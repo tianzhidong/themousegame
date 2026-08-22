@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dmv3y6cbvkqxc"]
+
+[ext_resource type="PackedScene" path="res://scenes/core/Friend.tscn" id="1_friend"]
+[ext_resource type="Texture2D" uid="uid://c7n0rciybswtg" path="res://assets/images/ui/back_button.png" id="2_2ii7u"]
+[ext_resource type="Script" uid="uid://hfkyaicge4ep" path="res://scripts/ui/back_button_2.gd" id="3_fakti"]
+[ext_resource type="Texture2D" uid="uid://dugdmlhiypicq" path="res://assets/images/ui/settings_button.png" id="5_yd7i6"]
+[ext_resource type="Script" uid="uid://biydogrrnkjp" path="res://scripts/ui/settings_button.gd" id="6_vcewm"]
+[ext_resource type="PackedScene" uid="uid://3kwv7sjrajm0" path="res://scenes/ui/taskbar.tscn" id="8_taskbar"]
+
+[node name="Level12" type="Node2D" unique_id=1818946770]
+
+[node name="friend" parent="." unique_id=1330163914 instance=ExtResource("1_friend")]
+
+[node name="BackButton" type="Sprite2D" parent="." unique_id=1966539377]
+position = Vector2(64.00001, 64)
+scale = Vector2(0.234375, 0.234375)
+texture = ExtResource("2_2ii7u")
+script = ExtResource("3_fakti")
+
+[node name="SettingsButton" type="Sprite2D" parent="." unique_id=180177189]
+position = Vector2(1857.0001, 70.00001)
+scale = Vector2(0.21875, 0.21875)
+texture = ExtResource("5_yd7i6")
+script = ExtResource("6_vcewm")
+
+[node name="Taskbar" parent="." instance=ExtResource("8_taskbar")]

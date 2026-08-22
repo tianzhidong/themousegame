@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bbxvc23wet25q"]
+
+[ext_resource type="Texture2D" uid="uid://bkj43nd5fpccd" path="res://assets/images/backgrounds/lesson7.png" id="1_npgra"]
+[ext_resource type="Texture2D" uid="uid://dlf8321k8cruv" path="res://assets/images/ui/voice_replay_button.png" id="2_7gxmi"]
+[ext_resource type="Script" path="res://scripts/ui/lesson.gd" id="3_lesson"]
+
+[node name="Lesson7" type="Node2D" unique_id=640833065]
+script = ExtResource("3_lesson")
+voice_path = "res://assets/audio/voice/lesson/滚轮.ogg"
+
+[node name="Lesson7" type="Sprite2D" parent="." unique_id=1296821678]
+position = Vector2(962, 544.75)
+scale = Vector2(1.145933, 1.1546228)
+texture = ExtResource("1_npgra")
+
+[node name="VoiceReplayButton" type="Sprite2D" parent="." unique_id=589568308]
+position = Vector2(1856, 1012)
+scale = Vector2(0.2382813, 0.2382813)
+texture = ExtResource("2_7gxmi")

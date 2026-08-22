@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cajqfiew8fs0q"]
+
+[ext_resource type="Texture2D" uid="uid://dbuwfw0yl1sgr" path="res://assets/images/ui/blank_2.png" id="1_oc727"]
+[ext_resource type="Texture2D" uid="uid://tukvy3k8o6mc" path="res://assets/images/ui/bgmv.png" id="2_wwwhf"]
+[ext_resource type="Texture2D" uid="uid://c2ykch6dvyoyh" path="res://assets/images/ui/OKbutton.png" id="3_kcspx"]
+[ext_resource type="Texture2D" uid="uid://ujdt0wre3n6o" path="res://assets/images/ui/dot.png" id="4_kcspx"]
+[ext_resource type="Script" uid="uid://b4d1tthuoqkuv" path="res://scripts/ui/gameset.gd" id="5_gameset"]
+
+[node name="Gameset" type="Node2D" unique_id=1468153428]
+script = ExtResource("5_gameset")
+
+[node name="Blank2" type="Sprite2D" parent="." unique_id=1853308969]
+position = Vector2(904, 536.00006)
+scale = Vector2(0.43740222, 0.4374022)
+texture = ExtResource("1_oc727")
+
+[node name="Bgmv" type="Sprite2D" parent="Blank2" unique_id=176594628]
+position = Vector2(18.289795, 18.289673)
+scale = Vector2(0.91058844, 0.9105887)
+texture = ExtResource("2_wwwhf")
+
+[node name="Dot" type="Sprite2D" parent="Blank2" unique_id=2131449797]
+position = Vector2(-109.73889, 16.003418)
+scale = Vector2(0.16765651, 0.16765651)
+texture = ExtResource("4_kcspx")
+
+[node name="OKbutton" type="Sprite2D" parent="Blank2" unique_id=1672616244]
+position = Vector2(0, 274.34692)
+scale = Vector2(0.29479158, 0.29479158)
+texture = ExtResource("3_kcspx")

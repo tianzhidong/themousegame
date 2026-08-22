@@ -1,0 +1,40 @@
+{
+  "day_id": 8,
+  "day_title": "高高的树屋",
+  "task_mode": "sequence",
+  "time_limit_seconds": 900,
+  "tasks": [
+    {
+      "id": "double_click_treehouse_windows",
+      "text": "双击打开树屋窗户",
+      "icon_path": "res://assets/images/objects/lesson/wooden_signpost.png",
+      "operation": "double_click",
+      "target_type": "window",
+      "target_color": "",
+      "target_tag": "treehouse_window",
+      "target_ids": [],
+      "target_count": 4,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 1,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/lesson/双击左键.ogg"
+    },
+    {
+      "id": "double_click_treehouse_lights",
+      "text": "双击点亮树屋灯笼",
+      "icon_path": "res://assets/images/ui/light_s.png",
+      "operation": "double_click",
+      "target_type": "light",
+      "target_color": "",
+      "target_tag": "treehouse_light",
+      "target_ids": [],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 2,
+      "hint_image_path": "",
+      "hint_audio_path": ""
+    }
+  ]
+}

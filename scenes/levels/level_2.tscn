@@ -1,0 +1,86 @@
+[gd_scene format=3 uid="uid://dom56ud8nwydb"]
+
+[ext_resource type="PackedScene" path="res://scenes/core/Friend.tscn" id="1_friend"]
+[ext_resource type="Texture2D" uid="uid://dq22220a2r27j" path="res://assets/images/backgrounds/day2_bg.png" id="2_g2h2n"]
+[ext_resource type="Texture2D" uid="uid://c7n0rciybswtg" path="res://assets/images/ui/back_button.png" id="3_ibugp"]
+[ext_resource type="Script" uid="uid://hfkyaicge4ep" path="res://scripts/ui/back_button_2.gd" id="4_8qukl"]
+[ext_resource type="Texture2D" uid="uid://dugdmlhiypicq" path="res://assets/images/ui/settings_button.png" id="6_qsp8v"]
+[ext_resource type="Script" uid="uid://biydogrrnkjp" path="res://scripts/ui/settings_button.gd" id="7_nt80m"]
+[ext_resource type="PackedScene" uid="uid://3kwv7sjrajm0" path="res://scenes/ui/taskbar.tscn" id="8_taskbar"]
+
+[node name="Level2" type="Node2D" unique_id=877520401]
+
+[node name="friend" parent="." unique_id=591430341 instance=ExtResource("1_friend")]
+z_index = 4
+
+[node name="BackButton" type="Sprite2D" parent="." unique_id=610354263]
+position = Vector2(64.00001, 64)
+scale = Vector2(0.234375, 0.234375)
+texture = ExtResource("3_ibugp")
+script = ExtResource("4_8qukl")
+
+[node name="SettingsButton" type="Sprite2D" parent="." unique_id=1903014552]
+position = Vector2(1857.0001, 70.00001)
+scale = Vector2(0.21875, 0.21875)
+texture = ExtResource("6_qsp8v")
+script = ExtResource("7_nt80m")
+
+[node name="Taskbar" parent="." unique_id=664421247 instance=ExtResource("8_taskbar")]
+
+[node name="Day2Bg" type="Sprite2D" parent="." unique_id=119717613]
+z_index = -5
+position = Vector2(960.00006, 540)
+scale = Vector2(1.1483253, 1.1477151)
+texture = ExtResource("2_g2h2n")
+metadata/_edit_lock_ = true
+
+[node name="apple" type="Area2D" parent="." unique_id=116949883]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="apple" unique_id=206462425]
+polygon = PackedVector2Array(133, 9, 208, 8, 242, 46, 291, 61, 337, 80, 339, 125, 361, 148, 388, 147, 405, 183, 443, 241, 451, 323, 417, 369, 392, 432, 340, 471, 280, 491, 324, 429, 288, 415, 237, 458, 218, 417, 200, 399, 144, 386, 116, 397, 106, 439, 88, 456, 56, 410, 38, 398, 6, 414, 1, 99, 54, 122, 118, 115, 123.554756, 75.74635, 112, 52)
+metadata/_edit_lock_ = true
+
+[node name="pear" type="Area2D" parent="." unique_id=1959972066]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="pear" unique_id=742930184]
+position = Vector2(424, 144)
+polygon = PackedVector2Array(-8, -35, 51, -41, 72, -70, 107, -73, 136, -81, 171, -68, 208, -52, 219, -9, 248, -23, 278, 4, 279, 16, 306, 28, 305, 58, 303, 80, 325, 69, 360, 92, 355, 142, 376, 139, 386, 192, 364, 224, 358, 247, 346, 277, 327, 306, 300, 316, 297, 330, 282, 344, 262, 336, 244, 348, 218, 344, 227, 328, 268.44855, 302.64087, 251, 300, 232, 310, 240, 286, 221, 279, 203, 312, 185, 309, 194, 262, 175, 261, 160, 260, 142, 283, 140, 263, 95, 275, 94, 315, 62, 305, 67, 272, 60, 271, 55, 289, 47.575283, 274.10617, 32, 278, 36, 302, 11, 285, -2, 292, 7, 307, -2, 317, 22, 314, 39, 327, 46, 343, 20, 335, 10, 351, -20, 345, -24, 323, -43, 318, -20, 300, -20, 288, -9, 270, -10, 258, 13, 254, 22, 230, 40, 202, 42, 149, 29, 124, 33, 96, 12, 60, -3, 31, -16, 6)
+metadata/_edit_lock_ = true
+
+[node name="berry" type="Area2D" parent="." unique_id=135990676]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="berry" unique_id=495369788]
+position = Vector2(230, 644)
+polygon = PackedVector2Array(1, -1, 10, 4, 18, -10, 31, -10, 45, -25, 62, -23, 73, -30, 94, -27, 110, -8, 119, -13, 131, -12, 133, -1, 146, 4, 158, 7, 167, 26, 164, 40, 163, 51, 179, 51, 185, 58, 188, 69, 191, 83, 191, 101, 191, 110, 183, 121, 168, 110, 148, 119, 109, 117, 94, 117, 90, 100, 69, 98, 63, 106, 37, 85, 20, 71, 3, 23)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="berry" unique_id=2061701465]
+position = Vector2(-2, 859)
+polygon = PackedVector2Array(-2, 1, 33, 23, 41, 54, 57, 33, 81, 26, 88, 31, 86, 54, 109, 62, 129, 67, 129, 93, 126, 111, 145, 114, 167, 106, 174, 120, 156, 138, 157, 154, 179, 156, 196, 166, 201, 180, 186, 194, 197, 208, 209, 215, 210, 224, -2, 227)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="berry" unique_id=1425897802]
+position = Vector2(1196, 781)
+polygon = PackedVector2Array(1, -5, 26, -41, 52, -57, 70, -96, 91, -99, 146, -134, 190, -152, 224, -154, 261, -139, 288, -129, 296, -117, 312, -98, 363, -79, 370, -48, 369, -33, 378, -26, 378, -9, 367, 19, 381, 12, 368, 28, 338, 36, 323, 48, 308, 24, 287, 17, 254, 26, 258, 56, 260, 72, 245, 56, 217, 65, 203, 76, 180, 89, 15, 81, 26, 49, 19, 25, -3, 14)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="berry" unique_id=1745122964]
+position = Vector2(1498, 619)
+polygon = PackedVector2Array(-1, -3, 10, -26, 32, -61, 57, -69, 52, -88, 76, -91, 91, -112, 107, -130, 143, -134, 141, 20, 63, 17, 61, 0, 23, 5)
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="berry" unique_id=1087563676]
+position = Vector2(842, 665)
+polygon = PackedVector2Array(0, 0, 93, 6, 183, 5, 189, -12, 179, -34, 172, -55, 154, -58, 149, -70, 128, -85, 101, -90, 61, -84, 45, -62, 28, -47, 23, -24, 8, -22)
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="berry" unique_id=20815905]
+position = Vector2(612, 598)
+polygon = PackedVector2Array(1, -3, 14, -2, 20, -14, 29, -13, 37, -11, 40, -21, 58, -23, 65, -21, 75, -21, 80, -11, 82, -18, 92, -13, 98, -4, 100, 4, 95, 11, 97, 18, 107, 15, 118, 21, 119, 29, 113, 37, 122, 37, 126, 43, 124, 53, 123, 56, 16, 55, 5, 29, 0, 7)
+
+[node name="mushroom" type="Area2D" parent="." unique_id=229367237]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="mushroom" unique_id=557772330]
+position = Vector2(120, 812)
+polygon = PackedVector2Array(1, -3, -96, -18, -117, 27, -83, 49, -17, 57, -18, 78, 80, 133, 113, 269, 1489, 266, 1505, 186, 1403, 171, 1303, 185, 1297, 116, 1336, 75, 1113, 66, 1098, 96, 916, 110, 873, 51, 918, -31, 957, -77, 990, -109, 1064, -96, 1125, -135, 1136, -161, 1077, -167, 1052, -132, 998, -135, 981, -156, 935, -155, 922, -124, 693, -137, 564, -145, 627, -117, 317, -100, 342, -77, 345, -37, 224, -32, 153, -35, 162, -13, 44, -18, 34, -12)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1455844094]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=99625965]
+position = Vector2(1421, 3)
+polygon = PackedVector2Array(0, 1, 5, 7, -29, 32, -43, 42, -63, 78, -56, 95, -63, 115, -45, 134, -29, 140, -45, 155, -51, 176, -47, 195, -42, 214, -25, 219, -12, 225, 10, 217, 31, 233, 54, 257, 72, 255, 99, 271, 80, 229, 43, 205, 46, 177, 74, 202, 72, 153, 99, 181, 99, 146, 113, 152, 116, 215, 139, 249, 159, 244, 168, 206, 148, 127, 190, 111, 212, 147, 262, 123, 397, 124, 371, 69, 388, 8, 379, -3)

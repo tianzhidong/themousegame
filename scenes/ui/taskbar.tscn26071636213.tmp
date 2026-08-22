@@ -1,0 +1,285 @@
+[gd_scene format=3 uid="uid://3kwv7sjrajm0"]
+
+[ext_resource type="Texture2D" uid="uid://bnj2aavtb6sdi" path="res://assets/images/ui/taskbar.png" id="1_l27u2"]
+[ext_resource type="Texture2D" uid="uid://02vffsbo0xjh" path="res://assets/images/ui/tasklabel.png" id="2_bssus"]
+[ext_resource type="Texture2D" uid="uid://bpt5kfixgf0hs" path="res://assets/images/ui/apple_s.png" id="3_koqvg"]
+[ext_resource type="Texture2D" uid="uid://cflm870dgc3wy" path="res://assets/images/ui/blank4.png" id="4_koqvg"]
+[ext_resource type="Script" uid="uid://krnal42wkmgd" path="res://scripts/ui/taskbar.gd" id="4_taskbar"]
+[ext_resource type="Texture2D" uid="uid://b486owv7y5iiq" path="res://assets/images/ui/circle_s0.png" id="5_70vtc"]
+[ext_resource type="Texture2D" uid="uid://drkhacmtnnawi" path="res://assets/images/objects/lesson/red_flower_open.png" id="5_iweoy"]
+[ext_resource type="Texture2D" uid="uid://cs2v6y3fu5ne5" path="res://assets/images/ui/plyer.png" id="6_iweoy"]
+[ext_resource type="Texture2D" uid="uid://l0k5p14wvtne" path="res://assets/images/ui/flower_s.png" id="7_rdkq4"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_wvhbo"]
+font_size = 580
+font_color = Color(0.4861505, 0.22027975, 0.026693217, 1)
+outline_color = Color(0, 0, 0, 1)
+shadow_color = Color(0.02745098, 0.5176471, 0.5058824, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wvhbo"]
+size = Vector2(686.03705, 726.46375)
+
+[node name="Taskbar" type="Node2D" unique_id=664421247]
+z_index = 10
+script = ExtResource("4_taskbar")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=311918326]
+
+[node name="Taskbar" type="Sprite2D" parent="CanvasLayer" unique_id=1340349964]
+position = Vector2(1775.9999, 512)
+scale = Vector2(0.48976982, 0.49555123)
+texture = ExtResource("1_l27u2")
+
+[node name="Tasklabel" type="Sprite2D" parent="CanvasLayer/Taskbar" unique_id=513043991]
+position = Vector2(5.340576e-05, -751.37335)
+scale = Vector2(0.23638006, 0.2363801)
+texture = ExtResource("2_bssus")
+
+[node name="Blank4" type="Sprite2D" parent="CanvasLayer/Taskbar" unique_id=576443613]
+position = Vector2(6.1262207, -563.53)
+scale = Vector2(0.2962493, 0.29624927)
+texture = ExtResource("4_koqvg")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Taskbar/Blank4" unique_id=1310940623]
+offset_left = -792.5923
+offset_top = -223.02798
+offset_right = 2640.4077
+offset_bottom = 1030.972
+scale = Vector2(0.35801768, 0.35801768)
+theme_override_constants/separation = -164
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Taskbar/Blank4/HBoxContainer" unique_id=417587782]
+layout_mode = 2
+texture = ExtResource("5_iweoy")
+
+[node name="Label" type="Label" parent="CanvasLayer/Taskbar/Blank4/HBoxContainer" unique_id=1030055035]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.29803923, 0.29803923, 0.29803923, 1)
+text = "点亮花朵"
+label_settings = SubResource("LabelSettings_wvhbo")
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Taskbar/Blank4/HBoxContainer" unique_id=1169688799]
+layout_mode = 2
+texture = ExtResource("6_iweoy")
+expand_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Taskbar" unique_id=1854820740]
+offset_left = -228.67857
+offset_top = -64.574585
+offset_right = 1571.3214
+offset_bottom = 2383.4253
+scale = Vector2(0.3636937, 0.3636937)
+theme_override_constants/separation = 58
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Taskbar/VBoxContainer" unique_id=1607783174]
+layout_mode = 2
+theme_override_constants/separation = -30
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer" unique_id=469506316]
+layout_mode = 2
+texture = ExtResource("3_koqvg")
+expand_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer" unique_id=1839114930]
+layout_mode = 2
+theme_override_constants/separation = -120
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer/HBoxContainer" unique_id=888484124]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+expand_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer/HBoxContainer" unique_id=1365049168]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer/HBoxContainer" unique_id=2046022104]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="TextureRect4" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer/HBoxContainer" unique_id=905096357]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="TextureRect5" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer/HBoxContainer" unique_id=1474859865]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/Taskbar/VBoxContainer" unique_id=1538225157]
+layout_mode = 2
+theme_override_constants/separation = -30
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer2" unique_id=1013637535]
+layout_mode = 2
+texture = ExtResource("3_koqvg")
+expand_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer2" unique_id=115971282]
+layout_mode = 2
+theme_override_constants/separation = -120
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer2/HBoxContainer" unique_id=2025973559]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer2/HBoxContainer" unique_id=72588118]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer2/HBoxContainer" unique_id=148758487]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="TextureRect4" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer2/HBoxContainer" unique_id=1869415353]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="TextureRect5" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer2/HBoxContainer" unique_id=294036929]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="CanvasLayer/Taskbar/VBoxContainer" unique_id=1832037855]
+layout_mode = 2
+theme_override_constants/separation = -30
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer4" unique_id=1123848193]
+layout_mode = 2
+texture = ExtResource("3_koqvg")
+expand_mode = 2
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer4" unique_id=1575858726]
+layout_mode = 2
+theme_override_constants/separation = -120
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer4/HBoxContainer5" unique_id=437798116]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer4/HBoxContainer5" unique_id=1556242824]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer4/HBoxContainer5" unique_id=2027328768]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="TextureRect4" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer4/HBoxContainer5" unique_id=1806611144]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="TextureRect5" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer4/HBoxContainer5" unique_id=299787057]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/Taskbar/VBoxContainer" unique_id=897199973]
+layout_mode = 2
+theme_override_constants/separation = -30
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer3" unique_id=1395911015]
+layout_mode = 2
+texture = ExtResource("3_koqvg")
+expand_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer3" unique_id=1374772263]
+layout_mode = 2
+theme_override_constants/separation = -120
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer3/HBoxContainer" unique_id=6608957]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer3/HBoxContainer" unique_id=794426766]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer3/HBoxContainer" unique_id=214404375]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="TextureRect4" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer3/HBoxContainer" unique_id=586273084]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="TextureRect5" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer3/HBoxContainer" unique_id=615018315]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="CanvasLayer/Taskbar/VBoxContainer" unique_id=1019399011]
+layout_mode = 2
+theme_override_constants/separation = -30
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer5" unique_id=522083072]
+layout_mode = 2
+texture = ExtResource("3_koqvg")
+expand_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer5" unique_id=1485073639]
+layout_mode = 2
+theme_override_constants/separation = -120
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer5/HBoxContainer" unique_id=391734426]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer5/HBoxContainer" unique_id=1330761722]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer5/HBoxContainer" unique_id=1127313375]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="TextureRect4" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer5/HBoxContainer" unique_id=945704794]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="TextureRect5" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer5/HBoxContainer" unique_id=1689702699]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="CanvasLayer/Taskbar/VBoxContainer" unique_id=1208939844]
+layout_mode = 2
+theme_override_constants/separation = -30
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer6" unique_id=465772038]
+layout_mode = 2
+texture = ExtResource("3_koqvg")
+expand_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer6" unique_id=1695516238]
+layout_mode = 2
+theme_override_constants/separation = -120
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer6/HBoxContainer" unique_id=2033045973]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer6/HBoxContainer" unique_id=1144253147]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer6/HBoxContainer" unique_id=193354729]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="TextureRect4" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer6/HBoxContainer" unique_id=1488021044]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="TextureRect5" type="TextureRect" parent="CanvasLayer/Taskbar/VBoxContainer/HBoxContainer6/HBoxContainer" unique_id=2016602422]
+layout_mode = 2
+texture = ExtResource("5_70vtc")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Taskbar" unique_id=667382926]
+offset_left = -212.34439
+offset_top = -468.16553
+offset_right = 212.34482
+offset_bottom = -96.86182
+texture = ExtResource("7_rdkq4")
+
+[node name="Area2D" type="Area2D" parent="CanvasLayer/Taskbar" unique_id=1306027482]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Taskbar/Area2D" unique_id=365056567]
+position = Vector2(0.00048828125, -476.23737)
+shape = SubResource("RectangleShape2D_wvhbo")

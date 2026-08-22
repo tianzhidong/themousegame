@@ -1,0 +1,40 @@
+{
+  "day_id": 7,
+  "day_title": "一起布置小屋",
+  "task_mode": "sequence",
+  "time_limit_seconds": 900,
+  "tasks": [
+    {
+      "id": "wheel_choose_decorations",
+      "text": "滚动滚轮挑选装饰",
+      "icon_path": "res://assets/images/objects/lesson/wooden_signpost.png",
+      "operation": "wheel",
+      "target_type": "decoration",
+      "target_color": "",
+      "target_tag": "cottage_decoration",
+      "target_ids": [],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "per_action",
+      "order": 1,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/lesson/滚轮.ogg"
+    },
+    {
+      "id": "wheel_adjust_decorations",
+      "text": "滚动滚轮调整装饰",
+      "icon_path": "res://assets/images/objects/lesson/flower_target_idle.png",
+      "operation": "wheel",
+      "target_type": "decoration",
+      "target_color": "",
+      "target_tag": "cottage_decoration_size",
+      "target_ids": [],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "per_action",
+      "order": 2,
+      "hint_image_path": "",
+      "hint_audio_path": ""
+    }
+  ]
+}

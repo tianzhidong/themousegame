@@ -1,0 +1,173 @@
+[gd_scene format=3 uid="uid://mleasmmr0ums"]
+
+[ext_resource type="Texture2D" uid="uid://4p51la1faqxp" path="res://assets/images/ui/result_panel.png" id="1_3dhtb"]
+[ext_resource type="Texture2D" uid="uid://c84kbremlchd2" path="res://assets/images/ui/star.png" id="2_e5n2g"]
+[ext_resource type="Texture2D" uid="uid://ghikpffrg1hn" path="res://assets/images/ui/friends.png" id="3_0tk3h"]
+[ext_resource type="Script" uid="uid://dr1clggn34eab" path="res://scripts/ui/result.gd" id="4_result"]
+[ext_resource type="Texture2D" uid="uid://dxc621i6docto" path="res://assets/images/ui/confetti_paper.png" id="5_confetti"]
+[ext_resource type="AudioStream" uid="uid://cgpwdgpvuy6b0" path="res://assets/audio/ui/congratulation.ogg" id="6_congratulation"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_wvhbo"]
+font_size = 90
+font_color = Color(0.5647059, 0.30588236, 0.14901961, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ifow5"]
+font_size = 50
+font_color = Color(0.5647059, 0.30588236, 0.14901961, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wvhbo"]
+size = Vector2(2130.463, 1114.8083)
+
+[sub_resource type="Gradient" id="Gradient_confetti_colors"]
+offsets = PackedFloat32Array(0, 0.24, 0.5, 0.76, 1)
+colors = PackedColorArray(0.96, 0.31, 0.35, 1, 1, 0.77, 0.19, 1, 0.24, 0.67, 0.93, 1, 0.37, 0.79, 0.43, 1, 0.7, 0.42, 0.87, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_confetti_colors"]
+gradient = SubResource("Gradient_confetti_colors")
+
+[sub_resource type="Gradient" id="Gradient_confetti_fade"]
+offsets = PackedFloat32Array(0, 0.72, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0.9, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_confetti_fade"]
+gradient = SubResource("Gradient_confetti_fade")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_confetti"]
+direction = Vector3(0, -1, 0)
+spread = 48.0
+angle_min = -180.0
+angle_max = 180.0
+initial_velocity_min = 700.0
+initial_velocity_max = 950.0
+angular_velocity_min = -540.0
+angular_velocity_max = 540.0
+gravity = Vector3(0, 560, 0)
+damping_min = 15.0
+damping_max = 45.0
+particle_flag_disable_z = true
+scale_min = 0.035
+scale_max = 0.065
+color_ramp = SubResource("GradientTexture1D_confetti_fade")
+color_initial_ramp = SubResource("GradientTexture1D_confetti_colors")
+
+[node name="Result" type="Node2D" unique_id=1314847253]
+script = ExtResource("4_result")
+metadata/_edit_vertical_guides_ = [980.0]
+metadata/_edit_horizontal_guides_ = [512.0]
+
+[node name="ResultPanel" type="Sprite2D" parent="." unique_id=363640398]
+position = Vector2(983.3334, 511.75)
+scale = Vector2(0.5446593, 0.5446593)
+texture = ExtResource("1_3dhtb")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ResultPanel" unique_id=560295256]
+offset_left = -598.5393
+offset_top = 216.64928
+offset_right = 1437.4607
+offset_bottom = 416.6493
+scale = Vector2(0.5807367, 0.5807367)
+
+[node name="TextureRect" type="TextureRect" parent="ResultPanel/HBoxContainer" unique_id=388207345]
+layout_mode = 2
+texture = ExtResource("2_e5n2g")
+
+[node name="TextureRect2" type="TextureRect" parent="ResultPanel/HBoxContainer" unique_id=638337079]
+layout_mode = 2
+texture = ExtResource("2_e5n2g")
+
+[node name="TextureRect3" type="TextureRect" parent="ResultPanel/HBoxContainer" unique_id=128508086]
+layout_mode = 2
+texture = ExtResource("2_e5n2g")
+
+[node name="TextureRect4" type="TextureRect" parent="ResultPanel/HBoxContainer" unique_id=1773270973]
+layout_mode = 2
+texture = ExtResource("2_e5n2g")
+
+[node name="TextureRect5" type="TextureRect" parent="ResultPanel/HBoxContainer" unique_id=1946762112]
+layout_mode = 2
+texture = ExtResource("2_e5n2g")
+
+[node name="TextureRect6" type="TextureRect" parent="ResultPanel/HBoxContainer" unique_id=324752764]
+layout_mode = 2
+texture = ExtResource("2_e5n2g")
+
+[node name="TextureRect7" type="TextureRect" parent="ResultPanel/HBoxContainer" unique_id=1520936074]
+layout_mode = 2
+texture = ExtResource("2_e5n2g")
+
+[node name="TextureRect8" type="TextureRect" parent="ResultPanel/HBoxContainer" unique_id=109477570]
+layout_mode = 2
+texture = ExtResource("2_e5n2g")
+
+[node name="TextureRect9" type="TextureRect" parent="ResultPanel/HBoxContainer" unique_id=1561383069]
+layout_mode = 2
+texture = ExtResource("2_e5n2g")
+
+[node name="TextureRect10" type="TextureRect" parent="ResultPanel/HBoxContainer" unique_id=1731017362]
+layout_mode = 2
+texture = ExtResource("2_e5n2g")
+
+[node name="time" type="Label" parent="ResultPanel" unique_id=262436988]
+offset_left = -396.57825
+offset_top = 89.964386
+offset_right = 105.42175
+offset_bottom = 214.96439
+text = "5分56秒"
+label_settings = SubResource("LabelSettings_wvhbo")
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="ResultPanel" unique_id=365800305]
+offset_left = 183.60095
+offset_top = 89.964386
+offset_right = 408.60095
+offset_bottom = 214.96439
+text = "85.5"
+label_settings = SubResource("LabelSettings_wvhbo")
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="ResultPanel" unique_id=1611299591]
+offset_left = 409.43024
+offset_top = 137.70076
+offset_right = 449.43024
+offset_bottom = 188.70076
+text = "%"
+label_settings = SubResource("LabelSettings_ifow5")
+vertical_alignment = 1
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1702970964]
+position = Vector2(970.33344, 465.75)
+scale = Vector2(0.37315837, 0.3731584)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1035703752]
+position = Vector2(73.69507, -401.97388)
+shape = SubResource("RectangleShape2D_wvhbo")
+
+[node name="FriendsClip" type="Control" parent="Area2D/CollisionShape2D" unique_id=1661038100]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 0
+offset_left = -1065.2316
+offset_top = -557.4042
+offset_right = 1065.2314
+offset_bottom = 557.4042
+mouse_filter = 2
+
+[node name="Friends" type="Sprite2D" parent="Area2D/CollisionShape2D/FriendsClip" unique_id=1644378942]
+position = Vector2(991.5365, 959.37805)
+texture = ExtResource("3_0tk3h")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=1326427658]
+position = Vector2(960, 760)
+emitting = false
+amount = 90
+texture = ExtResource("5_confetti")
+lifetime = 3.6
+one_shot = true
+explosiveness = 1.0
+randomness = 0.35
+visibility_rect = Rect2(-300, -950, 2520, 2100)
+process_material = SubResource("ParticleProcessMaterial_confetti")
+
+[node name="CongratulationSound" type="AudioStreamPlayer" parent="." unique_id=1786250960]
+stream = ExtResource("6_congratulation")
+volume_db = -2.0

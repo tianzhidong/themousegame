@@ -1,0 +1,72 @@
+{
+  "day_id": 11,
+  "day_title": "湖边寻宝记",
+  "task_mode": "parallel",
+  "time_limit_seconds": 900,
+  "tasks": [
+    {
+      "id": "click_lake_treasures",
+      "text": "点击找到湖边宝物",
+      "icon_path": "res://assets/images/objects/lesson/firefly.png",
+      "operation": "click",
+      "target_type": "treasure",
+      "target_color": "",
+      "target_tag": "lake_treasure",
+      "target_ids": [],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 1,
+      "hint_image_path": "",
+      "hint_audio_path": ""
+    },
+    {
+      "id": "drag_treasures_to_chest",
+      "text": "把宝物拖进收纳箱",
+      "icon_path": "res://assets/images/ui/star.png",
+      "operation": "drag",
+      "target_type": "treasure",
+      "target_color": "",
+      "target_tag": "treasure_chest_item",
+      "target_ids": [],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 2,
+      "hint_image_path": "",
+      "hint_audio_path": ""
+    },
+    {
+      "id": "wheel_turn_treasure_map",
+      "text": "滚动滚轮查看藏宝图",
+      "icon_path": "res://assets/images/objects/lesson/wooden_signpost.png",
+      "operation": "wheel",
+      "target_type": "map",
+      "target_color": "",
+      "target_tag": "treasure_map",
+      "target_ids": [],
+      "target_count": 4,
+      "progress_style": "dots",
+      "progress_mode": "per_action",
+      "order": 3,
+      "hint_image_path": "",
+      "hint_audio_path": ""
+    },
+    {
+      "id": "double_click_close_chest",
+      "text": "双击关好收纳箱",
+      "icon_path": "res://assets/images/ui/star.png",
+      "operation": "double_click",
+      "target_type": "chest",
+      "target_color": "",
+      "target_tag": "treasure_chest",
+      "target_ids": [],
+      "target_count": 1,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 4,
+      "hint_image_path": "",
+      "hint_audio_path": ""
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://b5r2oeyloe251"]
+
+[ext_resource type="PackedScene" path="res://scenes/core/Friend.tscn" id="1_friend"]
+[ext_resource type="Texture2D" uid="uid://c7n0rciybswtg" path="res://assets/images/ui/back_button.png" id="3_ene4w"]
+[ext_resource type="Script" uid="uid://hfkyaicge4ep" path="res://scripts/ui/back_button_2.gd" id="4_h6r4t"]
+[ext_resource type="Texture2D" uid="uid://dugdmlhiypicq" path="res://assets/images/ui/settings_button.png" id="6_xsrpe"]
+[ext_resource type="Script" uid="uid://biydogrrnkjp" path="res://scripts/ui/settings_button.gd" id="7_0kxia"]
+[ext_resource type="Texture2D" uid="uid://cbcm5v1grnbxv" path="res://assets/images/backgrounds/day8_bg.png" id="7_ene4w"]
+[ext_resource type="PackedScene" uid="uid://3kwv7sjrajm0" path="res://scenes/ui/taskbar.tscn" id="8_taskbar"]
+
+[node name="Level8" type="Node2D" unique_id=1674105111]
+
+[node name="friend" parent="." unique_id=1966422444 instance=ExtResource("1_friend")]
+
+[node name="BackButton" type="Sprite2D" parent="." unique_id=518662124]
+position = Vector2(64.00001, 64)
+scale = Vector2(0.234375, 0.234375)
+texture = ExtResource("3_ene4w")
+script = ExtResource("4_h6r4t")
+
+[node name="SettingsButton" type="Sprite2D" parent="." unique_id=1063696431]
+position = Vector2(1857.0001, 70.00001)
+scale = Vector2(0.21875, 0.21875)
+texture = ExtResource("6_xsrpe")
+script = ExtResource("7_0kxia")
+
+[node name="Taskbar" parent="." unique_id=1834177042 instance=ExtResource("8_taskbar")]
+
+[node name="Day8Bg" type="Sprite2D" parent="." unique_id=145678100]
+z_index = -5
+position = Vector2(959.99994, 540)
+scale = Vector2(1.1483253, 1.1477152)
+texture = ExtResource("7_ene4w")
+metadata/_edit_lock_ = true

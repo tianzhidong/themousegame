@@ -1,0 +1,40 @@
+{
+  "day_id": 2,
+  "day_title": "蝴蝶带路",
+  "task_mode": "sequence",
+  "time_limit_seconds": 900,
+  "tasks": [
+    {
+      "id": "move_over_butterflies",
+      "text": "移动鼠标找到蝴蝶",
+      "icon_path": "res://assets/images/objects/lesson/butterfly.png",
+      "operation": "move",
+      "target_type": "butterfly",
+      "target_color": "",
+      "target_tag": "forest_butterfly",
+      "target_ids": [],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 1,
+      "hint_image_path": "",
+      "hint_audio_path": ""
+    },
+    {
+      "id": "click_blue_butterflies_day2",
+      "text": "点击蓝色蝴蝶",
+      "icon_path": "res://assets/images/ui/butterfly_s.png",
+      "operation": "click",
+      "target_type": "butterfly",
+      "target_color": "blue",
+      "target_tag": "forest_butterfly",
+      "target_ids": [],
+      "target_count": 3,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 2,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/lesson/单击左键.ogg"
+    }
+  ]
+}

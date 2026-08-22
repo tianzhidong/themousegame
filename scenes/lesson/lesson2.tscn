@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://bonjm8f46lx47"]
+
+[ext_resource type="Texture2D" uid="uid://bq644pgopidfd" path="res://assets/images/backgrounds/lesson2.png" id="1_f70b5"]
+[ext_resource type="Texture2D" uid="uid://dlf8321k8cruv" path="res://assets/images/ui/voice_replay_button.png" id="2_2eq00"]
+[ext_resource type="Script" uid="uid://cnwag6sbyejcf" path="res://scripts/ui/lesson.gd" id="3_lesson"]
+[ext_resource type="Texture2D" uid="uid://cmmh67iqfb7io" path="res://assets/images/objects/lesson/red_flower_bud.png" id="4_kjvou"]
+[ext_resource type="Script" uid="uid://bcd3v0b2ojyib" path="res://scripts/lesson/collision_shape_2d.gd" id="4_uhd6p"]
+[ext_resource type="Texture2D" uid="uid://drkhacmtnnawi" path="res://assets/images/objects/lesson/red_flower_open.png" id="5_uhd6p"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wvhbo"]
+radius = 337.7939
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wvhbo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_kjvou")
+}],
+"loop": 1,
+"name": &"red_flower_bud",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_kjvou")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_uhd6p")
+}],
+"loop": 1,
+"name": &"red_flower_open",
+"speed": 5.0
+}]
+
+[node name="Lesson2" type="Node2D" unique_id=1273231318]
+script = ExtResource("3_lesson")
+voice_path = "res://assets/audio/voice/lesson/单击左键.ogg"
+
+[node name="Lesson2" type="Sprite2D" parent="." unique_id=1329334447]
+position = Vector2(959.99994, 540)
+scale = Vector2(1.1483253, 1.1477153)
+texture = ExtResource("1_f70b5")
+
+[node name="VoiceReplayButton" type="Sprite2D" parent="." unique_id=796217176]
+position = Vector2(1856, 1012)
+scale = Vector2(0.2382813, 0.2382813)
+texture = ExtResource("2_2eq00")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1018390774]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1768117608]
+position = Vector2(1328, 480)
+scale = Vector2(0.30911604, 0.3956519)
+shape = SubResource("CircleShape2D_wvhbo")
+script = ExtResource("4_uhd6p")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D/CollisionShape2D" unique_id=766087098]
+position = Vector2(25.880371, 181.97815)
+scale = Vector2(1.520774, 1.1881547)
+sprite_frames = SubResource("SpriteFrames_wvhbo")
+animation = &"red_flower_open"

@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://wbw44s0sw5xr"]
+
+[ext_resource type="PackedScene" path="res://scenes/core/Friend.tscn" id="1_friend"]
+[ext_resource type="Texture2D" uid="uid://c7n0rciybswtg" path="res://assets/images/ui/back_button.png" id="2_rej77"]
+[ext_resource type="Script" uid="uid://hfkyaicge4ep" path="res://scripts/ui/back_button_2.gd" id="3_5vn0v"]
+[ext_resource type="Texture2D" uid="uid://dugdmlhiypicq" path="res://assets/images/ui/settings_button.png" id="5_um320"]
+[ext_resource type="Script" uid="uid://biydogrrnkjp" path="res://scripts/ui/settings_button.gd" id="6_glw47"]
+[ext_resource type="Texture2D" uid="uid://b4o7ut5l7xcx4" path="res://assets/images/backgrounds/day4_bg.png" id="7_5vn0v"]
+[ext_resource type="PackedScene" uid="uid://3kwv7sjrajm0" path="res://scenes/ui/taskbar.tscn" id="8_taskbar"]
+
+[node name="Level4" type="Node2D" unique_id=1075978117]
+
+[node name="friend" parent="." unique_id=1141735396 instance=ExtResource("1_friend")]
+position = Vector2(470.99997, 277.00006)
+scale = Vector2(0.48, 0.48)
+
+[node name="BackButton" type="Sprite2D" parent="." unique_id=2088995517]
+position = Vector2(64.00001, 64)
+scale = Vector2(0.234375, 0.234375)
+texture = ExtResource("2_rej77")
+script = ExtResource("3_5vn0v")
+
+[node name="SettingsButton" type="Sprite2D" parent="." unique_id=1576630808]
+position = Vector2(1857.0001, 70.00001)
+scale = Vector2(0.21875, 0.21875)
+texture = ExtResource("5_um320")
+script = ExtResource("6_glw47")
+
+[node name="Taskbar" parent="." unique_id=1685075465 instance=ExtResource("8_taskbar")]
+
+[node name="Day4Bg" type="Sprite2D" parent="." unique_id=1791435531]
+z_index = -5
+position = Vector2(960.00006, 540)
+scale = Vector2(1.1483253, 1.1477151)
+texture = ExtResource("7_5vn0v")
+metadata/_edit_lock_ = true
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1422375619]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=884336937]
+position = Vector2(624, 432)
+polygon = PackedVector2Array(-1, -3, 708, 0, 858, 414, -167, 411)

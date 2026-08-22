@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/images/friends/bear/bear_captain_idle.png" id="1_friend"]
+[ext_resource type="Script" path="res://scripts/core/friend.gd" id="2_friend"]
+
+[node name="friend" type="Sprite2D"]
+position = Vector2(736, 928.00006)
+scale = Vector2(0.27333334, 0.27333334)
+texture = ExtResource("1_friend")
+script = ExtResource("2_friend")

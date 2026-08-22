@@ -1,0 +1,40 @@
+{
+  "day_id": 6,
+  "day_title": "朋友们的礼物",
+  "task_mode": "sequence",
+  "time_limit_seconds": 900,
+  "tasks": [
+    {
+      "id": "click_friend_apples",
+      "text": "点击朋友送来的苹果",
+      "icon_path": "res://assets/images/ui/apple_s.png",
+      "operation": "click",
+      "target_type": "apple",
+      "target_color": "",
+      "target_tag": "friend_gift",
+      "target_ids": [],
+      "target_count": 4,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 1,
+      "hint_image_path": "",
+      "hint_audio_path": ""
+    },
+    {
+      "id": "drag_gifts_to_table",
+      "text": "把礼物拖到桌子上",
+      "icon_path": "res://assets/images/objects/lesson/wooden_signpost.png",
+      "operation": "drag",
+      "target_type": "gift",
+      "target_color": "",
+      "target_tag": "friend_gift",
+      "target_ids": [],
+      "target_count": 4,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 2,
+      "hint_image_path": "",
+      "hint_audio_path": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://cj2dl3avcywp"]
+
+[ext_resource type="Script" uid="uid://cc5dxmcr35it1" path="res://scripts/main/Main.cs" id="1_main"]
+[ext_resource type="Texture2D" uid="uid://d3cipiqcpxxl5" path="res://assets/images/backgrounds/forest_town_home.png" id="2_gyg6b"]
+[ext_resource type="Texture2D" uid="uid://dth78qv1qhe8l" path="res://assets/images/ui/start_panel.png" id="3_dc040"]
+[ext_resource type="Script" uid="uid://cnhgo65xi2o3f" path="res://scripts/ui/start_panel.gd" id="4_1rhdn"]
+[ext_resource type="Texture2D" uid="uid://k100fu3elqhe" path="res://assets/images/ui/close_win.png" id="5_dc040"]
+[ext_resource type="Script" uid="uid://bi7d20dsrd1gt" path="res://scripts/ui/close_win.gd" id="6_1rhdn"]
+[ext_resource type="Texture2D" uid="uid://dugdmlhiypicq" path="res://assets/images/ui/settings_button.png" id="7_ko0rf"]
+[ext_resource type="Script" uid="uid://biydogrrnkjp" path="res://scripts/ui/settings_button.gd" id="8_ostsq"]
+
+[node name="Main" type="Node2D" unique_id=1242662938]
+script = ExtResource("1_main")
+
+[node name="ForestTownHome" type="Sprite2D" parent="." unique_id=1097211082]
+position = Vector2(961, 540.37494)
+scale = Vector2(1.1471293, 1.1469182)
+texture = ExtResource("2_gyg6b")
+metadata/_edit_lock_ = true
+
+[node name="StartPanel" type="Sprite2D" parent="." unique_id=1288978328]
+position = Vector2(952, 944)
+scale = Vector2(0.3435463, 0.34354627)
+texture = ExtResource("3_dc040")
+script = ExtResource("4_1rhdn")
+
+[node name="CloseWin" type="Sprite2D" parent="." unique_id=2012866380]
+position = Vector2(1879.9999, 39.99998)
+scale = Vector2(0.12499994, 0.12499994)
+texture = ExtResource("5_dc040")
+script = ExtResource("6_1rhdn")
+
+[node name="SettingsButton" type="Sprite2D" parent="." unique_id=1765354412]
+position = Vector2(1833, 996)
+scale = Vector2(0.265625, 0.265625)
+texture = ExtResource("7_ko0rf")
+script = ExtResource("8_ostsq")

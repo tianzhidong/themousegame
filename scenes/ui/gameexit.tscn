@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://c6pnt2o8pqh3e"]
+
+[ext_resource type="Texture2D" uid="uid://b0h3s1gyhu5nm" path="res://assets/images/ui/exit_win.png" id="1_wwwhf"]
+[ext_resource type="Texture2D" uid="uid://ny6lrgcnewe7" path="res://assets/images/ui/exit_button.png" id="2_kcspx"]
+[ext_resource type="Texture2D" uid="uid://c1ajpxg1gfpyd" path="res://assets/images/ui/continue_button.png" id="3_foprt"]
+[ext_resource type="Script" uid="uid://gy8uvhxan1b5" path="res://scripts/ui/gameexit.gd" id="4_gameexit"]
+
+[node name="GameExit" type="Node2D" unique_id=1468153428]
+script = ExtResource("4_gameexit")
+metadata/_edit_horizontal_guides_ = [848.0]
+
+[node name="ExitWin" type="Sprite2D" parent="." unique_id=1325329817]
+position = Vector2(944, 528)
+scale = Vector2(0.5923697, 0.5923697)
+texture = ExtResource("1_wwwhf")
+
+[node name="ExitButton" type="Sprite2D" parent="ExitWin" unique_id=928346506]
+position = Vector2(277.52173, 428.91425)
+scale = Vector2(0.26892146, 0.2689215)
+texture = ExtResource("2_kcspx")
+
+[node name="ContinueButton" type="Sprite2D" parent="ExitWin" unique_id=893794067]
+position = Vector2(-230.94629, 428.91412)
+scale = Vector2(0.28574514, 0.28574514)
+texture = ExtResource("3_foprt")

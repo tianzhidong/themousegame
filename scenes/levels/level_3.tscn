@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://bx3tuaie6v80q"]
+
+[ext_resource type="PackedScene" path="res://scenes/core/Friend.tscn" id="1_friend"]
+[ext_resource type="Texture2D" uid="uid://ot1xcajcnfww" path="res://assets/images/backgrounds/day3_bg.png" id="2_44gv1"]
+[ext_resource type="Texture2D" uid="uid://c7n0rciybswtg" path="res://assets/images/ui/back_button.png" id="3_fkk1g"]
+[ext_resource type="Script" uid="uid://hfkyaicge4ep" path="res://scripts/ui/back_button_2.gd" id="4_ugcn1"]
+[ext_resource type="Texture2D" uid="uid://dugdmlhiypicq" path="res://assets/images/ui/settings_button.png" id="6_2bnyt"]
+[ext_resource type="Script" uid="uid://biydogrrnkjp" path="res://scripts/ui/settings_button.gd" id="7_n6eey"]
+[ext_resource type="Script" uid="uid://bywnyua5i6blu" path="res://scripts/days/day3/canvas_modulate.gd" id="8_2bnyt"]
+[ext_resource type="PackedScene" uid="uid://3kwv7sjrajm0" path="res://scenes/ui/taskbar.tscn" id="8_taskbar"]
+[ext_resource type="Texture2D" uid="uid://7maybtos72td" path="res://assets/images/objects/day3/handlight.png" id="8_ugcn1"]
+[ext_resource type="Texture2D" uid="uid://1vye1vqny4if" path="res://assets/images/objects/day3/vlight.png" id="10_2bnyt"]
+[ext_resource type="Texture2D" uid="uid://mioboso72svw" path="res://assets/images/objects/day3/circlelight.png" id="10_n6eey"]
+
+[node name="Level3" type="Node2D" unique_id=1861721280]
+
+[node name="friend" parent="." unique_id=1505455122 instance=ExtResource("1_friend")]
+
+[node name="Day3Bg" type="Sprite2D" parent="." unique_id=95449063]
+z_index = -4
+position = Vector2(960, 540)
+scale = Vector2(1.1483253, 1.1477152)
+texture = ExtResource("2_44gv1")
+
+[node name="BackButton" type="Sprite2D" parent="." unique_id=870908920]
+position = Vector2(64.00001, 64)
+scale = Vector2(0.234375, 0.234375)
+texture = ExtResource("3_fkk1g")
+script = ExtResource("4_ugcn1")
+
+[node name="SettingsButton" type="Sprite2D" parent="." unique_id=711852334]
+position = Vector2(1857.0001, 70.00001)
+scale = Vector2(0.21875, 0.21875)
+texture = ExtResource("6_2bnyt")
+script = ExtResource("7_n6eey")
+
+[node name="Taskbar" parent="." unique_id=1016474858 instance=ExtResource("8_taskbar")]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1294340051]
+script = ExtResource("8_2bnyt")
+
+[node name="Handlight" type="Sprite2D" parent="." unique_id=78205277]
+light_mask = 2
+z_index = 4
+position = Vector2(662.11, 1001.2258)
+rotation = -1.5973493
+scale = Vector2(0.21972515, 0.21972515)
+texture = ExtResource("8_ugcn1")
+
+[node name="PointLight2D" type="PointLight2D" parent="Handlight" unique_id=1152019330]
+z_index = -1
+position = Vector2(1632.4329, -57.304913)
+rotation = 0.035432994
+scale = Vector2(1.0398386, 1.0361319)
+energy = 0.59
+texture = ExtResource("10_n6eey")
+
+[node name="PointLight2D2" type="PointLight2D" parent="Handlight" unique_id=1122770603]
+light_mask = 0
+position = Vector2(1272.4154, -44.102966)
+scale = Vector2(1.5517771, 2.0906007)
+range_item_cull_mask = 2
+texture = ExtResource("10_2bnyt")

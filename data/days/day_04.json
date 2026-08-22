@@ -1,0 +1,40 @@
+{
+  "day_id": 4,
+  "day_title": "找找是谁藏起来了",
+  "task_mode": "sequence",
+  "time_limit_seconds": 900,
+  "tasks": [
+    {
+      "id": "drag_frogs_to_pond",
+      "text": "把青蛙拖到池塘",
+      "icon_path": "res://assets/images/objects/lesson/frog_target_idle.png",
+      "operation": "drag",
+      "target_type": "frog",
+      "target_color": "",
+      "target_tag": "hidden_frog",
+      "target_ids": [],
+      "target_count": 3,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 1,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/lesson/拖拽.ogg"
+    },
+    {
+      "id": "drag_birds_to_branch",
+      "text": "把小鸟拖到树枝",
+      "icon_path": "res://assets/images/objects/lesson/bird_target_idle.png",
+      "operation": "drag",
+      "target_type": "bird",
+      "target_color": "",
+      "target_tag": "hidden_bird",
+      "target_ids": [],
+      "target_count": 3,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 2,
+      "hint_image_path": "",
+      "hint_audio_path": ""
+    }
+  ]
+}

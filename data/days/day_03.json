@@ -1,0 +1,40 @@
+{
+  "day_id": 3,
+  "day_title": "花园醒来啦",
+  "task_mode": "sequence",
+  "time_limit_seconds": 900,
+  "tasks": [
+    {
+      "id": "click_red_flowers",
+      "text": "点击红色花朵",
+      "icon_path": "res://assets/images/objects/lesson/red_flower_open.png",
+      "operation": "click",
+      "target_type": "flower",
+      "target_color": "red",
+      "target_tag": "garden_flower",
+      "target_ids": [],
+      "target_count": 5,
+      "progress_style": "petals",
+      "progress_mode": "distinct_object",
+      "order": 1,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/lesson/单击左键.ogg"
+    },
+    {
+      "id": "click_blue_butterflies",
+      "text": "点击蓝色蝴蝶",
+      "icon_path": "res://assets/images/objects/lesson/butterfly.png",
+      "operation": "click",
+      "target_type": "butterfly",
+      "target_color": "blue",
+      "target_tag": "garden_butterfly",
+      "target_ids": [],
+      "target_count": 3,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 2,
+      "hint_image_path": "",
+      "hint_audio_path": ""
+    }
+  ]
+}

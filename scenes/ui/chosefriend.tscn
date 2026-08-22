@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://dndyr47gw0nis"]
+
+[ext_resource type="Texture2D" uid="uid://cih16wn2wb0m2" path="res://assets/images/backgrounds/forest_town_square.png" id="1_15shi"]
+[ext_resource type="Texture2D" uid="uid://bixljh0f5uss5" path="res://assets/images/ui/character_card_panel.png" id="2_1wx0g"]
+[ext_resource type="Texture2D" uid="uid://c7n0rciybswtg" path="res://assets/images/ui/back_button.png" id="3_8vgg1"]
+[ext_resource type="Script" uid="uid://bu05irot8l4t3" path="res://scripts/ui/character_card_panel.gd" id="3_nc6w4"]
+[ext_resource type="Texture2D" uid="uid://e1ea4vtig7sg" path="res://assets/images/friends/bear/bear_captain_idle.png" id="4_510r5"]
+[ext_resource type="Script" uid="uid://dcag56py4bvqy" path="res://scripts/ui/back_button.gd" id="4_qx37f"]
+[ext_resource type="Texture2D" uid="uid://cnsipaigtxjch" path="res://assets/images/friends/rabbit/rabbit_engineer_idle.png" id="5_1lb2b"]
+[ext_resource type="Texture2D" uid="uid://dpo0f0demtyfl" path="res://assets/images/friends/cat/cat_inventor_idle.png" id="6_xog7p"]
+
+[node name="chosefriend" type="Node2D" unique_id=1859021163]
+
+[node name="ForestTownSquare" type="Sprite2D" parent="." unique_id=871545774]
+position = Vector2(960, 540)
+scale = Vector2(1, 0.9990748)
+texture = ExtResource("1_15shi")
+metadata/_edit_lock_ = true
+
+[node name="CharacterCardPanel" type="Sprite2D" parent="." unique_id=2021102288]
+position = Vector2(975.99994, 506)
+scale = Vector2(0.453125, 0.453125)
+texture = ExtResource("2_1wx0g")
+script = ExtResource("3_nc6w4")
+friend_id = "bear"
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterCardPanel" unique_id=488382748]
+position = Vector2(0.00024223328, -53.172455)
+scale = Vector2(1.118161, 1.118161)
+texture = ExtResource("4_510r5")
+
+[node name="CharacterCardPanel2" type="Sprite2D" parent="." unique_id=1569173148]
+position = Vector2(432, 506)
+scale = Vector2(0.453125, 0.453125)
+texture = ExtResource("2_1wx0g")
+script = ExtResource("3_nc6w4")
+friend_id = "rabbit"
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterCardPanel2" unique_id=1387705947]
+position = Vector2(-17.655182, -57.379303)
+scale = Vector2(0.6896552, 0.6896551)
+texture = ExtResource("5_1lb2b")
+
+[node name="CharacterCardPanel3" type="Sprite2D" parent="." unique_id=1390155523]
+position = Vector2(1472, 506)
+scale = Vector2(0.453125, 0.453125)
+texture = ExtResource("2_1wx0g")
+script = ExtResource("3_nc6w4")
+friend_id = "cat"
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterCardPanel3" unique_id=426826466]
+position = Vector2(2.206913, -40.82752)
+scale = Vector2(0.71982753, 0.71982753)
+texture = ExtResource("6_xog7p")
+
+[node name="BackButton" type="Sprite2D" parent="." unique_id=1839430800]
+position = Vector2(104, 96)
+scale = Vector2(0.28125, 0.28125)
+texture = ExtResource("3_8vgg1")
+script = ExtResource("4_qx37f")

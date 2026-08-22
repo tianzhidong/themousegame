@@ -1,0 +1,72 @@
+{
+  "day_id": 10,
+  "day_title": "准备森林野餐",
+  "task_mode": "parallel",
+  "time_limit_seconds": 900,
+  "tasks": [
+    {
+      "id": "click_picnic_food",
+      "text": "点击找到野餐食物",
+      "icon_path": "res://assets/images/ui/apple_s.png",
+      "operation": "click",
+      "target_type": "food",
+      "target_color": "",
+      "target_tag": "picnic_food",
+      "target_ids": [],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 1,
+      "hint_image_path": "",
+      "hint_audio_path": ""
+    },
+    {
+      "id": "drag_food_to_basket",
+      "text": "把食物拖进野餐篮",
+      "icon_path": "res://assets/images/ui/apple_s.png",
+      "operation": "drag",
+      "target_type": "food",
+      "target_color": "",
+      "target_tag": "picnic_basket_item",
+      "target_ids": [],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 2,
+      "hint_image_path": "",
+      "hint_audio_path": ""
+    },
+    {
+      "id": "wheel_spread_picnic_blanket",
+      "text": "滚动滚轮铺好野餐布",
+      "icon_path": "res://assets/images/objects/lesson/flower_target_idle.png",
+      "operation": "wheel",
+      "target_type": "blanket",
+      "target_color": "",
+      "target_tag": "picnic_blanket",
+      "target_ids": [],
+      "target_count": 3,
+      "progress_style": "dots",
+      "progress_mode": "per_action",
+      "order": 3,
+      "hint_image_path": "",
+      "hint_audio_path": ""
+    },
+    {
+      "id": "double_click_close_basket",
+      "text": "双击扣好野餐篮",
+      "icon_path": "res://assets/images/ui/star.png",
+      "operation": "double_click",
+      "target_type": "basket",
+      "target_color": "",
+      "target_tag": "picnic_basket",
+      "target_ids": [],
+      "target_count": 1,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 4,
+      "hint_image_path": "",
+      "hint_audio_path": ""
+    }
+  ]
+}

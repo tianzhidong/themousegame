@@ -1,0 +1,304 @@
+[gd_scene format=3 uid="uid://74pgvdhfikoh"]
+
+[ext_resource type="Texture2D" uid="uid://bpxw72h68pv1r" path="res://assets/images/backgrounds/day1_bg.png" id="1_ksju7"]
+[ext_resource type="Texture2D" uid="uid://e1ea4vtig7sg" path="res://assets/images/friends/bear/bear_captain_idle.png" id="2_nsrm0"]
+[ext_resource type="Script" uid="uid://fcovasdpxs62" path="res://scripts/core/friend.gd" id="3_x42e6"]
+[ext_resource type="Texture2D" uid="uid://c7n0rciybswtg" path="res://assets/images/ui/back_button.png" id="4_sk5k4"]
+[ext_resource type="Script" uid="uid://hfkyaicge4ep" path="res://scripts/ui/back_button_2.gd" id="5_s8va5"]
+[ext_resource type="Texture2D" uid="uid://dugdmlhiypicq" path="res://assets/images/ui/settings_button.png" id="6_s8va5"]
+[ext_resource type="Script" uid="uid://biydogrrnkjp" path="res://scripts/ui/settings_button.gd" id="7_settings"]
+[ext_resource type="PackedScene" uid="uid://3kwv7sjrajm0" path="res://scenes/ui/taskbar.tscn" id="8_taskbar"]
+[ext_resource type="Texture2D" uid="uid://drh2rpscigee5" path="res://assets/images/objects/lesson/pin_1.png" id="10_excbq"]
+[ext_resource type="Texture2D" uid="uid://bmx3ph8pxuxo5" path="res://assets/images/objects/lesson/blue_flower_idle.png" id="11_blue_idle"]
+[ext_resource type="Texture2D" uid="uid://d03n0dpggqwof" path="res://assets/images/objects/lesson/blue_flower_open.png" id="11_blue_open"]
+[ext_resource type="Texture2D" uid="uid://dob8bymoh67s4" path="res://assets/images/objects/lesson/pin_2.png" id="11_iav0o"]
+[ext_resource type="Texture2D" uid="uid://drll20htd8kb8" path="res://assets/images/objects/lesson/lamp_target_idle.png" id="11_light_off"]
+[ext_resource type="Texture2D" uid="uid://cmmh67iqfb7io" path="res://assets/images/objects/lesson/red_flower_bud.png" id="11_red_bud"]
+[ext_resource type="Texture2D" uid="uid://drkhacmtnnawi" path="res://assets/images/objects/lesson/red_flower_open.png" id="11_red_open"]
+[ext_resource type="Texture2D" uid="uid://ln1n8g3t17xe" path="res://assets/images/objects/lesson/yellow_flower_bud.png" id="11_yellow_bud"]
+[ext_resource type="Texture2D" uid="uid://bnf2djkywmmuh" path="res://assets/images/objects/lesson/yellow_flower_open.png" id="11_yellow_open"]
+[ext_resource type="Script" uid="uid://bbc1v0yu341xk" path="res://scripts/lesson/level1_pins.gd" id="12_pins"]
+[ext_resource type="Texture2D" uid="uid://bo8j0twamj06s" path="res://assets/images/objects/lesson/lamp_on.png" id="12_wtwp4"]
+[ext_resource type="Texture2D" uid="uid://4rabhe57qtq3" path="res://assets/images/objects/lesson/wind_chime.png" id="20_gmpev"]
+[ext_resource type="Texture2D" uid="uid://jgjtjtiujc3r" path="res://assets/images/objects/lesson/butterfly1.png" id="21_7h2jl"]
+[ext_resource type="Texture2D" uid="uid://b0p5gvobl2bew" path="res://assets/images/objects/lesson/butterfly2.png" id="22_mqh5v"]
+[ext_resource type="Texture2D" uid="uid://csplt14t7l3kh" path="res://assets/images/objects/lesson/butterfly3.png" id="23_7o3do"]
+[ext_resource type="Script" uid="uid://b2w00c3bud27d" path="res://scripts/days/day1/animated_sprite_2d.gd" id="24_mqh5v"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wvhbo"]
+radius = 8.0
+height = 20.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wvhbo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_blue_idle")
+}],
+"loop": 1,
+"name": &"blue_flower_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_blue_open")
+}],
+"loop": 0,
+"name": &"blue_flower_open",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_light_off")
+}],
+"loop": 1,
+"name": &"light_off",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_wtwp4")
+}],
+"loop": 0,
+"name": &"light_on",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_red_bud")
+}],
+"loop": 1,
+"name": &"red_flower_bud",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_red_open")
+}],
+"loop": 0,
+"name": &"red_flower_open",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_yellow_bud")
+}],
+"loop": 1,
+"name": &"yellow_flower_bud",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_yellow_open")
+}],
+"loop": 0,
+"name": &"yellow_flower_open",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wvhbo"]
+radius = 387.13086
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ifow5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_7h2jl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_mqh5v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_7o3do")
+}],
+"loop": 1,
+"name": &"butterfly_fly",
+"speed": 5.0
+}]
+
+[node name="Level1" type="Node2D" unique_id=1656788793]
+metadata/_edit_horizontal_guides_ = [120.0, 24.0]
+metadata/_edit_vertical_guides_ = [984.0]
+
+[node name="Day1Bg" type="Sprite2D" parent="." unique_id=1294501243]
+position = Vector2(960, 540)
+scale = Vector2(1.1483254, 1.1477152)
+texture = ExtResource("1_ksju7")
+metadata/_edit_lock_ = true
+
+[node name="friend" type="Sprite2D" parent="." unique_id=363158661]
+z_index = 10
+position = Vector2(736, 928.00006)
+scale = Vector2(0.27333334, 0.27333334)
+texture = ExtResource("2_nsrm0")
+script = ExtResource("3_x42e6")
+
+[node name="BackButton" type="Sprite2D" parent="." unique_id=2048405876]
+position = Vector2(64.00001, 64)
+scale = Vector2(0.234375, 0.234375)
+texture = ExtResource("4_sk5k4")
+script = ExtResource("5_s8va5")
+
+[node name="SettingsButton" type="Sprite2D" parent="." unique_id=362841119]
+position = Vector2(1855.9998, 72.00001)
+scale = Vector2(0.21875, 0.21875)
+texture = ExtResource("6_s8va5")
+script = ExtResource("7_settings")
+
+[node name="Taskbar" parent="." unique_id=1029377708 instance=ExtResource("8_taskbar")]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2939355]
+script = ExtResource("12_pins")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Area2D" unique_id=743985249]
+position = Vector2(408, 619)
+scale = Vector2(1.0000004, 1)
+shape = SubResource("CapsuleShape2D_wvhbo")
+
+[node name="YellowFlower" type="AnimatedSprite2D" parent="Area2D/CollisionShape2D4" unique_id=1596000204]
+position = Vector2(-0.9999695, 19.999939)
+scale = Vector2(0.038856328, 0.038856335)
+sprite_frames = SubResource("SpriteFrames_wvhbo")
+animation = &"yellow_flower_bud"
+offset = Vector2(25.734375, -386.03516)
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D" unique_id=544115271]
+position = Vector2(461, 608)
+scale = Vector2(1.0000002, 1)
+shape = SubResource("CapsuleShape2D_wvhbo")
+
+[node name="BlueFlower" type="AnimatedSprite2D" parent="Area2D/CollisionShape2D3" unique_id=1855345753]
+position = Vector2(0, 21)
+scale = Vector2(0.03885633, 0.038856335)
+sprite_frames = SubResource("SpriteFrames_wvhbo")
+animation = &"blue_flower_idle"
+offset = Vector2(25.735352, -386.03516)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=488971187]
+position = Vector2(504, 612)
+scale = Vector2(1.0000001, 1)
+shape = SubResource("CapsuleShape2D_wvhbo")
+
+[node name="RedFlower" type="AnimatedSprite2D" parent="Area2D/CollisionShape2D2" unique_id=1904223167]
+position = Vector2(-4.7683716e-07, 19)
+scale = Vector2(0.038856335, 0.038856335)
+sprite_frames = SubResource("SpriteFrames_wvhbo")
+animation = &"red_flower_bud"
+offset = Vector2(25.736328, -386.03516)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=995638469]
+z_index = 3
+position = Vector2(581, 568)
+scale = Vector2(0.051662136, 0.07757402)
+shape = SubResource("CircleShape2D_wvhbo")
+debug_color = Color(0.3086387, 0.54890364, 0.6143263, 0.9882353)
+
+[node name="Light" type="AnimatedSprite2D" parent="Area2D/CollisionShape2D" unique_id=1258693310]
+position = Vector2(0.0002937317, 657.4369)
+scale = Vector2(1.7710974, 1.1795014)
+sprite_frames = SubResource("SpriteFrames_wvhbo")
+animation = &"light_off"
+offset = Vector2(3.8769531, -386.03516)
+
+[node name="Pin1" type="Sprite2D" parent="Area2D" unique_id=1126756046]
+position = Vector2(280, 371)
+scale = Vector2(0.03885634, 0.038856335)
+texture = ExtResource("10_excbq")
+offset = Vector2(0, -283.09375)
+
+[node name="Pin2" type="Sprite2D" parent="Area2D/Pin1" unique_id=819150417]
+position = Vector2(0, -643.3956)
+texture = ExtResource("11_iav0o")
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Area2D" unique_id=1978872913]
+position = Vector2(1144, 592)
+scale = Vector2(0.03885634, 0.038856335)
+polygon = PackedVector2Array(-617.66016, 1852.9805, 0, 2058.8672, 2264.754, 2058.8672, 3705.959, 1235.3203, 4117.7324, 0, 2676.5273, -1235.3193, 1235.3203, -1441.206, -411.77344, -1235.3193, -1647.0918, -617.66016, -2058.8652, 205.88672, -2058.8652, 823.5469, -1235.3184, 1441.207)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Area2D" unique_id=1320582576]
+position = Vector2(792, 360)
+polygon = PackedVector2Array(-8, 16, 0, 40, 8, 56, 24, 64, 64, 72, 136, 72, 176, 64, 200, 48, 208, 24, 192, 0, 160, -16, 96, -32, 32, -32, 8, -24, -8, -8)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Area2D" unique_id=1505439981]
+position = Vector2(360, 592)
+polygon = PackedVector2Array(0, 0, 0, 40, 40, 72, 112, 80, 200, 64, 272, 40, 288, 8, 264, -32, 216, -56, 136, -56, 80, -48, 40, -32, 16, -16)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=93133639]
+position = Vector2(256, 320)
+polygon = PackedVector2Array(-16, 48, 8, 56, 64, 64, 112, 72, 168, 64, 248, 32, 288, 0, 280, -32, 224, -72, 176, -96, 136, -112, 120, -104, 128, -96, 136, -80, 128, -72, 104, -64, 64, -56, 32, -56, -8, -48, -32, -32, -56, -16, -64, 0, -64, 24, -40, 40)
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Area2D" unique_id=584650431]
+position = Vector2(1160, 264)
+polygon = PackedVector2Array(16, -16, 56, -24, 80, -24, 112, -24, 200, 32, 208, 40, 208, 48, 192, 56, 88, 104, 56, 104, 16, 96, -48, 64, -64, 48, -64, 24, -24, 0)
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="Area2D" unique_id=164380753]
+position = Vector2(1408, 368)
+polygon = PackedVector2Array(0, 0, 40, -16, 88, -16, 120, -24, 144, -32, 216, -64, 232, -64, 232, 48, 184, 64, 120, 80, 56, 80, 0, 64, -16, 40, -16, 16)
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="Area2D" unique_id=1740466083]
+position = Vector2(240, 784)
+polygon = PackedVector2Array(0, 0, 104, 48, 216, 48, 336, 24, 400, 24, 504, 24, 528, 24, 520, -24, 472, -56, 416, -80, 336, -72, 248, -40, 168, -40, 40, -80, 0, -112, 40, -128, 40, -168, 16, -216, 40, -216, 56, -192, 72, -144, 96, -112, 120, -96, 176, -72, 264, -72, 368, -96, 464, -88, 536, -48, 560, -16, 560, 24, 512, 104, 432, 176, 200, 304, 168, 304, 216, 256, 176, 168, 120, 144, 48, 104, 16, 48, -40, 24, -72, -8, -48, -24)
+
+[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="Area2D" unique_id=951324981]
+position = Vector2(976, 1072)
+polygon = PackedVector2Array(0, 0, 0, -40, 8, -72, 32, -104, 56, -144, 64, -168, 72, -184, 56, -232, 48, -264, 48, -296, 72, -328, 112, -352, 176, -360, 208, -360, 176, -352, 160, -344, 144, -328, 120, -328, 104, -304, 88, -280, 80, -264, 88, -224, 104, -208, 104, -168, 96, -152, 80, -136, 80, -112, 72, -120, 64, -112, 64, -104, 48, -80, 32, -64, 32, -48, 32, -40, 32, -24, 32, 8, 0, 8)
+
+[node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="Area2D" unique_id=1868895580]
+position = Vector2(1380, 380)
+polygon = PackedVector2Array(0, -1, 12, -14, 33, -26, 57, -35, 36, -37, -15, -6, -21, 4, -40, 17, -42, 26, -54, 34, -60, 48, -71, 51, -73, 61, -85, 72, -82, 83, -18, 140, 43, 180, 71, 192, 83, 175, 98, 172, 97, 164, 118, 157, 127, 166, 127, 176, 155, 164, 175, 169, 183, 156, 211, 153, 222, 162, 244, 149, 240, 137, 257, 126, 257, 106, 247, 112, 242, 108, 232, 124, 176, 135, 165, 149, 149, 150, 141, 155, 109, 140, 112, 130, 76, 130, 26, 121, 4, 117, -11, 100, -41, 94, -48, 75, -41, 53, -23, 43, -7, 41, -9, 13)
+
+[node name="CollisionPolygon2D10" type="CollisionPolygon2D" parent="Area2D" unique_id=1639510834]
+position = Vector2(684, 429)
+polygon = PackedVector2Array(2, 0, 42, -24, 49, -41, 51, -100, 55, -142, 80, -180, 127, -210, 192, -230, 55, -240, 65, -228, 68, -215, 53, -207, 29, -211, 30, -242, -35, -246, -32, -235, -18, -227, -1, -228, 6, -217, 2, -213, 10, -203, 19, -203, 25, -194, 26, -184, 32, -172, 35, -126, 35, -88, 23, -58, 17, -34, -5, -24, -51, 1, -94, 8, -120, 4, -134, -16, -141, -32, -131, -46, -133, -56, -145, -39, -151, -18, -135, 3, -120, 16, -85, 23, -45, 21, -2, 1, 0, 0)
+
+[node name="CollisionPolygon2D11" type="CollisionPolygon2D" parent="Area2D" unique_id=1259057471]
+position = Vector2(1056, 297)
+polygon = PackedVector2Array(0, 0, 13, -33, 39, -46, 85, -62, 182, -91, 222, -96, 259, -97, 280, -96, 274, -83, 264, -62, 265, -49, 265, -41, 236, -60, 243, -68, 236, -78, 214, -74, 213, -83, 189, -84, 178, -78, 184, -73, 127, -63, 60, -36, 31, -21, 16, -2, 15, 9, 21, 18, 4, 22, 4, 12, -4, 9)
+
+[node name="CollisionPolygon2D12" type="CollisionPolygon2D" parent="Area2D" unique_id=938283025]
+position = Vector2(1560, 875)
+polygon = PackedVector2Array(-1, 0, 44, 49, 80, 70, 79, 15, 41, 4, 4, -30, -1, -67, 2, -99, -20, -110, -20, -86, -22, -60, -23, -45, -17, -21)
+
+[node name="CollisionPolygon2D13" type="CollisionPolygon2D" parent="Area2D" unique_id=1588951108]
+polygon = PackedVector2Array(936, 210, 920, 234, 901, 230, 888, 247, 893, 256, 882, 275, 887, 289, 897, 299, 925, 303, 953, 306, 986, 326, 1011, 331, 1031, 339, 1061, 346, 1071, 360, 1076, 377, 1088, 392, 1102, 403, 1155, 414, 1193, 417, 1197, 404, 1182, 395, 1164, 384, 1148, 382, 1134, 377, 1140, 368, 1127, 361, 1114, 350, 1106, 341, 1168, 370, 1196, 379, 1243, 381, 1275, 369, 1291, 364, 1292, 374, 1272, 383, 1251, 403, 1216, 423, 1198, 431, 1163, 436, 1094, 422, 1062, 418, 1042, 406, 1037, 396, 1019, 358, 965, 332, 907, 319, 875, 314, 851, 297, 847, 275, 867, 247, 895, 227, 926, 214, 937, 209)
+
+[node name="CollisionPolygon2D14" type="CollisionPolygon2D" parent="Area2D" unique_id=159593941]
+position = Vector2(373, 226)
+polygon = PackedVector2Array(0, 0, 3, 11, -14, 23, -59, 27, -117, 36, -165, 53, -190, 72, -205, 91, -216, 80, -227, 87, -230, 93, -233, 88, -214, 60, -183, 40, -136, 22, -84, 21, -65, 13, -41, 17, -18, 12, -7, 2)
+
+[node name="CollisionPolygon2D15" type="CollisionPolygon2D" parent="Area2D" unique_id=192447756]
+position = Vector2(36, 389)
+polygon = PackedVector2Array(-1, -1, 14, 40, 42, 73, 78, 96, 104, 100, 105, 107, 140, 120, 150, 113, 162, 123, 223, 132, 255, 132, 312, 119, 355, 105, 397, 85, 410, 71, 399, 53, 383, 32, 368, 16, 344, 9, 303, 10, 303, 20, 315, 16, 332, 18, 353, 22, 365, 30, 381, 47, 393, 62, 388, 74, 366, 86, 314, 97, 266, 98, 229, 105, 202, 96, 170, 102, 151, 87, 134, 93, 103, 83, 57, 60, 39, 39, 26, 25, 21, 10, 17, 4, 17, -9, 6, -19, 1, -29)
+
+[node name="WindChime" type="Sprite2D" parent="." unique_id=104073438]
+position = Vector2(144, 168)
+scale = Vector2(0.084330134, 0.084330134)
+texture = ExtResource("20_gmpev")
+
+[node name="WindChime5" type="Sprite2D" parent="." unique_id=838215076]
+position = Vector2(1506, 274)
+scale = Vector2(0.042165067, 0.042165067)
+texture = ExtResource("20_gmpev")
+
+[node name="WindChime2" type="Sprite2D" parent="." unique_id=1516078480]
+position = Vector2(88, 710.99994)
+scale = Vector2(0.084330134, 0.084330134)
+texture = ExtResource("20_gmpev")
+
+[node name="WindChime3" type="Sprite2D" parent="." unique_id=2037406234]
+position = Vector2(1456, 740)
+scale = Vector2(0.084330134, 0.084330134)
+texture = ExtResource("20_gmpev")
+
+[node name="WindChime4" type="Sprite2D" parent="." unique_id=1426031105]
+position = Vector2(1256, 160)
+scale = Vector2(0.042165067, 0.042165067)
+texture = ExtResource("20_gmpev")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=732715725]
+z_index = 4
+position = Vector2(492.2667, 565.8317)
+scale = Vector2(0.09866647, 0.09866648)
+sprite_frames = SubResource("SpriteFrames_ifow5")
+animation = &"butterfly_fly"
+script = ExtResource("24_mqh5v")

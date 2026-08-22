@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://edkck8atumtp"]
+
+[ext_resource type="Texture2D" uid="uid://bxgsgalp2j7v7" path="res://assets/images/backgrounds/day13_bg.png" id="1_44n6v"]
+[ext_resource type="Texture2D" uid="uid://cwfmfihgcs7de" path="res://assets/images/stoies/day_1.png" id="2_7e5mj"]
+[ext_resource type="Script" uid="uid://dg8b566t43knw" path="res://scripts/ui/day.gd" id="3_lnv4h"]
+[ext_resource type="Texture2D" uid="uid://2k46id8d1fys" path="res://assets/images/ui/next_button.png" id="3_okkw8"]
+[ext_resource type="Script" uid="uid://becnw8r7jo5oq" path="res://scripts/ui/next_button.gd" id="4_dk63n"]
+[ext_resource type="Script" uid="uid://b2aseh6k5syf7" path="res://scripts/ui/label.gd" id="7_label"]
+[ext_resource type="Script" uid="uid://dj8gmrdqjnq6t" path="res://scripts/ui/label_2.gd" id="7_n00bq"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_wvhbo"]
+font_size = 146
+font_color = Color(1, 1, 0.9098039, 1)
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 42
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(5.12, 6.605)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ifow5"]
+font_size = 146
+font_color = Color(1, 1, 0.91764706, 1)
+outline_size = 2
+outline_color = Color(0.07058824, 0.07058824, 0.07058824, 1)
+shadow_size = 42
+shadow_color = Color(0.07058824, 0.07058824, 0.07058824, 1)
+
+[node name="Stories" type="Node2D" unique_id=1027147120]
+metadata/_edit_vertical_guides_ = [984.0]
+
+[node name="StoriesBg" type="Sprite2D" parent="." unique_id=1508688905]
+position = Vector2(960, 540)
+scale = Vector2(1.1483253, 1.1477152)
+texture = ExtResource("1_44n6v")
+metadata/_edit_lock_ = true
+
+[node name="Day1" type="Sprite2D" parent="." unique_id=417332743]
+visible = false
+position = Vector2(959.99994, 540)
+scale = Vector2(1.1483253, 1.1477152)
+texture = ExtResource("2_7e5mj")
+script = ExtResource("3_lnv4h")
+
+[node name="NextButton" type="Sprite2D" parent="." unique_id=45821834]
+visible = false
+position = Vector2(1824, 983.9999)
+scale = Vector2(0.31250036, 0.31250036)
+texture = ExtResource("3_okkw8")
+script = ExtResource("4_dk63n")
+
+[node name="StoryVoice" type="AudioStreamPlayer" parent="." unique_id=887691452]
+
+[node name="StoryTheme" type="AudioStreamPlayer" parent="." unique_id=1159433918]
+
+[node name="WhiteOverlay" type="ColorRect" parent="." unique_id=232691514]
+visible = false
+z_index = 100
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="." unique_id=341792955]
+z_index = 1
+offset_left = 552.0
+offset_top = 192.0
+offset_right = 1410.0
+offset_bottom = 504.0
+text = "第一天"
+label_settings = SubResource("LabelSettings_wvhbo")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("7_label")
+story_image_path = NodePath("../Day1")
+next_button_path = NodePath("../NextButton")
+
+[node name="Label2" type="Label" parent="." unique_id=1324373221]
+offset_left = 472.0
+offset_top = 440.0
+offset_right = 1570.0
+offset_bottom = 752.0
+text = "你好，森林小镇！"
+label_settings = SubResource("LabelSettings_ifow5")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("7_n00bq")

@@ -1,0 +1,175 @@
+[gd_scene format=3 uid="uid://d0sdd0iihnvyf"]
+
+[ext_resource type="Texture2D" uid="uid://cih16wn2wb0m2" path="res://assets/images/backgrounds/forest_town_square.png" id="1_gpqk3"]
+[ext_resource type="Texture2D" uid="uid://c7n0rciybswtg" path="res://assets/images/ui/back_button.png" id="2_t73bn"]
+[ext_resource type="Script" uid="uid://dcag56py4bvqy" path="res://scripts/ui/back_button.gd" id="3_iv8w7"]
+[ext_resource type="Texture2D" uid="uid://cgju7e6n3ec76" path="res://assets/images/ui/day_plate.png" id="4_t73bn"]
+[ext_resource type="Script" uid="uid://4kfabnkpdxj" path="res://scripts/ui/day_button.gd" id="5_daybtn"]
+
+[node name="Choseday" type="Node2D" unique_id=1543613174]
+
+[node name="ForestTownSquare" type="Sprite2D" parent="." unique_id=1942618453]
+position = Vector2(960, 540)
+scale = Vector2(1, 0.99907494)
+texture = ExtResource("1_gpqk3")
+metadata/_edit_lock_ = true
+
+[node name="BackButton" type="Sprite2D" parent="." unique_id=260094960]
+position = Vector2(104, 96)
+scale = Vector2(0.28125, 0.28125)
+texture = ExtResource("2_t73bn")
+script = ExtResource("3_iv8w7")
+metadata/_edit_lock_ = true
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=817742198]
+offset_left = 192.0
+offset_top = 216.0
+offset_right = 6752.0
+offset_bottom = 3135.9844
+scale = Vector2(0.24109717, 0.24109717)
+theme_override_constants/h_separation = 406
+theme_override_constants/v_separation = -457
+columns = 4
+
+[node name="Button" type="Button" parent="GridContainer" unique_id=1804790889]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5137255, 0.3019608, 0.19215687, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 217
+text = "第1天"
+icon = ExtResource("4_t73bn")
+flat = true
+icon_alignment = 1
+script = ExtResource("5_daybtn")
+
+[node name="Button2" type="Button" parent="GridContainer" unique_id=489353372]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5137255, 0.3019608, 0.19215687, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 217
+text = "第2天"
+icon = ExtResource("4_t73bn")
+flat = true
+icon_alignment = 1
+script = ExtResource("5_daybtn")
+day_index = 2
+
+[node name="Button3" type="Button" parent="GridContainer" unique_id=1309404097]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5137255, 0.3019608, 0.19215687, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 217
+text = "第3天"
+icon = ExtResource("4_t73bn")
+flat = true
+icon_alignment = 1
+script = ExtResource("5_daybtn")
+day_index = 3
+
+[node name="Button4" type="Button" parent="GridContainer" unique_id=1422727467]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5137255, 0.3019608, 0.19215687, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 217
+text = "第4天"
+icon = ExtResource("4_t73bn")
+flat = true
+icon_alignment = 1
+script = ExtResource("5_daybtn")
+day_index = 4
+
+[node name="Button5" type="Button" parent="GridContainer" unique_id=1182066417]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5137255, 0.3019608, 0.19215687, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 217
+text = "第5天"
+icon = ExtResource("4_t73bn")
+flat = true
+icon_alignment = 1
+script = ExtResource("5_daybtn")
+day_index = 5
+
+[node name="Button6" type="Button" parent="GridContainer" unique_id=1700752361]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5137255, 0.3019608, 0.19215687, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 217
+text = "第6天"
+icon = ExtResource("4_t73bn")
+flat = true
+icon_alignment = 1
+script = ExtResource("5_daybtn")
+day_index = 6
+
+[node name="Button7" type="Button" parent="GridContainer" unique_id=871662326]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5137255, 0.3019608, 0.19215687, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 217
+text = "第7天"
+icon = ExtResource("4_t73bn")
+flat = true
+icon_alignment = 1
+script = ExtResource("5_daybtn")
+day_index = 7
+
+[node name="Button8" type="Button" parent="GridContainer" unique_id=1909276089]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5137255, 0.3019608, 0.19215687, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 217
+text = "第8天"
+icon = ExtResource("4_t73bn")
+flat = true
+icon_alignment = 1
+script = ExtResource("5_daybtn")
+day_index = 8
+
+[node name="Button9" type="Button" parent="GridContainer" unique_id=668152435]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5137255, 0.3019608, 0.19215687, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 217
+text = "第9天"
+icon = ExtResource("4_t73bn")
+flat = true
+icon_alignment = 1
+script = ExtResource("5_daybtn")
+day_index = 9
+
+[node name="Button10" type="Button" parent="GridContainer" unique_id=2037571571]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5137255, 0.3019608, 0.19215687, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 217
+text = "第10天"
+icon = ExtResource("4_t73bn")
+flat = true
+icon_alignment = 1
+script = ExtResource("5_daybtn")
+day_index = 10
+
+[node name="Button11" type="Button" parent="GridContainer" unique_id=2084760355]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5137255, 0.3019608, 0.19215687, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 217
+text = "第11天"
+icon = ExtResource("4_t73bn")
+flat = true
+icon_alignment = 1
+script = ExtResource("5_daybtn")
+day_index = 11
+
+[node name="Button12" type="Button" parent="GridContainer" unique_id=1823230803]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5137255, 0.3019608, 0.19215687, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 217
+text = "第12天"
+icon = ExtResource("4_t73bn")
+flat = true
+icon_alignment = 1
+script = ExtResource("5_daybtn")
+day_index = 12
