@@ -6,11 +6,23 @@
 [ext_resource type="Texture2D" uid="uid://dugdmlhiypicq" path="res://assets/images/ui/settings_button.png" id="6_tqnj0"]
 [ext_resource type="Script" uid="uid://biydogrrnkjp" path="res://scripts/ui/settings_button.gd" id="7_dwyms"]
 [ext_resource type="Texture2D" uid="uid://d2005iiqr33qx" path="res://assets/images/backgrounds/day5_bg.png" id="7_fsnos"]
+[ext_resource type="Texture2D" uid="uid://b3rpk3bcmn23t" path="res://assets/images/objects/day5/m1.png" id="8_6xwso"]
 [ext_resource type="PackedScene" uid="uid://3kwv7sjrajm0" path="res://scenes/ui/taskbar.tscn" id="8_taskbar"]
+[ext_resource type="Texture2D" uid="uid://gwffl8k8to1m" path="res://assets/images/objects/day5/m2.png" id="9_5ke18"]
+[ext_resource type="Texture2D" uid="uid://b23fbktork5jn" path="res://assets/images/objects/day5/m3.png" id="10_j14br"]
+[ext_resource type="Texture2D" uid="uid://c4srrrkwiru86" path="res://assets/images/objects/day5/m4.png" id="11_0y7y4"]
+[ext_resource type="Texture2D" uid="uid://cgwa634ets5ov" path="res://assets/images/objects/day5/m5.png" id="12_gruok"]
+[ext_resource type="Script" uid="uid://37jsl47j0w47" path="res://scripts/days/day5_module_button.gd" id="13_day5module"]
+[ext_resource type="Texture2D" uid="uid://q37x7dx7nwp6" path="res://assets/images/objects/day5/m6.png" id="14_clock"]
+[ext_resource type="Texture2D" uid="uid://drf8aixkl1cio" path="res://assets/images/objects/day5/m7.png" id="15_conveyor"]
+[ext_resource type="Texture2D" uid="uid://c467v2a0qtcxg" path="res://assets/images/objects/day5/m8.png" id="16_fan"]
 
 [node name="Levle5" type="Node2D" unique_id=896239325]
 
 [node name="friend" parent="." unique_id=511264299 instance=ExtResource("1_friend")]
+z_index = 5
+position = Vector2(744.00006, 888.00006)
+scale = Vector2(0.38999993, 0.38999993)
 
 [node name="BackButton" type="Sprite2D" parent="." unique_id=1356938593]
 position = Vector2(64.00001, 64)
@@ -32,3 +44,61 @@ position = Vector2(960, 540.00006)
 scale = Vector2(1.1483253, 1.1477151)
 texture = ExtResource("7_fsnos")
 metadata/_edit_lock_ = true
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1659925829]
+scale = Vector2(0.17248419, 0.17248419)
+
+[node name="M1" type="Sprite2D" parent="Node2D" unique_id=511491935]
+position = Vector2(4220.677, 2782.8638)
+texture = ExtResource("8_6xwso")
+script = ExtResource("13_day5module")
+metadata/_edit_lock_ = true
+
+[node name="M2" type="Sprite2D" parent="Node2D" unique_id=1261310420]
+position = Vector2(5797.633, 2922.0068)
+texture = ExtResource("9_5ke18")
+script = ExtResource("13_day5module")
+module_index = 2
+metadata/_edit_lock_ = true
+
+[node name="M3" type="Sprite2D" parent="Node2D" unique_id=1278947250]
+position = Vector2(7374.589, 3061.1501)
+texture = ExtResource("10_j14br")
+script = ExtResource("13_day5module")
+module_index = 3
+metadata/_edit_lock_ = true
+
+[node name="M4" type="Sprite2D" parent="Node2D" unique_id=1798646456]
+position = Vector2(2782.8638, 3061.1501)
+texture = ExtResource("11_0y7y4")
+script = ExtResource("13_day5module")
+module_index = 4
+metadata/_edit_lock_ = true
+
+[node name="M5" type="Sprite2D" parent="Node2D" unique_id=1304674209]
+position = Vector2(1484.194, 2922.007)
+texture = ExtResource("12_gruok")
+script = ExtResource("13_day5module")
+module_index = 5
+metadata/_edit_lock_ = true
+
+[node name="M6" type="Sprite2D" parent="Node2D" unique_id=956824897]
+position = Vector2(3542.3533, 4029.3547)
+scale = Vector2(1.8490295, 1.8490295)
+texture = ExtResource("14_clock")
+script = ExtResource("13_day5module")
+module_index = 6
+
+[node name="M7" type="Sprite2D" parent="Node2D" unique_id=715070770]
+position = Vector2(5275.846, 4133.7124)
+scale = Vector2(1.7605432, 1.7605432)
+texture = ExtResource("15_conveyor")
+script = ExtResource("13_day5module")
+module_index = 7
+
+[node name="M8" type="Sprite2D" parent="Node2D" unique_id=1062125907]
+position = Vector2(7084.7065, 4261.2603)
+scale = Vector2(1.9845254, 1.9845253)
+texture = ExtResource("16_fan")
+script = ExtResource("13_day5module")
+module_index = 8

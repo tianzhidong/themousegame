@@ -9,6 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://dugdmlhiypicq" path="res://assets/images/ui/settings_button.png" id="7_ko0rf"]
 [ext_resource type="Script" uid="uid://biydogrrnkjp" path="res://scripts/ui/settings_button.gd" id="8_ostsq"]
 
+[ext_resource type="Script" path="res://scripts/ui/page_voice.gd" id="page_voice_script"]
+[ext_resource type="AudioStream" path="res://assets/audio/voice/pages/home_welcome.wav" id="page_voice_audio"]
+
 [node name="Main" type="Node2D" unique_id=1242662938]
 script = ExtResource("1_main")
 
@@ -35,3 +38,7 @@ position = Vector2(1833, 996)
 scale = Vector2(0.265625, 0.265625)
 texture = ExtResource("7_ko0rf")
 script = ExtResource("8_ostsq")
+
+[node name="PageVoice" type="AudioStreamPlayer" parent="."]
+script = ExtResource("page_voice_script")
+stream = ExtResource("page_voice_audio")

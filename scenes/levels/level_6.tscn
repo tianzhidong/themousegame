@@ -3,20 +3,84 @@
 [ext_resource type="PackedScene" path="res://scenes/core/Friend.tscn" id="1_friend"]
 [ext_resource type="Texture2D" uid="uid://cxbq52713e862" path="res://assets/images/backgrounds/day6_bg.png" id="2_7x7cx"]
 [ext_resource type="Texture2D" uid="uid://c7n0rciybswtg" path="res://assets/images/ui/back_button.png" id="3_7x7cx"]
+[ext_resource type="Texture2D" uid="uid://k3aktfs0pyv2" path="res://assets/images/objects/day6/party_table.png" id="3_e18e5"]
 [ext_resource type="Script" uid="uid://hfkyaicge4ep" path="res://scripts/ui/back_button_2.gd" id="4_b6i88"]
+[ext_resource type="Texture2D" uid="uid://cedycmsquu6ny" path="res://assets/images/objects/day6/empty_cardboard_box.png" id="4_m5qie"]
+[ext_resource type="Texture2D" uid="uid://da4whn1ttsm67" path="res://assets/images/objects/day6/empty_cardboard_box_2.png" id="6_kydov"]
 [ext_resource type="Texture2D" uid="uid://dugdmlhiypicq" path="res://assets/images/ui/settings_button.png" id="6_m5qie"]
 [ext_resource type="Script" uid="uid://biydogrrnkjp" path="res://scripts/ui/settings_button.gd" id="7_kydov"]
 [ext_resource type="PackedScene" uid="uid://3kwv7sjrajm0" path="res://scenes/ui/taskbar.tscn" id="8_taskbar"]
+[ext_resource type="Script" uid="uid://bu87tdwqlr5xk" path="res://scripts/days/Day6Party.cs" id="9_party"]
+[ext_resource type="Texture2D" uid="uid://bbmtke2byyaab" path="res://assets/images/objects/day6/balloon_bouquet_hearts_01.png" id="party_01"]
+[ext_resource type="Texture2D" uid="uid://b1s8wkn6gomqi" path="res://assets/images/objects/day6/balloon_bouquet_colorful_01.png" id="party_02"]
+[ext_resource type="Texture2D" uid="uid://bu6n1tdot1cc4" path="res://assets/images/objects/day6/balloon_bouquet_bunny.png" id="party_03"]
+[ext_resource type="Texture2D" uid="uid://cqw8148mi172v" path="res://assets/images/objects/day6/balloon_green.png" id="party_04"]
+[ext_resource type="Texture2D" uid="uid://b5wrtrnjl06q2" path="res://assets/images/objects/day6/balloon_blue.png" id="party_05"]
+[ext_resource type="Texture2D" uid="uid://6bxmm3uuo3hu" path="res://assets/images/objects/day6/happy_birthday_banner.png" id="party_06"]
+[ext_resource type="Texture2D" uid="uid://2h1k35pnh0hk" path="res://assets/images/objects/day6/colorful_pennant_banners.png" id="party_07"]
+[ext_resource type="Texture2D" uid="uid://11pfv4nkvsms" path="res://assets/images/objects/day6/lantern_pink.png" id="party_08"]
+[ext_resource type="Texture2D" uid="uid://btfmfdiys868u" path="res://assets/images/objects/day6/lantern_yellow.png" id="party_09"]
+[ext_resource type="Texture2D" uid="uid://0v27ohrnlr3a" path="res://assets/images/objects/day6/lantern_purple_02.png" id="party_10"]
+[ext_resource type="Texture2D" uid="uid://dl2qvup402n2m" path="res://assets/images/objects/day6/lantern_orange.png" id="party_11"]
+[ext_resource type="Texture2D" uid="uid://dca7vb88pb43y" path="res://assets/images/objects/day6/flower_bouquet_vase.png" id="party_12"]
+[ext_resource type="Texture2D" uid="uid://uj0cvcwnrh1j" path="res://assets/images/objects/day6/paper_cup_group.png" id="party_13"]
+[ext_resource type="Texture2D" uid="uid://dx24oq4jl7tjn" path="res://assets/images/objects/day6/paper_cups_blue.png" id="party_15"]
+[ext_resource type="Texture2D" uid="uid://do7qnfgv3mo4g" path="res://assets/images/objects/day6/paper_cups_yellow.png" id="party_16"]
+[ext_resource type="Texture2D" uid="uid://chturftkakcll" path="res://assets/images/objects/day6/cupcake_strawberry.png" id="party_17"]
+[ext_resource type="Texture2D" uid="uid://c4d3hlmsyjvek" path="res://assets/images/objects/day6/cupcake_chocolate.png" id="party_18"]
+[ext_resource type="Texture2D" uid="uid://c28k077cfpwqy" path="res://assets/images/objects/day6/fruit_cookie_platter.png" id="party_19"]
+[ext_resource type="Texture2D" uid="uid://bidcjyl8xpe01" path="res://assets/images/objects/day6/tiered_snack_stand.png" id="party_20"]
+[ext_resource type="Texture2D" uid="uid://dxr5xn5p6u80c" path="res://assets/images/objects/day6/birthday_cake_01.png" id="party_21"]
+[ext_resource type="Texture2D" uid="uid://bx01dlj7u34wk" path="res://assets/images/objects/day6/birthday_cake_02.png" id="party_22"]
+[ext_resource type="Texture2D" uid="uid://doeorio7dcd8f" path="res://assets/images/objects/day6/gift_box_group.png" id="party_23"]
+[ext_resource type="Texture2D" uid="uid://b2c5g6w366yw1" path="res://assets/images/objects/day6/party_hat_pair.png" id="party_24"]
+[ext_resource type="Texture2D" uid="uid://dmk6ng6o4430q" path="res://assets/images/objects/day6/party_hat_yellow.png" id="party_25"]
+[ext_resource type="Texture2D" uid="uid://snilfycure78" path="res://assets/images/objects/day6/party_popper_blue.png" id="party_26"]
+[ext_resource type="Texture2D" uid="uid://fmahcg2do1iv" path="res://assets/images/objects/day6/party_popper_red.png" id="party_27"]
 
 [node name="Level6" type="Node2D" unique_id=1898297111]
+script = ExtResource("9_party")
 
 [node name="friend" parent="." unique_id=640405561 instance=ExtResource("1_friend")]
+z_index = 4
+position = Vector2(1384, 592)
+scale = Vector2(0.32937497, 0.32937497)
 
 [node name="Day6Bg" type="Sprite2D" parent="." unique_id=266118273]
 position = Vector2(960.00006, 540)
 scale = Vector2(1.1483253, 1.1477152)
 texture = ExtResource("2_7x7cx")
 metadata/_edit_lock_ = true
+
+[node name="09桌子" type="Sprite2D" parent="Day6Bg" unique_id=339615494]
+position = Vector2(-118.43341, 17.425903)
+scale = Vector2(0.5257987, 0.5260781)
+texture = ExtResource("3_e18e5")
+
+[node name="09桌子2" type="Sprite2D" parent="Day6Bg" unique_id=1256252470]
+position = Vector2(-348.3334, 212.59633)
+scale = Vector2(0.81178826, 0.8122197)
+texture = ExtResource("3_e18e5")
+
+[node name="10空纸箱" type="Sprite2D" parent="Day6Bg" unique_id=1539557668]
+position = Vector2(452.8333, 324.12216)
+scale = Vector2(0.87083334, 0.8712962)
+texture = ExtResource("4_m5qie")
+
+[node name="Area2D" type="Area2D" parent="Day6Bg/10空纸箱" unique_id=1452140776]
+collision_layer = 0
+collision_mask = 0
+input_pickable = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Day6Bg/10空纸箱/Area2D" unique_id=1384573306]
+polygon = PackedVector2Array(-190, -120, 15, -160, 200, -118, -18, -74)
+disabled = true
+
+[node name="前遮罩" type="Sprite2D" parent="Day6Bg" unique_id=1280639075]
+z_index = 11
+position = Vector2(453.74673, 327.28976)
+scale = Vector2(0.89929485, 0.89929473)
+texture = ExtResource("6_kydov")
 
 [node name="BackButton" type="Sprite2D" parent="." unique_id=1081596297]
 position = Vector2(64.00001, 64)
@@ -31,3 +95,328 @@ texture = ExtResource("6_m5qie")
 script = ExtResource("7_kydov")
 
 [node name="Taskbar" parent="." unique_id=131852431 instance=ExtResource("8_taskbar")]
+
+[node name="Day6Targets" type="Node2D" parent="." unique_id=491162444]
+z_index = 3
+
+[node name="Group1_Balloons" type="Node2D" parent="Day6Targets" unique_id=504373683]
+metadata/task_id = "place_balloons"
+
+[node name="Target1" type="Sprite2D" parent="Day6Targets/Group1_Balloons" unique_id=1078254990]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(1291.9998, 460)
+scale = Vector2(0.46728972, 0.46728972)
+texture = ExtResource("party_01")
+offset = Vector2(-5.5, 0)
+metadata/object_id = "place_balloons_01"
+
+[node name="Target2" type="Sprite2D" parent="Day6Targets/Group1_Balloons" unique_id=1183599875]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(1533, 394.99994)
+scale = Vector2(0.28795812, 0.28795812)
+texture = ExtResource("party_02")
+offset = Vector2(1.5, 3.5)
+metadata/object_id = "place_balloons_02"
+
+[node name="Target3" type="Sprite2D" parent="Day6Targets/Group1_Balloons" unique_id=1537263128]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(1121, 409)
+scale = Vector2(0.5111821, 0.5111821)
+texture = ExtResource("party_03")
+metadata/object_id = "place_balloons_03"
+
+[node name="Target4" type="Sprite2D" parent="Day6Targets/Group1_Balloons" unique_id=1330563950]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(1100, 582)
+rotation = 0.3592746
+scale = Vector2(0.37100086, 0.4105262)
+texture = ExtResource("party_04")
+metadata/object_id = "place_balloons_04"
+
+[node name="Target5" type="Sprite2D" parent="Day6Targets/Group1_Balloons" unique_id=1390092259]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(1065, 575.99994)
+scale = Vector2(0.35597977, 0.35779828)
+texture = ExtResource("party_05")
+metadata/object_id = "place_balloons_05"
+
+[node name="Group2_Banners" type="Node2D" parent="Day6Targets" unique_id=1501531785]
+metadata/task_id = "place_banners"
+
+[node name="Target1" type="Sprite2D" parent="Day6Targets/Group2_Banners" unique_id=1109186793]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(525.00006, 99)
+scale = Vector2(0.40756914, 0.40756914)
+texture = ExtResource("party_06")
+offset = Vector2(0, 4)
+metadata/object_id = "place_banners_01"
+
+[node name="Target2" type="Sprite2D" parent="Day6Targets/Group2_Banners" unique_id=2007465163]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(746.45654, 767.6912)
+scale = Vector2(0.56910706, 0.5691071)
+texture = ExtResource("party_07")
+offset = Vector2(-2.5, 2.5)
+metadata/object_id = "place_banners_02"
+
+[node name="Target3" type="Sprite2D" parent="Day6Targets/Group2_Banners" unique_id=314471330]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(529, 759)
+scale = Vector2(0.5504529, 0.5504529)
+texture = ExtResource("party_07")
+offset = Vector2(-2.5, 2.5)
+metadata/object_id = "place_banners_03"
+
+[node name="Target4" type="Sprite2D" parent="Day6Targets/Group2_Banners" unique_id=242346891]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(318.57172, 749.0911)
+scale = Vector2(0.5355714, 0.53557146)
+texture = ExtResource("party_07")
+offset = Vector2(-2.5, 2.5)
+metadata/object_id = "place_banners_04"
+
+[node name="Target5" type="Sprite2D" parent="Day6Targets/Group2_Banners" unique_id=1395254411]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(1392.0001, 121.00001)
+scale = Vector2(0.40275553, 0.40275553)
+texture = ExtResource("party_06")
+offset = Vector2(0, 4)
+metadata/object_id = "place_banners_05"
+
+[node name="Group3_Lanterns" type="Node2D" parent="Day6Targets" unique_id=777313343]
+metadata/task_id = "place_lanterns"
+
+[node name="Target1" type="Sprite2D" parent="Day6Targets/Group3_Lanterns" unique_id=308912228]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(319, 99)
+scale = Vector2(0.25842696, 0.25842696)
+texture = ExtResource("party_08")
+offset = Vector2(0, 0.5)
+metadata/object_id = "place_lanterns_01"
+
+[node name="Target2" type="Sprite2D" parent="Day6Targets/Group3_Lanterns" unique_id=1435600811]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(815, 131)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("party_09")
+metadata/object_id = "place_lanterns_02"
+
+[node name="Target3" type="Sprite2D" parent="Day6Targets/Group3_Lanterns" unique_id=1669884514]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(1046, 140.00002)
+scale = Vector2(0.18932039, 0.18932039)
+texture = ExtResource("party_10")
+metadata/object_id = "place_lanterns_03"
+
+[node name="Target4" type="Sprite2D" parent="Day6Targets/Group3_Lanterns" unique_id=1164649684]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(928, 142)
+scale = Vector2(0.21505377, 0.21505377)
+texture = ExtResource("party_11")
+metadata/object_id = "place_lanterns_04"
+
+[node name="Target5" type="Sprite2D" parent="Day6Targets/Group3_Lanterns" unique_id=608431671]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(1229.0001, 132)
+scale = Vector2(0.21359223, 0.21359223)
+texture = ExtResource("party_10")
+metadata/object_id = "place_lanterns_05"
+
+[node name="Group4_Flowers" type="Node2D" parent="Day6Targets" unique_id=116221162]
+metadata/task_id = "place_flowers"
+
+[node name="Target1" type="Sprite2D" parent="Day6Targets/Group4_Flowers" unique_id=594880498]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(703.99994, 622)
+scale = Vector2(0.52380955, 0.52380955)
+texture = ExtResource("party_12")
+metadata/object_id = "place_flowers_01"
+
+[node name="Target2" type="Sprite2D" parent="Day6Targets/Group4_Flowers" unique_id=379640572]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(840.99994, 632)
+scale = Vector2(0.51428574, 0.51428574)
+texture = ExtResource("party_12")
+metadata/object_id = "place_flowers_02"
+
+[node name="Target3" type="Sprite2D" parent="Day6Targets/Group4_Flowers" unique_id=235842788]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(710, 436)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("party_12")
+metadata/object_id = "place_flowers_03"
+
+[node name="Target4" type="Sprite2D" parent="Day6Targets/Group4_Flowers" unique_id=839767866]
+self_modulate = Color(1, 1, 1, 0.55)
+z_index = 2
+position = Vector2(1010, 439)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("party_12")
+metadata/object_id = "place_flowers_04"
+
+[node name="Target5" type="Sprite2D" parent="Day6Targets/Group4_Flowers" unique_id=1147644295]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(358, 635)
+scale = Vector2(0.41484153, 0.40476212)
+texture = ExtResource("party_12")
+metadata/object_id = "place_flowers_05"
+
+[node name="Group5_Tableware" type="Node2D" parent="Day6Targets" unique_id=1079334459]
+metadata/task_id = "place_tableware"
+
+[node name="Target1" type="Sprite2D" parent="Day6Targets/Group5_Tableware" unique_id=1901392635]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(699, 472)
+scale = Vector2(0.390625, 0.390625)
+texture = ExtResource("party_13")
+metadata/object_id = "place_tableware_01"
+
+[node name="Target2" type="Sprite2D" parent="Day6Targets/Group5_Tableware" unique_id=1173395378]
+self_modulate = Color(1, 1, 1, 0.55)
+z_index = 2
+position = Vector2(593, 665)
+scale = Vector2(0.37109375, 0.37109375)
+texture = ExtResource("party_13")
+metadata/object_id = "place_tableware_02"
+
+[node name="Target3" type="Sprite2D" parent="Day6Targets/Group5_Tableware" unique_id=543110685]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(914, 472)
+scale = Vector2(0.3846154, 0.3846154)
+texture = ExtResource("party_15")
+metadata/object_id = "place_tableware_03"
+
+[node name="Target4" type="Sprite2D" parent="Day6Targets/Group5_Tableware" unique_id=1017374631]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(947, 473)
+scale = Vector2(0.3559322, 0.3559322)
+texture = ExtResource("party_16")
+metadata/object_id = "place_tableware_04"
+
+[node name="Target5" type="Sprite2D" parent="Day6Targets/Group5_Tableware" unique_id=854465074]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(740.99994, 665.99994)
+scale = Vector2(0.35897437, 0.35897437)
+texture = ExtResource("party_15")
+metadata/object_id = "place_tableware_05"
+
+[node name="Group6_Snacks" type="Node2D" parent="Day6Targets" unique_id=301753781]
+metadata/task_id = "place_snacks"
+
+[node name="Target1" type="Sprite2D" parent="Day6Targets/Group6_Snacks" unique_id=1093943186]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(763.00006, 468.00006)
+scale = Vector2(0.22916667, 0.22916667)
+texture = ExtResource("party_17")
+metadata/object_id = "place_snacks_01"
+
+[node name="Target2" type="Sprite2D" parent="Day6Targets/Group6_Snacks" unique_id=1223965745]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(872, 470)
+scale = Vector2(0.22924057, 0.22924057)
+texture = ExtResource("party_18")
+metadata/object_id = "place_snacks_02"
+
+[node name="Target3" type="Sprite2D" parent="Day6Targets/Group6_Snacks" unique_id=1821553234]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(427, 651)
+scale = Vector2(0.3125, 0.3125)
+texture = ExtResource("party_19")
+metadata/object_id = "place_snacks_03"
+
+[node name="Target4" type="Sprite2D" parent="Day6Targets/Group6_Snacks" unique_id=786530103]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(611, 643)
+scale = Vector2(0.31914893, 0.31914893)
+texture = ExtResource("party_20")
+metadata/object_id = "place_snacks_04"
+
+[node name="Target5" type="Sprite2D" parent="Day6Targets/Group6_Snacks" unique_id=473621702]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(661, 660)
+scale = Vector2(0.31111112, 0.31111112)
+texture = ExtResource("party_18")
+metadata/object_id = "place_snacks_05"
+
+[node name="Group7_CakesGifts" type="Node2D" parent="Day6Targets" unique_id=1063148914]
+metadata/task_id = "place_cakes_gifts"
+
+[node name="Target1" type="Sprite2D" parent="Day6Targets/Group7_CakesGifts" unique_id=778226535]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(819.00006, 452.00003)
+scale = Vector2(0.2113402, 0.2113402)
+texture = ExtResource("party_21")
+metadata/object_id = "place_cakes_gifts_01"
+
+[node name="Target2" type="Sprite2D" parent="Day6Targets/Group7_CakesGifts" unique_id=893455927]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(509.00006, 641.00006)
+scale = Vector2(0.22279793, 0.22279793)
+texture = ExtResource("party_22")
+metadata/object_id = "place_cakes_gifts_02"
+
+[node name="Target3" type="Sprite2D" parent="Day6Targets/Group7_CakesGifts" unique_id=546384520]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(1012, 813.99994)
+scale = Vector2(0.31716156, 0.35313195)
+texture = ExtResource("party_23")
+offset = Vector2(1, 0)
+metadata/object_id = "place_cakes_gifts_03"
+
+[node name="Target4" type="Sprite2D" parent="Day6Targets/Group7_CakesGifts" unique_id=966457622]
+self_modulate = Color(1, 1, 1, 0.55)
+z_index = 1
+position = Vector2(1117.0001, 631)
+scale = Vector2(0.32025754, 0.3266065)
+texture = ExtResource("party_23")
+offset = Vector2(1, 0)
+metadata/object_id = "place_cakes_gifts_04"
+
+[node name="Target5" type="Sprite2D" parent="Day6Targets/Group7_CakesGifts" unique_id=1753019064]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(918, 888)
+scale = Vector2(0.28774977, 0.2947764)
+texture = ExtResource("party_23")
+offset = Vector2(1, 0)
+metadata/object_id = "place_cakes_gifts_05"
+
+[node name="Group8_PartySupplies" type="Node2D" parent="Day6Targets" unique_id=1825193517]
+metadata/task_id = "place_party_supplies"
+
+[node name="Target1" type="Sprite2D" parent="Day6Targets/Group8_PartySupplies" unique_id=1835341651]
+self_modulate = Color(1, 1, 1, 0.55)
+z_index = -2
+position = Vector2(783, 648.00006)
+scale = Vector2(0.46195653, 0.46195653)
+texture = ExtResource("party_24")
+metadata/object_id = "place_party_supplies_01"
+
+[node name="Target2" type="Sprite2D" parent="Day6Targets/Group8_PartySupplies" unique_id=1978764298]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(977.99994, 468)
+scale = Vector2(0.4642857, 0.4642857)
+texture = ExtResource("party_25")
+metadata/object_id = "place_party_supplies_02"
+
+[node name="Target3" type="Sprite2D" parent="Day6Targets/Group8_PartySupplies" unique_id=312152954]
+self_modulate = Color(1, 1, 1, 0.55)
+z_index = 3
+position = Vector2(1172.0001, 606)
+scale = Vector2(0.4915254, 0.4915254)
+texture = ExtResource("party_26")
+metadata/object_id = "place_party_supplies_03"
+
+[node name="Target4" type="Sprite2D" parent="Day6Targets/Group8_PartySupplies" unique_id=1574508883]
+self_modulate = Color(1, 1, 1, 0.55)
+z_index = 5
+position = Vector2(1025, 788)
+scale = Vector2(0.4918033, 0.4918033)
+texture = ExtResource("party_27")
+metadata/object_id = "place_party_supplies_04"
+
+[node name="Target5" type="Sprite2D" parent="Day6Targets/Group8_PartySupplies" unique_id=748785951]
+self_modulate = Color(1, 1, 1, 0.55)
+position = Vector2(320.99997, 639.99994)
+scale = Vector2(0.53817433, 0.58721834)
+texture = ExtResource("party_24")
+metadata/object_id = "place_party_supplies_05"

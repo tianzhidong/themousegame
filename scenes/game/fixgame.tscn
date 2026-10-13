@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://dgnorhe1cse8s"]
+
+[ext_resource type="Texture2D" uid="uid://bqfgki1d3x7bi" path="res://assets/images/objects/day5/m1_bg.png" id="1_5grl2"]
+[ext_resource type="Texture2D" uid="uid://80ufgcabgp2c" path="res://assets/images/objects/day5/m1/m1_1.png" id="2_rwh60"]
+[ext_resource type="Texture2D" uid="uid://dedc44vh78wan" path="res://assets/images/objects/day5/tbox.png" id="2_vusbb"]
+[ext_resource type="Texture2D" uid="uid://b4pftw44uxlov" path="res://assets/images/objects/day5/m1/m1_2.png" id="3_vusbb"]
+[ext_resource type="Texture2D" uid="uid://wi124w3al0pu" path="res://assets/images/objects/day5/m1/m1_3.png" id="4_h3w5l"]
+[ext_resource type="Texture2D" uid="uid://djlq3ntcs1hbf" path="res://assets/images/objects/day5/m1/m1_4.png" id="5_ob8pm"]
+[ext_resource type="Texture2D" uid="uid://bq5lhipenfesk" path="res://assets/images/objects/day5/m1/m1_5.png" id="6_qci3k"]
+[ext_resource type="Script" uid="uid://cld0b4f0ycwwg" path="res://scripts/days/fixgame.gd" id="7_fixgame"]
+[ext_resource type="PackedScene" path="res://scenes/ui/taskbar.tscn" id="8_taskbar"]
+
+[node name="Fixgame" type="Node2D" unique_id=623192828]
+script = ExtResource("7_fixgame")
+
+[node name="Taskbar" parent="." instance=ExtResource("8_taskbar")]
+
+[node name="M1Bg" type="Sprite2D" parent="." unique_id=515796762]
+position = Vector2(960, 540)
+scale = Vector2(1.1483253, 1.1477151)
+texture = ExtResource("1_5grl2")
+metadata/_edit_lock_ = true
+
+[node name="Tbox" type="Sprite2D" parent="." unique_id=220763948]
+position = Vector2(216.00003, 552)
+scale = Vector2(0.75956327, 0.75956327)
+texture = ExtResource("2_vusbb")
+
+[node name="BoxContainer" type="BoxContainer" parent="Tbox" unique_id=475863554]
+offset_left = -120.000015
+offset_top = -592.0
+offset_right = 179.99998
+offset_bottom = 924.0
+scale = Vector2(0.7557337, 0.7557337)
+theme_override_constants/separation = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Tbox/BoxContainer" unique_id=1009470987]
+layout_mode = 2
+theme_override_constants/separation = 4
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Tbox/BoxContainer/VBoxContainer" unique_id=12963925]
+layout_mode = 2
+texture = ExtResource("2_rwh60")
+
+[node name="TextureRect2" type="TextureRect" parent="Tbox/BoxContainer/VBoxContainer" unique_id=1922570648]
+layout_mode = 2
+texture = ExtResource("3_vusbb")
+
+[node name="TextureRect3" type="TextureRect" parent="Tbox/BoxContainer/VBoxContainer" unique_id=1837722075]
+layout_mode = 2
+texture = ExtResource("4_h3w5l")
+
+[node name="TextureRect4" type="TextureRect" parent="Tbox/BoxContainer/VBoxContainer" unique_id=752184493]
+layout_mode = 2
+texture = ExtResource("5_ob8pm")
+
+[node name="TextureRect5" type="TextureRect" parent="Tbox/BoxContainer/VBoxContainer" unique_id=1941069551]
+layout_mode = 2
+texture = ExtResource("6_qci3k")

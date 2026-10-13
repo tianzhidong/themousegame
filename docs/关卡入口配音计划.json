@@ -1,0 +1,146 @@
+[
+  {
+    "id": "day01_title",
+    "day": 1,
+    "filename": "story1.wav",
+    "text": "第一天，花园醒来啦！"
+  },
+  {
+    "id": "day01_story",
+    "day": 1,
+    "filename": "day1_story.wav",
+    "text": "花园还在睡懒觉，花朵和风车都静悄悄的。来叫醒它们，让小镇热闹起来吧！"
+  },
+  {
+    "id": "day02_title",
+    "day": 2,
+    "filename": "story2.wav",
+    "text": "第二天，农场大丰收！"
+  },
+  {
+    "id": "day02_story",
+    "day": 2,
+    "filename": "day2_story.wav",
+    "text": "农场的果实成熟啦，小伙伴们忙不过来了。快来帮忙收获，别漏掉地上的鸡蛋哦！"
+  },
+  {
+    "id": "day03_title",
+    "day": 3,
+    "filename": "story3.wav",
+    "text": "第三天，湖畔奇妙夜！"
+  },
+  {
+    "id": "day03_story",
+    "day": 3,
+    "filename": "day3_story.wav",
+    "text": "月亮升起来了，湖畔藏着许多小惊喜。仔细找找，看看你能发现什么！"
+  },
+  {
+    "id": "day04_title",
+    "day": 4,
+    "filename": "story4.wav",
+    "text": "第四天，野餐准备好！"
+  },
+  {
+    "id": "day04_story",
+    "day": 4,
+    "filename": "day4_story.wav",
+    "text": "小伙伴们带来了好多东西，野餐布上却还空着。一起把东西摆好，准备野餐吧！"
+  },
+  {
+    "id": "day05_title",
+    "day": 5,
+    "filename": "story5.wav",
+    "text": "第五天，小小修理站！"
+  },
+  {
+    "id": "day05_story",
+    "day": 5,
+    "filename": "day5_story.wav",
+    "text": "小镇的机器缺了零件，不能工作了。请你当小修理师，把零件装回去吧！"
+  },
+  {
+    "id": "day06_title",
+    "day": 6,
+    "filename": "story6.wav",
+    "text": "第六天，生日派对！"
+  },
+  {
+    "id": "day06_story",
+    "day": 6,
+    "filename": "day6_story.wav",
+    "text": "今天有朋友过生日，大家想给它一个惊喜。一起布置现场，让派对热闹起来吧！"
+  },
+  {
+    "id": "day07_title",
+    "day": 7,
+    "filename": "story7.wav",
+    "text": "第七天，树屋探秘！"
+  },
+  {
+    "id": "day07_story",
+    "day": 7,
+    "filename": "day7_story.wav",
+    "text": "小伙伴们把心爱的物品藏在树屋里。来探索各个角落，找找它们在哪里！"
+  },
+  {
+    "id": "day08_title",
+    "day": 8,
+    "filename": "story8.wav",
+    "text": "第八天，奇妙玩具屋！"
+  },
+  {
+    "id": "day08_story",
+    "day": 8,
+    "filename": "day8_story.wav",
+    "text": "玩具屋里的小车和机器人都睡着了。来唤醒它们，再看看盒子里藏着什么！"
+  },
+  {
+    "id": "day09_title",
+    "day": 9,
+    "filename": "story9.wav",
+    "text": "第九天，实验室整理员！"
+  },
+  {
+    "id": "day09_story",
+    "day": 9,
+    "filename": "day9_story.wav",
+    "text": "实验室收到几箱新物品，还没来得及整理。仔细观察，帮它们找到合适的位置吧！"
+  },
+  {
+    "id": "day10_title",
+    "day": 10,
+    "filename": "story10.wav",
+    "text": "第十天，风吹乱的小镇！"
+  },
+  {
+    "id": "day10_story",
+    "day": 10,
+    "filename": "day10_story.wav",
+    "text": "一阵大风把小镇吹乱了，落叶和纸团散了一地。一起收拾街道，让小镇恢复整洁吧！"
+  },
+  {
+    "id": "day11_title",
+    "day": 11,
+    "filename": "story11.wav",
+    "text": "第十一天，河畔寻宝记！"
+  },
+  {
+    "id": "day11_story",
+    "day": 11,
+    "filename": "day11_story.wav",
+    "text": "河边的卷轴藏着宝藏线索，可藏宝图散成了碎片。找齐碎片，去寻找大宝箱吧！"
+  },
+  {
+    "id": "day12_title",
+    "day": 12,
+    "filename": "story12.wav",
+    "text": "第十二天，森林欢乐节！"
+  },
+  {
+    "id": "day12_story",
+    "day": 12,
+    "filename": "day12_story.wav",
+    "text": "森林欢乐节开始啦，各个摊位都准备好了惊喜。和小伙伴们一起逛逛，参加有趣的活动吧！"
+  }
+]

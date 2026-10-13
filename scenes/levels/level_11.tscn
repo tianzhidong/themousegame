@@ -7,10 +7,56 @@
 [ext_resource type="Texture2D" uid="uid://dugdmlhiypicq" path="res://assets/images/ui/settings_button.png" id="6_4fty2"]
 [ext_resource type="Script" uid="uid://biydogrrnkjp" path="res://scripts/ui/settings_button.gd" id="7_1nnno"]
 [ext_resource type="PackedScene" uid="uid://3kwv7sjrajm0" path="res://scenes/ui/taskbar.tscn" id="8_taskbar"]
+[ext_resource type="Script" uid="uid://bpvccj0cxe6lh" path="res://scripts/days/Day11Treasure.cs" id="9_treasure"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/bottle_blue_closed.tres" id="asset_bottle_blue_closed"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/bottle_green_closed.tres" id="asset_bottle_green_closed"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/bottle_purple_closed.tres" id="asset_bottle_purple_closed"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/bottle_red_closed.tres" id="asset_bottle_red_closed"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/bottle_yellow_closed.tres" id="asset_bottle_yellow_closed"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/coin_flower.tres" id="asset_coin_flower"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/coin_leaf.tres" id="asset_coin_leaf"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/coin_star.tres" id="asset_coin_star"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/coin_sun.tres" id="asset_coin_sun"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/coin_wave.tres" id="asset_coin_wave"]
+[ext_resource type="Texture2D" uid="uid://dx68aap57sy7t" path="res://assets/images/objects/day11/treasure_dig_pit.png" id="asset_dig_pit"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/gem_blue.tres" id="asset_gem_blue"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/gem_collection_tray.tres" id="asset_gem_collection_tray"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/gem_green.tres" id="asset_gem_green"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/gem_purple.tres" id="asset_gem_purple"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/gem_red.tres" id="asset_gem_red"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/gem_yellow.tres" id="asset_gem_yellow"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/leaf_pile_amber_mixed.tres" id="asset_leaf_pile_amber_mixed"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/leaf_pile_green_gold.tres" id="asset_leaf_pile_green_gold"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/leaf_pile_orange_maple.tres" id="asset_leaf_pile_orange_maple"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/leaf_pile_red_maple.tres" id="asset_leaf_pile_red_maple"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/leaf_pile_yellow_oak.tres" id="asset_leaf_pile_yellow_oak"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/map_fragment_01.tres" id="asset_map_fragment_01"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/map_fragment_02.tres" id="asset_map_fragment_02"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/map_fragment_03.tres" id="asset_map_fragment_03"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/map_fragment_04.tres" id="asset_map_fragment_04"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/map_fragment_05.tres" id="asset_map_fragment_05"]
+[ext_resource type="Texture2D" uid="uid://rif6jyw7l3ct" path="res://assets/images/objects/day11/treasure_puzzle_backdrop.png" id="asset_puzzle_backdrop"]
+[ext_resource type="Texture2D" uid="uid://b08t1pjhyvoa1" path="res://assets/images/objects/day11/treasure_puzzle_map.png" id="asset_puzzle_map"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/rock_flat_oval.tres" id="asset_rock_flat_oval"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/rock_moss_round.tres" id="asset_rock_moss_round"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/rock_pink_crystal.tres" id="asset_rock_pink_crystal"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/rock_twin_peak.tres" id="asset_rock_twin_peak"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/rock_white_stripe.tres" id="asset_rock_white_stripe"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/scroll_blue_closed.tres" id="asset_scroll_blue_closed"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/scroll_green_closed.tres" id="asset_scroll_green_closed"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/scroll_purple_closed.tres" id="asset_scroll_purple_closed"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/scroll_red_closed.tres" id="asset_scroll_red_closed"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/scroll_yellow_closed.tres" id="asset_scroll_yellow_closed"]
+[ext_resource type="Texture2D" uid="uid://cm3twss83f3dm" path="res://assets/images/objects/day11/treasure_shovel.png" id="asset_shovel"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/treasure_chest_closed.tres" id="asset_treasure_chest_closed"]
 
 [node name="Level11" type="Node2D" unique_id=538772820]
+script = ExtResource("9_treasure")
 
 [node name="friend" parent="." unique_id=1644678230 instance=ExtResource("1_friend")]
+z_index = 4
+position = Vector2(635.75, 762.3748)
+scale = Vector2(0.22083327, 0.22083327)
 
 [node name="Day11Bg" type="Sprite2D" parent="." unique_id=89349581]
 z_index = -4
@@ -18,6 +64,270 @@ position = Vector2(960.00006, 1713.5598)
 scale = Vector2(2.0403826, 2.0497127)
 texture = ExtResource("2_pfx17")
 metadata/_edit_lock_ = true
+
+[node name="TreasureObjects" type="Node2D" parent="Day11Bg" unique_id=2089150291]
+z_index = 4
+position = Vector2(-470.5, -836)
+
+[node name="Scrolls" type="Node2D" parent="Day11Bg/TreasureObjects" unique_id=2092964357]
+
+[node name="scroll_red_closed" type="Sprite2D" parent="Day11Bg/TreasureObjects/Scrolls" unique_id=437655553]
+z_index = 5
+position = Vector2(360.7166, 136.60452)
+scale = Vector2(0.07504298, 0.07504298)
+texture = ExtResource("asset_scroll_red_closed")
+
+[node name="scroll_blue_closed" type="Sprite2D" parent="Day11Bg/TreasureObjects/Scrolls" unique_id=77343988]
+z_index = 5
+position = Vector2(215.64584, 327.36298)
+scale = Vector2(0.06236039, 0.06236039)
+texture = ExtResource("asset_scroll_blue_closed")
+
+[node name="scroll_yellow_closed" type="Sprite2D" parent="Day11Bg/TreasureObjects/Scrolls" unique_id=965952807]
+z_index = 5
+position = Vector2(179.8682, 651.31085)
+scale = Vector2(0.08488499, 0.084884994)
+texture = ExtResource("asset_scroll_yellow_closed")
+
+[node name="scroll_green_closed" type="Sprite2D" parent="Day11Bg/TreasureObjects/Scrolls" unique_id=382029060]
+z_index = 5
+position = Vector2(778.77545, 984.04034)
+scale = Vector2(0.08361384, 0.083613835)
+texture = ExtResource("asset_scroll_green_closed")
+
+[node name="scroll_purple_closed" type="Sprite2D" parent="Day11Bg/TreasureObjects/Scrolls" unique_id=1284240590]
+z_index = 5
+position = Vector2(616.551, 1363.6058)
+scale = Vector2(0.060005534, 0.048893258)
+texture = ExtResource("asset_scroll_purple_closed")
+
+[node name="Rocks" type="Node2D" parent="Day11Bg/TreasureObjects" unique_id=678505390]
+
+[node name="rock_moss_round" type="Sprite2D" parent="Day11Bg/TreasureObjects/Rocks" unique_id=1207156085]
+z_index = 4
+position = Vector2(261.2255, 263.45157)
+scale = Vector2(0.100446366, 0.100446366)
+texture = ExtResource("asset_rock_moss_round")
+
+[node name="rock_white_stripe" type="Sprite2D" parent="Day11Bg/TreasureObjects/Rocks" unique_id=2057158234]
+z_index = 3
+position = Vector2(432.27182, 373.22305)
+scale = Vector2(0.092125006, 0.10134483)
+texture = ExtResource("asset_rock_white_stripe")
+
+[node name="rock_twin_peak" type="Sprite2D" parent="Day11Bg/TreasureObjects/Rocks" unique_id=367653220]
+z_index = 4
+position = Vector2(255.34424, 548.36957)
+scale = Vector2(0.16184187, 0.16184187)
+texture = ExtResource("asset_rock_twin_peak")
+
+[node name="rock_flat_oval" type="Sprite2D" parent="Day11Bg/TreasureObjects/Rocks" unique_id=163579808]
+z_index = 4
+position = Vector2(576.3624, 1066.491)
+scale = Vector2(0.116697565, 0.116697565)
+texture = ExtResource("asset_rock_flat_oval")
+
+[node name="rock_pink_crystal" type="Sprite2D" parent="Day11Bg/TreasureObjects/Rocks" unique_id=428410154]
+z_index = 4
+position = Vector2(260.24527, 1456.3018)
+scale = Vector2(0.08965906, 0.08965906)
+texture = ExtResource("asset_rock_pink_crystal")
+
+[node name="Gems" type="Node2D" parent="Day11Bg/TreasureObjects" unique_id=2000906506]
+
+[node name="gem_red" type="Sprite2D" parent="Day11Bg/TreasureObjects/Gems" unique_id=1789464575]
+z_index = 1
+position = Vector2(261.03357, 265.19775)
+scale = Vector2(0.056574393, 0.056574397)
+texture = ExtResource("asset_gem_red")
+
+[node name="gem_blue" type="Sprite2D" parent="Day11Bg/TreasureObjects/Gems" unique_id=629167028]
+z_index = 1
+position = Vector2(439.13333, 378.1018)
+scale = Vector2(0.04038957, 0.04038957)
+texture = ExtResource("asset_gem_blue")
+
+[node name="gem_yellow" type="Sprite2D" parent="Day11Bg/TreasureObjects/Gems" unique_id=1811473575]
+z_index = 1
+position = Vector2(245.05203, 565.4451)
+scale = Vector2(0.057960168, 0.057960168)
+texture = ExtResource("asset_gem_yellow")
+
+[node name="gem_green" type="Sprite2D" parent="Day11Bg/TreasureObjects/Gems" unique_id=2073704106]
+z_index = 1
+position = Vector2(576.85254, 1068.4426)
+scale = Vector2(0.042904228, 0.04222694)
+texture = ExtResource("asset_gem_green")
+
+[node name="gem_purple" type="Sprite2D" parent="Day11Bg/TreasureObjects/Gems" unique_id=611778300]
+z_index = 1
+position = Vector2(259.7552, 1456.3018)
+scale = Vector2(0.027981035, 0.027981035)
+texture = ExtResource("asset_gem_purple")
+
+[node name="LeafPiles" type="Node2D" parent="Day11Bg/TreasureObjects" unique_id=820103007]
+
+[node name="leaf_pile_orange_maple" type="Sprite2D" parent="Day11Bg/TreasureObjects/LeafPiles" unique_id=1720294298]
+z_index = 4
+position = Vector2(167.12552, 793.76984)
+scale = Vector2(0.15405908, 0.15405908)
+texture = ExtResource("asset_leaf_pile_orange_maple")
+
+[node name="leaf_pile_yellow_oak" type="Sprite2D" parent="Day11Bg/TreasureObjects/LeafPiles" unique_id=1069170080]
+z_index = 4
+position = Vector2(188.19998, 866.46295)
+scale = Vector2(0.21632653, 0.21632653)
+texture = ExtResource("asset_leaf_pile_yellow_oak")
+
+[node name="leaf_pile_red_maple" type="Sprite2D" parent="Day11Bg/TreasureObjects/LeafPiles" unique_id=39852497]
+z_index = 4
+position = Vector2(247.01251, 997.21295)
+scale = Vector2(0.22844829, 0.22844829)
+texture = ExtResource("asset_leaf_pile_red_maple")
+
+[node name="leaf_pile_amber_mixed" type="Sprite2D" parent="Day11Bg/TreasureObjects/LeafPiles" unique_id=401339743]
+z_index = 4
+position = Vector2(627.3332, 923.0562)
+scale = Vector2(0.18675254, 0.19617096)
+texture = ExtResource("asset_leaf_pile_amber_mixed")
+
+[node name="leaf_pile_green_gold" type="Sprite2D" parent="Day11Bg/TreasureObjects/LeafPiles" unique_id=310312604]
+z_index = 4
+position = Vector2(177.41766, 406.8863)
+scale = Vector2(0.11181441, 0.11181441)
+texture = ExtResource("asset_leaf_pile_green_gold")
+
+[node name="Coins" type="Node2D" parent="Day11Bg/TreasureObjects" unique_id=171208709]
+
+[node name="coin_leaf" type="Sprite2D" parent="Day11Bg/TreasureObjects/Coins" unique_id=1709237256]
+z_index = 1
+position = Vector2(173.49684, 407.37418)
+scale = Vector2(0.041658834, 0.041658834)
+texture = ExtResource("asset_coin_leaf")
+
+[node name="coin_flower" type="Sprite2D" parent="Day11Bg/TreasureObjects/Coins" unique_id=1188819566]
+z_index = 1
+position = Vector2(198.00204, 860.60834)
+scale = Vector2(0.043836974, 0.043836974)
+texture = ExtResource("asset_coin_flower")
+
+[node name="coin_sun" type="Sprite2D" parent="Day11Bg/TreasureObjects/Coins" unique_id=1834898011]
+z_index = 1
+position = Vector2(161.73434, 791.8183)
+scale = Vector2(0.040362142, 0.040362142)
+texture = ExtResource("asset_coin_sun")
+
+[node name="coin_wave" type="Sprite2D" parent="Day11Bg/TreasureObjects/Coins" unique_id=1216669724]
+z_index = 1
+position = Vector2(621.452, 923.0563)
+scale = Vector2(0.03390162, 0.03390162)
+texture = ExtResource("asset_coin_wave")
+
+[node name="coin_star" type="Sprite2D" parent="Day11Bg/TreasureObjects/Coins" unique_id=91753424]
+z_index = 1
+position = Vector2(244.07178, 1003.06744)
+scale = Vector2(0.04697363, 0.046973635)
+texture = ExtResource("asset_coin_star")
+
+[node name="Bottles" type="Node2D" parent="Day11Bg/TreasureObjects" unique_id=1117160665]
+
+[node name="bottle_red_closed" type="Sprite2D" parent="Day11Bg/TreasureObjects/Bottles" unique_id=2059521637]
+z_index = 4
+position = Vector2(677.8141, 279.06354)
+rotation = -0.75445986
+scale = Vector2(0.07507475, 0.07507475)
+texture = ExtResource("asset_bottle_red_closed")
+
+[node name="bottle_blue_closed" type="Sprite2D" parent="Day11Bg/TreasureObjects/Bottles" unique_id=1317475823]
+z_index = 4
+position = Vector2(528.3322, 516.16986)
+rotation = -1.4899366
+scale = Vector2(0.078742266, 0.078742266)
+texture = ExtResource("asset_bottle_blue_closed")
+
+[node name="bottle_yellow_closed" type="Sprite2D" parent="Day11Bg/TreasureObjects/Bottles" unique_id=806160639]
+z_index = 4
+position = Vector2(691.9047, 737.64014)
+rotation = 0.5661546
+scale = Vector2(0.07873425, 0.07873425)
+texture = ExtResource("asset_bottle_yellow_closed")
+
+[node name="bottle_green_closed" type="Sprite2D" parent="Day11Bg/TreasureObjects/Bottles" unique_id=739063977]
+z_index = 4
+position = Vector2(218.58646, 1143.087)
+rotation = -0.91571426
+scale = Vector2(0.0819369, 0.111730754)
+texture = ExtResource("asset_bottle_green_closed")
+
+[node name="bottle_purple_closed" type="Sprite2D" parent="Day11Bg/TreasureObjects/Bottles" unique_id=652164112]
+z_index = 4
+position = Vector2(553.8176, 1173.3352)
+rotation = 1.3432534
+scale = Vector2(0.084172, 0.084172)
+texture = ExtResource("asset_bottle_purple_closed")
+
+[node name="MapFragments" type="Node2D" parent="Day11Bg/TreasureObjects" unique_id=246621081]
+
+[node name="map_fragment_01" type="Sprite2D" parent="Day11Bg/TreasureObjects/MapFragments" unique_id=1809612008]
+z_index = 6
+position = Vector2(641.5464, 271.74542)
+scale = Vector2(0.08205128, 0.08205128)
+texture = ExtResource("asset_map_fragment_01")
+
+[node name="map_fragment_02" type="Sprite2D" parent="Day11Bg/TreasureObjects/MapFragments" unique_id=335840083]
+z_index = 6
+position = Vector2(501.37653, 486.89752)
+scale = Vector2(0.08205128, 0.08205128)
+texture = ExtResource("asset_map_fragment_02")
+
+[node name="map_fragment_03" type="Sprite2D" parent="Day11Bg/TreasureObjects/MapFragments" unique_id=971189989]
+z_index = 6
+position = Vector2(637, 714)
+scale = Vector2(0.08205128, 0.08205128)
+texture = ExtResource("asset_map_fragment_03")
+
+[node name="map_fragment_04" type="Sprite2D" parent="Day11Bg/TreasureObjects/MapFragments" unique_id=1053354815]
+z_index = 6
+position = Vector2(259.26508, 1141.1355)
+scale = Vector2(0.08205128, 0.08205128)
+texture = ExtResource("asset_map_fragment_04")
+
+[node name="map_fragment_05" type="Sprite2D" parent="Day11Bg/TreasureObjects/MapFragments" unique_id=564588534]
+z_index = 6
+position = Vector2(572.4416, 1133.3296)
+scale = Vector2(0.08205128, 0.08205128)
+texture = ExtResource("asset_map_fragment_05")
+
+[node name="DigSite" type="Node2D" parent="Day11Bg/TreasureObjects" unique_id=1174614552]
+position = Vector2(464.6187, 1420.1992)
+metadata/_edit_group_ = true
+
+[node name="Pit" type="Sprite2D" parent="Day11Bg/TreasureObjects/DigSite" unique_id=635234366]
+visible = false
+z_index = 3
+position = Vector2(0, 18)
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("asset_dig_pit")
+
+[node name="DigTarget" type="Marker2D" parent="Day11Bg/TreasureObjects/DigSite" unique_id=1423767326]
+position = Vector2(0, 18)
+
+[node name="Shovel" type="Sprite2D" parent="Day11Bg/TreasureObjects" unique_id=1469655538]
+z_index = 6
+position = Vector2(595, 1385)
+scale = Vector2(0.055, 0.055)
+texture = ExtResource("asset_shovel")
+metadata/_edit_group_ = true
+
+[node name="BladeTip" type="Marker2D" parent="Day11Bg/TreasureObjects/Shovel" unique_id=2023154565]
+position = Vector2(-107, 732)
+
+[node name="FinalChest" type="Sprite2D" parent="Day11Bg/TreasureObjects" unique_id=1809498229]
+visible = false
+z_index = 5
+position = Vector2(464.6187, 1420.1992)
+scale = Vector2(0.05308133, 0.05308133)
+texture = ExtResource("asset_treasure_chest_closed")
 
 [node name="BackButton" type="Sprite2D" parent="." unique_id=266266122]
 position = Vector2(64.00001, 64)
@@ -32,3 +342,190 @@ texture = ExtResource("6_4fty2")
 script = ExtResource("7_1nnno")
 
 [node name="Taskbar" parent="." unique_id=652856007 instance=ExtResource("8_taskbar")]
+
+[node name="AdventureHud" type="CanvasLayer" parent="." unique_id=1805417432]
+layer = 3
+
+[node name="PuzzleMiniAnchor" type="Node2D" parent="AdventureHud" unique_id=1159407503]
+position = Vector2(-14, 602)
+scale = Vector2(0.28619963, 0.28619963)
+metadata/_edit_group_ = true
+
+[node name="EditorPreview" type="Node2D" parent="AdventureHud/PuzzleMiniAnchor" unique_id=800905360]
+
+[node name="ArtBackground" type="Sprite2D" parent="AdventureHud/PuzzleMiniAnchor/EditorPreview" unique_id=705525908]
+position = Vector2(857.5, 602.5)
+scale = Vector2(0.875651, 0.8544922)
+texture = ExtResource("asset_puzzle_backdrop")
+
+[node name="Map" type="Sprite2D" parent="AdventureHud/PuzzleMiniAnchor/EditorPreview" unique_id=959330616]
+modulate = Color(1, 1, 1, 0.26)
+position = Vector2(1120, 600)
+scale = Vector2(0.41, 0.41)
+texture = ExtResource("asset_puzzle_map")
+
+[node name="GemTray" type="Node2D" parent="AdventureHud" unique_id=523023040]
+
+[node name="Tray" type="Sprite2D" parent="AdventureHud/GemTray" unique_id=605360925]
+position = Vector2(237, 978)
+scale = Vector2(0.5603847, 0.5603847)
+texture = ExtResource("asset_gem_collection_tray")
+
+[node name="Slots" type="Node2D" parent="AdventureHud/GemTray" unique_id=1551571899]
+
+[node name="gem_red" type="Sprite2D" parent="AdventureHud/GemTray/Slots" unique_id=811725821]
+modulate = Color(1, 1, 1, 0.2)
+z_index = 2
+position = Vector2(97.78674, 976.85)
+scale = Vector2(0.155931, 0.155931)
+texture = ExtResource("asset_gem_red")
+
+[node name="gem_blue" type="Sprite2D" parent="AdventureHud/GemTray/Slots" unique_id=1154236674]
+modulate = Color(1, 1, 1, 0.2)
+z_index = 2
+position = Vector2(164.78674, 978.85)
+scale = Vector2(0.15270483, 0.15270483)
+texture = ExtResource("asset_gem_blue")
+
+[node name="gem_yellow" type="Sprite2D" parent="AdventureHud/GemTray/Slots" unique_id=404397609]
+modulate = Color(1, 1, 1, 0.2)
+z_index = 2
+position = Vector2(233.54672, 977.85)
+scale = Vector2(0.15323323, 0.15323323)
+texture = ExtResource("asset_gem_yellow")
+
+[node name="gem_green" type="Sprite2D" parent="AdventureHud/GemTray/Slots" unique_id=1972214621]
+modulate = Color(1, 1, 1, 0.2)
+z_index = 2
+position = Vector2(304.7868, 976.85)
+scale = Vector2(0.15011662, 0.15011662)
+texture = ExtResource("asset_gem_green")
+
+[node name="gem_purple" type="Sprite2D" parent="AdventureHud/GemTray/Slots" unique_id=612023576]
+modulate = Color(1, 1, 1, 0.2)
+z_index = 2
+position = Vector2(377.78677, 977.85004)
+scale = Vector2(0.1491058, 0.1491058)
+texture = ExtResource("asset_gem_purple")
+
+[node name="CollectedGems" type="Node2D" parent="AdventureHud/GemTray" unique_id=670640351]
+
+[node name="MapPuzzle" type="Node2D" parent="AdventureHud" unique_id=755383525]
+visible = false
+
+[node name="ArtBackground" type="Sprite2D" parent="AdventureHud/MapPuzzle" unique_id=712076673]
+position = Vector2(857.5, 602.5)
+scale = Vector2(0.875651, 0.8544922)
+texture = ExtResource("asset_puzzle_backdrop")
+
+[node name="Backdrop" type="ColorRect" parent="AdventureHud/MapPuzzle" unique_id=2075703253]
+offset_left = 185.0
+offset_top = 165.0
+offset_right = 1530.0
+offset_bottom = 1040.0
+mouse_filter = 2
+color = Color(1, 1, 1, 0)
+
+[node name="Board" type="Sprite2D" parent="AdventureHud/MapPuzzle" unique_id=1843898876]
+modulate = Color(1, 1, 1, 0.08)
+z_index = 1
+position = Vector2(1120, 600)
+scale = Vector2(0.41, 0.41)
+texture = ExtResource("asset_puzzle_map")
+
+[node name="Targets" type="Node2D" parent="AdventureHud/MapPuzzle" unique_id=854599712]
+
+[node name="map_fragment_01" type="Sprite2D" parent="AdventureHud/MapPuzzle/Targets" unique_id=1282528063]
+modulate = Color(1, 1, 1, 0.18)
+z_index = 2
+position = Vector2(1029.8, 399.51)
+scale = Vector2(0.41, 0.41)
+texture = ExtResource("asset_map_fragment_01")
+
+[node name="map_fragment_02" type="Sprite2D" parent="AdventureHud/MapPuzzle/Targets" unique_id=1557542193]
+modulate = Color(1, 1, 1, 0.18)
+z_index = 2
+position = Vector2(1212.66, 387.62)
+scale = Vector2(0.41, 0.41)
+texture = ExtResource("asset_map_fragment_02")
+
+[node name="map_fragment_03" type="Sprite2D" parent="AdventureHud/MapPuzzle/Targets" unique_id=1928274668]
+modulate = Color(1, 1, 1, 0.18)
+z_index = 2
+position = Vector2(1120.82, 586.47)
+scale = Vector2(0.41, 0.41)
+texture = ExtResource("asset_map_fragment_03")
+
+[node name="map_fragment_04" type="Sprite2D" parent="AdventureHud/MapPuzzle/Targets" unique_id=2022784]
+modulate = Color(1, 1, 1, 0.18)
+z_index = 2
+position = Vector2(1028.16, 789.42)
+scale = Vector2(0.41, 0.41)
+texture = ExtResource("asset_map_fragment_04")
+
+[node name="map_fragment_05" type="Sprite2D" parent="AdventureHud/MapPuzzle/Targets" unique_id=1061608356]
+modulate = Color(1, 1, 1, 0.18)
+z_index = 2
+position = Vector2(1214.71, 792.29)
+scale = Vector2(0.41, 0.41)
+texture = ExtResource("asset_map_fragment_05")
+
+[node name="Pieces" type="Node2D" parent="AdventureHud/MapPuzzle" unique_id=1006622188]
+z_index = 4
+
+[node name="map_fragment_01" type="Sprite2D" parent="AdventureHud/MapPuzzle/Pieces" unique_id=555812108]
+z_index = 4
+position = Vector2(370, 320)
+scale = Vector2(0.41, 0.41)
+texture = ExtResource("asset_map_fragment_01")
+
+[node name="map_fragment_02" type="Sprite2D" parent="AdventureHud/MapPuzzle/Pieces" unique_id=1014838134]
+z_index = 4
+position = Vector2(620, 320)
+scale = Vector2(0.41, 0.41)
+texture = ExtResource("asset_map_fragment_02")
+
+[node name="map_fragment_03" type="Sprite2D" parent="AdventureHud/MapPuzzle/Pieces" unique_id=465501222]
+z_index = 4
+position = Vector2(470, 570)
+scale = Vector2(0.41, 0.41)
+texture = ExtResource("asset_map_fragment_03")
+
+[node name="map_fragment_04" type="Sprite2D" parent="AdventureHud/MapPuzzle/Pieces" unique_id=103873171]
+z_index = 4
+position = Vector2(360, 850)
+scale = Vector2(0.41, 0.41)
+texture = ExtResource("asset_map_fragment_04")
+
+[node name="map_fragment_05" type="Sprite2D" parent="AdventureHud/MapPuzzle/Pieces" unique_id=357397068]
+z_index = 4
+position = Vector2(620, 850)
+scale = Vector2(0.41, 0.41)
+texture = ExtResource("asset_map_fragment_05")
+
+[node name="ClueLayer" type="CanvasLayer" parent="." unique_id=829383703]
+layer = 20
+
+[node name="ClueViewer" type="Control" parent="ClueLayer" unique_id=862416517]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+
+[node name="Backdrop" type="ColorRect" parent="ClueLayer/ClueViewer" unique_id=253172068]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0.03, 0.06, 0.04, 0.55)
+
+[node name="CluePicture" type="TextureRect" parent="ClueLayer/ClueViewer" unique_id=2108636853]
+layout_mode = 0
+offset_left = 680.0
+offset_top = 185.0
+offset_right = 1240.0
+offset_bottom = 865.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5

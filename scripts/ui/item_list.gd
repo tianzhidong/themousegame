@@ -1,5 +1,7 @@
 extends ItemList
 
+const CLICK_SOUND := preload("res://assets/audio/ui/ui_click.ogg")
+
 @export var rows := 3
 @export var columns := 5
 @export var spacing := Vector2(24.0, 24.0)
@@ -7,9 +9,14 @@ extends ItemList
 @export var button_text_suffix := "日"
 
 var _buttons: Array[Button] = []
+var _click_player: AudioStreamPlayer
 
 
 func _ready() -> void:
+	_click_player = AudioStreamPlayer.new()
+	_click_player.stream = CLICK_SOUND
+	add_child(_click_player)
+
 	clear()
 	_create_buttons()
 	resized.connect(_layout_buttons)
@@ -27,6 +34,7 @@ func _create_buttons() -> void:
 		button.name = "ItemButton%d" % (index + 1)
 		button.text = "%s%d%s" % [button_text_prefix, index + 1, button_text_suffix]
 		button.clip_text = true
+		button.button_down.connect(_play_click_sound)
 		add_child(button)
 		_buttons.append(button)
 
@@ -53,3 +61,7 @@ func _layout_buttons() -> void:
 			float(row) * (button_size.y + spacing.y)
 		)
 		button.size = button_size
+
+
+func _play_click_sound() -> void:
+	_click_player.play()

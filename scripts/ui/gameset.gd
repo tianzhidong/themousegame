@@ -60,12 +60,14 @@ func _input(event: InputEvent) -> void:
 			return
 
 		if _is_on_volume_track(mouse_event.position):
+			_click_player.play()
 			_is_dragging = true
 			_set_volume_from_global_position(mouse_event.position)
 			get_viewport().set_input_as_handled()
 			return
 
 		if _contains_sprite_point(_dot, mouse_event.position):
+			_click_player.play()
 			_is_dragging = true
 			get_viewport().set_input_as_handled()
 			return

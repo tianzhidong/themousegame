@@ -2,6 +2,12 @@ extends Node
 
 var selected_day := 1
 var selected_friend_id := "bear"
+var selected_day5_module := 1
+var day5_repaired_parts: Dictionary = {}
+const DAY5_TASK_TYPES := {
+	1: "machineC", 2: "machineD", 3: "machineE", 4: "machineB",
+	5: "machineA", 6: "machineF", 7: "machineG", 8: "machineH"
+}
 var settings_return_scene_path := "res://scenes/main/Main.tscn"
 
 const FRIEND_IDLE_TEXTURE_PATHS := {
@@ -21,6 +27,18 @@ func set_selected_friend(friend_id: String) -> void:
 		return
 
 	selected_friend_id = friend_id
+
+
+func set_selected_day5_module(module_index: int) -> void:
+	selected_day5_module = clampi(module_index, 1, 8)
+
+
+func get_selected_day5_module() -> int:
+	return selected_day5_module
+
+
+func get_day5_task_type(module_index: int) -> String:
+	return DAY5_TASK_TYPES.get(module_index, "")
 
 
 func get_selected_friend_idle_texture_path() -> String:

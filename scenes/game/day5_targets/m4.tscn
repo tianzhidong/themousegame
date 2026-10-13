@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://cme2k7nodtnk0"]
+
+[ext_resource type="Texture2D" uid="uid://ul2dv8ecr28j" path="res://assets/images/objects/day5/m4_bg.png" id="1_bg"]
+[ext_resource type="Texture2D" uid="uid://b4yicdld7njlx" path="res://assets/images/objects/day5/m4/m4_1.png" id="2_part"]
+[ext_resource type="Texture2D" uid="uid://bbv1cf5yavfqy" path="res://assets/images/objects/day5/m4/m4_2.png" id="3_part"]
+[ext_resource type="Texture2D" uid="uid://oh23sfbgtdb" path="res://assets/images/objects/day5/m4/m4_3.png" id="4_part"]
+[ext_resource type="Texture2D" uid="uid://b4ee3y43teumo" path="res://assets/images/objects/day5/m4/m4_4.png" id="5_part"]
+[ext_resource type="Texture2D" uid="uid://cj17xxdrsehai" path="res://assets/images/objects/day5/m4/m4_5.png" id="6_part"]
+
+[node name="Machine4Targets" type="Sprite2D" unique_id=1915766184]
+texture = ExtResource("1_bg")
+centered = false
+metadata/_edit_lock_ = true
+metadata/yard_scale = 1.417075269
+metadata/yard_offset = Vector2(-1310.8546, -772.83704)
+
+[node name="PartTarget1" type="Sprite2D" parent="." unique_id=1602640966]
+position = Vector2(865, 541)
+scale = Vector2(1.0266668, 1.0308572)
+texture = ExtResource("2_part")
+offset = Vector2(0, 0.5)
+
+[node name="PartTarget2" type="Sprite2D" parent="." unique_id=1641672902]
+position = Vector2(555.99994, 516)
+rotation = -0.8449721
+scale = Vector2(0.6728375, 0.6744198)
+texture = ExtResource("3_part")
+offset = Vector2(0, 0.5)
+
+[node name="PartTarget3" type="Sprite2D" parent="." unique_id=388705159]
+position = Vector2(542.00006, 667)
+rotation = -0.92159235
+scale = Vector2(0.7481633, 0.741727)
+texture = ExtResource("4_part")
+offset = Vector2(0, 0.5)
+
+[node name="PartTarget4" type="Sprite2D" parent="." unique_id=1821065297]
+position = Vector2(1224.0001, 589)
+scale = Vector2(1.0978603, 1.1023413)
+texture = ExtResource("5_part")
+offset = Vector2(0, 0.5)
+
+[node name="PartTarget5" type="Sprite2D" parent="." unique_id=1502862587]
+position = Vector2(868.99994, 709)
+scale = Vector2(1.009279, 0.9469551)
+texture = ExtResource("6_part")

@@ -11,16 +11,43 @@
 [ext_resource type="Texture2D" uid="uid://7maybtos72td" path="res://assets/images/objects/day3/handlight.png" id="8_ugcn1"]
 [ext_resource type="Texture2D" uid="uid://1vye1vqny4if" path="res://assets/images/objects/day3/vlight.png" id="10_2bnyt"]
 [ext_resource type="Texture2D" uid="uid://mioboso72svw" path="res://assets/images/objects/day3/circlelight.png" id="10_n6eey"]
+[ext_resource type="Texture2D" uid="uid://b3mdqjde3ur66" path="res://assets/images/objects/day3/fish.png" id="12_f6egh"]
+[ext_resource type="Texture2D" uid="uid://375n6xe6gc7t" path="res://assets/images/objects/day3/flower2.png" id="13_t4txi"]
+[ext_resource type="Texture2D" uid="uid://duy8w7b2bvtel" path="res://assets/images/objects/day3/snall.png" id="14_fhpes"]
+[ext_resource type="Texture2D" uid="uid://bxxvfq7uf6hyg" path="res://assets/images/objects/day3/frog.png" id="14_josfm"]
+[ext_resource type="Texture2D" uid="uid://bp8kqwy1w38x4" path="res://assets/images/objects/day3/shell.png" id="15_lgrx1"]
+[ext_resource type="Texture2D" uid="uid://dd6v1gw52l3ck" path="res://assets/images/objects/day3/turtle.png" id="16_fhpes"]
+[ext_resource type="Texture2D" uid="uid://cw6ldoytmsx4f" path="res://assets/images/objects/day3/firefly.png" id="17_firefly"]
+[ext_resource type="Texture2D" uid="uid://7igcgvbhr6f7" path="res://assets/images/objects/day3/stone.png" id="18_vmg1d"]
+[ext_resource type="Script" uid="uid://uj82wwo6upa8" path="res://scripts/days/day3/collectibles.gd" id="19_day3_collectibles"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day3/the_moon_glow.png" id="20_moon_glow"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_moon_glow"]
+light_mode = 1
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wvhbo"]
+radius = 87.05171
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wvhbo"]
+radius = 78.0
+height = 316.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wvhbo"]
+size = Vector2(1540, 420)
 
 [node name="Level3" type="Node2D" unique_id=1861721280]
+script = ExtResource("19_day3_collectibles")
 
 [node name="friend" parent="." unique_id=1505455122 instance=ExtResource("1_friend")]
+position = Vector2(303, 475)
+scale = Vector2(0.38916665, 0.38916665)
 
 [node name="Day3Bg" type="Sprite2D" parent="." unique_id=95449063]
 z_index = -4
 position = Vector2(960, 540)
 scale = Vector2(1.1483253, 1.1477152)
 texture = ExtResource("2_44gv1")
+metadata/_edit_lock_ = true
 
 [node name="BackButton" type="Sprite2D" parent="." unique_id=870908920]
 position = Vector2(64.00001, 64)
@@ -42,7 +69,7 @@ script = ExtResource("8_2bnyt")
 [node name="Handlight" type="Sprite2D" parent="." unique_id=78205277]
 light_mask = 2
 z_index = 4
-position = Vector2(662.11, 1001.2258)
+position = Vector2(295, 898)
 rotation = -1.5973493
 scale = Vector2(0.21972515, 0.21972515)
 texture = ExtResource("8_ugcn1")
@@ -61,3 +88,111 @@ position = Vector2(1272.4154, -44.102966)
 scale = Vector2(1.5517771, 2.0906007)
 range_item_cull_mask = 2
 texture = ExtResource("10_2bnyt")
+
+[node name="themoon" type="Area2D" parent="." unique_id=1205163517]
+
+[node name="MoonGlow" type="Sprite2D" parent="themoon"]
+light_mask = 0
+material = SubResource("CanvasItemMaterial_moon_glow")
+z_index = -3
+position = Vector2(615, 156)
+scale = Vector2(0.155, 0.155)
+texture = ExtResource("20_moon_glow")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="themoon" unique_id=364642624]
+position = Vector2(615, 156)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="themoon" unique_id=204850893]
+position = Vector2(620, 548)
+shape = SubResource("CapsuleShape2D_wvhbo")
+
+[node name="pond" type="Area2D" parent="." unique_id=1186979331]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="pond" unique_id=1543461008]
+position = Vector2(-6, 11)
+polygon = PackedVector2Array(406, 421, 528, 411, 590, 403, 755, 411, 1008, 427, 960, 449, 924, 457, 955, 476, 1088, 495, 1140, 481, 1168, 513, 1156, 539, 1242, 543, 1298, 572, 1409, 517, 1494, 566, 1517, 619, 1387, 663, 1473, 738, 1345, 761, 1322, 832, 1186, 799, 989, 877, 955, 840, 798, 889, 702, 871, 686, 809, 738, 757, 753, 696, 510, 581, 386, 563, 395, 461)
+metadata/_edit_lock_ = true
+
+[node name="fish" type="TextureRect" parent="pond/CollisionPolygon2D" unique_id=455638444]
+offset_left = 891.0
+offset_top = 674.0
+offset_right = 1596.0
+offset_bottom = 1179.0
+scale = Vector2(0.12359323, 0.16509283)
+texture = ExtResource("12_f6egh")
+
+[node name="flower2" type="TextureRect" parent="pond/CollisionPolygon2D" unique_id=922400801]
+offset_left = 1376.0
+offset_top = 543.0
+offset_right = 1847.0
+offset_bottom = 929.0
+scale = Vector2(0.1435811, 0.1435811)
+texture = ExtResource("13_t4txi")
+
+[node name="sky" type="Area2D" parent="." unique_id=379210122]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sky" unique_id=728519079]
+position = Vector2(960, 290)
+shape = SubResource("RectangleShape2D_wvhbo")
+
+[node name="firefly" type="TextureRect" parent="sky/CollisionShape2D" unique_id=1994982668]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.18078977, 0.18078977)
+texture = ExtResource("17_firefly")
+
+[node name="land" type="Area2D" parent="." unique_id=258802466]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="land" unique_id=1185804672]
+polygon = PackedVector2Array(487, 992, 547, 1019, 619, 1061, 852, 1075, 1280, 1075, 1291, 1067, 1364, 1047, 1367, 1018, 1411, 1003, 1464, 1006, 1495, 987, 1542, 927, 1611, 893, 1632, 866, 1577, 837, 1540, 892, 1499, 910, 1433, 954, 1281, 952, 1274, 919, 1228, 923, 1112, 917, 1021, 908, 923, 910, 807, 933, 745, 911, 740, 976, 569, 971, 502, 915, 457, 900, 439, 921)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="land" unique_id=239307966]
+polygon = PackedVector2Array(136, 795, 3, 828, 3, 853, 55, 872, 81, 918, 88, 940, 93, 967, 138, 894, 158.33063, 883.6354, 194.03134, 878.08276, 133, 954, 193, 946, 235, 973, 246, 870, 216, 826, 197, 806)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="land" unique_id=1907868388]
+polygon = PackedVector2Array(1333, 424, 1327, 446, 1431, 474, 1491, 505, 1563, 522, 1602, 569, 1641, 590, 1637, 526, 1636, 457, 1570, 396, 1518, 363, 1426, 368)
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="land" unique_id=1993660168]
+position = Vector2(0, 3)
+polygon = PackedVector2Array(85, 618, 99, 654, 251, 687, 373, 653, 536, 604, 428, 597, 369, 592, 389.30933, 622.7938, 356, 645, 288, 637, 243, 641, 232, 622, 253, 588, 224, 574, 203, 566, 179, 564, 196.74678, 591.5119)
+
+[node name="snall" type="TextureRect" parent="land" unique_id=1563467467]
+offset_left = 567.0
+offset_top = 977.0
+offset_right = 1015.78766
+offset_bottom = 1303.5132
+scale = Vector2(0.1279669, 0.15007049)
+texture = ExtResource("14_fhpes")
+
+[node name="forg" type="TextureRect" parent="land" unique_id=341295090]
+offset_left = 641.00006
+offset_top = 867.0
+offset_right = 1086.0
+offset_bottom = 1267.0
+scale = Vector2(0.112792574, 0.112792574)
+texture = ExtResource("14_josfm")
+
+[node name="shell" type="TextureRect" parent="land" unique_id=1663421034]
+offset_left = 1012.0
+offset_top = 967.0
+offset_right = 1270.5293
+offset_bottom = 1169.5273
+scale = Vector2(0.17281634, 0.17281634)
+texture = ExtResource("15_lgrx1")
+
+[node name="turtle" type="TextureRect" parent="land" unique_id=4192297]
+offset_left = 1229.0
+offset_top = 953.0
+offset_right = 1625.0906
+offset_bottom = 1212.5566
+scale = Vector2(0.16588783, 0.22345765)
+texture = ExtResource("16_fhpes")
+
+[node name="stone" type="TextureRect" parent="land" unique_id=439981388]
+offset_left = 830.0001
+offset_top = 965.0001
+offset_right = 1730.3364
+offset_bottom = 1245.1295
+scale = Vector2(0.049812768, 0.1463603)
+texture = ExtResource("18_vmg1d")

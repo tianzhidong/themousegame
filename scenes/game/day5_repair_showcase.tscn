@@ -1,0 +1,67 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/days/day5_repair_showcase.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/images/ui/repair_success_rays.svg" id="2_rays"]
+
+[node name="RepairShowcase" type="CanvasLayer"]
+layer = 40
+script = ExtResource("1_script")
+
+[node name="Presentation" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+
+[node name="Dimmer" type="ColorRect" parent="Presentation"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+color = Color(0.09, 0.14, 0.12, 0.84)
+
+[node name="Center" type="Node2D" parent="Presentation"]
+position = Vector2(960, 540)
+
+[node name="Rays" type="Sprite2D" parent="Presentation/Center"]
+scale = Vector2(1.15, 1.15)
+texture = ExtResource("2_rays")
+
+[node name="Machine" type="Node2D" parent="Presentation/Center"]
+
+[node name="Title" type="Label" parent="Presentation"]
+layout_mode = 1
+anchor_right = 1.0
+offset_top = 66.0
+offset_bottom = 150.0
+grow_horizontal = 2
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.94, 0.69, 1)
+theme_override_colors/font_outline_color = Color(0.22, 0.12, 0.04, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 64
+text = "修好啦！"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Note" type="Label" parent="Presentation"]
+layout_mode = 1
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -112.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.92, 0.95, 0.85, 1)
+theme_override_font_sizes/font_size = 32
+text = "马上返回修理站"
+horizontal_alignment = 1
+vertical_alignment = 1

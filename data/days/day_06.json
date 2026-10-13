@@ -1,40 +1,400 @@
 {
   "day_id": 6,
-  "day_title": "朋友们的礼物",
+  "day_title": "生日派对",
   "task_mode": "sequence",
   "time_limit_seconds": 900,
   "tasks": [
     {
-      "id": "click_friend_apples",
-      "text": "点击朋友送来的苹果",
-      "icon_path": "res://assets/images/ui/apple_s.png",
-      "operation": "click",
-      "target_type": "apple",
+      "id": "place_balloons",
+      "text": "布置气球",
+      "icon_path": "res://assets/images/objects/day6/balloon_bouquet_hearts_01.png",
+      "operation": "drag",
+      "target_type": "balloon",
       "target_color": "",
-      "target_tag": "friend_gift",
-      "target_ids": [],
-      "target_count": 4,
+      "target_tag": "place_balloons",
+      "target_ids": [
+        "place_balloons_01",
+        "place_balloons_02",
+        "place_balloons_03",
+        "place_balloons_04",
+        "place_balloons_05"
+      ],
+      "target_count": 5,
       "progress_style": "dots",
       "progress_mode": "distinct_object",
       "order": 1,
       "hint_image_path": "",
-      "hint_audio_path": ""
+      "hint_audio_path": "res://assets/audio/voice/task_hints/day06/place_balloons_hint.wav",
+      "placements": [
+        {
+          "asset": "balloon_bouquet_hearts_01",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group1_Balloons/Target1"
+        },
+        {
+          "asset": "balloon_bouquet_colorful_01",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group1_Balloons/Target2"
+        },
+        {
+          "asset": "balloon_bouquet_bunny",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group1_Balloons/Target3"
+        },
+        {
+          "asset": "balloon_green",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group1_Balloons/Target4"
+        },
+        {
+          "asset": "balloon_blue",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group1_Balloons/Target5"
+        }
+      ]
     },
     {
-      "id": "drag_gifts_to_table",
-      "text": "把礼物拖到桌子上",
-      "icon_path": "res://assets/images/objects/lesson/wooden_signpost.png",
+      "id": "place_banners",
+      "text": "悬挂彩旗",
+      "icon_path": "res://assets/images/objects/day6/happy_birthday_banner.png",
       "operation": "drag",
-      "target_type": "gift",
+      "target_type": "banner",
       "target_color": "",
-      "target_tag": "friend_gift",
-      "target_ids": [],
-      "target_count": 4,
+      "target_tag": "place_banners",
+      "target_ids": [
+        "place_banners_01",
+        "place_banners_02",
+        "place_banners_03",
+        "place_banners_04",
+        "place_banners_05"
+      ],
+      "target_count": 5,
       "progress_style": "dots",
       "progress_mode": "distinct_object",
       "order": 2,
       "hint_image_path": "",
-      "hint_audio_path": ""
+      "hint_audio_path": "res://assets/audio/voice/task_hints/day06/place_banners_hint.wav",
+      "placements": [
+        {
+          "asset": "happy_birthday_banner",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group2_Banners/Target1"
+        },
+        {
+          "asset": "colorful_pennant_banners",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group2_Banners/Target2"
+        },
+        {
+          "asset": "colorful_pennant_banners",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group2_Banners/Target3"
+        },
+        {
+          "asset": "colorful_pennant_banners",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group2_Banners/Target4"
+        },
+        {
+          "asset": "happy_birthday_banner",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group2_Banners/Target5"
+        }
+      ]
+    },
+    {
+      "id": "place_lanterns",
+      "text": "悬挂彩灯",
+      "icon_path": "res://assets/images/objects/day6/lantern_pink.png",
+      "operation": "drag",
+      "target_type": "lantern",
+      "target_color": "",
+      "target_tag": "place_lanterns",
+      "target_ids": [
+        "place_lanterns_01",
+        "place_lanterns_02",
+        "place_lanterns_03",
+        "place_lanterns_04",
+        "place_lanterns_05"
+      ],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 3,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/task_hints/day06/place_lanterns_hint.wav",
+      "placements": [
+        {
+          "asset": "lantern_pink",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group3_Lanterns/Target1"
+        },
+        {
+          "asset": "lantern_yellow",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group3_Lanterns/Target2"
+        },
+        {
+          "asset": "lantern_purple_02",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group3_Lanterns/Target3"
+        },
+        {
+          "asset": "lantern_orange",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group3_Lanterns/Target4"
+        },
+        {
+          "asset": "lantern_purple_02",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group3_Lanterns/Target5"
+        }
+      ]
+    },
+    {
+      "id": "place_flowers",
+      "text": "摆放鲜花",
+      "icon_path": "res://assets/images/objects/day6/flower_bouquet_vase.png",
+      "operation": "drag",
+      "target_type": "flower",
+      "target_color": "",
+      "target_tag": "place_flowers",
+      "target_ids": [
+        "place_flowers_01",
+        "place_flowers_02",
+        "place_flowers_03",
+        "place_flowers_04",
+        "place_flowers_05"
+      ],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 4,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/task_hints/day06/place_flowers_hint.wav",
+      "placements": [
+        {
+          "asset": "flower_bouquet_vase",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group4_Flowers/Target1"
+        },
+        {
+          "asset": "flower_bouquet_vase",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group4_Flowers/Target2"
+        },
+        {
+          "asset": "flower_bouquet_vase",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group4_Flowers/Target3"
+        },
+        {
+          "asset": "flower_bouquet_vase",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group4_Flowers/Target4"
+        },
+        {
+          "asset": "flower_bouquet_vase",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group4_Flowers/Target5"
+        }
+      ]
+    },
+    {
+      "id": "place_tableware",
+      "text": "摆放餐具",
+      "icon_path": "res://assets/images/objects/day6/paper_cup_group.png",
+      "operation": "drag",
+      "target_type": "tableware",
+      "target_color": "",
+      "target_tag": "place_tableware",
+      "target_ids": [
+        "place_tableware_01",
+        "place_tableware_02",
+        "place_tableware_03",
+        "place_tableware_04",
+        "place_tableware_05"
+      ],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 5,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/task_hints/day06/place_tableware_hint.wav",
+      "placements": [
+        {
+          "asset": "paper_cup_group",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group5_Tableware/Target1"
+        },
+        {
+          "asset": "paper_cup_group",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group5_Tableware/Target2"
+        },
+        {
+          "asset": "paper_cups_blue",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group5_Tableware/Target3"
+        },
+        {
+          "asset": "paper_cups_yellow",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group5_Tableware/Target4"
+        },
+        {
+          "asset": "paper_cups_blue",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group5_Tableware/Target5"
+        }
+      ]
+    },
+    {
+      "id": "place_snacks",
+      "text": "摆放点心",
+      "icon_path": "res://assets/images/objects/day6/cupcake_strawberry.png",
+      "operation": "drag",
+      "target_type": "snack",
+      "target_color": "",
+      "target_tag": "place_snacks",
+      "target_ids": [
+        "place_snacks_01",
+        "place_snacks_02",
+        "place_snacks_03",
+        "place_snacks_04",
+        "place_snacks_05"
+      ],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 6,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/task_hints/day06/place_snacks_hint.wav",
+      "placements": [
+        {
+          "asset": "cupcake_strawberry",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group6_Snacks/Target1"
+        },
+        {
+          "asset": "cupcake_chocolate",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group6_Snacks/Target2"
+        },
+        {
+          "asset": "fruit_cookie_platter",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group6_Snacks/Target3"
+        },
+        {
+          "asset": "tiered_snack_stand",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group6_Snacks/Target4"
+        },
+        {
+          "asset": "cupcake_chocolate",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group6_Snacks/Target5"
+        }
+      ]
+    },
+    {
+      "id": "place_cakes_gifts",
+      "text": "蛋糕礼物",
+      "icon_path": "res://assets/images/objects/day6/birthday_cake_01.png",
+      "operation": "drag",
+      "target_type": "cake_gift",
+      "target_color": "",
+      "target_tag": "place_cakes_gifts",
+      "target_ids": [
+        "place_cakes_gifts_01",
+        "place_cakes_gifts_02",
+        "place_cakes_gifts_03",
+        "place_cakes_gifts_04",
+        "place_cakes_gifts_05"
+      ],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 7,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/task_hints/day06/place_cakes_gifts_hint.wav",
+      "placements": [
+        {
+          "asset": "birthday_cake_01",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group7_CakesGifts/Target1"
+        },
+        {
+          "asset": "birthday_cake_02",
+          "rotation_variation": 2,
+          "target_path": "Day6Targets/Group7_CakesGifts/Target2"
+        },
+        {
+          "asset": "gift_box_group",
+          "rotation_variation": 4,
+          "target_path": "Day6Targets/Group7_CakesGifts/Target3"
+        },
+        {
+          "asset": "gift_box_group",
+          "rotation_variation": 4,
+          "target_path": "Day6Targets/Group7_CakesGifts/Target4"
+        },
+        {
+          "asset": "gift_box_group",
+          "rotation_variation": 4,
+          "target_path": "Day6Targets/Group7_CakesGifts/Target5"
+        }
+      ]
+    },
+    {
+      "id": "place_party_supplies",
+      "text": "派对用品",
+      "icon_path": "res://assets/images/objects/day6/party_hat_pair.png",
+      "operation": "drag",
+      "target_type": "party_supply",
+      "target_color": "",
+      "target_tag": "place_party_supplies",
+      "target_ids": [
+        "place_party_supplies_01",
+        "place_party_supplies_02",
+        "place_party_supplies_03",
+        "place_party_supplies_04",
+        "place_party_supplies_05"
+      ],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 8,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/task_hints/day06/place_party_supplies_hint.wav",
+      "placements": [
+        {
+          "asset": "party_hat_pair",
+          "rotation_variation": 5,
+          "target_path": "Day6Targets/Group8_PartySupplies/Target1"
+        },
+        {
+          "asset": "party_hat_yellow",
+          "rotation_variation": 5,
+          "target_path": "Day6Targets/Group8_PartySupplies/Target2"
+        },
+        {
+          "asset": "party_popper_blue",
+          "rotation_variation": 5,
+          "target_path": "Day6Targets/Group8_PartySupplies/Target3"
+        },
+        {
+          "asset": "party_popper_red",
+          "rotation_variation": 5,
+          "target_path": "Day6Targets/Group8_PartySupplies/Target4"
+        },
+        {
+          "asset": "party_hat_pair",
+          "rotation_variation": 5,
+          "target_path": "Day6Targets/Group8_PartySupplies/Target5"
+        }
+      ]
     }
   ]
 }

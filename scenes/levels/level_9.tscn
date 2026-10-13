@@ -1,21 +1,101 @@
 [gd_scene format=3 uid="uid://rp0xsljmwagj"]
 
 [ext_resource type="PackedScene" path="res://scenes/core/Friend.tscn" id="1_friend"]
-[ext_resource type="Texture2D" uid="uid://bjmybgq0h16ox" path="res://assets/images/backgrounds/day9_bg.png" id="2_xlc0a"]
+[ext_resource type="Texture2D" uid="uid://bgr51f26qofad" path="res://assets/images/backgrounds/day9_bg.png" id="2_xlc0a"]
 [ext_resource type="Texture2D" uid="uid://c7n0rciybswtg" path="res://assets/images/ui/back_button.png" id="3_ltlq2"]
 [ext_resource type="Script" uid="uid://hfkyaicge4ep" path="res://scripts/ui/back_button_2.gd" id="4_6nuwh"]
 [ext_resource type="Texture2D" uid="uid://dugdmlhiypicq" path="res://assets/images/ui/settings_button.png" id="6_kj523"]
 [ext_resource type="Script" uid="uid://biydogrrnkjp" path="res://scripts/ui/settings_button.gd" id="7_xampj"]
 [ext_resource type="PackedScene" uid="uid://3kwv7sjrajm0" path="res://scenes/ui/taskbar.tscn" id="8_taskbar"]
+[ext_resource type="Texture2D" uid="uid://cttbxpkax7okk" path="res://assets/images/objects/day9/book_blue.png" id="day9_book_blue"]
+[ext_resource type="Texture2D" uid="uid://dny4bkaruym0d" path="res://assets/images/objects/day9/book_green.png" id="day9_book_green"]
+[ext_resource type="Texture2D" uid="uid://ctr5oycw7sn54" path="res://assets/images/objects/day9/book_red.png" id="day9_book_red"]
+[ext_resource type="Texture2D" uid="uid://cpms7fbafhl50" path="res://assets/images/objects/day9/bottle_tall_green.png" id="day9_bottle_tall_green"]
+[ext_resource type="Texture2D" uid="uid://d180d7yivsrkj" path="res://assets/images/objects/day9/flask_conical_red.png" id="day9_flask_conical_red"]
+[ext_resource type="Texture2D" uid="uid://cpigm5hj0ftyu" path="res://assets/images/objects/day9/flask_round_blue.png" id="day9_flask_round_blue"]
+[ext_resource type="Script" uid="uid://by0w33t5yudrg" path="res://scripts/days/Day9Laboratory.cs" id="day9_laboratory"]
+[ext_resource type="Texture2D" uid="uid://u0fyhq27oow5" path="res://assets/images/objects/day9/specimen_flower.png" id="day9_specimen_flower"]
+[ext_resource type="Texture2D" uid="uid://ctstcxe7nmmue" path="res://assets/images/objects/day9/specimen_grass.png" id="day9_specimen_grass"]
+[ext_resource type="Texture2D" uid="uid://byqvsxs3ii33n" path="res://assets/images/objects/day9/specimen_leaf.png" id="day9_specimen_leaf"]
+[ext_resource type="Texture2D" uid="uid://esvukf1xd4c4" path="res://assets/images/objects/day9/supply_box_closed.png" id="day9_supply_box_closed"]
+[ext_resource type="Texture2D" uid="uid://ds7fxrwsb3y30" path="res://assets/images/objects/day9/supply_box_open.png" id="day9_supply_box_open"]
+
+[sub_resource type="AtlasTexture" id="atlas_book_blue"]
+atlas = ExtResource("day9_book_blue")
+region = Rect2(78, 127, 1117, 1079)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="atlas_book_red"]
+atlas = ExtResource("day9_book_red")
+region = Rect2(5, 11, 184, 169)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="atlas_book_green"]
+atlas = ExtResource("day9_book_green")
+region = Rect2(8, 6, 188, 178)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="atlas_flask_round_blue"]
+atlas = ExtResource("day9_flask_round_blue")
+region = Rect2(265, 134, 724, 1001)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="atlas_flask_conical_red"]
+atlas = ExtResource("day9_flask_conical_red")
+region = Rect2(223, 117, 809, 1031)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="atlas_bottle_tall_green"]
+atlas = ExtResource("day9_bottle_tall_green")
+region = Rect2(400, 68, 456, 1113)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="atlas_specimen_leaf"]
+atlas = ExtResource("day9_specimen_leaf")
+region = Rect2(223, 128, 808, 1001)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="atlas_specimen_flower"]
+atlas = ExtResource("day9_specimen_flower")
+region = Rect2(233, 127, 788, 1026)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="atlas_specimen_grass"]
+atlas = ExtResource("day9_specimen_grass")
+region = Rect2(243, 120, 769, 1017)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="atlas_supply_box_closed"]
+atlas = ExtResource("day9_supply_box_closed")
+region = Rect2(58, 149, 1140, 965)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="atlas_supply_box_open"]
+atlas = ExtResource("day9_supply_box_open")
+region = Rect2(58, 149, 1140, 965)
+filter_clip = true
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_abi3o"]
+size = Vector2(234, 67.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ifow5"]
+size = Vector2(31, 33)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wvhbo"]
 
 [node name="Level9" type="Node2D" unique_id=11572598]
+script = ExtResource("day9_laboratory")
 
 [node name="friend" parent="." unique_id=219516958 instance=ExtResource("1_friend")]
+position = Vector2(135.99997, 871.99994)
+scale = Vector2(0.44166657, 0.44166657)
 
 [node name="Day9Bg" type="Sprite2D" parent="." unique_id=196316863]
+z_index = -3
 position = Vector2(960, 540)
 scale = Vector2(1.1483254, 1.1477152)
 texture = ExtResource("2_xlc0a")
+metadata/_edit_lock_ = true
 
 [node name="BackButton" type="Sprite2D" parent="." unique_id=254374572]
 position = Vector2(64.00001, 64)
@@ -30,3 +110,480 @@ texture = ExtResource("6_kj523")
 script = ExtResource("7_xampj")
 
 [node name="Taskbar" parent="." unique_id=735477048 instance=ExtResource("8_taskbar")]
+
+[node name="Day9Objects" type="Node2D" parent="." unique_id=336777098]
+z_index = 1
+
+[node name="Books" type="Node2D" parent="Day9Objects" unique_id=669741061]
+
+[node name="BookBlue" type="Sprite2D" parent="Day9Objects/Books" unique_id=2082466138]
+modulate = Color(0.99, 0.99, 0.99, 1)
+position = Vector2(385, 981)
+rotation = -0.069813
+scale = Vector2(0.100269, 0.100269)
+texture = SubResource("atlas_book_blue")
+metadata/asset_id = "book_blue"
+
+[node name="BookRed" type="Sprite2D" parent="Day9Objects/Books" unique_id=357387177]
+modulate = Color(0.97, 0.97, 0.97, 1)
+position = Vector2(510, 1002)
+rotation = 0.05236
+scale = Vector2(0.641304, 0.641304)
+texture = SubResource("atlas_book_red")
+metadata/asset_id = "book_red"
+
+[node name="BookGreen" type="Sprite2D" parent="Day9Objects/Books" unique_id=583772717]
+position = Vector2(625, 977)
+rotation = -0.034907
+scale = Vector2(0.611702, 0.611702)
+texture = SubResource("atlas_book_green")
+metadata/asset_id = "book_green"
+
+[node name="Bottles" type="Node2D" parent="Day9Objects" unique_id=2040834240]
+
+[node name="FlaskRoundBlue" type="Sprite2D" parent="Day9Objects/Bottles" unique_id=631962249]
+position = Vector2(747, 995)
+rotation = -0.034907
+scale = Vector2(0.0999, 0.0999)
+texture = SubResource("atlas_flask_round_blue")
+metadata/asset_id = "flask_round_blue"
+
+[node name="FlaskConicalRed" type="Sprite2D" parent="Day9Objects/Bottles" unique_id=1103568372]
+modulate = Color(0.98, 0.98, 0.98, 1)
+position = Vector2(861, 991)
+rotation = 0.034907
+scale = Vector2(0.100873, 0.100873)
+texture = SubResource("atlas_flask_conical_red")
+metadata/asset_id = "flask_conical_red"
+
+[node name="BottleTallGreen" type="Sprite2D" parent="Day9Objects/Bottles" unique_id=1070728844]
+modulate = Color(0.99, 0.99, 0.99, 1)
+position = Vector2(968, 1002)
+rotation = -0.017453
+scale = Vector2(0.097934, 0.097934)
+texture = SubResource("atlas_bottle_tall_green")
+metadata/asset_id = "bottle_tall_green"
+
+[node name="Specimens" type="Node2D" parent="Day9Objects" unique_id=125080333]
+
+[node name="SpecimenLeaf" type="Sprite2D" parent="Day9Objects/Specimens" unique_id=1338958950]
+modulate = Color(0.97, 0.97, 0.97, 1)
+position = Vector2(1082, 984)
+rotation = 0.034907
+scale = Vector2(0.095904, 0.095904)
+texture = SubResource("atlas_specimen_leaf")
+metadata/asset_id = "specimen_leaf"
+
+[node name="SpecimenFlower" type="Sprite2D" parent="Day9Objects/Specimens" unique_id=769510064]
+position = Vector2(1196, 1002)
+rotation = -0.05236
+scale = Vector2(0.097466, 0.097466)
+texture = SubResource("atlas_specimen_flower")
+metadata/asset_id = "specimen_flower"
+
+[node name="SpecimenGrass" type="Sprite2D" parent="Day9Objects/Specimens" unique_id=1941646596]
+modulate = Color(0.99, 0.99, 0.99, 1)
+position = Vector2(1309, 986)
+rotation = 0.017453
+scale = Vector2(0.096362, 0.096362)
+texture = SubResource("atlas_specimen_grass")
+metadata/asset_id = "specimen_grass"
+
+[node name="SupplyBox" type="Node2D" parent="Day9Objects" unique_id=1669574306]
+position = Vector2(1490, 1038)
+
+[node name="ContentsAnchor" type="Node2D" parent="Day9Objects/SupplyBox" unique_id=414248490]
+position = Vector2(0, -78)
+
+[node name="Closed" type="Sprite2D" parent="Day9Objects/SupplyBox" unique_id=749487189]
+position = Vector2(0, -110.975)
+scale = Vector2(0.23, 0.23)
+texture = SubResource("atlas_supply_box_closed")
+
+[node name="Open" type="Sprite2D" parent="Day9Objects/SupplyBox" unique_id=1589620987]
+visible = false
+position = Vector2(0, -110.975)
+scale = Vector2(0.23, 0.23)
+texture = SubResource("atlas_supply_box_open")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1563781297]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=56495834]
+position = Vector2(182, 296)
+shape = SubResource("RectangleShape2D_abi3o")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=1666535510]
+position = Vector2(182, 563.5)
+shape = SubResource("RectangleShape2D_abi3o")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D" unique_id=1788565595]
+position = Vector2(182, 471.75)
+shape = SubResource("RectangleShape2D_abi3o")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Area2D" unique_id=228589276]
+position = Vector2(182, 382)
+shape = SubResource("RectangleShape2D_abi3o")
+
+[node name="Area2D2" type="Area2D" parent="." unique_id=1334286877]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D2" unique_id=1261303700]
+position = Vector2(530, 756)
+polygon = PackedVector2Array(0, 0, 151, -1, 118, 74, -52, 75)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Area2D2" unique_id=251570451]
+position = Vector2(939, 756)
+polygon = PackedVector2Array(-43, -3, 136, 0, 145, 74, -52, 75)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Area2D2" unique_id=1129920227]
+position = Vector2(737, 756)
+polygon = PackedVector2Array(-24, -2, 130, -1, 118, 74, -52, 75)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Area2D2" unique_id=1645243864]
+position = Vector2(1164, 756)
+polygon = PackedVector2Array(-63, 1, 104, 2, 131, 73, -50, 75)
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Area2D2" unique_id=1473387744]
+position = Vector2(1383, 756)
+polygon = PackedVector2Array(-87, -2, 68, -2, 117, 73, -52, 75)
+
+[node name="Area2D3" type="Area2D" parent="." unique_id=641615225]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D3" unique_id=213545112]
+position = Vector2(703, 626)
+polygon = PackedVector2Array(-1, -2, 3, -4, 116, -4, 121, 1, 123, 75, 3, 74)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Area2D3" unique_id=557695489]
+position = Vector2(1075, 626)
+polygon = PackedVector2Array(-1, -2, 3, -4, 128, -4, 133, 4, 130, 75, -4, 74)
+
+[node name="Area2D4" type="Area2D" parent="." unique_id=1765000048]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D4" unique_id=1671579063]
+position = Vector2(1316, 417)
+polygon = PackedVector2Array(-1, 116, 0, -1, 8, -10, 59, -9, 67, -1, 69, 127, -1, 126)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Area2D4" unique_id=1134925717]
+position = Vector2(1479, 419)
+polygon = PackedVector2Array(-1, 116, 0, -1, 8, -10, 59, -10, 66, -4, 66, 126, -1, 126)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Area2D4" unique_id=265276756]
+position = Vector2(1398, 416)
+polygon = PackedVector2Array(-1, 116, 0, -1, 8, -10, 59, -9, 67, -3, 65, 128, -1, 126)
+
+[node name="Area2D5" type="Area2D" parent="." unique_id=767625493]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D5" unique_id=2053340982]
+position = Vector2(546, 493)
+shape = SubResource("RectangleShape2D_ifow5")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D5" unique_id=183542748]
+position = Vector2(702, 493)
+shape = SubResource("RectangleShape2D_ifow5")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Area2D5" unique_id=1084452267]
+position = Vector2(659, 493)
+shape = SubResource("RectangleShape2D_ifow5")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Area2D5" unique_id=1006998431]
+position = Vector2(624, 493)
+shape = SubResource("RectangleShape2D_ifow5")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D5" unique_id=247224800]
+position = Vector2(587, 493)
+shape = SubResource("RectangleShape2D_ifow5")
+
+[node name="Area2D6" type="Area2D" parent="." unique_id=333633072]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D6" unique_id=2009374165]
+position = Vector2(558, 288)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Area2D6" unique_id=130665625]
+position = Vector2(703, 288)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Area2D6" unique_id=854643998]
+position = Vector2(666, 288)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Area2D6" unique_id=1337996267]
+position = Vector2(631, 288)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Area2D6" unique_id=941326729]
+position = Vector2(596, 288)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D6" unique_id=1102513372]
+position = Vector2(558, 325)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Area2D6" unique_id=1779518000]
+position = Vector2(703, 325)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Area2D6" unique_id=1709164410]
+position = Vector2(666, 325)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="Area2D6" unique_id=57530196]
+position = Vector2(631, 325)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="Area2D6" unique_id=715073440]
+position = Vector2(596, 325)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D6" unique_id=1811405873]
+position = Vector2(558, 432)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="Area2D6" unique_id=1753814717]
+position = Vector2(703, 432)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="Area2D6" unique_id=1245035180]
+position = Vector2(666, 432)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="Area2D6" unique_id=1779164388]
+position = Vector2(631, 432)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="Area2D6" unique_id=332252001]
+position = Vector2(596, 432)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Area2D6" unique_id=1576065687]
+position = Vector2(558, 398)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="Area2D6" unique_id=1770279843]
+position = Vector2(703, 398)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="Area2D6" unique_id=562846040]
+position = Vector2(666, 398)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="Area2D6" unique_id=488721171]
+position = Vector2(631, 398)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="Area2D6" unique_id=546010850]
+position = Vector2(596, 398)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D21" type="CollisionShape2D" parent="Area2D6" unique_id=1234327071]
+position = Vector2(558, 363)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D22" type="CollisionShape2D" parent="Area2D6" unique_id=1626975054]
+position = Vector2(703, 363)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D23" type="CollisionShape2D" parent="Area2D6" unique_id=199807910]
+position = Vector2(666, 363)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D24" type="CollisionShape2D" parent="Area2D6" unique_id=511432795]
+position = Vector2(631, 363)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="CollisionShape2D25" type="CollisionShape2D" parent="Area2D6" unique_id=524872906]
+position = Vector2(596, 363)
+shape = SubResource("CircleShape2D_wvhbo")
+
+[node name="Day9Targets" type="Node2D" parent="." unique_id=141019821]
+
+[node name="Group1_Books" type="Node2D" parent="Day9Targets" unique_id=135937106]
+metadata/task_id = "sort_books"
+
+[node name="Target1" type="Sprite2D" parent="Day9Targets/Group1_Books" unique_id=353455042]
+modulate = Color(1, 1, 1, 0.28)
+position = Vector2(108, 384.99997)
+scale = Vector2(0.05550582, 0.05550582)
+texture = SubResource("atlas_book_blue")
+metadata/asset_id = "book_blue"
+
+[node name="Target2" type="Sprite2D" parent="Day9Targets/Group1_Books" unique_id=2139250962]
+modulate = Color(1, 1, 1, 0.28)
+position = Vector2(182.00002, 301.5272)
+scale = Vector2(0.33695653, 0.33695653)
+texture = SubResource("atlas_book_red")
+metadata/asset_id = "book_red"
+
+[node name="Target3" type="Sprite2D" parent="Day9Targets/Group1_Books" unique_id=264725319]
+modulate = Color(1, 1, 1, 0.28)
+position = Vector2(248, 300.64893)
+scale = Vector2(0.32978722, 0.32978722)
+texture = SubResource("atlas_book_green")
+metadata/asset_id = "book_green"
+
+[node name="Group2_Bottles" type="Node2D" parent="Day9Targets" unique_id=515516906]
+metadata/task_id = "sort_bottles"
+
+[node name="Target1" type="Sprite2D" parent="Day9Targets/Group2_Bottles" unique_id=959475378]
+modulate = Color(1, 1, 1, 0.28)
+position = Vector2(208.00002, 475)
+scale = Vector2(0.061938062, 0.061938062)
+texture = SubResource("atlas_flask_round_blue")
+metadata/asset_id = "flask_round_blue"
+
+[node name="Target2" type="Sprite2D" parent="Day9Targets/Group2_Bottles" unique_id=1247375344]
+modulate = Color(1, 1, 1, 0.28)
+position = Vector2(1429.4215, 515.99994)
+scale = Vector2(0.06013579, 0.06013579)
+texture = SubResource("atlas_flask_conical_red")
+metadata/asset_id = "flask_conical_red"
+
+[node name="Target3" type="Sprite2D" parent="Day9Targets/Group2_Bottles" unique_id=750298313]
+modulate = Color(1, 1, 1, 0.28)
+position = Vector2(750.99994, 662)
+scale = Vector2(0.0557053, 0.0557053)
+texture = SubResource("atlas_bottle_tall_green")
+metadata/asset_id = "bottle_tall_green"
+
+[node name="Group3_Specimens" type="Node2D" parent="Day9Targets" unique_id=1717246637]
+metadata/task_id = "sort_specimens"
+
+[node name="Target1" type="Sprite2D" parent="Day9Targets/Group3_Specimens" unique_id=2140659828]
+modulate = Color(1, 1, 1, 0.28)
+position = Vector2(1197.0001, 799)
+scale = Vector2(0.061938062, 0.061938062)
+texture = SubResource("atlas_specimen_leaf")
+metadata/asset_id = "specimen_leaf"
+
+[node name="Target2" type="Sprite2D" parent="Day9Targets/Group3_Specimens" unique_id=1203680920]
+modulate = Color(1, 1, 1, 0.28)
+position = Vector2(921, 800.00006)
+scale = Vector2(0.06042885, 0.06042885)
+texture = SubResource("atlas_specimen_flower")
+metadata/asset_id = "specimen_flower"
+
+[node name="Target3" type="Sprite2D" parent="Day9Targets/Group3_Specimens" unique_id=1698035816]
+modulate = Color(1, 1, 1, 0.28)
+position = Vector2(564, 801.00006)
+scale = Vector2(0.06096362, 0.06096362)
+texture = SubResource("atlas_specimen_grass")
+metadata/asset_id = "specimen_grass"
+
+[node name="Group4_Mixed" type="Node2D" parent="Day9Targets" unique_id=1162189212]
+metadata/task_id = "sort_mixed"
+
+[node name="Target1" type="Sprite2D" parent="Day9Targets/Group4_Mixed" unique_id=1115005184]
+modulate = Color(1, 1, 1, 0.28)
+position = Vector2(113, 303.00003)
+scale = Vector2(0.33695653, 0.33695653)
+texture = SubResource("atlas_book_red")
+metadata/asset_id = "book_red"
+
+[node name="Target2" type="Sprite2D" parent="Day9Targets/Group4_Mixed" unique_id=607662975]
+modulate = Color(1, 1, 1, 0.28)
+position = Vector2(260, 475)
+scale = Vector2(0.061938062, 0.061938062)
+texture = SubResource("atlas_flask_round_blue")
+metadata/asset_id = "flask_round_blue"
+
+[node name="Target3" type="Sprite2D" parent="Day9Targets/Group4_Mixed" unique_id=673147269]
+modulate = Color(1, 1, 1, 0.28)
+position = Vector2(748.00006, 801)
+scale = Vector2(0.061938062, 0.061938062)
+texture = SubResource("atlas_specimen_leaf")
+metadata/asset_id = "specimen_leaf"
+
+[node name="Group5_Colors" type="Node2D" parent="Day9Targets" unique_id=776850021]
+metadata/task_id = "sort_bottle_colors"
+
+[node name="Target1" type="Sprite2D" parent="Day9Targets/Group5_Colors" unique_id=1292115952]
+modulate = Color(1, 1, 1, 0.28)
+position = Vector2(109.000015, 566.00006)
+scale = Vector2(0.061938062, 0.061938062)
+texture = SubResource("atlas_flask_round_blue")
+metadata/asset_id = "flask_round_blue"
+
+[node name="Target2" type="Sprite2D" parent="Day9Targets/Group5_Colors" unique_id=1064811639]
+modulate = Color(1, 1, 1, 0.28)
+position = Vector2(1348, 517)
+scale = Vector2(0.06013579, 0.06013579)
+texture = SubResource("atlas_flask_conical_red")
+metadata/asset_id = "flask_conical_red"
+
+[node name="Target3" type="Sprite2D" parent="Day9Targets/Group5_Colors" unique_id=1640755463]
+modulate = Color(1, 1, 1, 0.28)
+position = Vector2(792.9999, 662)
+scale = Vector2(0.0557053, 0.0557053)
+texture = SubResource("atlas_bottle_tall_green")
+metadata/asset_id = "bottle_tall_green"
+
+[node name="Group6_Symbols" type="Node2D" parent="Day9Targets" unique_id=275799289]
+metadata/task_id = "sort_specimen_symbols"
+
+[node name="Target1" type="Sprite2D" parent="Day9Targets/Group6_Symbols" unique_id=1428171790]
+modulate = Color(1, 1, 1, 0.28)
+position = Vector2(1143, 800)
+scale = Vector2(0.061938062, 0.061938062)
+texture = SubResource("atlas_specimen_leaf")
+metadata/asset_id = "specimen_leaf"
+
+[node name="Target2" type="Sprite2D" parent="Day9Targets/Group6_Symbols" unique_id=1712416189]
+modulate = Color(1, 1, 1, 0.28)
+position = Vector2(981.00006, 800)
+scale = Vector2(0.06042885, 0.06042885)
+texture = SubResource("atlas_specimen_flower")
+metadata/asset_id = "specimen_flower"
+
+[node name="Target3" type="Sprite2D" parent="Day9Targets/Group6_Symbols" unique_id=997955933]
+modulate = Color(1, 1, 1, 0.28)
+position = Vector2(620.00006, 800.00006)
+scale = Vector2(0.06096362, 0.06096362)
+texture = SubResource("atlas_specimen_grass")
+metadata/asset_id = "specimen_grass"
+
+[node name="Group7_Matching" type="Node2D" parent="Day9Targets" unique_id=1448943844]
+metadata/task_id = "sort_matching_spaces"
+
+[node name="Target1" type="Sprite2D" parent="Day9Targets/Group7_Matching" unique_id=1158103603]
+modulate = Color(1, 1, 1, 0.28)
+position = Vector2(250, 386)
+scale = Vector2(0.05550582, 0.05550582)
+texture = SubResource("atlas_book_blue")
+metadata/asset_id = "book_blue"
+
+[node name="Target2" type="Sprite2D" parent="Day9Targets/Group7_Matching" unique_id=607209848]
+modulate = Color(1, 1, 1, 0.28)
+position = Vector2(106, 474.00003)
+scale = Vector2(0.061938062, 0.061938062)
+texture = SubResource("atlas_flask_round_blue")
+metadata/asset_id = "flask_round_blue"
+
+[node name="Target3" type="Sprite2D" parent="Day9Targets/Group7_Matching" unique_id=1529864505]
+modulate = Color(1, 1, 1, 0.28)
+position = Vector2(1039, 800.00006)
+scale = Vector2(0.06042885, 0.06042885)
+texture = SubResource("atlas_specimen_flower")
+metadata/asset_id = "specimen_flower"
+
+[node name="Group8_Independent" type="Node2D" parent="Day9Targets" unique_id=525022568]
+metadata/task_id = "sort_independent"
+
+[node name="Target1" type="Sprite2D" parent="Day9Targets/Group8_Independent" unique_id=1767932905]
+modulate = Color(1, 1, 1, 0.28)
+position = Vector2(179, 386)
+scale = Vector2(0.05550582, 0.05550582)
+texture = SubResource("atlas_book_blue")
+metadata/asset_id = "book_blue"
+
+[node name="Target2" type="Sprite2D" parent="Day9Targets/Group8_Independent" unique_id=771295121]
+modulate = Color(1, 1, 1, 0.28)
+position = Vector2(157, 475)
+scale = Vector2(0.061938062, 0.061938062)
+texture = SubResource("atlas_flask_round_blue")
+metadata/asset_id = "flask_round_blue"
+
+[node name="Target3" type="Sprite2D" parent="Day9Targets/Group8_Independent" unique_id=1803787436]
+modulate = Color(1, 1, 1, 0.28)
+position = Vector2(809, 800)
+scale = Vector2(0.061938062, 0.061938062)
+texture = SubResource("atlas_specimen_leaf")
+metadata/asset_id = "specimen_leaf"

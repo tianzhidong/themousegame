@@ -6,6 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://ujdt0wre3n6o" path="res://assets/images/ui/dot.png" id="4_kcspx"]
 [ext_resource type="Script" uid="uid://b4d1tthuoqkuv" path="res://scripts/ui/gameset.gd" id="5_gameset"]
 
+[ext_resource type="Script" path="res://scripts/ui/page_voice.gd" id="page_voice_script"]
+[ext_resource type="AudioStream" path="res://assets/audio/voice/pages/music_settings.wav" id="page_voice_audio"]
+
 [node name="Gameset" type="Node2D" unique_id=1468153428]
 script = ExtResource("5_gameset")
 
@@ -28,3 +31,7 @@ texture = ExtResource("4_kcspx")
 position = Vector2(0, 274.34692)
 scale = Vector2(0.29479158, 0.29479158)
 texture = ExtResource("3_kcspx")
+
+[node name="PageVoice" type="AudioStreamPlayer" parent="."]
+script = ExtResource("page_voice_script")
+stream = ExtResource("page_voice_audio")

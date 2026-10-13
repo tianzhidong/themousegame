@@ -1,0 +1,9 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/clue_scrolls_atlas.png" id="1_atlas"]
+
+[resource]
+atlas = ExtResource("1_atlas")
+region = Rect2(1428, 77, 312, 235)
+margin = Rect2(12, 185, 25, 185)
+filter_clip = true

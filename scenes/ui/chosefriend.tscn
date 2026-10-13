@@ -9,6 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://cnsipaigtxjch" path="res://assets/images/friends/rabbit/rabbit_engineer_idle.png" id="5_1lb2b"]
 [ext_resource type="Texture2D" uid="uid://dpo0f0demtyfl" path="res://assets/images/friends/cat/cat_inventor_idle.png" id="6_xog7p"]
 
+[ext_resource type="Script" path="res://scripts/ui/page_voice.gd" id="page_voice_script"]
+[ext_resource type="AudioStream" path="res://assets/audio/voice/pages/choose_friend.wav" id="page_voice_audio"]
+
 [node name="chosefriend" type="Node2D" unique_id=1859021163]
 
 [node name="ForestTownSquare" type="Sprite2D" parent="." unique_id=871545774]
@@ -22,7 +25,6 @@ position = Vector2(975.99994, 506)
 scale = Vector2(0.453125, 0.453125)
 texture = ExtResource("2_1wx0g")
 script = ExtResource("3_nc6w4")
-friend_id = "bear"
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterCardPanel" unique_id=488382748]
 position = Vector2(0.00024223328, -53.172455)
@@ -58,3 +60,7 @@ position = Vector2(104, 96)
 scale = Vector2(0.28125, 0.28125)
 texture = ExtResource("3_8vgg1")
 script = ExtResource("4_qx37f")
+
+[node name="PageVoice" type="AudioStreamPlayer" parent="."]
+script = ExtResource("page_voice_script")
+stream = ExtResource("page_voice_audio")

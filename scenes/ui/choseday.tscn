@@ -6,6 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://cgju7e6n3ec76" path="res://assets/images/ui/day_plate.png" id="4_t73bn"]
 [ext_resource type="Script" uid="uid://4kfabnkpdxj" path="res://scripts/ui/day_button.gd" id="5_daybtn"]
 
+[ext_resource type="Script" path="res://scripts/ui/page_voice.gd" id="page_voice_script"]
+[ext_resource type="AudioStream" path="res://assets/audio/voice/pages/choose_day.wav" id="page_voice_audio"]
+
 [node name="Choseday" type="Node2D" unique_id=1543613174]
 
 [node name="ForestTownSquare" type="Sprite2D" parent="." unique_id=1942618453]
@@ -173,3 +176,7 @@ flat = true
 icon_alignment = 1
 script = ExtResource("5_daybtn")
 day_index = 12
+
+[node name="PageVoice" type="AudioStreamPlayer" parent="."]
+script = ExtResource("page_voice_script")
+stream = ExtResource("page_voice_audio")

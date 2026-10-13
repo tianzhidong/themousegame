@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://nhe3j5nvi4sj"]
+
+[ext_resource type="Texture2D" uid="uid://di0re1h3p4yvd" path="res://assets/images/objects/day5/m2_bg.png" id="1_bg"]
+[ext_resource type="Texture2D" uid="uid://bhdmjmfceqxdr" path="res://assets/images/objects/day5/m2/m2_1.png" id="2_part"]
+[ext_resource type="Texture2D" uid="uid://curdo5ukrq6ch" path="res://assets/images/objects/day5/m2/m2_2.png" id="3_part"]
+[ext_resource type="Texture2D" uid="uid://c45da6jika1fa" path="res://assets/images/objects/day5/m2/m2_3.png" id="4_part"]
+[ext_resource type="Texture2D" uid="uid://cgtbo8qng5jw4" path="res://assets/images/objects/day5/m2/m2_4.png" id="5_part"]
+[ext_resource type="Texture2D" uid="uid://424h58tjike" path="res://assets/images/objects/day5/m2/m2_5.png" id="6_part"]
+
+[node name="Machine2Targets" type="Sprite2D" unique_id=310353768]
+texture = ExtResource("1_bg")
+centered = false
+metadata/_edit_lock_ = true
+metadata/yard_scale = 1.25673913
+metadata/yard_offset = Vector2(-1162.3837, -621.49805)
+
+[node name="PartTarget1" type="Sprite2D" parent="." unique_id=1737735164]
+position = Vector2(750, 680)
+scale = Vector2(0.68666637, 0.6933333)
+texture = ExtResource("2_part")
+
+[node name="PartTarget2" type="Sprite2D" parent="." unique_id=280097105]
+position = Vector2(1213, 508.99997)
+scale = Vector2(0.3574802, 0.39329216)
+texture = ExtResource("3_part")
+
+[node name="PartTarget3" type="Sprite2D" parent="." unique_id=1486298217]
+position = Vector2(1224.378, 686)
+scale = Vector2(0.2841459, 0.35384616)
+texture = ExtResource("4_part")
+
+[node name="PartTarget4" type="Sprite2D" parent="." unique_id=879495105]
+position = Vector2(1090, 479)
+scale = Vector2(0.6968294, 0.6998457)
+texture = ExtResource("5_part")
+
+[node name="PartTarget5" type="Sprite2D" parent="." unique_id=40450094]
+position = Vector2(1100, 655)
+scale = Vector2(0.8003252, 0.8037895)
+texture = ExtResource("6_part")

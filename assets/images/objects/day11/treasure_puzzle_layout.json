@@ -1,0 +1,65 @@
+{
+	"generation": "imagegen transparent map; deterministic complementary curved cuts",
+	"pieces": [
+		{
+			"name": "treasure_puzzle_piece_01",
+			"offset": [
+				36,
+				16
+			],
+			"size": [
+				512,
+				526
+			]
+		},
+		{
+			"name": "treasure_puzzle_piece_02",
+			"offset": [
+				488,
+				22
+			],
+			"size": [
+				500,
+				456
+			]
+		},
+		{
+			"name": "treasure_puzzle_piece_03",
+			"offset": [
+				34,
+				411
+			],
+			"size": [
+				960,
+				648
+			]
+		},
+		{
+			"name": "treasure_puzzle_piece_04",
+			"offset": [
+				28,
+				934
+			],
+			"size": [
+				520,
+				592
+			]
+		},
+		{
+			"name": "treasure_puzzle_piece_05",
+			"offset": [
+				477,
+				938
+			],
+			"size": [
+				532,
+				598
+			]
+		}
+	],
+	"size": [
+		1024,
+		1536
+	],
+	"source": "treasure_puzzle_map.png"
+}

@@ -7,3 +7,8 @@
 [Oo]bj/
 .vs/
 .idea/
+
+# Generated assets, export tools and packaged builds
+/output/
+__pycache__/
+*.py[cod]

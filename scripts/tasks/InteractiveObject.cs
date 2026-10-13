@@ -30,6 +30,7 @@ public partial class InteractiveObject : Area2D
     public bool CanReceiveMouseInput { get; set; }
 
     private TaskManager? _taskManager;
+    private AudioManager? _audioManager;
     private bool _dragReported;
 
     public override void _Ready()
@@ -40,6 +41,7 @@ public partial class InteractiveObject : Area2D
         }
 
         _taskManager = GetNodeOrNull<TaskManager>("/root/TaskManager");
+        _audioManager = GetNodeOrNull<AudioManager>("/root/AudioManager");
         if (_taskManager == null)
         {
             GD.PushError($"InteractiveObject '{GetPath()}': required TaskManager autoload was not found.");
@@ -129,6 +131,7 @@ public partial class InteractiveObject : Area2D
 
             if (accepted)
             {
+                _audioManager?.PlayUiClick();
                 viewport.SetInputAsHandled();
             }
             return;

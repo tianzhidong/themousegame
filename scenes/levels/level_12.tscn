@@ -5,11 +5,126 @@
 [ext_resource type="Script" uid="uid://hfkyaicge4ep" path="res://scripts/ui/back_button_2.gd" id="3_fakti"]
 [ext_resource type="Texture2D" uid="uid://dugdmlhiypicq" path="res://assets/images/ui/settings_button.png" id="5_yd7i6"]
 [ext_resource type="Script" uid="uid://biydogrrnkjp" path="res://scripts/ui/settings_button.gd" id="6_vcewm"]
+[ext_resource type="Texture2D" uid="uid://uvemjsx34w33" path="res://assets/images/backgrounds/day12_festival_scrolling.png" id="7_fakti"]
 [ext_resource type="PackedScene" uid="uid://3kwv7sjrajm0" path="res://scenes/ui/taskbar.tscn" id="8_taskbar"]
+[ext_resource type="Script" uid="uid://7dx3bktw63j5" path="res://scripts/days/Day12Festival.cs" id="9_festival"]
+[ext_resource type="Texture2D" uid="uid://bagutb6vrlxaf" path="res://assets/images/objects/day12/park_bases/balloon_stall.png" id="10_balloon"]
+[ext_resource type="Texture2D" uid="uid://bygd0x3d04udj" path="res://assets/images/objects/day12/park_bases/music_stage.png" id="11_music"]
+[ext_resource type="Texture2D" uid="uid://223yjqsi7bx3" path="res://assets/images/objects/day12/park_bases/surprise_egg_house.png" id="12_egg"]
+[ext_resource type="Texture2D" uid="uid://2pa5pp1ur0oj" path="res://assets/images/objects/day12/park_bases/mystery_gift_stall.png" id="13_gift"]
+[ext_resource type="Texture2D" uid="uid://dqig2ypkc1xhe" path="res://assets/images/objects/day12/park_bases/animal_food_plaza.png" id="14_food"]
+[ext_resource type="Texture2D" uid="uid://bb1pafsn44i76" path="res://assets/images/objects/day12/park_bases/festival_train.png" id="15_train"]
+[ext_resource type="Texture2D" uid="uid://dfjyrv7g6bgi2" path="res://assets/images/objects/day12/park_bases/observation_tree_tower.png" id="16_tower"]
+[ext_resource type="Texture2D" uid="uid://cxkhqrs740vdf" path="res://assets/images/objects/day12/park_bases/river_aquarium.png" id="17_aquarium"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day12/park_bases/festival_train_foreground.png" id="67_lswco"]
+[ext_resource type="Texture2D" uid="uid://b5wrtrnjl06q2" path="res://assets/images/objects/day6/balloon_blue.png" id="park_click_balloons_3_k6l70"]
+[ext_resource type="Texture2D" uid="uid://cqw8148mi172v" path="res://assets/images/objects/day6/balloon_green.png" id="park_click_balloons_7_5syoi"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day12/instrument_drum.tres" id="park_click_instruments_3_1ns5y"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day12/instrument_xylophone.tres" id="park_click_instruments_6_2snue"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day12/instrument_piano.tres" id="park_click_instruments_7_otxv3"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day12/instrument_trumpet.tres" id="park_click_instruments_8_c3pop"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day12/instrument_guitar.tres" id="park_click_instruments_9_04sqa"]
+[ext_resource type="Texture2D" uid="uid://dikoxumugly0k" path="res://assets/images/objects/day4/vegetable_carrot.png" id="park_deliver_food_3_4rukv"]
+[ext_resource type="Texture2D" uid="uid://dhtyvkkoanryh" path="res://assets/images/objects/day4/fruit_apple.png" id="park_deliver_food_6_qmh1a"]
+[ext_resource type="Texture2D" uid="uid://c8msx62cedlge" path="res://assets/images/objects/day4/fruit_pear.png" id="park_deliver_food_7_jqvo7"]
+[ext_resource type="Texture2D" uid="uid://bj65s6wetenkw" path="res://assets/images/objects/day4/vegetable_broccoli.png" id="park_deliver_food_8_35fag"]
+[ext_resource type="Texture2D" uid="uid://csp1pcu85fjh2" path="res://assets/images/objects/day4/fruit_orange.png" id="park_deliver_food_9_sd8jx"]
+[ext_resource type="Texture2D" uid="uid://b3mdqjde3ur66" path="res://assets/images/objects/day3/fish.png" id="park_find_aquatic_animals_3_2nqtc"]
+[ext_resource type="Texture2D" uid="uid://dd6v1gw52l3ck" path="res://assets/images/objects/day3/turtle.png" id="park_find_aquatic_animals_6_hjnx0"]
+[ext_resource type="Texture2D" uid="uid://bxxvfq7uf6hyg" path="res://assets/images/objects/day3/frog.png" id="park_find_aquatic_animals_7_4qvxv"]
+[ext_resource type="Texture2D" uid="uid://duy8w7b2bvtel" path="res://assets/images/objects/day3/snall.png" id="park_find_aquatic_animals_8_kq5xe"]
+[ext_resource type="Texture2D" uid="uid://dihyt6lndeyts" path="res://assets/images/objects/day12/river_crayfish.png" id="park_find_aquatic_animals_9_1b6c3"]
+[ext_resource type="Texture2D" uid="uid://wujtjqfnxpso" path="res://assets/images/objects/day7/doll_rabbit.png" id="park_find_tower_friends_3_3d7y2"]
+[ext_resource type="Texture2D" uid="uid://bo4dydrwq8dgi" path="res://assets/images/objects/day7/doll_bear.png" id="park_find_tower_friends_6_ndbkl"]
+[ext_resource type="Texture2D" uid="uid://rvukl484y83c" path="res://assets/images/objects/day7/doll_cat.png" id="park_find_tower_friends_7_rolia"]
+[ext_resource type="Texture2D" uid="uid://dhg16k3sh7ey1" path="res://assets/images/objects/day7/doll_fox.png" id="park_find_tower_friends_8_8v8pb"]
+[ext_resource type="Texture2D" uid="uid://djukifhjxdqxc" path="res://assets/images/objects/day7/doll_puppy.png" id="park_find_tower_friends_9_3utyq"]
+[ext_resource type="Texture2D" uid="uid://chtg2ou1b6w17" path="res://assets/images/objects/day4/clothing_sun_hat.png" id="park_load_luggage_3_adwdk"]
+[ext_resource type="Texture2D" uid="uid://cs7l5d3f0q4as" path="res://assets/images/objects/day4/clothing_jacket.png" id="park_load_luggage_6_mb7bu"]
+[ext_resource type="Texture2D" uid="uid://byup3nkwfvbsv" path="res://assets/images/objects/day4/toy_beach_ball.png" id="park_load_luggage_7_3hqg5"]
+[ext_resource type="Texture2D" uid="uid://0xwew2eealkh" path="res://assets/images/objects/day4/toy_car.png" id="park_load_luggage_8_gkx3j"]
+[ext_resource type="Texture2D" uid="uid://dg2lcct1jvqep" path="res://assets/images/objects/day7/book_green.png" id="park_load_luggage_9_ewlnf"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/egg_red_closed.tres" id="park_open_eggs_3_oejam"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/egg_red_opened.tres" id="park_open_eggs_6_gyx2l"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/egg_blue_closed.tres" id="park_open_eggs_7_ujm51"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/egg_blue_opened.tres" id="park_open_eggs_8_0mihp"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/egg_yellow_closed.tres" id="park_open_eggs_9_tva64"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/egg_yellow_opened.tres" id="park_open_eggs_10_dnta8"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/egg_green_closed.tres" id="park_open_eggs_11_36x6p"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/egg_green_opened.tres" id="park_open_eggs_12_lodji"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/egg_purple_closed.tres" id="park_open_eggs_13_o2xve"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/egg_purple_opened.tres" id="park_open_eggs_14_6uuxg"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/box_red_closed.tres" id="park_open_gifts_3_o2bpo"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/box_red_opened.tres" id="park_open_gifts_6_npqlo"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/box_teal_closed.tres" id="park_open_gifts_7_v5qe8"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/box_teal_opened.tres" id="park_open_gifts_8_pv4v5"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/box_yellow_closed.tres" id="park_open_gifts_9_rwweo"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/box_yellow_opened.tres" id="park_open_gifts_10_p0fbm"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/box_purple_closed.tres" id="park_open_gifts_11_gwfol"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/box_purple_opened.tres" id="park_open_gifts_12_gfrh8"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/box_green_closed.tres" id="park_open_gifts_13_ow2ge"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/box_green_opened.tres" id="park_open_gifts_14_idam3"]
+[ext_resource type="Texture2D" uid="uid://36la8lveuig3" path="res://assets/images/objects/day8/toy_room_opened_atlas.png" id="park_open_gifts_gift_box_atlas"]
+[ext_resource type="Texture2D" uid="uid://bchdt5oqke80o" path="res://assets/images/objects/day4/toy_airplane.png" id="park_open_gifts_gift_plane"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day12/activity_art/dinner_plate.tres" id="park_plate"]
+
+[sub_resource type="RectangleShape2D" id="park_deliver_food_drop_1"]
+size = Vector2(141.075, 90.13125)
+
+[sub_resource type="RectangleShape2D" id="park_deliver_food_drop_2"]
+size = Vector2(141.075, 90.13125)
+
+[sub_resource type="RectangleShape2D" id="park_deliver_food_drop_3"]
+size = Vector2(141.075, 90.13125)
+
+[sub_resource type="RectangleShape2D" id="park_deliver_food_drop_4"]
+size = Vector2(141.075, 90.13125)
+
+[sub_resource type="RectangleShape2D" id="park_deliver_food_drop_5"]
+size = Vector2(141.075, 90.13125)
+
+[sub_resource type="RectangleShape2D" id="park_load_luggage_drop_1"]
+size = Vector2(141.075, 107.7656)
+
+[sub_resource type="RectangleShape2D" id="park_load_luggage_drop_2"]
+size = Vector2(141.075, 107.7656)
+
+[sub_resource type="RectangleShape2D" id="park_load_luggage_drop_3"]
+size = Vector2(141.075, 107.7656)
+
+[sub_resource type="RectangleShape2D" id="park_load_luggage_drop_4"]
+size = Vector2(141.075, 107.7656)
+
+[sub_resource type="RectangleShape2D" id="park_load_luggage_drop_5"]
+size = Vector2(141.075, 107.7656)
+
+[sub_resource type="AtlasTexture" id="park_tree_closed_window_1"]
+atlas = ExtResource("16_tower")
+region = Rect2(592, 988, 147, 114)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="park_tree_closed_window_2"]
+atlas = ExtResource("16_tower")
+region = Rect2(592, 809, 147, 107)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="park_tree_closed_window_3"]
+atlas = ExtResource("16_tower")
+region = Rect2(591, 629, 154, 107)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="park_tree_closed_window_4"]
+atlas = ExtResource("16_tower")
+region = Rect2(592, 456, 145, 106)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="park_tree_closed_window_5"]
+atlas = ExtResource("16_tower")
+region = Rect2(594, 278, 137, 106)
+filter_clip = true
 
 [node name="Level12" type="Node2D" unique_id=1818946770]
-
-[node name="friend" parent="." unique_id=1330163914 instance=ExtResource("1_friend")]
+script = ExtResource("9_festival")
 
 [node name="BackButton" type="Sprite2D" parent="." unique_id=1966539377]
 position = Vector2(64.00001, 64)
@@ -23,4 +138,1011 @@ scale = Vector2(0.21875, 0.21875)
 texture = ExtResource("5_yd7i6")
 script = ExtResource("6_vcewm")
 
-[node name="Taskbar" parent="." instance=ExtResource("8_taskbar")]
+[node name="Taskbar" parent="." unique_id=1115974235 instance=ExtResource("8_taskbar")]
+
+[node name="Day12Bg" type="Sprite2D" parent="." unique_id=532684126]
+z_index = -3
+position = Vector2(960, 2878.674)
+scale = Vector2(2.651934, 2.651934)
+texture = ExtResource("7_fakti")
+metadata/_edit_lock_ = true
+
+[node name="friend" parent="Day12Bg" unique_id=1330163914 instance=ExtResource("1_friend")]
+z_as_relative = false
+position = Vector2(15.083369, -817.01654)
+scale = Vector2(0.09112851, 0.09112851)
+
+[node name="Attractions" type="Node2D" parent="Day12Bg" unique_id=676795188]
+z_index = 1
+
+[node name="BalloonStall" type="Sprite2D" parent="Day12Bg/Attractions" unique_id=694257847]
+position = Vector2(-150.87216, -900.0138)
+scale = Vector2(0.17326768, 0.17567326)
+texture = ExtResource("10_balloon")
+metadata/task_id = "click_balloons"
+
+[node name="Targets" type="Node2D" parent="Day12Bg/Attractions/BalloonStall" unique_id=782226447]
+z_index = 2
+
+[node name="Target1" type="Node2D" parent="Day12Bg/Attractions/BalloonStall/Targets" unique_id=1016202115]
+position = Vector2(-284.1094, 58.78125)
+metadata/object_id = "day12_click_balloons_1"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/BalloonStall/Targets/Target1" unique_id=2055773356]
+position = Vector2(57.997913, 87.40216)
+rotation = 0.025430916
+scale = Vector2(0.8538561, 0.8538561)
+texture = ExtResource("park_click_balloons_3_k6l70")
+
+[node name="Target2" type="Node2D" parent="Day12Bg/Attractions/BalloonStall/Targets" unique_id=2036558963]
+position = Vector2(-151.8516, 53.88281)
+metadata/object_id = "day12_click_balloons_2"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/BalloonStall/Targets/Target2" unique_id=1583249538]
+position = Vector2(65.02362, 92.300575)
+rotation = 0.043605585
+scale = Vector2(0.9796875, 0.9796875)
+texture = ExtResource("park_click_balloons_7_5syoi")
+
+[node name="Target3" type="Node2D" parent="Day12Bg/Attractions/BalloonStall/Targets" unique_id=1150999508]
+position = Vector2(-14.69531, 60.74063)
+metadata/object_id = "day12_click_balloons_3"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/BalloonStall/Targets/Target3" unique_id=1751607028]
+position = Vector2(49.740467, 68.27071)
+rotation = -0.040707715
+scale = Vector2(0.8538561, 0.8538561)
+texture = ExtResource("park_click_balloons_3_k6l70")
+
+[node name="Target4" type="Node2D" parent="Day12Bg/Attractions/BalloonStall/Targets" unique_id=1960092135]
+position = Vector2(122.4609, 53.88281)
+metadata/object_id = "day12_click_balloons_4"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/BalloonStall/Targets/Target4" unique_id=356139494]
+position = Vector2(34.457317, 75.12855)
+rotation = -0.033753637
+scale = Vector2(0.9796875, 0.9796875)
+texture = ExtResource("park_click_balloons_7_5syoi")
+
+[node name="Target5" type="Node2D" parent="Day12Bg/Attractions/BalloonStall/Targets" unique_id=1194890249]
+position = Vector2(254.7188, 58.78125)
+metadata/object_id = "day12_click_balloons_5"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/BalloonStall/Targets/Target5" unique_id=1997218006]
+position = Vector2(24.07245, 70.23013)
+rotation = -0.049144823
+scale = Vector2(0.8538561, 0.8538561)
+texture = ExtResource("park_click_balloons_3_k6l70")
+
+[node name="MusicStage" type="Sprite2D" parent="Day12Bg/Attractions" unique_id=1581192704]
+position = Vector2(182.24205, -851.6509)
+scale = Vector2(0.14716838, 0.14683531)
+texture = ExtResource("11_music")
+metadata/task_id = "click_instruments"
+
+[node name="Targets" type="Node2D" parent="Day12Bg/Attractions/MusicStage" unique_id=352567416]
+z_index = 2
+
+[node name="Target1" type="Node2D" parent="Day12Bg/Attractions/MusicStage/Targets" unique_id=804763804]
+position = Vector2(-323.2969, 210.6328)
+metadata/object_id = "day12_click_instruments_1"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/MusicStage/Targets/Target1" unique_id=776915929]
+position = Vector2(8.5817, -127.35918)
+rotation = 0.047491595
+scale = Vector2(0.38074028, 0.3804885)
+texture = ExtResource("park_click_instruments_3_1ns5y")
+
+[node name="Target2" type="Node2D" parent="Day12Bg/Attractions/MusicStage/Targets" unique_id=1818554160]
+position = Vector2(-156.75, 210.6328)
+metadata/object_id = "day12_click_instruments_2"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/MusicStage/Targets/Target2" unique_id=1714479884]
+position = Vector2(15.937494, -92.64487)
+rotation = 0.0013382218
+scale = Vector2(0.34917337, 0.36197725)
+texture = ExtResource("park_click_instruments_6_2snue")
+
+[node name="Target3" type="Node2D" parent="Day12Bg/Attractions/MusicStage/Targets" unique_id=1607388318]
+position = Vector2(24.49219, 210.6328)
+metadata/object_id = "day12_click_instruments_3"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/MusicStage/Targets/Target3" unique_id=786838791]
+position = Vector2(25.174988, -101.09992)
+rotation = 0.014311345
+scale = Vector2(0.38391966, 0.3962032)
+texture = ExtResource("park_click_instruments_7_otxv3")
+
+[node name="Target4" type="Node2D" parent="Day12Bg/Attractions/MusicStage/Targets" unique_id=1322062847]
+position = Vector2(191.0391, 210.6328)
+metadata/object_id = "day12_click_instruments_4"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/MusicStage/Targets/Target4" unique_id=1123520355]
+position = Vector2(0.398498, -69.15892)
+rotation = 0.011880095
+scale = Vector2(0.28848165, 0.29483554)
+texture = ExtResource("park_click_instruments_8_c3pop")
+
+[node name="Target5" type="Node2D" parent="Day12Bg/Attractions/MusicStage/Targets" unique_id=1292185811]
+position = Vector2(347.7891, 210.6328)
+metadata/object_id = "day12_click_instruments_5"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/MusicStage/Targets/Target5" unique_id=905232536]
+position = Vector2(17.53142, -89.87461)
+rotation = 0.03228773
+scale = Vector2(0.3527449, 0.37342045)
+texture = ExtResource("park_click_instruments_9_04sqa")
+
+[node name="SurpriseEggHouse" type="Sprite2D" parent="Day12Bg/Attractions" unique_id=371663126]
+position = Vector2(-174.96666, -427.86667)
+scale = Vector2(0.17129585, 0.17129585)
+texture = ExtResource("12_egg")
+metadata/task_id = "open_eggs"
+
+[node name="Targets" type="Node2D" parent="Day12Bg/Attractions/SurpriseEggHouse" unique_id=442226249]
+z_index = 2
+
+[node name="Target1" type="Node2D" parent="Day12Bg/Attractions/SurpriseEggHouse/Targets" unique_id=762925844]
+position = Vector2(-278.2312, 152.8313)
+metadata/object_id = "day12_open_eggs_1"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/SurpriseEggHouse/Targets/Target1" unique_id=1999597988]
+position = Vector2(14.068453, -47.166016)
+rotation = -0.045227777
+scale = Vector2(0.6997768, 0.6997768)
+texture = ExtResource("park_open_eggs_3_oejam")
+
+[node name="RevealedSprite" type="Sprite2D" parent="Day12Bg/Attractions/SurpriseEggHouse/Targets/Target1" unique_id=851659728]
+visible = false
+position = Vector2(13.89570665, -50.98288597)
+rotation = -0.045227777
+scale = Vector2(0.4078578, 0.4078578)
+texture = ExtResource("park_open_eggs_6_gyx2l")
+
+[node name="Target2" type="Node2D" parent="Day12Bg/Attractions/SurpriseEggHouse/Targets" unique_id=389629390]
+position = Vector2(-133.2375, 141.075)
+metadata/object_id = "day12_open_eggs_2"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/SurpriseEggHouse/Targets/Target2" unique_id=611296555]
+position = Vector2(14.36431, -42.013847)
+rotation = 0.034370873
+scale = Vector2(0.703643, 0.703643)
+texture = ExtResource("park_open_eggs_7_ujm51")
+
+[node name="RevealedSprite" type="Sprite2D" parent="Day12Bg/Attractions/SurpriseEggHouse/Targets/Target2" unique_id=998644926]
+visible = false
+position = Vector2(14.49560746, -45.83236367)
+rotation = 0.034370873
+scale = Vector2(0.4041944, 0.4041944)
+texture = ExtResource("park_open_eggs_8_0mihp")
+
+[node name="Target3" type="Node2D" parent="Day12Bg/Attractions/SurpriseEggHouse/Targets" unique_id=1351307277]
+position = Vector2(5.878125, 130.2984)
+metadata/object_id = "day12_open_eggs_3"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/SurpriseEggHouse/Targets/Target3" unique_id=564744010]
+position = Vector2(16.135511, -42.24414)
+rotation = -0.038271226
+scale = Vector2(0.703643, 0.703643)
+texture = ExtResource("park_open_eggs_9_tva64")
+
+[node name="RevealedSprite" type="Sprite2D" parent="Day12Bg/Attractions/SurpriseEggHouse/Targets/Target3" unique_id=1529608630]
+visible = false
+position = Vector2(15.989321, -46.06211602)
+rotation = -0.038271226
+scale = Vector2(0.4054082, 0.4054082)
+texture = ExtResource("park_open_eggs_10_dnta8")
+
+[node name="Target4" type="Node2D" parent="Day12Bg/Attractions/SurpriseEggHouse/Targets" unique_id=196585261]
+position = Vector2(146.9531, 116.5828)
+metadata/object_id = "day12_open_eggs_4"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/SurpriseEggHouse/Targets/Target4" unique_id=1496494595]
+position = Vector2(15.947344, -43.93788)
+rotation = 0.034215078
+scale = Vector2(0.6997768, 0.6997768)
+texture = ExtResource("park_open_eggs_11_36x6p")
+
+[node name="RevealedSprite" type="Sprite2D" parent="Day12Bg/Attractions/SurpriseEggHouse/Targets/Target4" unique_id=2133068800]
+visible = false
+position = Vector2(16.07804706, -47.75643197)
+rotation = 0.034215078
+scale = Vector2(0.4090938, 0.4090938)
+texture = ExtResource("park_open_eggs_12_lodji")
+
+[node name="Target5" type="Node2D" parent="Day12Bg/Attractions/SurpriseEggHouse/Targets" unique_id=446946618]
+position = Vector2(286.0688, 108.7453)
+metadata/object_id = "day12_open_eggs_5"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/SurpriseEggHouse/Targets/Target5" unique_id=1640725276]
+position = Vector2(22.121328, -44.905815)
+rotation = 0.03452929
+scale = Vector2(0.6997768, 0.6997768)
+texture = ExtResource("park_open_eggs_13_o2xve")
+
+[node name="RevealedSprite" type="Sprite2D" parent="Day12Bg/Attractions/SurpriseEggHouse/Targets/Target5" unique_id=840316970]
+visible = false
+position = Vector2(22.25323058, -48.72431672)
+rotation = 0.03452929
+scale = Vector2(0.4017885, 0.4017885)
+texture = ExtResource("park_open_eggs_14_6uuxg")
+
+[node name="MysteryGiftStall" type="Sprite2D" parent="Day12Bg/Attractions" unique_id=265884416]
+position = Vector2(180.24585, -405.99573)
+scale = Vector2(0.16478601, 0.16478601)
+texture = ExtResource("13_gift")
+metadata/task_id = "open_gifts"
+
+[node name="Targets" type="Node2D" parent="Day12Bg/Attractions/MysteryGiftStall" unique_id=1701507750]
+z_index = 2
+
+[node name="Target1" type="Node2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets" unique_id=1797569314]
+position = Vector2(-313.5, 219.45)
+metadata/object_id = "day12_open_gifts_1"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets/Target1" unique_id=1983561967]
+position = Vector2(18.30629, -20.366642)
+rotation = 0.009063407
+scale = Vector2(0.7119822, 0.7119822)
+texture = ExtResource("park_open_gifts_3_o2bpo")
+
+[node name="RevealedSprite" type="Sprite2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets/Target1" unique_id=187756697]
+visible = false
+position = Vector2(18.42106493, -33.02984727)
+rotation = 0.009063407
+scale = Vector2(0.5341917, 0.5341917)
+texture = ExtResource("park_open_gifts_6_npqlo")
+
+[node name="GiftItem" type="Sprite2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets/Target1/RevealedSprite" unique_id=379153198]
+position = Vector2(4, -6)
+scale = Vector2(0.58, 0.58)
+texture = ExtResource("park_find_tower_friends_6_ndbkl")
+
+[node name="BoxFront" type="Polygon2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets/Target1/RevealedSprite" unique_id=2089103039]
+texture = ExtResource("park_open_gifts_gift_box_atlas")
+polygon = PackedVector2Array(-93.5, -6, -6.5, 32, 120.5, -6, 120.5, 82, 2.5, 124, -94.5, 86)
+uv = PackedVector2Array(56, 159, 143, 197, 270, 159, 270, 247, 152, 289, 55, 251)
+
+[node name="Target2" type="Node2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets" unique_id=1930732420]
+position = Vector2(-161.6484, 225.3281)
+metadata/object_id = "day12_open_gifts_2"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets/Target2" unique_id=368130324]
+position = Vector2(15.195602, -17.09146)
+rotation = -0.04729279
+scale = Vector2(0.6765798, 0.6765798)
+texture = ExtResource("park_open_gifts_7_v5qe8")
+
+[node name="RevealedSprite" type="Sprite2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets/Target2" unique_id=1916171126]
+visible = false
+position = Vector2(14.64953238, -28.62942271)
+rotation = -0.04729279
+scale = Vector2(0.4916992, 0.4916992)
+texture = ExtResource("park_open_gifts_8_pv4v5")
+
+[node name="GiftItem" type="Sprite2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets/Target2/RevealedSprite" unique_id=1259797421]
+position = Vector2(0, 8)
+scale = Vector2(0.64, 0.64)
+texture = ExtResource("park_load_luggage_8_gkx3j")
+
+[node name="BoxFront" type="Polygon2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets/Target2/RevealedSprite" unique_id=167076405]
+texture = ExtResource("park_open_gifts_gift_box_atlas")
+polygon = PackedVector2Array(-107, -3.5, -11, 30.5, 129, -12.5, 126, 81.5, -13, 115.5, -109, 81.5)
+uv = PackedVector2Array(326, 167, 422, 201, 562, 158, 559, 252, 420, 286, 324, 252)
+
+[node name="Target3" type="Node2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets" unique_id=84414033]
+position = Vector2(-9.796875, 231.2063)
+metadata/object_id = "day12_open_gifts_3"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets/Target3" unique_id=390273187]
+position = Vector2(-1.64501, -9.239605)
+rotation = -0.049470425
+scale = Vector2(0.8164062, 0.8164062)
+texture = ExtResource("park_open_gifts_9_rwweo")
+
+[node name="RevealedSprite" type="Sprite2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets/Target3" unique_id=379261458]
+visible = false
+position = Vector2(-2.201060306, -20.47048932)
+rotation = -0.049470425
+scale = Vector2(0.5769271, 0.5769271)
+texture = ExtResource("park_open_gifts_10_p0fbm")
+
+[node name="GiftItem" type="Sprite2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets/Target3/RevealedSprite" unique_id=922841851]
+position = Vector2(3, 4)
+scale = Vector2(0.59, 0.59)
+texture = ExtResource("park_load_luggage_7_3hqg5")
+
+[node name="BoxFront" type="Polygon2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets/Target3/RevealedSprite" unique_id=1820219081]
+texture = ExtResource("park_open_gifts_gift_box_atlas")
+polygon = PackedVector2Array(-84.5, -5.5, -75.5, 8.5, -54.5, 18.5, -24.5, 26.5, 9.5, 29.5, 44.5, 25.5, 76.5, 14.5, 104.5, -6.5, 104.5, 80.5, 94.5, 102.5, 71.5, 113.5, 35.5, 121.5, -14.5, 121.5, -50.5, 112.5, -75.5, 97.5, -84.5, 78.5)
+uv = PackedVector2Array(617, 160, 626, 174, 647, 184, 677, 192, 711, 195, 746, 191, 778, 180, 806, 159, 806, 246, 796, 268, 773, 279, 737, 287, 687, 287, 651, 278, 626, 263, 617, 244)
+
+[node name="Target4" type="Node2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets" unique_id=514777785]
+position = Vector2(142.0547, 237.0844)
+metadata/object_id = "day12_open_gifts_4"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets/Target4" unique_id=688673837]
+position = Vector2(-4.755696, -15.117708)
+rotation = 0.05104376
+scale = Vector2(0.7037985, 0.7037985)
+texture = ExtResource("park_open_gifts_11_gwfol")
+
+[node name="RevealedSprite" type="Sprite2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets/Target4" unique_id=1992968278]
+visible = false
+position = Vector2(-4.360143183, -22.86026506)
+rotation = 0.05104376
+scale = Vector2(0.5011915, 0.5011915)
+texture = ExtResource("park_open_gifts_12_gfrh8")
+
+[node name="GiftItem" type="Sprite2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets/Target4/RevealedSprite" unique_id=95824058]
+position = Vector2(3, 4)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("park_open_gifts_gift_plane")
+
+[node name="BoxFront" type="Polygon2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets/Target4/RevealedSprite" unique_id=1278825745]
+texture = ExtResource("park_open_gifts_gift_box_atlas")
+polygon = PackedVector2Array(-104.5, -11, -17.5, 30, 126.5, -12, 125.5, 80, -11.5, 122, -104.5, 83)
+uv = PackedVector2Array(872, 156, 959, 197, 1103, 155, 1102, 247, 965, 289, 872, 250)
+
+[node name="Target5" type="Node2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets" unique_id=172017050]
+position = Vector2(293.9062, 242.9625)
+metadata/object_id = "day12_open_gifts_5"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets/Target5" unique_id=127598065]
+position = Vector2(-10.154703, -9.5543995)
+rotation = 0.016268544
+scale = Vector2(0.6765798, 0.6765798)
+texture = ExtResource("park_open_gifts_13_ow2ge")
+
+[node name="RevealedSprite" type="Sprite2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets/Target5" unique_id=408791110]
+visible = false
+position = Vector2(-9.95659971, -21.73040079)
+rotation = 0.016268544
+scale = Vector2(0.5110575, 0.5110575)
+texture = ExtResource("park_open_gifts_14_idam3")
+
+[node name="GiftItem" type="Sprite2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets/Target5/RevealedSprite" unique_id=350750922]
+position = Vector2(2, -15)
+scale = Vector2(0.55, 0.55)
+texture = ExtResource("park_find_tower_friends_3_3d7y2")
+
+[node name="BoxFront" type="Polygon2D" parent="Day12Bg/Attractions/MysteryGiftStall/Targets/Target5/RevealedSprite" unique_id=1821530140]
+texture = ExtResource("park_open_gifts_gift_box_atlas")
+polygon = PackedVector2Array(-105, -10.5, -6, 29.5, 123, -18.5, 122, 78.5, 1, 114.5, -109, 76.5)
+uv = PackedVector2Array(1151, 161, 1250, 201, 1379, 153, 1378, 250, 1257, 286, 1147, 248)
+
+[node name="AnimalFoodPlaza" type="Sprite2D" parent="Day12Bg/Attractions" unique_id=2000263724]
+position = Vector2(-161.76874, 8.418753)
+scale = Vector2(0.1762128, 0.1762128)
+texture = ExtResource("14_food")
+metadata/task_id = "deliver_food"
+
+[node name="Targets" type="Node2D" parent="Day12Bg/Attractions/AnimalFoodPlaza" unique_id=1650944895]
+z_index = 2
+
+[node name="Target1" type="Node2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/Targets" unique_id=636787675]
+position = Vector2(-293.9062, 308.6016)
+metadata/object_id = "day12_deliver_food_1"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/Targets/Target1" unique_id=1219452847]
+position = Vector2(-35.64326, -178.06569)
+rotation = 0.03896621
+scale = Vector2(0.4843399, 0.4843399)
+texture = ExtResource("park_deliver_food_3_4rukv")
+
+[node name="Target2" type="Node2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/Targets" unique_id=2060540604]
+position = Vector2(-156.75, 331.1344)
+metadata/object_id = "day12_deliver_food_2"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/Targets/Target2" unique_id=1243382476]
+position = Vector2(-85.062294, -138.5407)
+rotation = 0.024160039
+scale = Vector2(0.525686, 0.525686)
+texture = ExtResource("park_deliver_food_6_qmh1a")
+
+[node name="Target3" type="Node2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/Targets" unique_id=1203590606]
+position = Vector2(-19.59375, 352.6875)
+metadata/object_id = "day12_deliver_food_3"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/Targets/Target3" unique_id=1345766703]
+position = Vector2(26.013603, -127.99467)
+rotation = -0.03405966
+scale = Vector2(0.5442708, 0.5442708)
+texture = ExtResource("park_deliver_food_7_jqvo7")
+
+[node name="Target4" type="Node2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/Targets" unique_id=1238372092]
+position = Vector2(122.4609, 330.1547)
+metadata/object_id = "day12_deliver_food_4"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/Targets/Target4" unique_id=36757071]
+position = Vector2(106.511696, -129.00084)
+rotation = 0.028573254
+scale = Vector2(0.4983382, 0.4983382)
+texture = ExtResource("park_deliver_food_8_35fag")
+
+[node name="Target5" type="Node2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/Targets" unique_id=525611004]
+position = Vector2(254.7188, 311.5406)
+metadata/object_id = "day12_deliver_food_5"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/Targets/Target5" unique_id=2111862623]
+position = Vector2(85.53024, -202.40428)
+rotation = 0.018617434
+scale = Vector2(0.5193524, 0.5193524)
+texture = ExtResource("park_deliver_food_9_sd8jx")
+
+[node name="DropTargets" type="Node2D" parent="Day12Bg/Attractions/AnimalFoodPlaza" unique_id=863907291]
+z_index = 1
+
+[node name="DropTarget1" type="Area2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets" unique_id=1025245430]
+position = Vector2(-166.5469, 95.02969)
+collision_layer = 0
+collision_mask = 0
+input_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="DropArea" type="CollisionShape2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets/DropTarget1" unique_id=45626456]
+shape = SubResource("park_deliver_food_drop_1")
+
+[node name="LandingPoint" type="Marker2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets/DropTarget1" unique_id=39704341]
+
+[node name="Plate" type="Sprite2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets/DropTarget1" unique_id=1384266570]
+rotation = -0.024
+scale = Vector2(0.3337135, 0.1461412)
+texture = ExtResource("park_plate")
+
+[node name="GuideIcon" type="Sprite2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets/DropTarget1" unique_id=434623565]
+modulate = Color(1, 1, 1, 0.55)
+position = Vector2(0.26125, 0)
+scale = Vector2(0.26125, 0.26125)
+texture = ExtResource("park_deliver_food_3_4rukv")
+
+[node name="DropTarget2" type="Area2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets" unique_id=864912589]
+position = Vector2(-29.39062, 58.78125)
+collision_layer = 0
+collision_mask = 0
+input_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="DropArea" type="CollisionShape2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets/DropTarget2" unique_id=1202726586]
+shape = SubResource("park_deliver_food_drop_2")
+
+[node name="LandingPoint" type="Marker2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets/DropTarget2" unique_id=1222770525]
+
+[node name="Plate" type="Sprite2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets/DropTarget2" unique_id=872202719]
+rotation = -0.012
+scale = Vector2(0.3337135, 0.1461412)
+texture = ExtResource("park_plate")
+
+[node name="GuideIcon" type="Sprite2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets/DropTarget2" unique_id=2038138797]
+modulate = Color(1, 1, 1, 0.55)
+position = Vector2(0.2641854, 0)
+scale = Vector2(0.2641854, 0.2641854)
+texture = ExtResource("park_deliver_food_6_qmh1a")
+
+[node name="DropTarget3" type="Area2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets" unique_id=6593666]
+position = Vector2(146.9531, 89.15156)
+collision_layer = 0
+collision_mask = 0
+input_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="DropArea" type="CollisionShape2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets/DropTarget3" unique_id=2071064496]
+shape = SubResource("park_deliver_food_drop_3")
+
+[node name="LandingPoint" type="Marker2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets/DropTarget3" unique_id=326265627]
+
+[node name="Plate" type="Sprite2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets/DropTarget3" unique_id=1287526746]
+scale = Vector2(0.3337135, 0.1461412)
+texture = ExtResource("park_plate")
+
+[node name="GuideIcon" type="Sprite2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets/DropTarget3" unique_id=39818163]
+modulate = Color(1, 1, 1, 0.55)
+position = Vector2(-0.130625, 0)
+scale = Vector2(0.26125, 0.26125)
+texture = ExtResource("park_deliver_food_7_jqvo7")
+
+[node name="DropTarget4" type="Area2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets" unique_id=1629203199]
+position = Vector2(-78.375, 146.9531)
+collision_layer = 0
+collision_mask = 0
+input_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="DropArea" type="CollisionShape2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets/DropTarget4" unique_id=1655387319]
+shape = SubResource("park_deliver_food_drop_4")
+
+[node name="LandingPoint" type="Marker2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets/DropTarget4" unique_id=847317871]
+
+[node name="Plate" type="Sprite2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets/DropTarget4" unique_id=1141367521]
+rotation = 0.012
+scale = Vector2(0.3337135, 0.1461412)
+texture = ExtResource("park_plate")
+
+[node name="GuideIcon" type="Sprite2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets/DropTarget4" unique_id=1004506459]
+modulate = Color(1, 1, 1, 0.55)
+position = Vector2(0.1313547, -0.1313547)
+scale = Vector2(0.2627095, 0.2627095)
+texture = ExtResource("park_deliver_food_8_35fag")
+
+[node name="DropTarget5" type="Area2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets" unique_id=852424873]
+position = Vector2(83.27344, 159.6891)
+collision_layer = 0
+collision_mask = 0
+input_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="DropArea" type="CollisionShape2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets/DropTarget5" unique_id=2002511416]
+shape = SubResource("park_deliver_food_drop_5")
+
+[node name="LandingPoint" type="Marker2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets/DropTarget5" unique_id=267657560]
+
+[node name="Plate" type="Sprite2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets/DropTarget5" unique_id=998820633]
+rotation = 0.024
+scale = Vector2(0.3337135, 0.1461412)
+texture = ExtResource("park_plate")
+
+[node name="GuideIcon" type="Sprite2D" parent="Day12Bg/Attractions/AnimalFoodPlaza/DropTargets/DropTarget5" unique_id=551449714]
+modulate = Color(1, 1, 1, 0.55)
+position = Vector2(0, -0.1313547)
+scale = Vector2(0.2627095, 0.2627095)
+texture = ExtResource("park_deliver_food_9_sd8jx")
+
+[node name="FestivalTrain" type="Sprite2D" parent="Day12Bg/Attractions" unique_id=1248198075]
+position = Vector2(157.99792, 569.1416)
+scale = Vector2(0.19781928, 0.19781928)
+texture = ExtResource("15_train")
+metadata/task_id = "load_luggage"
+
+[node name="Targets" type="Node2D" parent="Day12Bg/Attractions/FestivalTrain" unique_id=135034217]
+z_index = 2
+
+[node name="Target1" type="Node2D" parent="Day12Bg/Attractions/FestivalTrain/Targets" unique_id=260301922]
+position = Vector2(-220.4297, 68.57812)
+metadata/object_id = "day12_load_luggage_1"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/FestivalTrain/Targets/Target1" unique_id=1592320897]
+position = Vector2(73.65214, 30.544022)
+rotation = -0.02444988
+scale = Vector2(0.4898438, 0.4898438)
+texture = ExtResource("park_load_luggage_3_adwdk")
+
+[node name="Target2" type="Node2D" parent="Day12Bg/Attractions/FestivalTrain/Targets" unique_id=365837712]
+position = Vector2(-78.375, 102.8672)
+metadata/object_id = "day12_load_luggage_2"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/FestivalTrain/Targets/Target2" unique_id=1192284406]
+position = Vector2(32.62624, -7.5567665)
+rotation = 0.04970974
+scale = Vector2(0.4953476, 0.4953476)
+texture = ExtResource("park_load_luggage_6_mb7bu")
+
+[node name="Target3" type="Node2D" parent="Day12Bg/Attractions/FestivalTrain/Targets" unique_id=970681717]
+position = Vector2(63.67969, 88.17188)
+metadata/object_id = "day12_load_luggage_3"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/FestivalTrain/Targets/Target3" unique_id=2042957553]
+position = Vector2(1.1310052, 7.1380153)
+rotation = 0.009063586
+scale = Vector2(0.4925803, 0.4925803)
+texture = ExtResource("park_load_luggage_7_3hqg5")
+
+[node name="Target4" type="Node2D" parent="Day12Bg/Attractions/FestivalTrain/Targets" unique_id=1562598809]
+position = Vector2(205.7344, 102.8672)
+metadata/object_id = "day12_load_luggage_4"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/FestivalTrain/Targets/Target4" unique_id=1502516754]
+position = Vector2(-36.082623, 0.0680771)
+rotation = 0.03857186
+scale = Vector2(0.4898438, 0.4898438)
+texture = ExtResource("park_load_luggage_8_gkx3j")
+
+[node name="Target5" type="Node2D" parent="Day12Bg/Attractions/FestivalTrain/Targets" unique_id=572797986]
+position = Vector2(313.5, 112.6641)
+metadata/object_id = "day12_load_luggage_5"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/FestivalTrain/Targets/Target5" unique_id=1528986973]
+position = Vector2(-48.538086, -21.16633)
+rotation = 0.028146101
+scale = Vector2(0.4898438, 0.4898438)
+texture = ExtResource("park_load_luggage_9_ewlnf")
+
+[node name="DropTargets" type="Node2D" parent="Day12Bg/Attractions/FestivalTrain" unique_id=472634735]
+z_index = 1
+
+[node name="DropTarget1" type="Area2D" parent="Day12Bg/Attractions/FestivalTrain/DropTargets" unique_id=473426285]
+position = Vector2(-186.1406, 274.3125)
+collision_layer = 0
+collision_mask = 0
+input_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="DropArea" type="CollisionShape2D" parent="Day12Bg/Attractions/FestivalTrain/DropTargets/DropTarget1" unique_id=2137278621]
+position = Vector2(12.511072, -24.676804)
+shape = SubResource("park_load_luggage_drop_1")
+
+[node name="LandingPoint" type="Marker2D" parent="Day12Bg/Attractions/FestivalTrain/DropTargets/DropTarget1" unique_id=1020714860]
+position = Vector2(12.511072, -34.89680334)
+
+[node name="GuideIcon" type="Sprite2D" parent="Day12Bg/Attractions/FestivalTrain/DropTargets/DropTarget1" unique_id=278138095]
+modulate = Color(1, 1, 1, 0.55)
+z_index = 4
+position = Vector2(12.510986, -24.486328)
+scale = Vector2(0.3809896, 0.3809896)
+texture = ExtResource("park_load_luggage_3_adwdk")
+
+[node name="DropTarget2" type="Area2D" parent="Day12Bg/Attractions/FestivalTrain/DropTargets" unique_id=29582152]
+position = Vector2(-19.59375, 274.3125)
+collision_layer = 0
+collision_mask = 0
+input_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="DropArea" type="CollisionShape2D" parent="Day12Bg/Attractions/FestivalTrain/DropTargets/DropTarget2" unique_id=1002384414]
+position = Vector2(0, -24.780273)
+shape = SubResource("park_load_luggage_drop_2")
+
+[node name="LandingPoint" type="Marker2D" parent="Day12Bg/Attractions/FestivalTrain/DropTargets/DropTarget2" unique_id=763783551]
+position = Vector2(0, -38.44533973)
+
+[node name="GuideIcon" type="Sprite2D" parent="Day12Bg/Attractions/FestivalTrain/DropTargets/DropTarget2" unique_id=122688227]
+modulate = Color(1, 1, 1, 0.55)
+z_index = 4
+position = Vector2(2.2978516, -28.273438)
+scale = Vector2(0.3852704, 0.3852704)
+texture = ExtResource("park_load_luggage_6_mb7bu")
+
+[node name="DropTarget3" type="Area2D" parent="Day12Bg/Attractions/FestivalTrain/DropTargets" unique_id=169145390]
+position = Vector2(146.9531, 274.3125)
+collision_layer = 0
+collision_mask = 0
+input_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="DropArea" type="CollisionShape2D" parent="Day12Bg/Attractions/FestivalTrain/DropTargets/DropTarget3" unique_id=426350911]
+position = Vector2(0, -24.780273)
+shape = SubResource("park_load_luggage_drop_3")
+
+[node name="LandingPoint" type="Marker2D" parent="Day12Bg/Attractions/FestivalTrain/DropTargets/DropTarget3" unique_id=1283277291]
+position = Vector2(0, -38.02786772)
+
+[node name="GuideIcon" type="Sprite2D" parent="Day12Bg/Attractions/FestivalTrain/DropTargets/DropTarget3" unique_id=806467817]
+modulate = Color(1, 1, 1, 0.55)
+z_index = 4
+position = Vector2(-0.19140625, -24.780273)
+scale = Vector2(0.383118, 0.383118)
+texture = ExtResource("park_load_luggage_7_3hqg5")
+
+[node name="DropTarget4" type="Area2D" parent="Day12Bg/Attractions/FestivalTrain/DropTargets" unique_id=1968047802]
+position = Vector2(318.3984, 274.3125)
+collision_layer = 0
+collision_mask = 0
+input_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="DropArea" type="CollisionShape2D" parent="Day12Bg/Attractions/FestivalTrain/DropTargets/DropTarget4" unique_id=898417068]
+position = Vector2(0, -24.780273)
+shape = SubResource("park_load_luggage_drop_4")
+
+[node name="LandingPoint" type="Marker2D" parent="Day12Bg/Attractions/FestivalTrain/DropTargets/DropTarget4" unique_id=1394375303]
+position = Vector2(0, -36.45257903)
+
+[node name="GuideIcon" type="Sprite2D" parent="Day12Bg/Attractions/FestivalTrain/DropTargets/DropTarget4" unique_id=1730414081]
+modulate = Color(1, 1, 1, 0.55)
+z_index = 4
+position = Vector2(0, -24.589844)
+scale = Vector2(0.3809896, 0.3809896)
+texture = ExtResource("park_load_luggage_8_gkx3j")
+
+[node name="DropTarget5" type="Area2D" parent="Day12Bg/Attractions/FestivalTrain/DropTargets" unique_id=592530426]
+position = Vector2(489.8438, 274.3125)
+collision_layer = 0
+collision_mask = 0
+input_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="DropArea" type="CollisionShape2D" parent="Day12Bg/Attractions/FestivalTrain/DropTargets/DropTarget5" unique_id=1521252127]
+position = Vector2(0, -24.780273)
+shape = SubResource("park_load_luggage_drop_5")
+
+[node name="LandingPoint" type="Marker2D" parent="Day12Bg/Attractions/FestivalTrain/DropTargets/DropTarget5" unique_id=1162578905]
+position = Vector2(0, -38.1081146)
+
+[node name="GuideIcon" type="Sprite2D" parent="Day12Bg/Attractions/FestivalTrain/DropTargets/DropTarget5" unique_id=394373508]
+modulate = Color(1, 1, 1, 0.55)
+z_index = 4
+position = Vector2(0, -24.589844)
+scale = Vector2(0.3809896, 0.3809896)
+texture = ExtResource("park_load_luggage_9_ewlnf")
+
+[node name="FestivalTrainForeground" type="Sprite2D" parent="Day12Bg/Attractions/FestivalTrain" unique_id=703817739]
+z_index = 4
+position = Vector2(172.5109908, 310.4134238)
+scale = Vector2(1.000283744, 1.006247571)
+texture = ExtResource("67_lswco")
+
+[node name="ObservationTreeTower" type="Sprite2D" parent="Day12Bg/Attractions" unique_id=1097587403]
+position = Vector2(-186.65623, 463.9354)
+scale = Vector2(0.31552762, 0.31552762)
+texture = ExtResource("16_tower")
+metadata/task_id = "find_tower_friends"
+
+[node name="Targets" type="Node2D" parent="Day12Bg/Attractions/ObservationTreeTower" unique_id=1413585519]
+z_index = 2
+
+[node name="Target1" type="Node2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets" unique_id=1552949841]
+position = Vector2(9.796875, 411.4688)
+metadata/object_id = "day12_find_tower_friends_1"
+
+[node name="RevealedSprite" type="Sprite2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target1" unique_id=1396127298]
+visible = false
+z_index = 1
+position = Vector2(29.641016, 23.54347)
+rotation = -0.01118342
+scale = Vector2(0.4898438, 0.4898438)
+texture = ExtResource("park_find_tower_friends_3_3d7y2")
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target1" unique_id=1642579088]
+z_index = 2
+position = Vector2(28.703125, 6.5312)
+texture = SubResource("park_tree_closed_window_1")
+
+[node name="WindowInterior" type="Polygon2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target1" unique_id=848724086]
+position = Vector2(28.445938, 0.83650494)
+color = Color(0.12, 0.065, 0.03, 1)
+polygon = PackedVector2Array(-72.90039, 62.14453, -72.98672, 22.532812, -71.5843, 8.29381, -67.43094, -5.3979955, -60.686237, -18.016436, -51.609406, -29.076591, -40.549248, -38.153427, -27.930807, -44.898125, -14.239002, -49.051487, -1.3407443e-14, -50.453907, 14.239002, -49.051487, 27.930807, -44.898125, 40.549248, -38.153427, 51.609406, -29.076591, 60.686237, -18.016436, 67.43094, -5.3979955, 71.5843, 8.29381, 72.98672, 22.532812, 71.70532, 62.14453)
+
+[node name="DoorLeft" type="Polygon2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target1" unique_id=1026401505]
+visible = false
+z_index = 3
+position = Vector2(-44.540782, 0.83650494)
+texture = ExtResource("16_tower")
+polygon = PackedVector2Array(72.98672, 62.14453, 0.08633, 62.14453, 0, 22.532812, 1.40242, 8.29381, 5.55578, -5.3979955, 12.300483, -18.016436, 21.377314, -29.076591, 32.437472, -38.153427, 45.055913, -44.898125, 58.747718, -49.051487, 72.98672, -50.453907)
+uv = PackedVector2Array(665.242813, 1101.449835, 592.342423, 1101.449835, 592.256093, 1061.838117, 593.658513, 1047.599115, 597.811873, 1033.907309, 604.556576, 1021.288869, 613.633407, 1010.228714, 624.693565, 1001.151878, 637.312006, 994.4071799, 651.003811, 990.2538179, 665.242813, 988.8513979)
+
+[node name="DoorRight" type="Polygon2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target1" unique_id=1344703096]
+visible = false
+z_index = 3
+position = Vector2(101.432658, 0.83650494)
+texture = ExtResource("16_tower")
+polygon = PackedVector2Array(-72.98672, 62.14453, -72.98672, -50.453907, -58.747718, -49.051487, -45.055913, -44.898125, -32.437472, -38.153427, -21.377314, -29.076591, -12.300483, -18.016436, -5.55578, -5.3979955, -1.40242, 8.29381, 0, 22.532812, -1.2814, 62.14453)
+uv = PackedVector2Array(665.242813, 1101.449835, 665.242813, 988.8513979, 679.481815, 990.2538179, 693.17362, 994.4071799, 705.792061, 1001.151878, 716.852219, 1010.228714, 725.92905, 1021.288869, 732.673753, 1033.907309, 736.827113, 1047.599115, 738.229533, 1061.838117, 736.948133, 1101.449835)
+
+[node name="Target2" type="Node2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets" unique_id=228862751]
+position = Vector2(9.796875, 218.4703)
+metadata/object_id = "day12_find_tower_friends_2"
+
+[node name="RevealedSprite" type="Sprite2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target2" unique_id=416712860]
+visible = false
+z_index = 1
+position = Vector2(18.88524, 32.498463)
+rotation = 0.01228473
+scale = Vector2(0.4898438, 0.4898438)
+texture = ExtResource("park_find_tower_friends_6_ndbkl")
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target2" unique_id=1149166395]
+z_index = 2
+position = Vector2(28.703125, 17.0297)
+texture = SubResource("park_tree_closed_window_2")
+
+[node name="WindowInterior" type="Polygon2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target2" unique_id=675588711]
+position = Vector2(28.445938, 12.1819315)
+color = Color(0.12, 0.065, 0.03, 1)
+polygon = PackedVector2Array(-72.90039, 57.364258, -72.98672, 24.492188, -71.5843, 10.253185, -67.43094, -3.4386206, -60.686237, -16.05706, -51.609406, -27.117216, -40.549248, -36.19405, -27.930807, -42.938747, -14.239002, -47.092113, -1.3407443e-14, -48.49453, 14.239002, -47.092113, 27.930807, -42.938747, 40.549248, -36.19405, 51.609406, -27.117216, 60.686237, -16.05706, 67.43094, -3.4386206, 71.5843, 10.253185, 72.98672, 24.492188, 71.70532, 57.364258)
+
+[node name="DoorLeft" type="Polygon2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target2" unique_id=527921715]
+visible = false
+z_index = 3
+position = Vector2(-44.540782, 12.1819315)
+texture = ExtResource("16_tower")
+polygon = PackedVector2Array(72.98672, 57.364258, 0.08633, 57.364258, 0, 24.492188, 1.40242, 10.253185, 5.55578, -3.4386206, 12.300483, -16.05706, 21.377314, -27.117216, 32.437472, -36.19405, 45.055913, -42.938747, 58.747718, -47.092113, 72.98672, -48.49453)
+uv = PackedVector2Array(665.242813, 915.0164895, 592.342423, 915.0164895, 592.256093, 882.1444195, 593.658513, 867.9054165, 597.811873, 854.2136109, 604.556576, 841.5951715, 613.633407, 830.5350155, 624.693565, 821.4581815, 637.312006, 814.7134845, 651.003811, 810.5601185, 665.242813, 809.1577015)
+
+[node name="DoorRight" type="Polygon2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target2" unique_id=495348329]
+visible = false
+z_index = 3
+position = Vector2(101.432658, 12.1819315)
+texture = ExtResource("16_tower")
+polygon = PackedVector2Array(-72.98672, 57.364258, -72.98672, -48.49453, -58.747718, -47.092113, -45.055913, -42.938747, -32.437472, -36.19405, -21.377314, -27.117216, -12.300483, -16.05706, -5.55578, -3.4386206, -1.40242, 10.253185, 0, 24.492188, -1.2814, 57.364258)
+uv = PackedVector2Array(665.242813, 915.0164895, 665.242813, 809.1577015, 679.481815, 810.5601185, 693.17362, 814.7134845, 705.792061, 821.4581815, 716.852219, 830.5350155, 725.92905, 841.5951715, 732.673753, 854.2136109, 736.827113, 867.9054165, 738.229533, 882.1444195, 736.948133, 915.0164895)
+
+[node name="Target3" type="Node2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets" unique_id=1251070216]
+position = Vector2(9.796875, 47.025)
+metadata/object_id = "day12_find_tower_friends_3"
+
+[node name="RevealedSprite" type="Sprite2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target3" unique_id=655703587]
+visible = false
+z_index = 1
+position = Vector2(33.2263, 24.680204)
+rotation = 0.028381707
+scale = Vector2(0.4898438, 0.4898438)
+texture = ExtResource("park_find_tower_friends_7_rolia")
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target3" unique_id=1194177483]
+z_index = 2
+position = Vector2(31.203125, 8.475)
+texture = SubResource("park_tree_closed_window_3")
+
+[node name="WindowInterior" type="Polygon2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target3" unique_id=469366975]
+position = Vector2(29.641026, 3.168573)
+color = Color(0.12, 0.065, 0.03, 1)
+polygon = PackedVector2Array(-74.09546, 58.559082, -74.45625, 26.941406, -73.0256, 12.415712, -68.788605, -1.5517671, -61.908108, -14.42427, -52.648518, -25.707113, -41.365677, -34.9667, -28.493174, -41.8472, -14.525694, -46.084187, -1.3677391e-14, -47.514843, 14.525694, -46.084187, 28.493174, -41.8472, 41.365677, -34.9667, 52.648518, -25.707113, 61.908108, -14.42427, 68.788605, -1.5517671, 73.0256, 12.415712, 74.45625, 26.941406, 77.680786, 58.559082)
+
+[node name="DoorLeft" type="Polygon2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target3" unique_id=1086762155]
+visible = false
+z_index = 3
+position = Vector2(-44.815224, 3.168573)
+texture = ExtResource("16_tower")
+polygon = PackedVector2Array(74.45625, 58.559082, 0.36079, 58.559082, 0, 26.941406, 1.43065, 12.415712, 5.667645, -1.5517671, 12.548142, -14.42427, 21.807732, -25.707113, 33.090573, -34.9667, 45.963076, -41.8472, 59.930556, -46.084187, 74.45625, -47.514843)
+uv = PackedVector2Array(666.437901, 735.752655, 592.342441, 735.752655, 591.981651, 704.134979, 593.412301, 689.609285, 597.649296, 675.6418059, 604.529793, 662.769303, 613.789383, 651.48646, 625.072224, 642.226873, 637.944727, 635.346373, 651.912207, 631.109386, 666.437901, 629.67873)
+
+[node name="DoorRight" type="Polygon2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target3" unique_id=1280921276]
+visible = false
+z_index = 3
+position = Vector2(107.321812, 3.168573)
+texture = ExtResource("16_tower")
+polygon = PackedVector2Array(-77.680786, 58.559082, -77.680786, -47.514843, -63.155092, -46.084187, -49.187612, -41.8472, -36.315109, -34.9667, -25.032268, -25.707113, -15.772678, -14.42427, -8.892181, -1.5517671, -4.655186, 12.415712, -3.224536, 26.941406, 0, 58.559082)
+uv = PackedVector2Array(666.437901, 735.752655, 666.437901, 629.67873, 680.963595, 631.109386, 694.931075, 635.346373, 707.803578, 642.226873, 719.086419, 651.48646, 728.346009, 662.769303, 735.226506, 675.6418059, 739.463501, 689.609285, 740.894151, 704.134979, 744.118687, 735.752655)
+
+[node name="Target4" type="Node2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets" unique_id=72637639]
+position = Vector2(9.796875, -123.4406)
+metadata/object_id = "day12_find_tower_friends_4"
+
+[node name="RevealedSprite" type="Sprite2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target4" unique_id=1061456226]
+visible = false
+z_index = 1
+position = Vector2(26.05577, 13.492592)
+rotation = 0.023892883
+scale = Vector2(0.4898438, 0.4898438)
+texture = ExtResource("park_find_tower_friends_8_8v8pb")
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target4" unique_id=69479970]
+z_index = 2
+position = Vector2(27.703125, 5.4406)
+texture = SubResource("park_tree_closed_window_4")
+
+[node name="WindowInterior" type="Polygon2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target4" unique_id=1135196213]
+position = Vector2(27.25085, -0.8484162)
+color = Color(0.12, 0.065, 0.03, 1)
+polygon = PackedVector2Array(-71.70532, 53.77881, -72.007034, 25.96172, -70.623436, 11.913844, -66.525826, -1.5941792, -59.87166, -14.043244, -50.91666, -24.95494, -40.004963, -33.90994, -27.555899, -40.564102, -14.047875, -44.661716, -1.3227477e-14, -46.045315, 14.047875, -44.661716, 27.555899, -40.564102, 40.004963, -33.90994, 50.91666, -24.95494, 59.87166, -14.043244, 66.525826, -1.5941792, 70.623436, 11.913844, 72.007034, 25.96172, 70.51019, 58.559082)
+
+[node name="DoorLeft" type="Polygon2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target4" unique_id=789303827]
+visible = false
+z_index = 3
+position = Vector2(-44.756184, -0.8484162)
+texture = ExtResource("16_tower")
+polygon = PackedVector2Array(72.007034, 56.18903188, 0.301714, 53.77881, 0, 25.96172, 1.383598, 11.913844, 5.481208, -1.5941792, 12.135374, -14.043244, 21.090374, -24.95494, 32.002071, -33.90994, 44.451135, -40.564102, 57.959159, -44.661716, 72.007034, -46.045315)
+uv = PackedVector2Array(664.047725, 558.9000157, 592.342405, 556.4897938, 592.040691, 528.6727038, 593.424289, 514.6248278, 597.521899, 501.1168046, 604.176065, 488.6677398, 613.131065, 477.7560438, 624.042762, 468.8010438, 636.491826, 462.1468818, 649.99985, 458.0492678, 664.047725, 456.6656688)
+
+[node name="DoorRight" type="Polygon2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target4" unique_id=880999199]
+visible = false
+z_index = 3
+position = Vector2(99.257884, -0.8484162)
+texture = ExtResource("16_tower")
+polygon = PackedVector2Array(-72.007034, 56.18903188, -72.007034, -46.045315, -57.959159, -44.661716, -44.451135, -40.564102, -32.002071, -33.90994, -21.090374, -24.95494, -12.135374, -14.043244, -5.481208, -1.5941792, -1.383598, 11.913844, 0, 25.96172, -1.496844, 58.559082)
+uv = PackedVector2Array(664.047725, 558.9000157, 664.047725, 456.6656688, 678.0956, 458.0492678, 691.603624, 462.1468818, 704.052688, 468.8010438, 714.964385, 477.7560438, 723.919385, 488.6677398, 730.573551, 501.1168046, 734.671161, 514.6248278, 736.054759, 528.6727038, 734.557915, 561.2700658)
+
+[node name="Target5" type="Node2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets" unique_id=1793688061]
+position = Vector2(14.69531, -301.7437)
+metadata/object_id = "day12_find_tower_friends_5"
+
+[node name="RevealedSprite" type="Sprite2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target5" unique_id=1879484021]
+visible = false
+z_index = 1
+position = Vector2(16.377008, 16.117643)
+rotation = 0.047545373
+scale = Vector2(0.4898438, 0.4898438)
+texture = ExtResource("park_find_tower_friends_9_3utyq")
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target5" unique_id=130963923]
+z_index = 2
+position = Vector2(20.80469, 5.7437)
+texture = SubResource("park_tree_closed_window_5")
+
+[node name="WindowInterior" type="Polygon2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target5" unique_id=1977620333]
+position = Vector2(21.157326, 1.7764902)
+color = Color(0.12, 0.065, 0.03, 1)
+polygon = PackedVector2Array(-68.119995, 56.169434, -68.08828, 19.59375, -66.77998, 6.310385, -62.90537, -6.4625072, -56.61334, -18.234072, -48.145683, -28.551935, -37.827824, -37.01959, -26.056257, -43.31162, -13.283365, -47.186234, -1.2507614e-14, -48.49453, 13.283365, -47.186234, 26.056257, -43.31162, 37.827824, -37.01959, 48.145683, -28.551935, 56.61334, -18.234072, 62.90537, -6.4625072, 66.77998, 6.310385, 68.08828, 19.59375, 66.92499, 56.169434)
+
+[node name="DoorLeft" type="Polygon2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target5" unique_id=1276074366]
+visible = false
+z_index = 3
+position = Vector2(-46.962669, 1.7764902)
+texture = ExtResource("16_tower")
+polygon = PackedVector2Array(68.119995, 56.169434, 0, 56.169434, 0.031715, 19.59375, 1.340015, 6.310385, 5.214625, -6.4625072, 11.506655, -18.234072, 19.974312, -28.551935, 30.292171, -37.01959, 42.063738, -43.31162, 54.83663, -47.186234, 68.119995, -48.49453)
+uv = PackedVector2Array(662.852636, 383.2022242, 594.732641, 383.2022242, 594.764356, 346.6265402, 596.072656, 333.3431752, 599.947266, 320.570283, 606.239296, 308.7987182, 614.706953, 298.4808552, 625.024812, 290.0132002, 636.796379, 283.7211702, 649.569271, 279.8465562, 662.852636, 278.5382602)
+
+[node name="DoorRight" type="Polygon2D" parent="Day12Bg/Attractions/ObservationTreeTower/Targets/Target5" unique_id=543321683]
+visible = false
+z_index = 3
+position = Vector2(89.245606, 1.7764902)
+texture = ExtResource("16_tower")
+polygon = PackedVector2Array(-68.08828, 56.169434, -68.08828, -48.49453, -54.804915, -47.186234, -42.032023, -43.31162, -30.260456, -37.01959, -19.942597, -28.551935, -11.47494, -18.234072, -5.18291, -6.4625072, -1.3083, 6.310385, 0, 19.59375, -1.16329, 56.169434)
+uv = PackedVector2Array(662.852636, 383.2022242, 662.852636, 278.5382602, 676.136001, 279.8465562, 688.908893, 283.7211702, 700.68046, 290.0132002, 710.998319, 298.4808552, 719.465976, 308.7987182, 725.758006, 320.570283, 729.632616, 333.3431752, 730.940916, 346.6265402, 729.777626, 383.2022242)
+
+[node name="RiverAquarium" type="Sprite2D" parent="Day12Bg/Attractions" unique_id=34821015]
+position = Vector2(174.96663, -29.666658)
+scale = Vector2(0.30563954, 0.30563954)
+texture = ExtResource("17_aquarium")
+metadata/task_id = "find_aquatic_animals"
+
+[node name="Targets" type="Node2D" parent="Day12Bg/Attractions/RiverAquarium" unique_id=1654372106]
+z_index = 2
+
+[node name="Target1" type="Node2D" parent="Day12Bg/Attractions/RiverAquarium/Targets" unique_id=631042131]
+position = Vector2(-15.675, -208.6734)
+metadata/object_id = "day12_find_aquatic_animals_1"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/RiverAquarium/Targets/Target1" unique_id=2079794386]
+position = Vector2(-0.8279049, -6.071303)
+rotation = -0.006273775
+scale = Vector2(0.5519366, 0.5519366)
+texture = ExtResource("park_find_aquatic_animals_3_2nqtc")
+
+[node name="BubbleOrigin" type="Marker2D" parent="Day12Bg/Attractions/RiverAquarium/Targets/Target1/ObjectSprite" unique_id=1682708282]
+position = Vector2(70.45, -10.3)
+
+[node name="Target2" type="Node2D" parent="Day12Bg/Attractions/RiverAquarium/Targets" unique_id=1074253447]
+position = Vector2(-14.69531, -50.94375)
+metadata/object_id = "day12_find_aquatic_animals_2"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/RiverAquarium/Targets/Target2" unique_id=2024993526]
+position = Vector2(2.3578544, 11.463616)
+rotation = -0.038860388
+scale = Vector2(0.627, 0.627)
+texture = ExtResource("park_find_aquatic_animals_6_hjnx0")
+
+[node name="BubbleOrigin" type="Marker2D" parent="Day12Bg/Attractions/RiverAquarium/Targets/Target2/ObjectSprite" unique_id=295829860]
+position = Vector2(65.85, -9.25)
+
+[node name="Target3" type="Node2D" parent="Day12Bg/Attractions/RiverAquarium/Targets" unique_id=255634627]
+position = Vector2(-9.796875, 96.00937)
+metadata/object_id = "day12_find_aquatic_animals_3"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/RiverAquarium/Targets/Target3" unique_id=1251244739]
+position = Vector2(4.861813, 31.06697)
+rotation = -0.019742394
+scale = Vector2(0.4583333, 0.4583333)
+texture = ExtResource("park_find_aquatic_animals_7_4qvxv")
+
+[node name="BubbleOrigin" type="Marker2D" parent="Day12Bg/Attractions/RiverAquarium/Targets/Target3/ObjectSprite" unique_id=196359943]
+position = Vector2(70, -20.15)
+
+[node name="Target4" type="Node2D" parent="Day12Bg/Attractions/RiverAquarium/Targets" unique_id=357838570]
+position = Vector2(-6.857813, 241.0031)
+metadata/object_id = "day12_find_aquatic_animals_4"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/RiverAquarium/Targets/Target4" unique_id=1721951598]
+position = Vector2(-1.7784591, 21.786228)
+rotation = 0.04151224
+scale = Vector2(0.5558511, 0.5558511)
+texture = ExtResource("park_find_aquatic_animals_8_kq5xe")
+
+[node name="BubbleOrigin" type="Marker2D" parent="Day12Bg/Attractions/RiverAquarium/Targets/Target4/ObjectSprite" unique_id=1376565607]
+position = Vector2(72.55, -15.65)
+
+[node name="Target5" type="Node2D" parent="Day12Bg/Attractions/RiverAquarium/Targets" unique_id=1089611320]
+position = Vector2(0.9796875, 376.2)
+metadata/object_id = "day12_find_aquatic_animals_5"
+
+[node name="ObjectSprite" type="Sprite2D" parent="Day12Bg/Attractions/RiverAquarium/Targets/Target5" unique_id=670963150]
+position = Vector2(-14.550916, 32.171806)
+rotation = -0.024543338
+scale = Vector2(0.06493372, 0.06493372)
+texture = ExtResource("park_find_aquatic_animals_9_1b6c3")
+
+[node name="BubbleOrigin" type="Marker2D" parent="Day12Bg/Attractions/RiverAquarium/Targets/Target5/ObjectSprite" unique_id=39826504]
+position = Vector2(425.3, -157.55)
+
+[node name="GameFeedback" type="AudioStreamPlayer" parent="." unique_id=1940362249]
+
+[node name="InstrumentSound" type="AudioStreamPlayer" parent="." unique_id=1398987685]

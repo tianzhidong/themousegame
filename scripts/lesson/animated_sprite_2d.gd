@@ -7,6 +7,7 @@ var _audio_player: AudioStreamPlayer
 var _is_hovered := false
 var _has_triggered := false
 var _can_detect_hover := false
+var _lesson: Node
 
 
 func _ready() -> void:
@@ -14,15 +15,16 @@ func _ready() -> void:
 	_audio_player.stream = FLOWER_SOUND
 	add_child(_audio_player)
 
-	var lesson := get_parent()
-	if lesson != null and lesson.has_signal("teaching_finished"):
-		lesson.connect("teaching_finished", _on_teaching_finished)
-		if lesson.has_method("is_teaching_finished") and lesson.is_teaching_finished():
+	_lesson = get_parent()
+	if _lesson != null and _lesson.has_signal("teaching_finished"):
+		_lesson.connect("teaching_finished", _on_teaching_finished)
+		_lesson.connect("teaching_started", _on_teaching_started)
+		if _lesson.has_method("is_teaching_finished") and _lesson.is_teaching_finished():
 			_on_teaching_finished()
 
 
 func _process(_delta: float) -> void:
-	if _has_triggered or not _can_detect_hover:
+	if _has_triggered or not _can_detect_hover or not _lesson.can_accept_practice_input():
 		return
 
 	var hovered := _contains_mouse()
@@ -34,6 +36,13 @@ func _process(_delta: float) -> void:
 
 func _on_teaching_finished() -> void:
 	_can_detect_hover = true
+	# A pointer parked here during narration must leave and re-enter.
+	_is_hovered = _contains_mouse()
+
+
+func _on_teaching_started() -> void:
+	_can_detect_hover = false
+	_is_hovered = false
 
 
 func _contains_mouse() -> bool:
@@ -50,6 +59,7 @@ func _contains_mouse() -> bool:
 
 func _trigger_flower() -> void:
 	_has_triggered = true
+	_lesson.finish_practice()
 	animation = &"blue_flower_open"
 	play()
 	_audio_player.play()

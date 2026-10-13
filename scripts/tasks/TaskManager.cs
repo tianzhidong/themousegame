@@ -38,6 +38,7 @@ public partial class TaskManager : Node
     private DayTaskConfig? _config;
     private ulong _dayStartedAtMsec;
     private bool _allTasksCompleted;
+    private AudioManager _audioManager = null!;
 
     public int CurrentDayId { get; private set; }
 
@@ -50,6 +51,11 @@ public partial class TaskManager : Node
     public IReadOnlyList<TaskRuntimeState> Tasks => _tasks;
 
     public double LastCompletionSeconds { get; private set; }
+
+    public override void _Ready()
+    {
+        _audioManager = GetNode<AudioManager>("/root/AudioManager");
+    }
 
     public bool LoadSelectedDay()
     {
@@ -143,6 +149,24 @@ public partial class TaskManager : Node
         if (task.Progress == previousProgress)
         {
             return false;
+        }
+
+        if (task.Definition.Steps.Count > 0)
+        {
+            int stepIndex = task.GetAvailableStepIndices().First(index =>
+                _interactionGate.Matches(task.Definition.Steps[index], report));
+            task.CompletedStepIndices.Add(stepIndex);
+        }
+
+        // These days play their configured effects in the object scripts.
+        // Other days share the fallback only after an interaction is accepted.
+        if (CurrentDayId == 5)
+        {
+            _audioManager.PlayDay5PartInstall();
+        }
+        else if (CurrentDayId is not (1 or 2 or 3 or 4 or 6 or 7 or 8 or 9 or 10 or 11 or 12))
+        {
+            _audioManager.PlayDefaultInteractionEffect();
         }
 
         EmitSignal(
@@ -251,6 +275,8 @@ public partial class TaskManager : Node
 
         task.State = TaskRunState.Completed;
         task.Progress = task.Definition.TargetCount;
+        if (CurrentDayId == 5) _audioManager.PlayDay5RepairCompleted();
+        _audioManager.PlayTaskFinish();
         EmitSignal(SignalName.OnTaskCompleted, task.Definition.Id);
 
         if (!IsParallelMode())
@@ -286,7 +312,10 @@ public partial class TaskManager : Node
         foreach (TaskRuntimeState task in _tasks)
         {
             if (task.State == TaskRunState.Active
-                && _interactionGate.Matches(task.Definition, report))
+                && (task.Definition.Steps.Count > 0
+                    ? task.GetAvailableStepIndices().Any(index =>
+                        _interactionGate.Matches(task.Definition.Steps[index], report))
+                    : _interactionGate.Matches(task.Definition, report)))
             {
                 return task;
             }

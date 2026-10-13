@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://lq4fk1egfa7m"]
+
+[ext_resource type="Texture2D" uid="uid://cks0bs7o304fq" path="res://assets/images/objects/day5/m8_bg.png" id="1_bg"]
+[ext_resource type="Texture2D" uid="uid://bii0r5lka5lov" path="res://assets/images/objects/day5/m8/m8_1.png" id="2_part"]
+[ext_resource type="Texture2D" uid="uid://dsljsyyngqhn0" path="res://assets/images/objects/day5/m8/m8_2.png" id="3_part"]
+[ext_resource type="Texture2D" uid="uid://dg4a0hrryrkw3" path="res://assets/images/objects/day5/m8/m8_3.png" id="4_part"]
+[ext_resource type="Texture2D" uid="uid://depk7g4jvsqtg" path="res://assets/images/objects/day5/m8/m8_4.png" id="5_part"]
+[ext_resource type="Texture2D" uid="uid://cdc075q2h1cqc" path="res://assets/images/objects/day5/m8/m8_5.png" id="6_part"]
+
+[node name="Machine8Targets" type="Sprite2D" unique_id=1123480819]
+texture = ExtResource("1_bg")
+centered = false
+metadata/_edit_lock_ = true
+metadata/yard_scale = 0.950724638
+metadata/yard_offset = Vector2(-879.4203, -519.4058)
+
+[node name="PartTarget1" type="Sprite2D" parent="." unique_id=1489787372]
+position = Vector2(922, 545)
+scale = Vector2(1.6801437, 1.6801437)
+texture = ExtResource("2_part")
+offset = Vector2(0.5, 0)
+
+[node name="PartTarget2" type="Sprite2D" parent="." unique_id=1862834696]
+position = Vector2(689.04724, 422.54727)
+scale = Vector2(0.65301824, 0.5696849)
+texture = ExtResource("3_part")
+
+[node name="PartTarget3" type="Sprite2D" parent="." unique_id=362612741]
+position = Vector2(1161.1038, 371.2134)
+scale = Vector2(0.4245599, 0.33857718)
+texture = ExtResource("4_part")
+offset = Vector2(0.5, 0)
+
+[node name="PartTarget4" type="Sprite2D" parent="." unique_id=827612530]
+position = Vector2(705, 720.00006)
+rotation = 0.82371527
+scale = Vector2(0.7126688, 0.7025373)
+texture = ExtResource("5_part")
+offset = Vector2(0, 0.5)
+
+[node name="PartTarget5" type="Sprite2D" parent="." unique_id=802488604]
+position = Vector2(1127, 727.00006)
+scale = Vector2(0.65418696, 0.65418696)
+texture = ExtResource("6_part")

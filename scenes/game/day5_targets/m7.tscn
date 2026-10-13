@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://dwulvuswljx3a"]
+
+[ext_resource type="Texture2D" uid="uid://dgpjmpqdnohae" path="res://assets/images/objects/day5/m7_bg.png" id="1_bg"]
+[ext_resource type="Texture2D" uid="uid://cmjhmjvrdx614" path="res://assets/images/objects/day5/m7/m7_1.png" id="2_part"]
+[ext_resource type="Texture2D" uid="uid://bn8qmblwq1im1" path="res://assets/images/objects/day5/m7/m7_2.png" id="3_part"]
+[ext_resource type="Texture2D" uid="uid://ewixjcgip5kl" path="res://assets/images/objects/day5/m7/m7_3.png" id="4_part"]
+[ext_resource type="Texture2D" uid="uid://dvaf238j2kp6y" path="res://assets/images/objects/day5/m7/m7_4.png" id="5_part"]
+[ext_resource type="Texture2D" uid="uid://ca78b12towaln" path="res://assets/images/objects/day5/m7/m7_5.png" id="6_part"]
+
+[node name="Machine7Targets" type="Sprite2D" unique_id=89201777]
+texture = ExtResource("1_bg")
+centered = false
+metadata/_edit_lock_ = true
+metadata/yard_scale = 0.936842105
+metadata/yard_offset = Vector2(-866.5789, -535.2632)
+
+[node name="PartTarget1" type="Sprite2D" parent="." unique_id=1206974277]
+position = Vector2(923.99994, 483.00003)
+scale = Vector2(2.6069028, 2.645375)
+texture = ExtResource("2_part")
+offset = Vector2(0, 0.5)
+metadata/snap_use_visible_rect = true
+metadata/snap_padding = Vector2(10, 12)
+
+[node name="PartTarget2" type="Sprite2D" parent="." unique_id=883975363]
+position = Vector2(704, 688)
+scale = Vector2(0.7260567, 0.7260567)
+texture = ExtResource("3_part")
+
+[node name="PartTarget3" type="Sprite2D" parent="." unique_id=276101856]
+position = Vector2(869, 693)
+scale = Vector2(0.5466668, 0.5466668)
+texture = ExtResource("4_part")
+
+[node name="PartTarget4" type="Sprite2D" parent="." unique_id=657616607]
+position = Vector2(1039, 692.99994)
+scale = Vector2(0.7412602, 0.7412602)
+texture = ExtResource("5_part")
+
+[node name="PartTarget5" type="Sprite2D" parent="." unique_id=1243307779]
+position = Vector2(1201, 684)
+scale = Vector2(0.6178047, 0.6178047)
+texture = ExtResource("6_part")

@@ -27,6 +27,14 @@ public partial class Day7BackgroundScroll : Sprite2D
 
     public override void _Input(InputEvent @event)
     {
+        Node? scene = GetTree().CurrentScene;
+        if (scene == null
+            || scene.GetNodeOrNull<Node>("SettingsOverlay") != null
+            || scene.GetNodeOrNull<Node>("ResultOverlayLayer") != null)
+        {
+            return;
+        }
+
         if (@event is not InputEventMouseButton mouseEvent || !mouseEvent.Pressed)
         {
             return;

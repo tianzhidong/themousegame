@@ -130,6 +130,19 @@ public sealed class DayTaskConfigLoader
             task.ProgressMode ??= string.Empty;
             task.HintImagePath ??= string.Empty;
             task.HintAudioPath ??= string.Empty;
+            task.Steps ??= [];
+            foreach (TaskDefinition step in task.Steps)
+            {
+                step.Text ??= string.Empty;
+                step.IconPath ??= string.Empty;
+                step.Operation ??= string.Empty;
+                step.TargetType ??= string.Empty;
+                step.TargetColor ??= string.Empty;
+                step.TargetTag ??= string.Empty;
+                step.TargetIds ??= [];
+                step.Steps ??= [];
+                step.UnorderedGroup = step.UnorderedGroup?.Trim() ?? string.Empty;
+            }
         }
     }
 
@@ -235,6 +248,7 @@ public sealed class DayTaskConfigLoader
 
             ValidateResourcePath(path, $"{fieldPrefix}.hint_image_path", task.HintImagePath, errors);
             ValidateResourcePath(path, $"{fieldPrefix}.hint_audio_path", task.HintAudioPath, errors);
+            ValidateSteps(path, fieldPrefix, config.TaskMode, task, errors);
         }
 
         int[] actualOrders = taskOrders.OrderBy(order => order).ToArray();
@@ -245,6 +259,37 @@ public sealed class DayTaskConfigLoader
                 errors.Add($"{path}: task order sequence must contain every value from 1 to {config.Tasks.Count}; missing '{expectedOrder}'.");
                 break;
             }
+        }
+    }
+
+    private static void ValidateSteps(string path, string prefix, string mode,
+        TaskDefinition task, ICollection<string> errors)
+    {
+        if (task.Steps.Count == 0) return;
+        if (mode != "sequence" || task.ProgressMode != "per_action")
+            errors.Add($"{path}: '{prefix}.steps' requires sequence mode and per_action progress.");
+        if (task.Steps.Count != task.TargetCount)
+            errors.Add($"{path}: '{prefix}.steps' count must equal target_count.");
+        HashSet<string> seenGroups = new(StringComparer.Ordinal);
+        for (int index = 0; index < task.Steps.Count; index++)
+        {
+            TaskDefinition step = task.Steps[index];
+            string field = $"{prefix}.steps[{index}]";
+            if (!string.IsNullOrEmpty(step.UnorderedGroup)
+                && (index == 0 || task.Steps[index - 1].UnorderedGroup != step.UnorderedGroup)
+                && !seenGroups.Add(step.UnorderedGroup))
+                errors.Add($"{path}: '{field}.unordered_group' must use consecutive steps.");
+            if (step.Steps.Count != 0 || step.TargetCount != 1)
+                errors.Add($"{path}: '{field}' must be one action without nested steps.");
+            if (string.IsNullOrWhiteSpace(step.Text) || string.IsNullOrWhiteSpace(step.IconPath)
+                || !SupportedOperations.Contains(step.Operation))
+                errors.Add($"{path}: '{field}' needs text, icon_path and a supported operation.");
+            if (step.TargetIds.Any(string.IsNullOrWhiteSpace)
+                || step.TargetIds.Distinct(StringComparer.OrdinalIgnoreCase).Count() != step.TargetIds.Count)
+                errors.Add($"{path}: '{field}.target_ids' contains empty or duplicate IDs.");
+            ValidateResourcePath(path, $"{field}.icon_path", step.IconPath, errors);
+            ValidateResourcePath(path, $"{field}.hint_image_path", step.HintImagePath, errors);
+            ValidateResourcePath(path, $"{field}.hint_audio_path", step.HintAudioPath, errors);
         }
     }
 

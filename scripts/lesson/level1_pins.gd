@@ -1,13 +1,14 @@
 extends Area2D
 
 const PIN_COUNT := 10
-const PIN_SOUND := preload("res://assets/audio/voice/day1/pin.ogg")
+const PIN_SOUND := preload("res://assets/audio/voice/day1/风车.mp3")
 const PIN_ROTATION_DURATION := 0.7
 const OBJECT_COUNT :=10
 const BUTTERFLY_COUNT := 10
 const BUTTERFLY_SCREEN_MARGIN := 120.0
-const FLOWER_SOUND := preload("res://assets/audio/ui/object_flower.ogg")
-const LIGHT_SOUND := preload("res://assets/audio/ui/light_on.ogg")
+const FLOWER_SOUND := preload("res://assets/audio/voice/day1/开花.ogg")
+const LIGHT_SOUND := preload("res://assets/audio/voice/day1/开灯.ogg")
+const BUTTERFLY_SOUND := preload("res://assets/audio/voice/day1/蝴蝶飞.mp3")
 const MIN_SPAWN_DISTANCE := 58.0
 
 var _random := RandomNumberGenerator.new()
@@ -25,14 +26,13 @@ var _object_colors: Dictionary = {}
 var _object_tags: Dictionary = {}
 var _triggered_pins: Dictionary = {}
 var _triggered_objects: Dictionary = {}
-var _pin_audio_player: AudioStreamPlayer
-var _flower_audio_player: AudioStreamPlayer
-var _light_audio_player: AudioStreamPlayer
+var _audio_manager: Node
 var _task_manager: Node
 
 
 func _ready() -> void:
 	_random.randomize()
+	_audio_manager = get_node("/root/AudioManager")
 	_task_manager = get_node_or_null("/root/TaskManager")
 	if _task_manager == null:
 		push_error("Level1: required TaskManager autoload was not found; interactive objects are disabled")
@@ -59,18 +59,6 @@ func _ready() -> void:
 	_create_pin_groups()
 	_create_interactive_object_groups()
 	_create_butterfly_groups()
-
-	_pin_audio_player = AudioStreamPlayer.new()
-	_pin_audio_player.stream = PIN_SOUND
-	add_child(_pin_audio_player)
-
-	_flower_audio_player = AudioStreamPlayer.new()
-	_flower_audio_player.stream = FLOWER_SOUND
-	add_child(_flower_audio_player)
-
-	_light_audio_player = AudioStreamPlayer.new()
-	_light_audio_player.stream = LIGHT_SOUND
-	add_child(_light_audio_player)
 
 
 func _process(_delta: float) -> void:
@@ -451,7 +439,7 @@ func _contains_collision_shape(object: AnimatedSprite2D, global_point: Vector2) 
 
 func _trigger_pin(pin2: Sprite2D) -> void:
 	_triggered_pins[pin2] = true
-	_pin_audio_player.play()
+	_audio_manager.call("PlayEffect", PIN_SOUND)
 	_spin_pin_forever(pin2)
 
 
@@ -462,13 +450,14 @@ func _trigger_interactive_object(object: AnimatedSprite2D) -> void:
 	object.play()
 
 	if bool(_object_is_butterfly.get(object, false)):
+		_audio_manager.call("PlayEffect", BUTTERFLY_SOUND)
 		_start_butterfly_flight(object)
 		return
 
 	if _object_uses_light_sound[object]:
-		_light_audio_player.play()
+		_audio_manager.call("PlayEffect", LIGHT_SOUND)
 	else:
-		_flower_audio_player.play()
+		_audio_manager.call("PlayEffect", FLOWER_SOUND)
 
 
 func _start_butterfly_flight(butterfly: AnimatedSprite2D) -> void:

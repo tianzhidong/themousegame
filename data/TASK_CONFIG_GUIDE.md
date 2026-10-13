@@ -48,7 +48,15 @@ Godot 保存 JSON 时可能把整数写成 `1.0`。任务加载器同时兼容 `
 - `progress_mode`：`per_action` 或 `distinct_object`。
 - `order`：匹配优先级和顺序，必须从 1 连续排列。
 - `hint_image_path`：引导图片路径，可为空。
-- `hint_audio_path`：引导音频路径，可为空。任务栏只保存路径，不负责播放引导。
+- `hint_audio_path`：引导音频路径，可为空。当前任务可自动播放提示，点击任务栏的小喇叭可重播；第10、11关在新一组出现时播放，第12关在进入对应小游戏时播放。
+
+## 同一行包含多个操作步骤
+
+第9天在每个任务中配置可选 `steps` 数组，依次执行双击开箱、拖拽三件物品和单击关箱。每完成一步增加一个进度点；组任务的 `target_count` 等于步骤数，`progress_mode` 必须为 `per_action`，当天 `task_mode` 必须为 `sequence`。
+
+连续步骤设置相同的非空 `unordered_group` 时，这些步骤可按任意顺序完成，每步只计数一次，全部完成才进入下一步。第9天的三个拖拽步骤均设置为 `"unordered_group": "box_contents"`：先开箱，自由选择三件物品拖拽，全部归位后才能关箱。顶部提示优先提示尚未完成的物品，不限制实际拖拽顺序。
+
+每个步骤沿用 `hint_audio_path`、`text`、`icon_path`、`operation`、`target_type`、`target_color`、`target_tag`、`target_ids` 字段，`target_count` 必须为1，不允许再嵌套步骤。任务栏每行显示该组进度，顶部文字和图标显示当前步骤。不含 `steps` 的其他天仍沿用原来的计数方式。
 
 ## 为什么其他对象不会响应
 

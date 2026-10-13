@@ -5,10 +5,17 @@
 [ext_resource type="Script" uid="uid://hfkyaicge4ep" path="res://scripts/ui/back_button_2.gd" id="3_5vn0v"]
 [ext_resource type="Texture2D" uid="uid://dugdmlhiypicq" path="res://assets/images/ui/settings_button.png" id="5_um320"]
 [ext_resource type="Script" uid="uid://biydogrrnkjp" path="res://scripts/ui/settings_button.gd" id="6_glw47"]
-[ext_resource type="Texture2D" uid="uid://b4o7ut5l7xcx4" path="res://assets/images/backgrounds/day4_bg.png" id="7_5vn0v"]
+[ext_resource type="Texture2D" uid="uid://cqby3p8qbjw7y" path="res://assets/images/backgrounds/day4_picnic_bg.png" id="7_5vn0v"]
 [ext_resource type="PackedScene" uid="uid://3kwv7sjrajm0" path="res://scenes/ui/taskbar.tscn" id="8_taskbar"]
+[ext_resource type="Script" uid="uid://c3oy2mtu0gs37" path="res://scripts/days/Day4Picnic.cs" id="9_picnic"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day4/picnic_basket_back.tres" id="10_basket_back"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day4/picnic_basket_front.tres" id="11_basket_front"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ifow5"]
+radius = 33.01515
 
 [node name="Level4" type="Node2D" unique_id=1075978117]
+script = ExtResource("9_picnic")
 
 [node name="friend" parent="." unique_id=1141735396 instance=ExtResource("1_friend")]
 position = Vector2(470.99997, 277.00006)
@@ -35,8 +42,65 @@ scale = Vector2(1.1483253, 1.1477151)
 texture = ExtResource("7_5vn0v")
 metadata/_edit_lock_ = true
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1422375619]
+[node name="mat" type="Area2D" parent="." unique_id=1422375619]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=884336937]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="mat" unique_id=884336937]
 position = Vector2(624, 432)
 polygon = PackedVector2Array(-1, -3, 708, 0, 858, 414, -167, 411)
+
+[node name="basket" type="Area2D" parent="." unique_id=728880800]
+
+[node name="basket1" type="CollisionPolygon2D" parent="basket" unique_id=2044601158]
+position = Vector2(280, 552)
+scale = Vector2(0.39, 0.39)
+polygon = PackedVector2Array(-348.5, -0.5, -295.5, -57.5, -174.5, -96.5, -0.5, -112.5, 174.5, -96.5, 295.5, -57.5, 349.5, -0.5, 330.7693, 41.025635, 256.41028, 79.48718, 141.02563, 110.25647, -35.8974, 117.94873, -223.0769, 92.30774, -348.71796, 30.769287)
+
+[node name="Back" type="Sprite2D" parent="basket/basket1" unique_id=281733309]
+z_index = -1
+texture = ExtResource("10_basket_back")
+metadata/skip_background_brightness = true
+
+[node name="Front" type="Sprite2D" parent="basket/basket1" unique_id=1849656402]
+z_index = 60
+texture = ExtResource("11_basket_front")
+metadata/skip_background_brightness = true
+
+[node name="basket2" type="CollisionPolygon2D" parent="basket" unique_id=769285704]
+position = Vector2(280, 780)
+scale = Vector2(0.43, 0.43)
+polygon = PackedVector2Array(-348.5, -0.5, -295.5, -57.5, -174.5, -96.5, -0.5, -112.5, 174.5, -96.5, 295.5, -57.5, 349.5, -0.5, 344.18604, 30.232544, 302.32562, 58.139526, 220.93024, 88.37207, 86.04651, 113.95349, -48.83722, 116.27905, -162.79071, 102.32556, -260.46515, 79.069824, -346.51166, 34.883667)
+
+[node name="Back" type="Sprite2D" parent="basket/basket2" unique_id=147345977]
+self_modulate = Color(0.98, 0.97, 0.94, 1)
+z_index = -1
+texture = ExtResource("10_basket_back")
+metadata/skip_background_brightness = true
+
+[node name="Front" type="Sprite2D" parent="basket/basket2" unique_id=640220920]
+self_modulate = Color(0.98, 0.97, 0.94, 1)
+z_index = 60
+texture = ExtResource("11_basket_front")
+metadata/skip_background_brightness = true
+
+[node name="basket3" type="CollisionPolygon2D" parent="basket" unique_id=1649084043]
+position = Vector2(919, 896)
+scale = Vector2(0.32, 0.32)
+polygon = PackedVector2Array(-348.5, -0.5, -295.5, -57.5, -174.5, -96.5, -0.5, -112.5, 174.5, -96.5, 295.5, -57.5, 349.5, -0.5, 325, 43.75, 212.5, 93.75, 93.75, 112.5, 0, 115.625, -90.625, 115.625, -193.75, 100, -337.5, 40.625)
+
+[node name="Back" type="Sprite2D" parent="basket/basket3" unique_id=1038113855]
+self_modulate = Color(1, 0.98, 0.96, 1)
+z_index = -1
+texture = ExtResource("10_basket_back")
+metadata/skip_background_brightness = true
+
+[node name="Front" type="Sprite2D" parent="basket/basket3" unique_id=1887062026]
+self_modulate = Color(1, 0.98, 0.96, 1)
+z_index = 60
+texture = ExtResource("11_basket_front")
+metadata/skip_background_brightness = true
+
+[node name="bottle" type="Area2D" parent="." unique_id=1676983526]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bottle" unique_id=1717828874]
+position = Vector2(1638, 718)
+shape = SubResource("CircleShape2D_ifow5")

@@ -1,0 +1,8 @@
+[
+  {"id":"home","day":0,"filename":"home_welcome.wav","text":"欢迎来到森林小镇！准备好你的小鼠标，点击开始，我们出发吧！"},
+  {"id":"choose_day","day":0,"filename":"choose_day.wav","text":"今天想挑战哪一天的任务呢？点选一个关卡，开始你的小镇之旅吧！"},
+  {"id":"choose_friend","day":0,"filename":"choose_friend.wav","text":"小伙伴们都准备好啦！选一位你喜欢的伙伴，一起完成今天的任务吧！"},
+  {"id":"music_settings","day":0,"filename":"music_settings.wav","text":"拖动小圆点，就能调节音乐的大小。调到听着舒服的音量吧！"},
+  {"id":"exit_prompt","day":0,"filename":"exit_prompt.wav","text":"想休息一下吗？你可以退出这一关，也可以继续挑战哦！"},
+  {"id":"day_complete","day":0,"filename":"day_complete.wav","text":"今天的任务完成啦！谢谢你的小鼠标，帮森林小镇解决了这么多事情！"}
+]

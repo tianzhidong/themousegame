@@ -1,0 +1,9 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/seed_packets_atlas.png" id="1_atlas"]
+
+[resource]
+atlas = ExtResource("1_atlas")
+region = Rect2(1605, 35, 334, 343)
+margin = Rect2(0, 15, 0, 15)
+filter_clip = true

@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/images/objects/day12/activity_art/train_wagon_side.png" id="1_wagon"]
+
+[resource]
+atlas = ExtResource("1_wagon")
+region = Rect2(8, 224, 1520, 616)
+filter_clip = true

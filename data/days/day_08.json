@@ -1,40 +1,184 @@
 {
   "day_id": 8,
-  "day_title": "高高的树屋",
+  "day_title": "奇妙玩具屋",
   "task_mode": "sequence",
   "time_limit_seconds": 900,
   "tasks": [
     {
-      "id": "double_click_treehouse_windows",
-      "text": "双击打开树屋窗户",
-      "icon_path": "res://assets/images/objects/lesson/wooden_signpost.png",
+      "id": "double_click_toyhouse_boxes",
+      "text": "打开盒子",
+      "icon_path": "res://assets/images/objects/day8/box_red_closed.tres",
       "operation": "double_click",
-      "target_type": "window",
+      "target_type": "box",
       "target_color": "",
-      "target_tag": "treehouse_window",
-      "target_ids": [],
-      "target_count": 4,
+      "target_tag": "toyhouse_toy",
+      "target_ids": [
+        "box_red",
+        "box_teal",
+        "box_yellow",
+        "box_purple",
+        "box_green"
+      ],
+      "target_count": 5,
       "progress_style": "dots",
       "progress_mode": "distinct_object",
       "order": 1,
       "hint_image_path": "",
-      "hint_audio_path": "res://assets/audio/voice/lesson/双击左键.ogg"
+      "hint_audio_path": "res://assets/audio/voice/task_hints/day08/double_click_toyhouse_boxes_hint.wav"
     },
     {
-      "id": "double_click_treehouse_lights",
-      "text": "双击点亮树屋灯笼",
-      "icon_path": "res://assets/images/ui/light_s.png",
+      "id": "double_click_cars",
+      "text": "开动小车",
+      "icon_path": "res://assets/images/objects/day8/car_red_closed.tres",
       "operation": "double_click",
-      "target_type": "light",
+      "target_type": "car",
       "target_color": "",
-      "target_tag": "treehouse_light",
-      "target_ids": [],
+      "target_tag": "toyhouse_toy",
+      "target_ids": [
+        "car_red",
+        "car_blue",
+        "car_yellow",
+        "car_green",
+        "car_purple"
+      ],
       "target_count": 5,
       "progress_style": "dots",
       "progress_mode": "distinct_object",
       "order": 2,
       "hint_image_path": "",
-      "hint_audio_path": ""
+      "hint_audio_path": "res://assets/audio/voice/task_hints/day08/double_click_cars_hint.wav"
+    },
+    {
+      "id": "double_click_airplanes",
+      "text": "开动飞机",
+      "icon_path": "res://assets/images/objects/day8/airplane_red_closed.tres",
+      "operation": "double_click",
+      "target_type": "airplane",
+      "target_color": "",
+      "target_tag": "toyhouse_toy",
+      "target_ids": [
+        "airplane_red",
+        "airplane_blue",
+        "airplane_yellow",
+        "airplane_green",
+        "airplane_purple"
+      ],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 3,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/task_hints/day08/double_click_airplanes_hint.wav"
+    },
+    {
+      "id": "double_click_robots",
+      "text": "开机器人",
+      "icon_path": "res://assets/images/objects/day8/robot_red_closed.tres",
+      "operation": "double_click",
+      "target_type": "robot",
+      "target_color": "",
+      "target_tag": "toyhouse_toy",
+      "target_ids": [
+        "robot_red",
+        "robot_blue",
+        "robot_yellow",
+        "robot_green",
+        "robot_purple"
+      ],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 4,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/task_hints/day08/double_click_robots_hint.wav"
+    },
+    {
+      "id": "double_click_eggs",
+      "text": "打开彩蛋",
+      "icon_path": "res://assets/images/objects/day8/egg_red_closed.tres",
+      "operation": "double_click",
+      "target_type": "egg",
+      "target_color": "",
+      "target_tag": "toyhouse_toy",
+      "target_ids": [
+        "egg_red",
+        "egg_blue",
+        "egg_yellow",
+        "egg_green",
+        "egg_purple"
+      ],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 5,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/task_hints/day08/double_click_eggs_hint.wav"
+    },
+    {
+      "id": "double_click_candies",
+      "text": "打开糖果",
+      "icon_path": "res://assets/images/objects/day8/candy_red_closed.tres",
+      "operation": "double_click",
+      "target_type": "candy",
+      "target_color": "",
+      "target_tag": "toyhouse_toy",
+      "target_ids": [
+        "candy_red",
+        "candy_blue",
+        "candy_yellow",
+        "candy_green",
+        "candy_purple"
+      ],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 6,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/task_hints/day08/double_click_candies_hint.wav"
+    },
+    {
+      "id": "double_click_rocket",
+      "text": "发射火箭",
+      "icon_path": "res://assets/images/objects/day8/rocket_red_closed.tres",
+      "operation": "double_click",
+      "target_type": "rocket",
+      "target_color": "",
+      "target_tag": "toyhouse_toy",
+      "target_ids": [
+        "rocket_red",
+        "rocket_blue",
+        "rocket_yellow",
+        "rocket_green",
+        "rocket_purple"
+      ],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 7,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/task_hints/day08/double_click_rocket_hint.wav"
+    },
+    {
+      "id": "double_click_picture_books",
+      "text": "打开画册",
+      "icon_path": "res://assets/images/objects/day8/picture_book_red_closed.tres",
+      "operation": "double_click",
+      "target_type": "picture_book",
+      "target_color": "",
+      "target_tag": "toyhouse_toy",
+      "target_ids": [
+        "picture_book_red",
+        "picture_book_teal",
+        "picture_book_yellow",
+        "picture_book_purple",
+        "picture_book_green"
+      ],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "distinct_object",
+      "order": 8,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/task_hints/day08/double_click_picture_books_hint.wav"
     }
   ]
 }

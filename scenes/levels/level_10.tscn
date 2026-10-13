@@ -7,12 +7,62 @@
 [ext_resource type="Texture2D" uid="uid://dugdmlhiypicq" path="res://assets/images/ui/settings_button.png" id="6_hkd47"]
 [ext_resource type="Script" uid="uid://biydogrrnkjp" path="res://scripts/ui/settings_button.gd" id="7_hvxp4"]
 [ext_resource type="PackedScene" uid="uid://3kwv7sjrajm0" path="res://scenes/ui/taskbar.tscn" id="8_taskbar"]
+[ext_resource type="Script" uid="uid://c0fn7q4oi2y8b" path="res://scripts/days/Day10Courtyard.cs" id="9_courtyard"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/flower_blue.tres" id="day10_flower_blue"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/flower_pink_daisy.tres" id="day10_flower_pink_daisy"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/flower_purple_violet.tres" id="day10_flower_purple_violet"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/flower_red_tulip.tres" id="day10_flower_red_tulip"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/flower_yellow_sunflower.tres" id="day10_flower_yellow_sunflower"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/leaf_amber_oak.tres" id="day10_leaf_amber_oak"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/leaf_green_heart.tres" id="day10_leaf_green_heart"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/leaf_green_oval.tres" id="day10_leaf_green_oval"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/leaf_orange_maple.tres" id="day10_leaf_orange_maple"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/leaf_yellow_willow.tres" id="day10_leaf_yellow_willow"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/paper_ball_blue.tres" id="day10_paper_ball_blue"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/paper_ball_cream.tres" id="day10_paper_ball_cream"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/paper_ball_flat.tres" id="day10_paper_ball_flat"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/paper_ball_pink.tres" id="day10_paper_ball_pink"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/paper_ball_white.tres" id="day10_paper_ball_white"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/pinwheel_blue_rotor.tres" id="day10_pinwheel_blue_rotor"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/pinwheel_blue_stick.tres" id="day10_pinwheel_blue_stick"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/pinwheel_pink_rotor.tres" id="day10_pinwheel_pink_rotor"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/pinwheel_pink_stick.tres" id="day10_pinwheel_pink_stick"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/pinwheel_purple_rotor.tres" id="day10_pinwheel_purple_rotor"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/pinwheel_purple_stick.tres" id="day10_pinwheel_purple_stick"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/pinwheel_red_rotor.tres" id="day10_pinwheel_red_rotor"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/pinwheel_red_stick.tres" id="day10_pinwheel_red_stick"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/pinwheel_yellow_rotor.tres" id="day10_pinwheel_yellow_rotor"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/pinwheel_yellow_stick.tres" id="day10_pinwheel_yellow_stick"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/seeds_blue_flower.tres" id="day10_seeds_blue_flower"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/seeds_pink_daisy.tres" id="day10_seeds_pink_daisy"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/seeds_purple_violet.tres" id="day10_seeds_purple_violet"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/seeds_red_tulip.tres" id="day10_seeds_red_tulip"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/seeds_yellow_sunflower.tres" id="day10_seeds_yellow_sunflower"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/seed_packet_blue_flower_closed.tres" id="day10_seed_packet_blue_flower_closed"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/seed_packet_pink_daisy_closed.tres" id="day10_seed_packet_pink_daisy_closed"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/seed_packet_purple_violet_closed.tres" id="day10_seed_packet_purple_violet_closed"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/seed_packet_red_tulip_closed.tres" id="day10_seed_packet_red_tulip_closed"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/seed_packet_yellow_sunflower_closed.tres" id="day10_seed_packet_yellow_sunflower_closed"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/sign_bakery.tres" id="day10_sign_bakery"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/sign_flower_shop.tres" id="day10_sign_flower_shop"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/sign_forest.tres" id="day10_sign_forest"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/sign_lake.tres" id="day10_sign_lake"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/sign_playground.tres" id="day10_sign_playground"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/tool_broom.tres" id="day10_tool_broom"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/tool_bucket.tres" id="day10_tool_bucket"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/tool_hand_rake.tres" id="day10_tool_hand_rake"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/tool_trowel.tres" id="day10_tool_trowel"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day10/tool_watering_can.tres" id="day10_tool_watering_can"]
 
 [node name="Level10" type="Node2D" unique_id=595934799]
+script = ExtResource("9_courtyard")
 
 [node name="friend" parent="." unique_id=1481695877 instance=ExtResource("1_friend")]
+position = Vector2(503.99997, 865.99994)
+scale = Vector2(0.45999995, 0.45999995)
 
 [node name="Day10Bg" type="Sprite2D" parent="." unique_id=737892236]
+z_index = -1
 position = Vector2(960, 540)
 scale = Vector2(1.1483254, 1.1477152)
 texture = ExtResource("2_sqmjf")
@@ -31,3 +81,559 @@ texture = ExtResource("6_hkd47")
 script = ExtResource("7_hvxp4")
 
 [node name="Taskbar" parent="." unique_id=1401419519 instance=ExtResource("8_taskbar")]
+
+[node name="CanvasLayer" parent="Taskbar" index="0" unique_id=311918326]
+visible = false
+
+[node name="CourtyardObjects" type="Node2D" parent="." unique_id=950591428]
+editor_description = "在 2D 编辑器拖动素材；检查器 Transform 可精确调整位置、大小和旋转。运行和重置使用保存的布局。"
+
+[node name="Leaves" type="Node2D" parent="CourtyardObjects" unique_id=1372201054]
+editor_description = "树叶初始位置"
+
+[node name="leaf_green_oval" type="Sprite2D" parent="CourtyardObjects/Leaves" unique_id=1440318085]
+modulate = Color(0.98312366, 0.98312366, 0.98312366, 1)
+z_index = 3
+position = Vector2(896, 1027)
+rotation = -0.06205601
+scale = Vector2(0.16809472, 0.16809472)
+texture = ExtResource("day10_leaf_green_oval")
+
+[node name="leaf_yellow_willow" type="Sprite2D" parent="CourtyardObjects/Leaves" unique_id=991089689]
+modulate = Color(0.9929435, 0.9929435, 0.9929435, 1)
+z_index = 3
+position = Vector2(821.0526, 705.84485)
+rotation = 0.27342436
+scale = Vector2(0.1407763, 0.1407763)
+texture = ExtResource("day10_leaf_yellow_willow")
+
+[node name="leaf_amber_oak" type="Sprite2D" parent="CourtyardObjects/Leaves" unique_id=129721334]
+modulate = Color(0.9808268, 0.9808268, 0.9808268, 1)
+z_index = 3
+position = Vector2(1251.6747, 671.4134)
+rotation = -0.29650566
+scale = Vector2(0.16294667, 0.16294667)
+texture = ExtResource("day10_leaf_amber_oak")
+
+[node name="leaf_orange_maple" type="Sprite2D" parent="CourtyardObjects/Leaves" unique_id=806095872]
+modulate = Color(0.9981127, 0.9981127, 0.9981127, 1)
+z_index = 3
+position = Vector2(1529, 820)
+rotation = -0.21816906
+scale = Vector2(0.14931531, 0.14931531)
+texture = ExtResource("day10_leaf_orange_maple")
+
+[node name="leaf_green_heart" type="Sprite2D" parent="CourtyardObjects/Leaves" unique_id=1376659167]
+modulate = Color(0.99440646, 0.99440646, 0.99440646, 1)
+z_index = 3
+position = Vector2(1148.3253, 964.08075)
+rotation = -0.39744952
+scale = Vector2(0.17790595, 0.17790595)
+texture = ExtResource("day10_leaf_green_heart")
+
+[node name="Paper" type="Node2D" parent="CourtyardObjects" unique_id=204698803]
+editor_description = "纸团初始位置"
+
+[node name="paper_ball_white" type="Sprite2D" parent="CourtyardObjects/Paper" unique_id=595139049]
+modulate = Color(0.9713447, 0.9713447, 0.9713447, 1)
+z_index = 3
+position = Vector2(842.2036, 600.5746)
+rotation = -0.06199096
+scale = Vector2(0.09173383, 0.09173383)
+texture = ExtResource("day10_paper_ball_white")
+
+[node name="paper_ball_cream" type="Sprite2D" parent="CourtyardObjects/Paper" unique_id=1922464148]
+modulate = Color(0.98743445, 0.98743445, 0.98743445, 1)
+z_index = 3
+position = Vector2(1326.7391, 633.8691)
+rotation = -0.02260316
+scale = Vector2(0.083273634, 0.083273634)
+texture = ExtResource("day10_paper_ball_cream")
+
+[node name="paper_ball_blue" type="Sprite2D" parent="CourtyardObjects/Paper" unique_id=772316045]
+modulate = Color(0.99071354, 0.99071354, 0.99071354, 1)
+z_index = 3
+position = Vector2(1194.2584, 843.5707)
+rotation = -0.19217218
+scale = Vector2(0.18265665, 0.18265665)
+texture = ExtResource("day10_paper_ball_blue")
+
+[node name="paper_ball_pink" type="Sprite2D" parent="CourtyardObjects/Paper" unique_id=682604682]
+modulate = Color(0.9845331, 0.9845331, 0.9845331, 1)
+z_index = 3
+position = Vector2(849.76074, 872.26355)
+rotation = 0.24577107
+scale = Vector2(0.1904716, 0.1904716)
+texture = ExtResource("day10_paper_ball_pink")
+
+[node name="paper_ball_flat" type="Sprite2D" parent="CourtyardObjects/Paper" unique_id=770147310]
+modulate = Color(0.9653589, 0.9653589, 0.9653589, 1)
+z_index = 3
+position = Vector2(1418.1819, 975.5579)
+rotation = -0.25967613
+scale = Vector2(0.16192833, 0.16192833)
+texture = ExtResource("day10_paper_ball_flat")
+
+[node name="Tools" type="Node2D" parent="CourtyardObjects" unique_id=2131044113]
+editor_description = "工具初始位置"
+
+[node name="tool_trowel" type="Sprite2D" parent="CourtyardObjects/Tools" unique_id=1053245851]
+modulate = Color(0.9746458, 0.9746458, 0.9746458, 1)
+z_index = 3
+position = Vector2(974, 891)
+rotation = -0.04817025
+scale = Vector2(0.2056485, 0.2056485)
+texture = ExtResource("day10_tool_trowel")
+
+[node name="tool_hand_rake" type="Sprite2D" parent="CourtyardObjects/Tools" unique_id=1610213803]
+modulate = Color(0.9819593, 0.9819593, 0.9819593, 1)
+z_index = 3
+position = Vector2(1435.4067, 723.06055)
+rotation = -0.04535948
+scale = Vector2(0.20424631, 0.20424631)
+texture = ExtResource("day10_tool_hand_rake")
+
+[node name="tool_watering_can" type="Sprite2D" parent="CourtyardObjects/Tools" unique_id=1633577642]
+modulate = Color(0.98338187, 0.98338187, 0.98338187, 1)
+z_index = 3
+position = Vector2(1297.6077, 941.12646)
+rotation = -0.10629197
+scale = Vector2(0.20847137, 0.20847137)
+texture = ExtResource("day10_tool_watering_can")
+
+[node name="tool_broom" type="Sprite2D" parent="CourtyardObjects/Tools" unique_id=1950799662]
+modulate = Color(0.96897197, 0.96897197, 0.96897197, 1)
+z_index = 3
+position = Vector2(1567.4641, 981.2965)
+rotation = -0.0839527
+scale = Vector2(0.18046588, 0.18046588)
+texture = ExtResource("day10_tool_broom")
+
+[node name="tool_bucket" type="Sprite2D" parent="CourtyardObjects/Tools" unique_id=860627048]
+modulate = Color(0.9798641, 0.9798641, 0.9798641, 1)
+z_index = 3
+position = Vector2(1619.1388, 631.24335)
+rotation = -0.1131506
+scale = Vector2(0.2413523, 0.2413523)
+texture = ExtResource("day10_tool_bucket")
+
+[node name="SeedPackets" type="Node2D" parent="CourtyardObjects" unique_id=644370423]
+editor_description = "种子包初始位置"
+
+[node name="seed_packet_red_tulip_closed" type="Sprite2D" parent="CourtyardObjects/SeedPackets" unique_id=1018799710]
+modulate = Color(0.98133934, 0.98133934, 0.98133934, 1)
+z_index = 3
+position = Vector2(715.4115, 665.2135)
+rotation = 0.0165343
+scale = Vector2(0.22127339, 0.22127339)
+texture = ExtResource("day10_seed_packet_red_tulip_closed")
+
+[node name="seed_packet_yellow_sunflower_closed" type="Sprite2D" parent="CourtyardObjects/SeedPackets" unique_id=857880814]
+modulate = Color(0.98268944, 0.98268944, 0.98268944, 1)
+z_index = 3
+position = Vector2(710.9432, 953.94275)
+rotation = -0.03668457
+scale = Vector2(0.22222333, 0.22222333)
+texture = ExtResource("day10_seed_packet_yellow_sunflower_closed")
+
+[node name="seed_packet_blue_flower_closed" type="Sprite2D" parent="CourtyardObjects/SeedPackets" unique_id=2121792688]
+modulate = Color(0.96451664, 0.96451664, 0.96451664, 1)
+z_index = 3
+position = Vector2(837.8681, 908.8097)
+rotation = 0.01060859
+scale = Vector2(0.20992205, 0.20992205)
+texture = ExtResource("day10_seed_packet_blue_flower_closed")
+
+[node name="seed_packet_pink_daisy_closed" type="Sprite2D" parent="CourtyardObjects/SeedPackets" unique_id=1160093709]
+modulate = Color(0.96665454, 0.96665454, 0.96665454, 1)
+z_index = 3
+position = Vector2(829.6081, 735.78894)
+rotation = -0.04224334
+scale = Vector2(0.22018714, 0.22018714)
+texture = ExtResource("day10_seed_packet_pink_daisy_closed")
+
+[node name="seed_packet_purple_violet_closed" type="Sprite2D" parent="CourtyardObjects/SeedPackets" unique_id=424438045]
+modulate = Color(0.97732925, 0.97732925, 0.97732925, 1)
+z_index = 3
+position = Vector2(713.7456, 805.4842)
+rotation = 0.0468824
+scale = Vector2(0.22038703, 0.22038703)
+texture = ExtResource("day10_seed_packet_purple_violet_closed")
+
+[node name="Seeds" type="Node2D" parent="CourtyardObjects" unique_id=2007290165]
+editor_description = "种子初始位置"
+
+[node name="seeds_red_tulip" type="Sprite2D" parent="CourtyardObjects/Seeds" unique_id=511259497]
+modulate = Color(0.97098815, 0.97098815, 0.97098815, 1)
+z_index = 3
+position = Vector2(715.99994, 616)
+rotation = -0.13326538
+scale = Vector2(0.06439515, 0.06439515)
+texture = ExtResource("day10_seeds_red_tulip")
+
+[node name="seeds_yellow_sunflower" type="Sprite2D" parent="CourtyardObjects/Seeds" unique_id=857746951]
+modulate = Color(0.9647793, 0.9647793, 0.9647793, 1)
+z_index = 3
+position = Vector2(712, 902)
+rotation = -0.16835774
+scale = Vector2(0.0682515, 0.0682515)
+texture = ExtResource("day10_seeds_yellow_sunflower")
+
+[node name="seeds_blue_flower" type="Sprite2D" parent="CourtyardObjects/Seeds" unique_id=776758865]
+modulate = Color(0.985949, 0.985949, 0.985949, 1)
+z_index = 3
+position = Vector2(839.0001, 862.00006)
+rotation = -0.17543815
+scale = Vector2(0.066782616, 0.066782616)
+texture = ExtResource("day10_seeds_blue_flower")
+
+[node name="seeds_pink_daisy" type="Sprite2D" parent="CourtyardObjects/Seeds" unique_id=646804490]
+modulate = Color(0.9792053, 0.9792053, 0.9792053, 1)
+z_index = 3
+position = Vector2(829.6081, 686)
+rotation = 0.14530462
+scale = Vector2(0.06773382, 0.06773382)
+texture = ExtResource("day10_seeds_pink_daisy")
+
+[node name="seeds_purple_violet" type="Sprite2D" parent="CourtyardObjects/Seeds" unique_id=1838385520]
+modulate = Color(0.96020037, 0.96020037, 0.96020037, 1)
+z_index = 3
+position = Vector2(713.7455, 758.99994)
+rotation = -0.03418548
+scale = Vector2(0.06511292, 0.06511292)
+texture = ExtResource("day10_seeds_purple_violet")
+
+[node name="PlantingSpots" type="Node2D" parent="CourtyardObjects" unique_id=923934956]
+editor_description = "每个 Pot 包含花朵、种子目标和浇水点击区域，可整体移动"
+
+[node name="Pot1" type="Node2D" parent="CourtyardObjects/PlantingSpots" unique_id=1335904298]
+editor_description = "整体移动种植位置；Flower 为花朵，SeedTarget 为种子吸附目标，WaterClickArea 为浇水点击范围。"
+position = Vector2(252.63155, 376.4506)
+
+[node name="Flower" type="Sprite2D" parent="CourtyardObjects/PlantingSpots/Pot1" unique_id=1969942166]
+modulate = Color(0.97277695, 0.97277695, 0.97277695, 1)
+z_index = 3
+position = Vector2(0, -88.80735)
+scale = Vector2(0.22549428, 0.22549428)
+texture = ExtResource("day10_flower_red_tulip")
+
+[node name="SeedTarget" type="Sprite2D" parent="CourtyardObjects/PlantingSpots/Pot1" unique_id=1200692025]
+modulate = Color(0.4, 0.8, 1, 0.5)
+z_index = 2
+position = Vector2(-1.6315459, -46.771255)
+scale = Vector2(0.07125891, 0.07125891)
+texture = ExtResource("day10_seeds_red_tulip")
+
+[node name="WaterClickArea" type="Marker2D" parent="CourtyardObjects/PlantingSpots/Pot1" unique_id=1008147494]
+editor_description = "浇水点击范围中心；可调整位置，缩放会同步调整点击范围。运行时不显示图形。"
+z_index = 1
+position = Vector2(-2.6315384, -44.4506)
+scale = Vector2(0.38925472, 0.38925472)
+
+[node name="Pot2" type="Node2D" parent="CourtyardObjects/PlantingSpots" unique_id=373370744]
+editor_description = "整体移动种植位置；Flower 为花朵，SeedTarget 为种子吸附目标，WaterClickArea 为浇水点击范围。"
+position = Vector2(350.23923, 378.746)
+
+[node name="Flower" type="Sprite2D" parent="CourtyardObjects/PlantingSpots/Pot2" unique_id=1418630543]
+modulate = Color(0.983314, 0.983314, 0.983314, 1)
+z_index = 3
+position = Vector2(0, -84.44208)
+scale = Vector2(0.20111042, 0.20111042)
+texture = ExtResource("day10_flower_yellow_sunflower")
+
+[node name="SeedTarget" type="Sprite2D" parent="CourtyardObjects/PlantingSpots/Pot2" unique_id=250569366]
+modulate = Color(0.4, 0.8, 1, 0.5)
+z_index = 2
+position = Vector2(-1.631546, -46.77126)
+scale = Vector2(0.07371007, 0.07371007)
+texture = ExtResource("day10_seeds_yellow_sunflower")
+
+[node name="WaterClickArea" type="Marker2D" parent="CourtyardObjects/PlantingSpots/Pot2" unique_id=1947988881]
+editor_description = "浇水点击范围中心；可调整位置，缩放会同步调整点击范围。运行时不显示图形。"
+z_index = 1
+position = Vector2(-2.2392445, -47.746017)
+scale = Vector2(0.43500805, 0.43500805)
+
+[node name="Pot3" type="Node2D" parent="CourtyardObjects/PlantingSpots" unique_id=948664838]
+editor_description = "整体移动种植位置；Flower 为花朵，SeedTarget 为种子吸附目标，WaterClickArea 为浇水点击范围。"
+position = Vector2(442.10526, 378.746)
+
+[node name="Flower" type="Sprite2D" parent="CourtyardObjects/PlantingSpots/Pot3" unique_id=1444668244]
+modulate = Color(0.9869341, 0.9869341, 0.9869341, 1)
+z_index = 3
+position = Vector2(0, -86.58565)
+scale = Vector2(0.22743507, 0.22743507)
+texture = ExtResource("day10_flower_blue")
+
+[node name="SeedTarget" type="Sprite2D" parent="CourtyardObjects/PlantingSpots/Pot3" unique_id=216741624]
+modulate = Color(0.4, 0.8, 1, 0.5)
+z_index = 2
+position = Vector2(-1.6315459, -46.771255)
+scale = Vector2(0.07352941, 0.07352941)
+texture = ExtResource("day10_seeds_blue_flower")
+
+[node name="WaterClickArea" type="Marker2D" parent="CourtyardObjects/PlantingSpots/Pot3" unique_id=878519667]
+editor_description = "浇水点击范围中心；可调整位置，缩放会同步调整点击范围。运行时不显示图形。"
+z_index = 1
+position = Vector2(-1.1052399, -46.745987)
+scale = Vector2(0.47807026, 0.47807026)
+
+[node name="Pot4" type="Node2D" parent="CourtyardObjects/PlantingSpots" unique_id=1227256910]
+editor_description = "整体移动种植位置；Flower 为花朵，SeedTarget 为种子吸附目标，WaterClickArea 为浇水点击范围。"
+position = Vector2(259.5215, 524.50586)
+
+[node name="Flower" type="Sprite2D" parent="CourtyardObjects/PlantingSpots/Pot4" unique_id=1198526338]
+modulate = Color(0.99642134, 0.99642134, 0.99642134, 1)
+z_index = 3
+position = Vector2(0, -85.55631)
+scale = Vector2(0.2151186, 0.2151186)
+texture = ExtResource("day10_flower_pink_daisy")
+
+[node name="SeedTarget" type="Sprite2D" parent="CourtyardObjects/PlantingSpots/Pot4" unique_id=462079153]
+modulate = Color(0.4, 0.8, 1, 0.5)
+z_index = 2
+position = Vector2(-1.6315459, -46.771255)
+scale = Vector2(0.07142857, 0.07142857)
+texture = ExtResource("day10_seeds_pink_daisy")
+
+[node name="WaterClickArea" type="Marker2D" parent="CourtyardObjects/PlantingSpots/Pot4" unique_id=909341383]
+editor_description = "浇水点击范围中心；可调整位置，缩放会同步调整点击范围。运行时不显示图形。"
+z_index = 1
+position = Vector2(-1.5215085, -46.505867)
+scale = Vector2(0.43478373, 0.43478373)
+
+[node name="Pot5" type="Node2D" parent="CourtyardObjects/PlantingSpots" unique_id=404226233]
+editor_description = "整体移动种植位置；Flower 为花朵，SeedTarget 为种子吸附目标，WaterClickArea 为浇水点击范围。"
+position = Vector2(367.46408, 524.50586)
+
+[node name="Flower" type="Sprite2D" parent="CourtyardObjects/PlantingSpots/Pot5" unique_id=1370834888]
+modulate = Color(0.96251094, 0.96251094, 0.96251094, 1)
+z_index = 3
+position = Vector2(0, -87.479355)
+scale = Vector2(0.2319467, 0.2319467)
+texture = ExtResource("day10_flower_purple_violet")
+
+[node name="SeedTarget" type="Sprite2D" parent="CourtyardObjects/PlantingSpots/Pot5" unique_id=1657074600]
+modulate = Color(0.4, 0.8, 1, 0.5)
+z_index = 2
+position = Vector2(-1.631546, -46.77126)
+scale = Vector2(0.07263923, 0.07263923)
+texture = ExtResource("day10_seeds_purple_violet")
+
+[node name="WaterClickArea" type="Marker2D" parent="CourtyardObjects/PlantingSpots/Pot5" unique_id=92693492]
+editor_description = "浇水点击范围中心；可调整位置，缩放会同步调整点击范围。运行时不显示图形。"
+z_index = 1
+position = Vector2(-2.464096, -44.505844)
+scale = Vector2(0.43266582, 0.43266582)
+
+[node name="Signs" type="Node2D" parent="CourtyardObjects" unique_id=315918599]
+editor_description = "路牌初始位置"
+
+[node name="sign_flower_shop" type="Sprite2D" parent="CourtyardObjects/Signs" unique_id=1394727656]
+modulate = Color(0.9760452, 0.9760452, 0.9760452, 1)
+z_index = 3
+position = Vector2(757.8947, 987.0351)
+rotation = -0.00942168
+scale = Vector2(0.2763771, 0.2763771)
+texture = ExtResource("day10_sign_flower_shop")
+
+[node name="sign_bakery" type="Sprite2D" parent="CourtyardObjects/Signs" unique_id=442221182]
+modulate = Color(0.9815467, 0.9815467, 0.9815467, 1)
+z_index = 3
+position = Vector2(1022.0096, 987.0351)
+rotation = 0.02075355
+scale = Vector2(0.27466324, 0.27466324)
+texture = ExtResource("day10_sign_bakery")
+
+[node name="sign_lake" type="Sprite2D" parent="CourtyardObjects/Signs" unique_id=73051834]
+modulate = Color(0.97765386, 0.97765386, 0.97765386, 1)
+z_index = 3
+position = Vector2(1448.9999, 619.99994)
+rotation = -0.08166133
+scale = Vector2(0.2823125, 0.2823125)
+texture = ExtResource("day10_sign_lake")
+
+[node name="sign_playground" type="Sprite2D" parent="CourtyardObjects/Signs" unique_id=457557122]
+modulate = Color(0.9614127, 0.9614127, 0.9614127, 1)
+z_index = 3
+position = Vector2(1596.1722, 860.7864)
+rotation = -0.02072698
+scale = Vector2(0.29919285, 0.29919285)
+texture = ExtResource("day10_sign_playground")
+
+[node name="sign_forest" type="Sprite2D" parent="CourtyardObjects/Signs" unique_id=1345660201]
+modulate = Color(0.9620229, 0.9620229, 0.9620229, 1)
+z_index = 3
+position = Vector2(1205.7416, 746.0149)
+rotation = 0.00865436
+scale = Vector2(0.2575204, 0.2575204)
+texture = ExtResource("day10_sign_forest")
+
+[node name="Pinwheels" type="Node2D" parent="CourtyardObjects" unique_id=185241586]
+editor_description = "选择 Pinwheel 父节点可一起移动叶片和支杆"
+
+[node name="Pinwheel1" type="Node2D" parent="CourtyardObjects/Pinwheels" unique_id=1697363885]
+position = Vector2(328, 803)
+metadata/_edit_group_ = true
+
+[node name="Stick" type="Sprite2D" parent="CourtyardObjects/Pinwheels/Pinwheel1" unique_id=1705953773]
+z_index = 1
+position = Vector2(0, 50)
+scale = Vector2(0.25974026, 0.25974026)
+texture = ExtResource("day10_pinwheel_red_stick")
+
+[node name="Rotor" type="Sprite2D" parent="CourtyardObjects/Pinwheels/Pinwheel1" unique_id=1674198973]
+modulate = Color(0.9781631, 0.9781631, 0.9781631, 1)
+z_index = 3
+rotation = 0.17083417
+scale = Vector2(0.2304144, 0.2304144)
+texture = ExtResource("day10_pinwheel_red_rotor")
+
+[node name="Pinwheel2" type="Node2D" parent="CourtyardObjects/Pinwheels" unique_id=1114452768]
+position = Vector2(1005, 530)
+metadata/_edit_group_ = true
+
+[node name="Stick" type="Sprite2D" parent="CourtyardObjects/Pinwheels/Pinwheel2" unique_id=987698169]
+z_index = 1
+position = Vector2(0, 50)
+scale = Vector2(0.25906736, 0.25906736)
+texture = ExtResource("day10_pinwheel_blue_stick")
+
+[node name="Rotor" type="Sprite2D" parent="CourtyardObjects/Pinwheels/Pinwheel2" unique_id=1010715267]
+modulate = Color(0.97834563, 0.97834563, 0.97834563, 1)
+z_index = 3
+rotation = 0.76192313
+scale = Vector2(0.25657618, 0.25657618)
+texture = ExtResource("day10_pinwheel_blue_rotor")
+
+[node name="Pinwheel3" type="Node2D" parent="CourtyardObjects/Pinwheels" unique_id=871029130]
+position = Vector2(250, 855)
+metadata/_edit_group_ = true
+
+[node name="Stick" type="Sprite2D" parent="CourtyardObjects/Pinwheels/Pinwheel3" unique_id=1981585194]
+z_index = 1
+position = Vector2(0, 50)
+scale = Vector2(0.25974026, 0.25974026)
+texture = ExtResource("day10_pinwheel_yellow_stick")
+
+[node name="Rotor" type="Sprite2D" parent="CourtyardObjects/Pinwheels/Pinwheel3" unique_id=351958456]
+modulate = Color(0.9778835, 0.9778835, 0.9778835, 1)
+z_index = 3
+rotation = 0.7871452
+scale = Vector2(0.24040785, 0.24040785)
+texture = ExtResource("day10_pinwheel_yellow_rotor")
+
+[node name="Pinwheel4" type="Node2D" parent="CourtyardObjects/Pinwheels" unique_id=1019229027]
+position = Vector2(156, 880)
+metadata/_edit_group_ = true
+
+[node name="Stick" type="Sprite2D" parent="CourtyardObjects/Pinwheels/Pinwheel4" unique_id=2099290818]
+z_index = 1
+position = Vector2(0, 50)
+scale = Vector2(0.25974026, 0.25974026)
+texture = ExtResource("day10_pinwheel_pink_stick")
+
+[node name="Rotor" type="Sprite2D" parent="CourtyardObjects/Pinwheels/Pinwheel4" unique_id=1349773835]
+modulate = Color(0.9879148, 0.9879148, 0.9879148, 1)
+z_index = 3
+rotation = 1.4104832
+scale = Vector2(0.2488297, 0.2488297)
+texture = ExtResource("day10_pinwheel_pink_rotor")
+
+[node name="Pinwheel5" type="Node2D" parent="CourtyardObjects/Pinwheels" unique_id=944933441]
+position = Vector2(52, 897)
+metadata/_edit_group_ = true
+
+[node name="Stick" type="Sprite2D" parent="CourtyardObjects/Pinwheels/Pinwheel5" unique_id=1608563252]
+z_index = 1
+position = Vector2(0, 50)
+scale = Vector2(0.25974026, 0.25974026)
+texture = ExtResource("day10_pinwheel_purple_stick")
+
+[node name="Rotor" type="Sprite2D" parent="CourtyardObjects/Pinwheels/Pinwheel5" unique_id=823337453]
+modulate = Color(0.99638164, 0.99638164, 0.99638164, 1)
+z_index = 3
+rotation = 1.020278
+scale = Vector2(0.24002413, 0.24002413)
+texture = ExtResource("day10_pinwheel_purple_rotor")
+
+[node name="PlacementTargets" type="Node2D" parent="CourtyardObjects" unique_id=695425264]
+editor_description = "半透明素材是吸附后的目标位置；可独立调整位置、大小和旋转。"
+
+[node name="ToolSlots" type="Node2D" parent="CourtyardObjects/PlacementTargets" unique_id=1642021152]
+editor_description = "工具归位位置"
+
+[node name="tool_trowel" type="Sprite2D" parent="CourtyardObjects/PlacementTargets/ToolSlots" unique_id=823482920]
+modulate = Color(0.4, 0.8, 1, 0.5)
+z_index = 2
+position = Vector2(1687, 595)
+scale = Vector2(0.1328125, 0.1328125)
+texture = ExtResource("day10_tool_trowel")
+
+[node name="tool_hand_rake" type="Sprite2D" parent="CourtyardObjects/PlacementTargets/ToolSlots" unique_id=198898991]
+modulate = Color(0.4, 0.8, 1, 0.5)
+z_index = 2
+position = Vector2(1727.0001, 591)
+scale = Vector2(0.1325536, 0.1325536)
+texture = ExtResource("day10_tool_hand_rake")
+
+[node name="tool_watering_can" type="Sprite2D" parent="CourtyardObjects/PlacementTargets/ToolSlots" unique_id=1970184614]
+modulate = Color(0.4, 0.8, 1, 0.5)
+z_index = 2
+position = Vector2(1784, 641)
+scale = Vector2(0.14285713, 0.14285713)
+texture = ExtResource("day10_tool_watering_can")
+
+[node name="tool_broom" type="Sprite2D" parent="CourtyardObjects/PlacementTargets/ToolSlots" unique_id=1033198180]
+modulate = Color(0.4, 0.8, 1, 0.5)
+z_index = 2
+position = Vector2(1763, 584)
+scale = Vector2(0.11785095, 0.11785095)
+texture = ExtResource("day10_tool_broom")
+
+[node name="tool_bucket" type="Sprite2D" parent="CourtyardObjects/PlacementTargets/ToolSlots" unique_id=771280196]
+modulate = Color(0.4, 0.8, 1, 0.5)
+z_index = 3
+position = Vector2(1719.0001, 633.00006)
+scale = Vector2(0.16585366, 0.16585366)
+texture = ExtResource("day10_tool_bucket")
+
+[node name="SignSlots" type="Node2D" parent="CourtyardObjects/PlacementTargets" unique_id=1344525468]
+editor_description = "路牌安装位置"
+
+[node name="sign_flower_shop" type="Sprite2D" parent="CourtyardObjects/PlacementTargets/SignSlots" unique_id=347954011]
+modulate = Color(0.4, 0.8, 1, 0.5)
+z_index = 2
+position = Vector2(1073.6842, 636.98193)
+scale = Vector2(0.27672955, 0.27672955)
+texture = ExtResource("day10_sign_flower_shop")
+
+[node name="sign_bakery" type="Sprite2D" parent="CourtyardObjects/PlacementTargets/SignSlots" unique_id=1207422399]
+modulate = Color(0.4, 0.8, 1, 0.5)
+z_index = 2
+position = Vector2(942.77515, 688.6291)
+scale = Vector2(0.2773109, 0.2773109)
+texture = ExtResource("day10_sign_bakery")
+
+[node name="sign_lake" type="Sprite2D" parent="CourtyardObjects/PlacementTargets/SignSlots" unique_id=744691127]
+modulate = Color(0.4, 0.8, 1, 0.5)
+z_index = 2
+position = Vector2(1073.6842, 728.79913)
+scale = Vector2(0.28265524, 0.28265524)
+texture = ExtResource("day10_sign_lake")
+
+[node name="sign_playground" type="Sprite2D" parent="CourtyardObjects/PlacementTargets/SignSlots" unique_id=1886411972]
+modulate = Color(0.4, 0.8, 1, 0.5)
+z_index = 2
+position = Vector2(942.77515, 780.44635)
+scale = Vector2(0.2832618, 0.2832618)
+texture = ExtResource("day10_sign_playground")
+
+[node name="sign_forest" type="Sprite2D" parent="CourtyardObjects/PlacementTargets/SignSlots" unique_id=733923976]
+modulate = Color(0.4, 0.8, 1, 0.5)
+z_index = 2
+position = Vector2(1073.6842, 820.6164)
+scale = Vector2(0.27385893, 0.27385893)
+texture = ExtResource("day10_sign_forest")
+
+[editable path="Taskbar"]

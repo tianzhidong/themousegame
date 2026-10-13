@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/images/objects/day9/book_red.png" id="1_texture"]
+
+[resource]
+atlas = ExtResource("1_texture")
+region = Rect2(5, 11, 184, 169)
+filter_clip = true

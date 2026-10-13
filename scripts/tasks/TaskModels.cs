@@ -81,6 +81,14 @@ public sealed class TaskDefinition
 
     [JsonPropertyName("hint_audio_path")]
     public string HintAudioPath { get; set; } = string.Empty;
+
+    // Optional ordered actions within one taskbar row; each action contributes one dot.
+    [JsonPropertyName("steps")]
+    public List<TaskDefinition> Steps { get; set; } = [];
+
+    // Consecutive steps with the same nonempty group may finish in any order.
+    [JsonPropertyName("unordered_group")]
+    public string UnorderedGroup { get; set; } = string.Empty;
 }
 
 public sealed class TaskRuntimeState
@@ -95,6 +103,33 @@ public sealed class TaskRuntimeState
     public TaskRunState State { get; internal set; } = TaskRunState.Pending;
 
     public int Progress { get; internal set; }
+
+    public TaskDefinition CurrentInteractionDefinition
+    {
+        get
+        {
+            foreach (int index in GetAvailableStepIndices()) return Definition.Steps[index];
+            return Definition;
+        }
+    }
+
+    internal HashSet<int> CompletedStepIndices { get; } = [];
+
+    internal IEnumerable<int> GetAvailableStepIndices()
+    {
+        int first = 0;
+        while (first < Definition.Steps.Count && CompletedStepIndices.Contains(first)) first++;
+        if (first >= Definition.Steps.Count) yield break;
+
+        yield return first;
+        string group = Definition.Steps[first].UnorderedGroup;
+        if (string.IsNullOrEmpty(group)) yield break;
+        for (int index = first + 1; index < Definition.Steps.Count
+            && Definition.Steps[index].UnorderedGroup == group; index++)
+        {
+            if (!CompletedStepIndices.Contains(index)) yield return index;
+        }
+    }
 
     internal HashSet<string> CountedObjectIds { get; } = new(StringComparer.OrdinalIgnoreCase);
 }

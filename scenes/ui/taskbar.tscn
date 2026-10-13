@@ -43,17 +43,20 @@ scale = Vector2(0.2962493, 0.29624927)
 texture = ExtResource("4_koqvg")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Taskbar/Blank4" unique_id=1310940623]
-offset_left = -758.125
+offset_left = -700.0
 offset_top = -223.02783
-offset_right = 3555.875
+offset_right = 3614.0
 offset_bottom = 1030.9722
 scale = Vector2(0.35801768, 0.35801768)
-theme_override_constants/separation = -164
+theme_override_constants/separation = 40
 
 [node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Taskbar/Blank4/HBoxContainer" unique_id=417587782]
+custom_minimum_size = Vector2(760, 760)
 layout_mode = 2
+size_flags_vertical = 4
 texture = ExtResource("5_rdkq4")
-expand_mode = 2
+expand_mode = 1
+stretch_mode = 6
 
 [node name="Label" type="Label" parent="CanvasLayer/Taskbar/Blank4/HBoxContainer" unique_id=1030055035]
 layout_mode = 2

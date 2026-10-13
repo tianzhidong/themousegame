@@ -13,11 +13,12 @@ config_version=5
 config/name="新建游戏项目"
 run/main_scene="res://scenes/main/Main.tscn"
 config/features=PackedStringArray("4.7", "C#", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://assets/images/ui/forest_town_icon.png"
 
 [autoload]
 
 AudioManager="*res://scripts/autoload/AudioManager.cs"
+BackgroundLightingManager="*res://scripts/visuals/background_lighting_manager.gd"
 GameState="*res://scripts/autoload/game_state.gd"
 TaskManager="*res://scripts/tasks/TaskManager.cs"
 

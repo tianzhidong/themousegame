@@ -1,88 +1,702 @@
 {
   "day_id": 9,
-  "day_title": "神秘礼物盒",
+  "day_title": "实验室整理员",
   "task_mode": "sequence",
   "time_limit_seconds": 900,
   "tasks": [
-	{
-	  "id": "move_find_gift_boxes",
-	  "text": "移动鼠标寻找礼物盒",
-	  "icon_path": "res://assets/images/objects/lesson/firefly.png",
-	  "operation": "move",
-	  "target_type": "box",
-	  "target_color": "",
-	  "target_tag": "hidden_gift_box",
-	  "target_ids": [],
-	  "target_count": 3,
-	  "progress_style": "dots",
-	  "progress_mode": "distinct_object",
-	  "order": 1,
-	  "hint_image_path": "",
-	  "hint_audio_path": ""
-	},
-	{
-	  "id": "click_gift_box_clues",
-	  "text": "点击礼物盒上的线索",
-	  "icon_path": "res://assets/images/ui/star.png",
-	  "operation": "click",
-	  "target_type": "clue",
-	  "target_color": "",
-	  "target_tag": "gift_box_clue",
-	  "target_ids": [],
-	  "target_count": 4,
-	  "progress_style": "dots",
-	  "progress_mode": "distinct_object",
-	  "order": 2,
-	  "hint_image_path": "",
-	  "hint_audio_path": ""
-	},
-	{
-	  "id": "drag_gifts_into_box",
-	  "text": "把礼物拖进礼物盒",
-	  "icon_path": "res://assets/images/ui/apple_s.png",
-	  "operation": "drag",
-	  "target_type": "gift",
-	  "target_color": "",
-	  "target_tag": "gift_box_item",
-	  "target_ids": [],
-	  "target_count": 4,
-	  "progress_style": "dots",
-	  "progress_mode": "distinct_object",
-	  "order": 3,
-	  "hint_image_path": "",
-	  "hint_audio_path": ""
-	},
-	{
-	  "id": "wheel_gift_box_lock",
-	  "text": "滚动滚轮转动密码锁",
-	  "icon_path": "res://assets/images/objects/lesson/pin_s.png",
-	  "operation": "wheel",
-	  "target_type": "box",
-	  "target_color": "",
-	  "target_tag": "gift_box_lock",
-	  "target_ids": [],
-	  "target_count": 5,
-	  "progress_style": "dots",
-	  "progress_mode": "per_action",
-	  "order": 4,
-	  "hint_image_path": "",
-	  "hint_audio_path": ""
-	},
-	{
-	  "id": "double_click_open_gift_box",
-	  "text": "双击打开神秘礼物盒",
-	  "icon_path": "res://assets/images/ui/star.png",
-	  "operation": "double_click",
-	  "target_type": "box",
-	  "target_color": "",
-	  "target_tag": "mystery_gift_box",
-	  "target_ids": [],
-	  "target_count": 1,
-	  "progress_style": "dots",
-	  "progress_mode": "distinct_object",
-	  "order": 5,
-	  "hint_image_path": "",
-	  "hint_audio_path": ""
-	}
+    {
+      "id": "sort_books",
+      "text": "整理书本",
+      "icon_path": "res://assets/images/objects/day9/book_blue.tres",
+      "operation": "double_click",
+      "target_type": "",
+      "target_color": "",
+      "target_tag": "laboratory_item",
+      "target_ids": [],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "per_action",
+      "order": 1,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_books_hint.wav",
+      "steps": [
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_books_step_01_hint.wav",
+          "text": "双击开箱",
+          "icon_path": "res://assets/images/objects/day9/supply_box_closed.tres",
+          "operation": "double_click",
+          "target_type": "box",
+          "target_ids": [
+            "supply_box"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_books_step_02_hint.wav",
+          "text": "拖蓝书",
+          "icon_path": "res://assets/images/objects/day9/book_blue.tres",
+          "operation": "drag",
+          "unordered_group": "box_contents",
+          "target_type": "book",
+          "target_ids": [
+            "book_blue"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_books_step_03_hint.wav",
+          "text": "拖红书",
+          "icon_path": "res://assets/images/objects/day9/book_red.tres",
+          "operation": "drag",
+          "unordered_group": "box_contents",
+          "target_type": "book",
+          "target_ids": [
+            "book_red"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_books_step_04_hint.wav",
+          "text": "拖绿书",
+          "icon_path": "res://assets/images/objects/day9/book_green.tres",
+          "operation": "drag",
+          "unordered_group": "box_contents",
+          "target_type": "book",
+          "target_ids": [
+            "book_green"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_books_step_05_hint.wav",
+          "text": "单击关箱",
+          "icon_path": "res://assets/images/objects/day9/supply_box_open.tres",
+          "operation": "click",
+          "target_type": "box",
+          "target_ids": [
+            "supply_box"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sort_bottles",
+      "text": "整理瓶子",
+      "icon_path": "res://assets/images/objects/day9/flask_round_blue.tres",
+      "operation": "double_click",
+      "target_type": "",
+      "target_color": "",
+      "target_tag": "laboratory_item",
+      "target_ids": [],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "per_action",
+      "order": 2,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_bottles_hint.wav",
+      "steps": [
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_bottles_step_01_hint.wav",
+          "text": "双击开箱",
+          "icon_path": "res://assets/images/objects/day9/supply_box_closed.tres",
+          "operation": "double_click",
+          "target_type": "box",
+          "target_ids": [
+            "supply_box"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_bottles_step_02_hint.wav",
+          "text": "拖蓝圆瓶",
+          "icon_path": "res://assets/images/objects/day9/flask_round_blue.tres",
+          "operation": "drag",
+          "unordered_group": "box_contents",
+          "target_type": "bottle",
+          "target_ids": [
+            "flask_round_blue"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_bottles_step_03_hint.wav",
+          "text": "拖红锥瓶",
+          "icon_path": "res://assets/images/objects/day9/flask_conical_red.tres",
+          "operation": "drag",
+          "unordered_group": "box_contents",
+          "target_type": "bottle",
+          "target_ids": [
+            "flask_conical_red"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_bottles_step_04_hint.wav",
+          "text": "拖绿长瓶",
+          "icon_path": "res://assets/images/objects/day9/bottle_tall_green.tres",
+          "operation": "drag",
+          "unordered_group": "box_contents",
+          "target_type": "bottle",
+          "target_ids": [
+            "bottle_tall_green"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_bottles_step_05_hint.wav",
+          "text": "单击关箱",
+          "icon_path": "res://assets/images/objects/day9/supply_box_open.tres",
+          "operation": "click",
+          "target_type": "box",
+          "target_ids": [
+            "supply_box"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sort_specimens",
+      "text": "整理标本",
+      "icon_path": "res://assets/images/objects/day9/specimen_leaf.tres",
+      "operation": "double_click",
+      "target_type": "",
+      "target_color": "",
+      "target_tag": "laboratory_item",
+      "target_ids": [],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "per_action",
+      "order": 3,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_specimens_hint.wav",
+      "steps": [
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_specimens_step_01_hint.wav",
+          "text": "双击开箱",
+          "icon_path": "res://assets/images/objects/day9/supply_box_closed.tres",
+          "operation": "double_click",
+          "target_type": "box",
+          "target_ids": [
+            "supply_box"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_specimens_step_02_hint.wav",
+          "text": "放叶标本",
+          "icon_path": "res://assets/images/objects/day9/specimen_leaf.tres",
+          "operation": "drag",
+          "unordered_group": "box_contents",
+          "target_type": "specimen",
+          "target_ids": [
+            "specimen_leaf"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_specimens_step_03_hint.wav",
+          "text": "放花标本",
+          "icon_path": "res://assets/images/objects/day9/specimen_flower.tres",
+          "operation": "drag",
+          "unordered_group": "box_contents",
+          "target_type": "specimen",
+          "target_ids": [
+            "specimen_flower"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_specimens_step_04_hint.wav",
+          "text": "放草标本",
+          "icon_path": "res://assets/images/objects/day9/specimen_grass.tres",
+          "operation": "drag",
+          "unordered_group": "box_contents",
+          "target_type": "specimen",
+          "target_ids": [
+            "specimen_grass"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_specimens_step_05_hint.wav",
+          "text": "单击关箱",
+          "icon_path": "res://assets/images/objects/day9/supply_box_open.tres",
+          "operation": "click",
+          "target_type": "box",
+          "target_ids": [
+            "supply_box"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sort_mixed",
+      "text": "混合分类",
+      "icon_path": "res://assets/images/objects/day9/book_red.tres",
+      "operation": "double_click",
+      "target_type": "",
+      "target_color": "",
+      "target_tag": "laboratory_item",
+      "target_ids": [],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "per_action",
+      "order": 4,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_mixed_hint.wav",
+      "steps": [
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_mixed_step_01_hint.wav",
+          "text": "双击开箱",
+          "icon_path": "res://assets/images/objects/day9/supply_box_closed.tres",
+          "operation": "double_click",
+          "target_type": "box",
+          "target_ids": [
+            "supply_box"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_mixed_step_02_hint.wav",
+          "text": "拖红书",
+          "icon_path": "res://assets/images/objects/day9/book_red.tres",
+          "operation": "drag",
+          "unordered_group": "box_contents",
+          "target_type": "book",
+          "target_ids": [
+            "book_red"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_mixed_step_03_hint.wav",
+          "text": "拖蓝圆瓶",
+          "icon_path": "res://assets/images/objects/day9/flask_round_blue.tres",
+          "operation": "drag",
+          "unordered_group": "box_contents",
+          "target_type": "bottle",
+          "target_ids": [
+            "flask_round_blue"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_mixed_step_04_hint.wav",
+          "text": "放叶标本",
+          "icon_path": "res://assets/images/objects/day9/specimen_leaf.tres",
+          "operation": "drag",
+          "unordered_group": "box_contents",
+          "target_type": "specimen",
+          "target_ids": [
+            "specimen_leaf"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_mixed_step_05_hint.wav",
+          "text": "单击关箱",
+          "icon_path": "res://assets/images/objects/day9/supply_box_open.tres",
+          "operation": "click",
+          "target_type": "box",
+          "target_ids": [
+            "supply_box"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sort_bottle_colors",
+      "text": "按色整理",
+      "icon_path": "res://assets/images/objects/day9/flask_round_blue.tres",
+      "operation": "double_click",
+      "target_type": "",
+      "target_color": "",
+      "target_tag": "laboratory_item",
+      "target_ids": [],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "per_action",
+      "order": 5,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_bottle_colors_hint.wav",
+      "steps": [
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_bottle_colors_step_01_hint.wav",
+          "text": "双击开箱",
+          "icon_path": "res://assets/images/objects/day9/supply_box_closed.tres",
+          "operation": "double_click",
+          "target_type": "box",
+          "target_ids": [
+            "supply_box"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_bottle_colors_step_02_hint.wav",
+          "text": "拖蓝圆瓶",
+          "icon_path": "res://assets/images/objects/day9/flask_round_blue.tres",
+          "operation": "drag",
+          "unordered_group": "box_contents",
+          "target_type": "bottle",
+          "target_ids": [
+            "flask_round_blue"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_bottle_colors_step_03_hint.wav",
+          "text": "拖红锥瓶",
+          "icon_path": "res://assets/images/objects/day9/flask_conical_red.tres",
+          "operation": "drag",
+          "unordered_group": "box_contents",
+          "target_type": "bottle",
+          "target_ids": [
+            "flask_conical_red"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_bottle_colors_step_04_hint.wav",
+          "text": "拖绿长瓶",
+          "icon_path": "res://assets/images/objects/day9/bottle_tall_green.tres",
+          "operation": "drag",
+          "unordered_group": "box_contents",
+          "target_type": "bottle",
+          "target_ids": [
+            "bottle_tall_green"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_bottle_colors_step_05_hint.wav",
+          "text": "单击关箱",
+          "icon_path": "res://assets/images/objects/day9/supply_box_open.tres",
+          "operation": "click",
+          "target_type": "box",
+          "target_ids": [
+            "supply_box"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sort_specimen_symbols",
+      "text": "按图整理",
+      "icon_path": "res://assets/images/objects/day9/specimen_leaf.tres",
+      "operation": "double_click",
+      "target_type": "",
+      "target_color": "",
+      "target_tag": "laboratory_item",
+      "target_ids": [],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "per_action",
+      "order": 6,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_specimen_symbols_hint.wav",
+      "steps": [
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_specimen_symbols_step_01_hint.wav",
+          "text": "双击开箱",
+          "icon_path": "res://assets/images/objects/day9/supply_box_closed.tres",
+          "operation": "double_click",
+          "target_type": "box",
+          "target_ids": [
+            "supply_box"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_specimen_symbols_step_02_hint.wav",
+          "text": "放叶标本",
+          "icon_path": "res://assets/images/objects/day9/specimen_leaf.tres",
+          "operation": "drag",
+          "unordered_group": "box_contents",
+          "target_type": "specimen",
+          "target_ids": [
+            "specimen_leaf"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_specimen_symbols_step_03_hint.wav",
+          "text": "放花标本",
+          "icon_path": "res://assets/images/objects/day9/specimen_flower.tres",
+          "operation": "drag",
+          "unordered_group": "box_contents",
+          "target_type": "specimen",
+          "target_ids": [
+            "specimen_flower"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_specimen_symbols_step_04_hint.wav",
+          "text": "放草标本",
+          "icon_path": "res://assets/images/objects/day9/specimen_grass.tres",
+          "operation": "drag",
+          "unordered_group": "box_contents",
+          "target_type": "specimen",
+          "target_ids": [
+            "specimen_grass"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_specimen_symbols_step_05_hint.wav",
+          "text": "单击关箱",
+          "icon_path": "res://assets/images/objects/day9/supply_box_open.tres",
+          "operation": "click",
+          "target_type": "box",
+          "target_ids": [
+            "supply_box"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sort_matching_spaces",
+      "text": "寻找空位",
+      "icon_path": "res://assets/images/objects/day9/book_blue.tres",
+      "operation": "double_click",
+      "target_type": "",
+      "target_color": "",
+      "target_tag": "laboratory_item",
+      "target_ids": [],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "per_action",
+      "order": 7,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_matching_spaces_hint.wav",
+      "steps": [
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_matching_spaces_step_01_hint.wav",
+          "text": "双击开箱",
+          "icon_path": "res://assets/images/objects/day9/supply_box_closed.tres",
+          "operation": "double_click",
+          "target_type": "box",
+          "target_ids": [
+            "supply_box"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_matching_spaces_step_02_hint.wav",
+          "text": "蓝书归位",
+          "icon_path": "res://assets/images/objects/day9/book_blue.tres",
+          "operation": "drag",
+          "unordered_group": "box_contents",
+          "target_type": "book",
+          "target_ids": [
+            "book_blue"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_matching_spaces_step_03_hint.wav",
+          "text": "圆瓶归位",
+          "icon_path": "res://assets/images/objects/day9/flask_round_blue.tres",
+          "operation": "drag",
+          "unordered_group": "box_contents",
+          "target_type": "bottle",
+          "target_ids": [
+            "flask_round_blue"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_matching_spaces_step_04_hint.wav",
+          "text": "标本归位",
+          "icon_path": "res://assets/images/objects/day9/specimen_flower.tres",
+          "operation": "drag",
+          "unordered_group": "box_contents",
+          "target_type": "specimen",
+          "target_ids": [
+            "specimen_flower"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_matching_spaces_step_05_hint.wav",
+          "text": "单击关箱",
+          "icon_path": "res://assets/images/objects/day9/supply_box_open.tres",
+          "operation": "click",
+          "target_type": "box",
+          "target_ids": [
+            "supply_box"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sort_independent",
+      "text": "独立整理",
+      "icon_path": "res://assets/images/objects/day9/book_blue.tres",
+      "operation": "double_click",
+      "target_type": "",
+      "target_color": "",
+      "target_tag": "laboratory_item",
+      "target_ids": [],
+      "target_count": 5,
+      "progress_style": "dots",
+      "progress_mode": "per_action",
+      "order": 8,
+      "hint_image_path": "",
+      "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_independent_hint.wav",
+      "steps": [
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_independent_step_01_hint.wav",
+          "text": "双击开箱",
+          "icon_path": "res://assets/images/objects/day9/supply_box_closed.tres",
+          "operation": "double_click",
+          "target_type": "box",
+          "target_ids": [
+            "supply_box"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_independent_step_02_hint.wav",
+          "text": "书本归位",
+          "icon_path": "res://assets/images/objects/day9/book_blue.tres",
+          "operation": "drag",
+          "unordered_group": "box_contents",
+          "target_type": "book",
+          "target_ids": [
+            "book_blue",
+            "book_red",
+            "book_green"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_independent_step_03_hint.wav",
+          "text": "瓶子归位",
+          "icon_path": "res://assets/images/objects/day9/flask_round_blue.tres",
+          "operation": "drag",
+          "unordered_group": "box_contents",
+          "target_type": "bottle",
+          "target_ids": [
+            "flask_round_blue",
+            "flask_conical_red",
+            "bottle_tall_green"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_independent_step_04_hint.wav",
+          "text": "标本归位",
+          "icon_path": "res://assets/images/objects/day9/specimen_leaf.tres",
+          "operation": "drag",
+          "unordered_group": "box_contents",
+          "target_type": "specimen",
+          "target_ids": [
+            "specimen_leaf",
+            "specimen_flower",
+            "specimen_grass"
+          ]
+        },
+        {
+          "target_color": "",
+          "target_tag": "laboratory_item",
+          "target_count": 1,
+          "hint_audio_path": "res://assets/audio/voice/task_hints/day09/sort_independent_step_05_hint.wav",
+          "text": "单击关箱",
+          "icon_path": "res://assets/images/objects/day9/supply_box_open.tres",
+          "operation": "click",
+          "target_type": "box",
+          "target_ids": [
+            "supply_box"
+          ]
+        }
+      ]
+    }
   ]
 }

@@ -6,12 +6,26 @@
 [ext_resource type="Script" uid="uid://hfkyaicge4ep" path="res://scripts/ui/back_button_2.gd" id="4_8qukl"]
 [ext_resource type="Texture2D" uid="uid://dugdmlhiypicq" path="res://assets/images/ui/settings_button.png" id="6_qsp8v"]
 [ext_resource type="Script" uid="uid://biydogrrnkjp" path="res://scripts/ui/settings_button.gd" id="7_nt80m"]
+[ext_resource type="Texture2D" uid="uid://bpt5kfixgf0hs" path="res://assets/images/ui/apple_s.png" id="8_8qukl"]
 [ext_resource type="PackedScene" uid="uid://3kwv7sjrajm0" path="res://scenes/ui/taskbar.tscn" id="8_taskbar"]
+[ext_resource type="Texture2D" uid="uid://nv8k1np7vype" path="res://assets/images/objects/day2/pear_s.png" id="9_tv7cl"]
+[ext_resource type="Texture2D" uid="uid://cs22b5xondi82" path="res://assets/images/objects/day2/berry_s.png" id="10_r88tb"]
+[ext_resource type="Texture2D" uid="uid://canuhax4rjap5" path="res://assets/images/objects/day2/mushroom_s.png" id="11_1yj8c"]
+[ext_resource type="Texture2D" uid="uid://c1vmh4xxr5bsg" path="res://assets/images/objects/day2/f_s.png" id="12_ndlae"]
+[ext_resource type="Texture2D" uid="uid://c68tnj7861qiq" path="res://assets/images/objects/day2/orange_s.png" id="13_v8d84"]
+[ext_resource type="Script" uid="uid://chm706hsuhhva" path="res://scripts/days/day2/apples.gd" id="14_apples"]
+[ext_resource type="Script" uid="uid://b8jannrivw0c5" path="res://scripts/days/day2/collectibles.gd" id="15_collectibles"]
+[ext_resource type="Texture2D" uid="uid://byjgo7fddjh67" path="res://assets/images/objects/day2/egg_s.png" id="15_ndlae"]
+[ext_resource type="Texture2D" uid="uid://snfac8nho2qc" path="res://assets/images/objects/day2/flower_s.png" id="16_flower"]
+[ext_resource type="Texture2D" uid="uid://e42108pmkm32" path="res://assets/images/objects/day1/blanket.png" id="18_gw1l3"]
 
 [node name="Level2" type="Node2D" unique_id=877520401]
+script = ExtResource("15_collectibles")
 
 [node name="friend" parent="." unique_id=591430341 instance=ExtResource("1_friend")]
 z_index = 4
+position = Vector2(657, 900.99994)
+scale = Vector2(0.41916665, 0.41916665)
 
 [node name="BackButton" type="Sprite2D" parent="." unique_id=610354263]
 position = Vector2(64.00001, 64)
@@ -35,10 +49,20 @@ texture = ExtResource("2_g2h2n")
 metadata/_edit_lock_ = true
 
 [node name="apple" type="Area2D" parent="." unique_id=116949883]
+script = ExtResource("14_apples")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="apple" unique_id=206462425]
 polygon = PackedVector2Array(133, 9, 208, 8, 242, 46, 291, 61, 337, 80, 339, 125, 361, 148, 388, 147, 405, 183, 443, 241, 451, 323, 417, 369, 392, 432, 340, 471, 280, 491, 324, 429, 288, 415, 237, 458, 218, 417, 200, 399, 144, 386, 116, 397, 106, 439, 88, 456, 56, 410, 38, 398, 6, 414, 1, 99, 54, 122, 118, 115, 123.554756, 75.74635, 112, 52)
 metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="apple/CollisionPolygon2D" unique_id=1003462972]
+offset_left = 140.0
+offset_top = 136.0
+offset_right = 340.0
+offset_bottom = 336.0
+scale = Vector2(0.30563512, 0.30563512)
+pivot_offset = Vector2(101.4281, 35.99063)
+texture = ExtResource("8_8qukl")
 
 [node name="pear" type="Area2D" parent="." unique_id=1959972066]
 
@@ -46,6 +70,13 @@ metadata/_edit_lock_ = true
 position = Vector2(424, 144)
 polygon = PackedVector2Array(-8, -35, 51, -41, 72, -70, 107, -73, 136, -81, 171, -68, 208, -52, 219, -9, 248, -23, 278, 4, 279, 16, 306, 28, 305, 58, 303, 80, 325, 69, 360, 92, 355, 142, 376, 139, 386, 192, 364, 224, 358, 247, 346, 277, 327, 306, 300, 316, 297, 330, 282, 344, 262, 336, 244, 348, 218, 344, 227, 328, 268.44855, 302.64087, 251, 300, 232, 310, 240, 286, 221, 279, 203, 312, 185, 309, 194, 262, 175, 261, 160, 260, 142, 283, 140, 263, 95, 275, 94, 315, 62, 305, 67, 272, 60, 271, 55, 289, 47.575283, 274.10617, 32, 278, 36, 302, 11, 285, -2, 292, 7, 307, -2, 317, 22, 314, 39, 327, 46, 343, 20, 335, 10, 351, -20, 345, -24, 323, -43, 318, -20, 300, -20, 288, -9, 270, -10, 258, 13, 254, 22, 230, 40, 202, 42, 149, 29, 124, 33, 96, 12, 60, -3, 31, -16, 6)
 metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="pear/CollisionPolygon2D" unique_id=1860429901]
+offset_right = 200.0
+offset_bottom = 200.0
+scale = Vector2(0.25433645, 0.25433645)
+pivot_offset = Vector2(129.74939, 0)
+texture = ExtResource("9_tv7cl")
 
 [node name="berry" type="Area2D" parent="." unique_id=135990676]
 
@@ -73,14 +104,81 @@ polygon = PackedVector2Array(0, 0, 93, 6, 183, 5, 189, -12, 179, -34, 172, -55, 
 position = Vector2(612, 598)
 polygon = PackedVector2Array(1, -3, 14, -2, 20, -14, 29, -13, 37, -11, 40, -21, 58, -23, 65, -21, 75, -21, 80, -11, 82, -18, 92, -13, 98, -4, 100, 4, 95, 11, 97, 18, 107, 15, 118, 21, 119, 29, 113, 37, 122, 37, 126, 43, 124, 53, 123, 56, 16, 55, 5, 29, 0, 7)
 
+[node name="TextureRect" type="TextureRect" parent="berry" unique_id=932333928]
+offset_left = 898.0
+offset_top = 602.99994
+offset_right = 1098.0
+offset_bottom = 802.99994
+scale = Vector2(0.14078213, 0.13163061)
+pivot_offset = Vector2(156.27002, 22.791504)
+texture = ExtResource("10_r88tb")
+
 [node name="mushroom" type="Area2D" parent="." unique_id=229367237]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="mushroom" unique_id=557772330]
 position = Vector2(120, 812)
-polygon = PackedVector2Array(1, -3, -96, -18, -117, 27, -83, 49, -17, 57, -18, 78, 80, 133, 113, 269, 1489, 266, 1505, 186, 1403, 171, 1303, 185, 1297, 116, 1336, 75, 1113, 66, 1098, 96, 916, 110, 873, 51, 918, -31, 957, -77, 990, -109, 1064, -96, 1125, -135, 1136, -161, 1077, -167, 1052, -132, 998, -135, 981, -156, 935, -155, 922, -124, 693, -137, 564, -145, 627, -117, 317, -100, 342, -77, 345, -37, 224, -32, 153, -35, 162, -13, 44, -18, 34, -12)
+polygon = PackedVector2Array(1, -3, -96, -18, -117, 27, -83, 49, -17, 57, -18, 78, 30, 129, 56, 138, 113, 269, 145, 217, 126, 110, 18, 33, 105, 28, 212, 13, 364, 6, 419, -46, 535, -65, 705, -105, 929, -90, 990, -109, 1064, -96, 1125, -135, 1136, -161, 1077, -167, 1052, -132, 998, -135, 981, -156, 935, -155, 922, -124, 693, -137, 564, -145, 627, -117, 317, -100, 342, -77, 345, -37, 224, -32, 153, -35, 162, -13, 44, -18, 34, -12)
+metadata/_edit_lock_ = true
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1455844094]
+[node name="TextureRect" type="TextureRect" parent="mushroom/CollisionPolygon2D" unique_id=556507968]
+offset_left = 14.999992
+offset_top = -1.9999962
+offset_right = 215.0
+offset_bottom = 198.0
+scale = Vector2(0.19555824, 0.19555824)
+pivot_offset = Vector2(89.88226, 187.69543)
+texture = ExtResource("11_1yj8c")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=99625965]
+[node name="TextureRect2" type="TextureRect" parent="mushroom/CollisionPolygon2D" unique_id=944364141]
+offset_right = 200.0
+offset_bottom = 200.0
+scale = Vector2(0.18258809, 0.18258809)
+pivot_offset = Vector2(93, 131)
+texture = ExtResource("16_flower")
+
+[node name="egg" type="TextureRect" parent="mushroom/CollisionPolygon2D" unique_id=1232356864]
+offset_left = 484.0
+offset_top = -107.0
+offset_right = 684.0
+offset_bottom = 93.0
+scale = Vector2(0.18686888, 0.18686888)
+texture = ExtResource("15_ndlae")
+
+[node name="feather" type="TextureRect" parent="mushroom/CollisionPolygon2D" unique_id=784504293]
+offset_left = 252.0
+offset_top = -72.0
+offset_right = 452.0
+offset_bottom = 128.0
+scale = Vector2(0.18, 0.18)
+pivot_offset = Vector2(100, 100)
+texture = ExtResource("12_ndlae")
+
+[node name="orange" type="Area2D" parent="." unique_id=1455844094]
+
+[node name="2d" type="CollisionPolygon2D" parent="orange" unique_id=99625965]
 position = Vector2(1421, 3)
 polygon = PackedVector2Array(0, 1, 5, 7, -29, 32, -43, 42, -63, 78, -56, 95, -63, 115, -45, 134, -29, 140, -45, 155, -51, 176, -47, 195, -42, 214, -25, 219, -12, 225, 10, 217, 31, 233, 54, 257, 72, 255, 99, 271, 80, 229, 43, 205, 46, 177, 74, 202, 72, 153, 99, 181, 99, 146, 113, 152, 116, 215, 139, 249, 159, 244, 168, 206, 148, 127, 190, 111, 212, 147, 262, 123, 397, 124, 371, 69, 388, 8, 379, -3)
+
+[node name="TextureRect" type="TextureRect" parent="orange/2d" unique_id=1554093631]
+offset_left = -21.0
+offset_top = 41.0
+offset_right = 179.0
+offset_bottom = 241.0
+scale = Vector2(0.23423487, 0.23423487)
+pivot_offset = Vector2(93.92285, 21.3461)
+texture = ExtResource("13_v8d84")
+
+[node name="blanket" type="Area2D" parent="." unique_id=333997716]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="blanket" unique_id=1128303963]
+position = Vector2(1088, 792)
+scale = Vector2(0.52089465, 0.35680667)
+polygon = PackedVector2Array(332.1211, 285.86914, 230.37305, 375.5537, 153.58203, 428.8037, -82.55017, 395.17212, -514.4994, 297.07983, -631.6056, 263.448, -566.33325, 204.59277, -447.30725, 140.13208, -376.27563, 112.10571, -289.88586, 126.1189, 120.9458, 193.38208, 334.04077, 232.61914)
+
+[node name="TextureRect" type="TextureRect" parent="blanket/CollisionPolygon2D" unique_id=1300153213]
+z_index = -5
+offset_left = -668.0814
+offset_top = 84.07915
+offset_right = 375.91858
+offset_bottom = 612.07916
+texture = ExtResource("18_gw1l3")

@@ -1,0 +1,9 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/images/objects/day11/drift_bottles_atlas.png" id="1_atlas"]
+
+[resource]
+atlas = ExtResource("1_atlas")
+region = Rect2(1705, 406, 187, 359)
+margin = Rect2(0, 33, 0, 33)
+filter_clip = true

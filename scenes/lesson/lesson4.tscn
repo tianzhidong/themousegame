@@ -2,7 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://duefwh64jpaxd" path="res://assets/images/backgrounds/lesson4.png" id="1_ykgfv"]
 [ext_resource type="Texture2D" uid="uid://dlf8321k8cruv" path="res://assets/images/ui/voice_replay_button.png" id="2_ok2ah"]
-[ext_resource type="Script" path="res://scripts/ui/lesson.gd" id="3_lesson"]
+[ext_resource type="Script" uid="uid://cx3eomhn8bfnl" path="res://scripts/lesson/day4_lesson.gd" id="3_lesson"]
+[ext_resource type="Texture2D" uid="uid://c82io4ggs8b08" path="res://assets/images/objects/day4/vegetable_tomato.png" id="4_jptmb"]
 
 [node name="Lesson4" type="Node2D" unique_id=1943455567]
 script = ExtResource("3_lesson")
@@ -17,3 +18,14 @@ texture = ExtResource("1_ykgfv")
 position = Vector2(1856, 1012)
 scale = Vector2(0.2382813, 0.2382813)
 texture = ExtResource("2_ok2ah")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2096102969]
+position = Vector2(496, 472)
+scale = Vector2(0.62, 0.58)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=1146433344]
+polygon = PackedVector2Array(1290.3225, 234.48273, 1483.8708, 289.6552, 1664.5161, 137.93103, 1651.6128, 96.5517, 1290.3225, 0, 1135.4839, 124.13794)
+
+[node name="VegetableTomato" type="Sprite2D" parent="Area2D/CollisionPolygon2D" unique_id=885522793]
+position = Vector2(12.90321, 110.34483)
+texture = ExtResource("4_jptmb")

@@ -1,12 +1,13 @@
 extends Node2D
 
 signal teaching_finished
+signal teaching_started
 
 const CLICK_SOUND := preload("res://assets/audio/ui/ui_click.ogg")
 const HOVER_SCALE := 1.06
 const TWEEN_DURATION := 0.1
 
-@export_file("*.ogg") var voice_path := ""
+@export_file("*.ogg", "*.wav", "*.mp3") var voice_path := ""
 
 @onready var _voice_replay_button: Sprite2D = $VoiceReplayButton
 
@@ -16,6 +17,7 @@ var _base_scale: Vector2
 var _is_hovered := false
 var _scale_tween: Tween
 var _teaching_is_finished := false
+var _practice_is_finished := false
 
 
 func _ready() -> void:
@@ -31,7 +33,7 @@ func _ready() -> void:
 		_voice_player.finished.connect(_finish_teaching)
 	add_child(_voice_player)
 	if voice != null:
-		_voice_player.play()
+		_play_teaching_voice()
 
 	_click_player = AudioStreamPlayer.new()
 	_click_player.stream = CLICK_SOUND
@@ -40,6 +42,22 @@ func _ready() -> void:
 
 func is_teaching_finished() -> bool:
 	return _teaching_is_finished
+
+
+func can_accept_practice_input() -> bool:
+	return _teaching_is_finished and not _practice_is_finished and _voice_player != null and not _voice_player.playing
+
+
+func finish_practice() -> void:
+	_practice_is_finished = true
+
+
+func _play_teaching_voice() -> void:
+	if _voice_player.stream == null:
+		return
+	_teaching_is_finished = false
+	teaching_started.emit()
+	_voice_player.play()
 
 
 func _finish_teaching() -> void:
@@ -60,6 +78,8 @@ func _process(_delta: float) -> void:
 
 
 func _input(event: InputEvent) -> void:
+	if _practice_is_finished:
+		return
 	var mouse_event := event as InputEventMouseButton
 	if mouse_event == null:
 		return
@@ -69,7 +89,7 @@ func _input(event: InputEvent) -> void:
 
 	if _contains_global_point(_voice_replay_button, mouse_event.position):
 		_click_player.play()
-		_voice_player.play()
+		_play_teaching_voice()
 		get_viewport().set_input_as_handled()
 
 

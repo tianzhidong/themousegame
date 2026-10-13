@@ -7,10 +7,201 @@
 [ext_resource type="Script" uid="uid://biydogrrnkjp" path="res://scripts/ui/settings_button.gd" id="7_0kxia"]
 [ext_resource type="Texture2D" uid="uid://cbcm5v1grnbxv" path="res://assets/images/backgrounds/day8_bg.png" id="7_ene4w"]
 [ext_resource type="PackedScene" uid="uid://3kwv7sjrajm0" path="res://scenes/ui/taskbar.tscn" id="8_taskbar"]
+[ext_resource type="Script" uid="uid://ufrotsp0242u" path="res://scripts/days/Day8ToyRoom.cs" id="9_toy_room"]
+[ext_resource type="Script" uid="uid://2eludy0y574j" path="res://scripts/tasks/InteractiveObject.cs" id="10_interactive"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/airplane_blue_closed.tres" id="closed_airplane_blue"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/airplane_green_closed.tres" id="closed_airplane_green"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/airplane_purple_closed.tres" id="closed_airplane_purple"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/airplane_red_closed.tres" id="closed_airplane_red"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/airplane_yellow_closed.tres" id="closed_airplane_yellow"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/box_green_closed.tres" id="closed_box_green"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/box_purple_closed.tres" id="closed_box_purple"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/box_red_closed.tres" id="closed_box_red"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/box_teal_closed.tres" id="closed_box_teal"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/box_yellow_closed.tres" id="closed_box_yellow"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/candy_blue_closed.tres" id="closed_candy_blue"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/candy_green_closed.tres" id="closed_candy_green"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/candy_purple_closed.tres" id="closed_candy_purple"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/candy_red_closed.tres" id="closed_candy_red"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/candy_yellow_closed.tres" id="closed_candy_yellow"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/car_blue_closed.tres" id="closed_car_blue"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/car_green_closed.tres" id="closed_car_green"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/car_purple_closed.tres" id="closed_car_purple"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/car_red_closed.tres" id="closed_car_red"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/car_yellow_closed.tres" id="closed_car_yellow"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/egg_blue_closed.tres" id="closed_egg_blue"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/egg_green_closed.tres" id="closed_egg_green"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/egg_purple_closed.tres" id="closed_egg_purple"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/egg_red_closed.tres" id="closed_egg_red"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/egg_yellow_closed.tres" id="closed_egg_yellow"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/picture_book_green_closed.tres" id="closed_picture_book_green"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/picture_book_purple_closed.tres" id="closed_picture_book_purple"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/picture_book_red_closed.tres" id="closed_picture_book_red"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/picture_book_teal_closed.tres" id="closed_picture_book_teal"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/picture_book_yellow_closed.tres" id="closed_picture_book_yellow"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/robot_blue_closed.tres" id="closed_robot_blue"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/robot_green_closed.tres" id="closed_robot_green"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/robot_purple_closed.tres" id="closed_robot_purple"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/robot_red_closed.tres" id="closed_robot_red"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/robot_yellow_closed.tres" id="closed_robot_yellow"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/robot_blue_lit.tres" id="lit_robot_blue"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/robot_green_lit.tres" id="lit_robot_green"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/robot_purple_lit.tres" id="lit_robot_purple"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/robot_red_lit.tres" id="lit_robot_red"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/robot_yellow_lit.tres" id="lit_robot_yellow"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/rocket_blue_closed.tres" id="closed_rocket_blue"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/rocket_green_closed.tres" id="closed_rocket_green"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/rocket_purple_closed.tres" id="closed_rocket_purple"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/rocket_red_closed.tres" id="closed_rocket_red"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/rocket_yellow_closed.tres" id="closed_rocket_yellow"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/box_green_opened.tres" id="opened_box_green"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/box_purple_opened.tres" id="opened_box_purple"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/box_red_opened.tres" id="opened_box_red"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/box_teal_opened.tres" id="opened_box_teal"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/box_yellow_opened.tres" id="opened_box_yellow"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/candy_blue_opened.tres" id="opened_candy_blue"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/candy_green_opened.tres" id="opened_candy_green"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/candy_purple_opened.tres" id="opened_candy_purple"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/candy_red_opened.tres" id="opened_candy_red"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/candy_yellow_opened.tres" id="opened_candy_yellow"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/egg_blue_opened.tres" id="opened_egg_blue"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/egg_green_opened.tres" id="opened_egg_green"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/egg_purple_opened.tres" id="opened_egg_purple"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/egg_red_opened.tres" id="opened_egg_red"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/egg_yellow_opened.tres" id="opened_egg_yellow"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/picture_book_green_opened.tres" id="opened_picture_book_green"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/picture_book_purple_opened.tres" id="opened_picture_book_purple"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/picture_book_red_opened.tres" id="opened_picture_book_red"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/picture_book_teal_opened.tres" id="opened_picture_book_teal"]
+[ext_resource type="Texture2D" path="res://assets/images/objects/day8/picture_book_yellow_opened.tres" id="opened_picture_book_yellow"]
+
+[sub_resource type="RectangleShape2D" id="shape_box_red"]
+size = Vector2(184, 167)
+
+[sub_resource type="RectangleShape2D" id="shape_box_teal"]
+size = Vector2(193, 153)
+
+[sub_resource type="RectangleShape2D" id="shape_box_yellow"]
+size = Vector2(162, 159)
+
+[sub_resource type="RectangleShape2D" id="shape_box_purple"]
+size = Vector2(186, 168)
+
+[sub_resource type="RectangleShape2D" id="shape_box_green"]
+size = Vector2(193, 152)
+
+[sub_resource type="RectangleShape2D" id="shape_car_red"]
+size = Vector2(198, 140)
+
+[sub_resource type="RectangleShape2D" id="shape_car_blue"]
+size = Vector2(202, 145)
+
+[sub_resource type="RectangleShape2D" id="shape_car_yellow"]
+size = Vector2(194, 152)
+
+[sub_resource type="RectangleShape2D" id="shape_car_green"]
+size = Vector2(200, 139)
+
+[sub_resource type="RectangleShape2D" id="shape_car_purple"]
+size = Vector2(201, 156)
+
+[sub_resource type="RectangleShape2D" id="shape_airplane_red"]
+size = Vector2(195, 150)
+
+[sub_resource type="RectangleShape2D" id="shape_airplane_blue"]
+size = Vector2(203, 152)
+
+[sub_resource type="RectangleShape2D" id="shape_airplane_yellow"]
+size = Vector2(198, 149)
+
+[sub_resource type="RectangleShape2D" id="shape_airplane_green"]
+size = Vector2(217, 151)
+
+[sub_resource type="RectangleShape2D" id="shape_airplane_purple"]
+size = Vector2(182, 163)
+
+[sub_resource type="RectangleShape2D" id="shape_robot_red"]
+size = Vector2(178, 239)
+
+[sub_resource type="RectangleShape2D" id="shape_robot_blue"]
+size = Vector2(183, 236)
+
+[sub_resource type="RectangleShape2D" id="shape_robot_yellow"]
+size = Vector2(170, 239)
+
+[sub_resource type="RectangleShape2D" id="shape_robot_green"]
+size = Vector2(189, 239)
+
+[sub_resource type="RectangleShape2D" id="shape_robot_purple"]
+size = Vector2(166, 232)
+
+[sub_resource type="RectangleShape2D" id="shape_egg_red"]
+size = Vector2(156, 194)
+
+[sub_resource type="RectangleShape2D" id="shape_egg_blue"]
+size = Vector2(156, 193)
+
+[sub_resource type="RectangleShape2D" id="shape_egg_yellow"]
+size = Vector2(154, 193)
+
+[sub_resource type="RectangleShape2D" id="shape_egg_green"]
+size = Vector2(154, 194)
+
+[sub_resource type="RectangleShape2D" id="shape_egg_purple"]
+size = Vector2(154, 194)
+
+[sub_resource type="RectangleShape2D" id="shape_candy_red"]
+size = Vector2(202, 124)
+
+[sub_resource type="RectangleShape2D" id="shape_candy_blue"]
+size = Vector2(203, 122)
+
+[sub_resource type="RectangleShape2D" id="shape_candy_yellow"]
+size = Vector2(201, 110)
+
+[sub_resource type="RectangleShape2D" id="shape_candy_green"]
+size = Vector2(198, 123)
+
+[sub_resource type="RectangleShape2D" id="shape_candy_purple"]
+size = Vector2(193, 128)
+
+[sub_resource type="RectangleShape2D" id="shape_rocket_red"]
+size = Vector2(154, 207)
+
+[sub_resource type="RectangleShape2D" id="shape_rocket_blue"]
+size = Vector2(150, 208)
+
+[sub_resource type="RectangleShape2D" id="shape_rocket_yellow"]
+size = Vector2(144, 201)
+
+[sub_resource type="RectangleShape2D" id="shape_rocket_green"]
+size = Vector2(151, 208)
+
+[sub_resource type="RectangleShape2D" id="shape_rocket_purple"]
+size = Vector2(149, 207)
+
+[sub_resource type="RectangleShape2D" id="shape_picture_book_red"]
+size = Vector2(205, 191)
+
+[sub_resource type="RectangleShape2D" id="shape_picture_book_teal"]
+size = Vector2(204, 195)
+
+[sub_resource type="RectangleShape2D" id="shape_picture_book_yellow"]
+size = Vector2(205, 193)
+
+[sub_resource type="RectangleShape2D" id="shape_picture_book_purple"]
+size = Vector2(205, 187)
+
+[sub_resource type="RectangleShape2D" id="shape_picture_book_green"]
+size = Vector2(202, 190)
 
 [node name="Level8" type="Node2D" unique_id=1674105111]
+script = ExtResource("9_toy_room")
 
 [node name="friend" parent="." unique_id=1966422444 instance=ExtResource("1_friend")]
+z_index = 2
+position = Vector2(319.99988, 767.99994)
+scale = Vector2(0.52333325, 0.52333325)
 
 [node name="BackButton" type="Sprite2D" parent="." unique_id=518662124]
 position = Vector2(64.00001, 64)
@@ -32,3 +223,754 @@ position = Vector2(959.99994, 540)
 scale = Vector2(1.1483253, 1.1477152)
 texture = ExtResource("7_ene4w")
 metadata/_edit_lock_ = true
+
+[node name="Toys" type="Node2D" parent="." unique_id=382965683]
+
+[node name="Boxes" type="Node2D" parent="Toys" unique_id=617855482]
+
+[node name="box_red" type="Area2D" parent="Toys/Boxes" unique_id=231137125]
+position = Vector2(112, 407)
+scale = Vector2(0.523256, 0.523256)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "box_red"
+ObjectType = "box"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/opened_texture = ExtResource("opened_box_red")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Boxes/box_red" unique_id=131311784]
+position = Vector2(91.73329, 32.488876)
+texture = ExtResource("closed_box_red")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Boxes/box_red" unique_id=2044420287]
+position = Vector2(107.02218, 1.9111103)
+shape = SubResource("shape_box_red")
+
+[node name="box_teal" type="Area2D" parent="Toys/Boxes" unique_id=973696258]
+position = Vector2(239, 412)
+scale = Vector2(0.497238, 0.497238)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "box_teal"
+ObjectType = "box"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/opened_texture = ExtResource("opened_box_teal")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Boxes/box_teal" unique_id=1365016536]
+position = Vector2(50.277733, 8.044437)
+texture = ExtResource("closed_box_teal")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Boxes/box_teal" unique_id=641076453]
+position = Vector2(50.277733, -8.044437)
+shape = SubResource("shape_box_teal")
+
+[node name="box_yellow" type="Area2D" parent="Toys/Boxes" unique_id=455947798]
+position = Vector2(116, 550)
+scale = Vector2(0.6, 0.6)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "box_yellow"
+ObjectType = "box"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/opened_texture = ExtResource("opened_box_yellow")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Boxes/box_yellow" unique_id=139337690]
+position = Vector2(73.33333, 16.666666)
+texture = ExtResource("closed_box_yellow")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Boxes/box_yellow" unique_id=1879216072]
+position = Vector2(73.33333, 3.3333333)
+shape = SubResource("shape_box_yellow")
+
+[node name="box_purple" type="Area2D" parent="Toys/Boxes" unique_id=189501970]
+position = Vector2(240, 550)
+scale = Vector2(0.517241, 0.517241)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "box_purple"
+ObjectType = "box"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/opened_texture = ExtResource("opened_box_purple")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Boxes/box_purple" unique_id=543287153]
+position = Vector2(30.933355, 3.8666694)
+texture = ExtResource("closed_box_purple")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Boxes/box_purple" unique_id=1151339821]
+position = Vector2(30.933355, 3.8666694)
+shape = SubResource("shape_box_purple")
+
+[node name="box_green" type="Area2D" parent="Toys/Boxes" unique_id=1389479587]
+position = Vector2(172, 690)
+scale = Vector2(0.497238, 0.497238)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "box_green"
+ObjectType = "box"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/opened_texture = ExtResource("opened_box_green")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Boxes/box_green" unique_id=994278130]
+position = Vector2(-8.044437, 28.15553)
+texture = ExtResource("closed_box_green")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Boxes/box_green" unique_id=1003226143]
+position = Vector2(-8.044437, 28.15553)
+shape = SubResource("shape_box_green")
+
+[node name="Cars" type="Node2D" parent="Toys" unique_id=595425030]
+
+[node name="car_red" type="Area2D" parent="Toys/Cars" unique_id=1017054962]
+position = Vector2(504, 664)
+scale = Vector2(0.688172, 0.688172)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "car_red"
+ObjectType = "car"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Cars/car_red" unique_id=224900218]
+texture = ExtResource("closed_car_red")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Cars/car_red" unique_id=1278419672]
+shape = SubResource("shape_car_red")
+
+[node name="car_blue" type="Area2D" parent="Toys/Cars" unique_id=768038672]
+position = Vector2(96, 888)
+scale = Vector2(0.673684, 0.673684)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "car_blue"
+ObjectType = "car"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Cars/car_blue" unique_id=1382565825]
+texture = ExtResource("closed_car_blue")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Cars/car_blue" unique_id=880411185]
+shape = SubResource("shape_car_blue")
+
+[node name="car_yellow" type="Area2D" parent="Toys/Cars" unique_id=1499827178]
+position = Vector2(1296, 744)
+scale = Vector2(0.703297, 0.703297)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "car_yellow"
+ObjectType = "car"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Cars/car_yellow" unique_id=498965566]
+texture = ExtResource("closed_car_yellow")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Cars/car_yellow" unique_id=2098075759]
+shape = SubResource("shape_car_yellow")
+
+[node name="car_green" type="Area2D" parent="Toys/Cars" unique_id=2076086849]
+position = Vector2(1173, 995)
+scale = Vector2(0.680851, 0.680851)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "car_green"
+ObjectType = "car"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Cars/car_green" unique_id=1558588552]
+texture = ExtResource("closed_car_green")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Cars/car_green" unique_id=629568223]
+shape = SubResource("shape_car_green")
+
+[node name="car_purple" type="Area2D" parent="Toys/Cars" unique_id=377298471]
+position = Vector2(848, 880)
+scale = Vector2(0.677249, 0.677249)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "car_purple"
+ObjectType = "car"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Cars/car_purple" unique_id=1999289007]
+texture = ExtResource("closed_car_purple")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Cars/car_purple" unique_id=1732028139]
+shape = SubResource("shape_car_purple")
+
+[node name="Airplanes" type="Node2D" parent="Toys" unique_id=90933562]
+
+[node name="airplane_red" type="Area2D" parent="Toys/Airplanes" unique_id=662799385]
+position = Vector2(1056, 672)
+scale = Vector2(0.639344, 0.639344)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "airplane_red"
+ObjectType = "airplane"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Airplanes/airplane_red" unique_id=1083063369]
+texture = ExtResource("closed_airplane_red")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Airplanes/airplane_red" unique_id=359383791]
+shape = SubResource("shape_airplane_red")
+
+[node name="airplane_blue" type="Area2D" parent="Toys/Airplanes" unique_id=1055466325]
+position = Vector2(472.00003, 312)
+scale = Vector2(0.612565, 0.612565)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "airplane_blue"
+ObjectType = "airplane"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Airplanes/airplane_blue" unique_id=1396928813]
+texture = ExtResource("closed_airplane_blue")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Airplanes/airplane_blue" unique_id=1642165277]
+shape = SubResource("shape_airplane_blue")
+
+[node name="airplane_yellow" type="Area2D" parent="Toys/Airplanes" unique_id=1294355925]
+position = Vector2(631.9999, 1000.0001)
+scale = Vector2(0.629032, 0.629032)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "airplane_yellow"
+ObjectType = "airplane"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Airplanes/airplane_yellow" unique_id=590113121]
+texture = ExtResource("closed_airplane_yellow")
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Airplanes/airplane_yellow" unique_id=628755048]
+shape = SubResource("shape_airplane_yellow")
+
+[node name="airplane_green" type="Area2D" parent="Toys/Airplanes" unique_id=1634948732]
+position = Vector2(1144, 168)
+scale = Vector2(0.570732, 0.570732)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "airplane_green"
+ObjectType = "airplane"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Airplanes/airplane_green" unique_id=672719736]
+texture = ExtResource("closed_airplane_green")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Airplanes/airplane_green" unique_id=599741026]
+shape = SubResource("shape_airplane_green")
+
+[node name="airplane_purple" type="Area2D" parent="Toys/Airplanes" unique_id=1518734915]
+position = Vector2(720, 176)
+scale = Vector2(0.688235, 0.688235)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "airplane_purple"
+ObjectType = "airplane"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Airplanes/airplane_purple" unique_id=121159318]
+texture = ExtResource("closed_airplane_purple")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Airplanes/airplane_purple" unique_id=1126247003]
+shape = SubResource("shape_airplane_purple")
+
+[node name="Robots" type="Node2D" parent="Toys" unique_id=429056628]
+
+[node name="robot_red" type="Area2D" parent="Toys/Robots" unique_id=166646347]
+position = Vector2(1213, 545)
+scale = Vector2(0.433735, 0.433735)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "robot_red"
+ObjectType = "robot"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/lit_texture = ExtResource("lit_robot_red")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Robots/robot_red" unique_id=1978964962]
+texture = ExtResource("closed_robot_red")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Robots/robot_red" unique_id=189501058]
+shape = SubResource("shape_robot_red")
+
+[node name="robot_blue" type="Area2D" parent="Toys/Robots" unique_id=1709768824]
+position = Vector2(1329, 548)
+scale = Vector2(0.421053, 0.421053)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "robot_blue"
+ObjectType = "robot"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/lit_texture = ExtResource("lit_robot_blue")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Robots/robot_blue" unique_id=652851184]
+position = Vector2(-78.37493, -9.499991)
+texture = ExtResource("closed_robot_blue")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Robots/robot_blue" unique_id=1395175286]
+position = Vector2(-78.37493, -9.499991)
+shape = SubResource("shape_robot_blue")
+
+[node name="robot_yellow" type="Area2D" parent="Toys/Robots" unique_id=2128722629]
+position = Vector2(1445, 545)
+scale = Vector2(0.455696, 0.455696)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "robot_yellow"
+ObjectType = "robot"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/lit_texture = ExtResource("lit_robot_yellow")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Robots/robot_yellow" unique_id=763262015]
+position = Vector2(-151.41675, -2.1944456)
+texture = ExtResource("closed_robot_yellow")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Robots/robot_yellow" unique_id=138509915]
+position = Vector2(-151.41675, -2.1944456)
+shape = SubResource("shape_robot_yellow")
+
+[node name="robot_green" type="Area2D" parent="Toys/Robots" unique_id=1705608904]
+position = Vector2(1250, 668)
+scale = Vector2(0.40678, 0.40678)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "robot_green"
+ObjectType = "robot"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/lit_texture = ExtResource("lit_robot_green")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Robots/robot_green" unique_id=1347939934]
+position = Vector2(506.41632, -285.16644)
+texture = ExtResource("closed_robot_green")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Robots/robot_green" unique_id=668743082]
+position = Vector2(506.41632, -285.16644)
+shape = SubResource("shape_robot_green")
+
+[node name="robot_purple" type="Area2D" parent="Toys/Robots" unique_id=570883771]
+position = Vector2(1404, 670)
+scale = Vector2(0.467532, 0.467532)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "robot_purple"
+ObjectType = "robot"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/lit_texture = ExtResource("lit_robot_purple")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Robots/robot_purple" unique_id=1238959455]
+position = Vector2(269.5003, -240.16696)
+scale = Vector2(0.94444376, 0.8888894)
+texture = ExtResource("closed_robot_purple")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Robots/robot_purple" unique_id=2091437142]
+position = Vector2(282.3336, -252.38911)
+shape = SubResource("shape_robot_purple")
+
+[node name="Eggs" type="Node2D" parent="Toys" unique_id=195811863]
+
+[node name="egg_red" type="Area2D" parent="Toys/Eggs" unique_id=321710879]
+position = Vector2(496.00003, 875)
+scale = Vector2(0.4375, 0.4375)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "egg_red"
+ObjectType = "egg"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/opened_texture = ExtResource("opened_egg_red")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Eggs/egg_red" unique_id=385652949]
+texture = ExtResource("closed_egg_red")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Eggs/egg_red" unique_id=276675922]
+shape = SubResource("shape_egg_red")
+
+[node name="egg_blue" type="Area2D" parent="Toys/Eggs" unique_id=43550687]
+position = Vector2(1448.0001, 896.00006)
+rotation = 0.5061916
+scale = Vector2(0.4375, 0.4375)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "egg_blue"
+ObjectType = "egg"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/opened_texture = ExtResource("opened_egg_blue")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Eggs/egg_blue" unique_id=1645150244]
+texture = ExtResource("closed_egg_blue")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Eggs/egg_blue" unique_id=1903568546]
+shape = SubResource("shape_egg_blue")
+
+[node name="egg_yellow" type="Area2D" parent="Toys/Eggs" unique_id=1034800640]
+position = Vector2(668, 878)
+rotation = -0.27289373
+scale = Vector2(0.443662, 0.443662)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "egg_yellow"
+ObjectType = "egg"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/opened_texture = ExtResource("opened_egg_yellow")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Eggs/egg_yellow" unique_id=163383175]
+texture = ExtResource("closed_egg_yellow")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Eggs/egg_yellow" unique_id=635721676]
+shape = SubResource("shape_egg_yellow")
+
+[node name="egg_green" type="Area2D" parent="Toys/Eggs" unique_id=177425216]
+position = Vector2(512, 776)
+rotation = 0.29363334
+scale = Vector2(0.443662, 0.443662)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "egg_green"
+ObjectType = "egg"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/opened_texture = ExtResource("opened_egg_green")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Eggs/egg_green" unique_id=1995307724]
+texture = ExtResource("closed_egg_green")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Eggs/egg_green" unique_id=17148222]
+shape = SubResource("shape_egg_green")
+
+[node name="egg_purple" type="Area2D" parent="Toys/Eggs" unique_id=1468396092]
+position = Vector2(1064, 888)
+scale = Vector2(0.443662, 0.443662)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "egg_purple"
+ObjectType = "egg"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/opened_texture = ExtResource("opened_egg_purple")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Eggs/egg_purple" unique_id=602984234]
+position = Vector2(-27.047615, -18.031744)
+texture = ExtResource("closed_egg_purple")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Eggs/egg_purple" unique_id=1306545403]
+position = Vector2(-27.047615, -18.031744)
+shape = SubResource("shape_egg_purple")
+
+[node name="Candies" type="Node2D" parent="Toys" unique_id=1134530543]
+
+[node name="candy_red" type="Area2D" parent="Toys/Candies" unique_id=893300660]
+position = Vector2(1112, 751.99994)
+rotation = -0.5116302
+scale = Vector2(0.22079352, 0.22079352)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "candy_red"
+ObjectType = "candy"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/opened_texture = ExtResource("opened_candy_red")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Candies/candy_red" unique_id=920902625]
+texture = ExtResource("closed_candy_red")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Candies/candy_red" unique_id=608870755]
+shape = SubResource("shape_candy_red")
+
+[node name="candy_blue" type="Area2D" parent="Toys/Candies" unique_id=1922188562]
+position = Vector2(1152, 720)
+scale = Vector2(0.21534306, 0.21534306)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "candy_blue"
+ObjectType = "candy"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/opened_texture = ExtResource("opened_candy_blue")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Candies/candy_blue" unique_id=1073556087]
+texture = ExtResource("closed_candy_blue")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Candies/candy_blue" unique_id=1228694738]
+shape = SubResource("shape_candy_blue")
+
+[node name="candy_yellow" type="Area2D" parent="Toys/Candies" unique_id=1430775478]
+position = Vector2(968, 695.99994)
+rotation = -0.078651756
+scale = Vector2(0.24514216, 0.24514216)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "candy_yellow"
+ObjectType = "candy"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/opened_texture = ExtResource("opened_candy_yellow")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Candies/candy_yellow" unique_id=437754624]
+texture = ExtResource("closed_candy_yellow")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Candies/candy_yellow" unique_id=573690594]
+shape = SubResource("shape_candy_yellow")
+
+[node name="candy_green" type="Area2D" parent="Toys/Candies" unique_id=281091168]
+position = Vector2(952, 760)
+rotation = 0.4453148
+scale = Vector2(0.33871, 0.33871)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "candy_green"
+ObjectType = "candy"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/opened_texture = ExtResource("opened_candy_green")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Candies/candy_green" unique_id=2103110172]
+texture = ExtResource("closed_candy_green")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Candies/candy_green" unique_id=1636855985]
+shape = SubResource("shape_candy_green")
+
+[node name="candy_purple" type="Area2D" parent="Toys/Candies" unique_id=1791883129]
+position = Vector2(1024, 752)
+scale = Vector2(0.348066, 0.348066)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "candy_purple"
+ObjectType = "candy"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/opened_texture = ExtResource("opened_candy_purple")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Candies/candy_purple" unique_id=1795556415]
+texture = ExtResource("closed_candy_purple")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Candies/candy_purple" unique_id=919075688]
+shape = SubResource("shape_candy_purple")
+
+[node name="Rockets" type="Node2D" parent="Toys" unique_id=780216680]
+
+[node name="rocket_red" type="Area2D" parent="Toys/Rockets" unique_id=2109962314]
+position = Vector2(1177, 857)
+scale = Vector2(0.514085, 0.514085)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "rocket_red"
+ObjectType = "rocket"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Rockets/rocket_red" unique_id=1751459500]
+texture = ExtResource("closed_rocket_red")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Rockets/rocket_red" unique_id=330727161]
+shape = SubResource("shape_rocket_red")
+
+[node name="rocket_blue" type="Area2D" parent="Toys/Rockets" unique_id=749775842]
+position = Vector2(1272, 860)
+scale = Vector2(0.528986, 0.528986)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "rocket_blue"
+ObjectType = "rocket"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Rockets/rocket_blue" unique_id=488234402]
+texture = ExtResource("closed_rocket_blue")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Rockets/rocket_blue" unique_id=1485291935]
+shape = SubResource("shape_rocket_blue")
+
+[node name="rocket_yellow" type="Area2D" parent="Toys/Rockets" unique_id=376536763]
+position = Vector2(1367, 855)
+scale = Vector2(0.55303, 0.55303)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "rocket_yellow"
+ObjectType = "rocket"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Rockets/rocket_yellow" unique_id=1539362025]
+texture = ExtResource("closed_rocket_yellow")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Rockets/rocket_yellow" unique_id=2016023613]
+shape = SubResource("shape_rocket_yellow")
+
+[node name="rocket_green" type="Area2D" parent="Toys/Rockets" unique_id=1575876475]
+position = Vector2(792, 616)
+scale = Vector2(0.52518, 0.52518)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "rocket_green"
+ObjectType = "rocket"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Rockets/rocket_green" unique_id=791602690]
+texture = ExtResource("closed_rocket_green")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Rockets/rocket_green" unique_id=682143696]
+shape = SubResource("shape_rocket_green")
+
+[node name="rocket_purple" type="Area2D" parent="Toys/Rockets" unique_id=1039322685]
+position = Vector2(888.00006, 616)
+scale = Vector2(0.532847, 0.532847)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "rocket_purple"
+ObjectType = "rocket"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/Rockets/rocket_purple" unique_id=640349116]
+texture = ExtResource("closed_rocket_purple")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/Rockets/rocket_purple" unique_id=2050022661]
+shape = SubResource("shape_rocket_purple")
+
+[node name="PictureBooks" type="Node2D" parent="Toys" unique_id=748670935]
+
+[node name="picture_book_red" type="Area2D" parent="Toys/PictureBooks" unique_id=2035990149]
+position = Vector2(448, 520)
+scale = Vector2(0.492228, 0.492228)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "picture_book_red"
+ObjectType = "picture_book"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/opened_texture = ExtResource("opened_picture_book_red")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/PictureBooks/picture_book_red" unique_id=891467279]
+texture = ExtResource("closed_picture_book_red")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/PictureBooks/picture_book_red" unique_id=351505913]
+shape = SubResource("shape_picture_book_red")
+
+[node name="picture_book_teal" type="Area2D" parent="Toys/PictureBooks" unique_id=1196188790]
+position = Vector2(1471.9999, 800)
+scale = Vector2(0.494792, 0.494792)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "picture_book_teal"
+ObjectType = "picture_book"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/opened_texture = ExtResource("opened_picture_book_teal")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/PictureBooks/picture_book_teal" unique_id=1719993339]
+texture = ExtResource("closed_picture_book_teal")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/PictureBooks/picture_book_teal" unique_id=713332360]
+shape = SubResource("shape_picture_book_teal")
+
+[node name="picture_book_yellow" type="Area2D" parent="Toys/PictureBooks" unique_id=249784599]
+position = Vector2(856, 712)
+scale = Vector2(0.492228, 0.492228)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "picture_book_yellow"
+ObjectType = "picture_book"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/opened_texture = ExtResource("opened_picture_book_yellow")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/PictureBooks/picture_book_yellow" unique_id=254437299]
+texture = ExtResource("closed_picture_book_yellow")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/PictureBooks/picture_book_yellow" unique_id=467772269]
+shape = SubResource("shape_picture_book_yellow")
+
+[node name="picture_book_purple" type="Area2D" parent="Toys/PictureBooks" unique_id=1462534166]
+position = Vector2(568, 528)
+scale = Vector2(0.492228, 0.492228)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "picture_book_purple"
+ObjectType = "picture_book"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/opened_texture = ExtResource("opened_picture_book_purple")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/PictureBooks/picture_book_purple" unique_id=372746526]
+texture = ExtResource("closed_picture_book_purple")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/PictureBooks/picture_book_purple" unique_id=2129943993]
+shape = SubResource("shape_picture_book_purple")
+
+[node name="picture_book_green" type="Area2D" parent="Toys/PictureBooks" unique_id=1295456842]
+position = Vector2(680, 528)
+scale = Vector2(0.5, 0.5)
+monitoring = false
+monitorable = false
+script = ExtResource("10_interactive")
+ObjectId = "picture_book_green"
+ObjectType = "picture_book"
+ObjectTags = PackedStringArray("toyhouse_toy")
+Operation = "double_click"
+metadata/opened_texture = ExtResource("opened_picture_book_green")
+
+[node name="Sprite2D" type="Sprite2D" parent="Toys/PictureBooks/picture_book_green" unique_id=1232367391]
+texture = ExtResource("closed_picture_book_green")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toys/PictureBooks/picture_book_green" unique_id=253610744]
+shape = SubResource("shape_picture_book_green")

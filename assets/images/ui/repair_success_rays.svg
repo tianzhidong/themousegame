@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <radialGradient id="beam">
+      <stop offset="0" stop-color="#fff5b5" stop-opacity="0.8"/>
+      <stop offset="0.4" stop-color="#ffe68a" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#ffd56b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="halo">
+      <stop offset="0" stop-color="#fff2b4" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#fff2b4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="500" cy="500" r="360" fill="url(#halo)"/>
+  <g fill="url(#beam)">
+    <path d="M500 500 L427 0 L573 0 Z"/>
+    <path d="M500 500 L443 0 L557 0 Z" transform="rotate(30 500 500)" opacity="0.83"/>
+    <path d="M500 500 L417 0 L583 0 Z" transform="rotate(60 500 500)" opacity="0.94"/>
+    <path d="M500 500 L436 0 L564 0 Z" transform="rotate(90 500 500)" opacity="0.85"/>
+    <path d="M500 500 L425 0 L575 0 Z" transform="rotate(120 500 500)"/>
+    <path d="M500 500 L446 0 L554 0 Z" transform="rotate(150 500 500)" opacity="0.88"/>
+    <path d="M500 500 L420 0 L580 0 Z" transform="rotate(180 500 500)" opacity="0.96"/>
+    <path d="M500 500 L441 0 L559 0 Z" transform="rotate(210 500 500)" opacity="0.82"/>
+    <path d="M500 500 L428 0 L572 0 Z" transform="rotate(240 500 500)" opacity="0.93"/>
+    <path d="M500 500 L438 0 L562 0 Z" transform="rotate(270 500 500)" opacity="0.86"/>
+    <path d="M500 500 L416 0 L584 0 Z" transform="rotate(300 500 500)"/>
+    <path d="M500 500 L445 0 L555 0 Z" transform="rotate(330 500 500)" opacity="0.84"/>
+  </g>
+</svg>

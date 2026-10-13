@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://dkvinmk0sbtly"]
+
+[ext_resource type="Texture2D" uid="uid://bqfgki1d3x7bi" path="res://assets/images/objects/day5/m1_bg.png" id="1_bg"]
+[ext_resource type="Texture2D" uid="uid://80ufgcabgp2c" path="res://assets/images/objects/day5/m1/m1_1.png" id="2_part"]
+[ext_resource type="Texture2D" uid="uid://b4pftw44uxlov" path="res://assets/images/objects/day5/m1/m1_2.png" id="3_part"]
+[ext_resource type="Texture2D" uid="uid://wi124w3al0pu" path="res://assets/images/objects/day5/m1/m1_3.png" id="4_part"]
+[ext_resource type="Texture2D" uid="uid://djlq3ntcs1hbf" path="res://assets/images/objects/day5/m1/m1_4.png" id="5_part"]
+[ext_resource type="Texture2D" uid="uid://bq5lhipenfesk" path="res://assets/images/objects/day5/m1/m1_5.png" id="6_part"]
+
+[node name="Machine1Targets" type="Sprite2D" unique_id=1524834224]
+texture = ExtResource("1_bg")
+centered = false
+metadata/_edit_lock_ = true
+metadata/yard_scale = 1.31927907
+metadata/yard_offset = Vector2(-1220.5431, -614.10254)
+
+[node name="PartTarget1" type="Sprite2D" parent="." unique_id=1917243826]
+position = Vector2(1035, 644)
+scale = Vector2(0.77076626, 0.784348)
+texture = ExtResource("2_part")
+offset = Vector2(0.5, 0.5)
+
+[node name="PartTarget2" type="Sprite2D" parent="." unique_id=652671641]
+position = Vector2(930, 508)
+scale = Vector2(1.2733335, 0.9025224)
+texture = ExtResource("3_part")
+offset = Vector2(0, 0.5)
+
+[node name="PartTarget3" type="Sprite2D" parent="." unique_id=1519417440]
+position = Vector2(789.00006, 632.00006)
+scale = Vector2(0.53688586, 0.50899565)
+texture = ExtResource("4_part")
+offset = Vector2(-2.5, -2.5)
+
+[node name="PartTarget4" type="Sprite2D" parent="." unique_id=255018082]
+position = Vector2(933.99994, 390)
+scale = Vector2(0.7776145, 0.7355812)
+texture = ExtResource("5_part")
+offset = Vector2(-9, 9)
+
+[node name="PartTarget5" type="Sprite2D" parent="." unique_id=239281554]
+position = Vector2(925, 107)
+scale = Vector2(0.44651696, 0.48146886)
+texture = ExtResource("6_part")
+offset = Vector2(22, 3.5)

@@ -2,11 +2,16 @@
 
 [ext_resource type="Texture2D" uid="uid://bkj43nd5fpccd" path="res://assets/images/backgrounds/lesson7.png" id="1_npgra"]
 [ext_resource type="Texture2D" uid="uid://dlf8321k8cruv" path="res://assets/images/ui/voice_replay_button.png" id="2_7gxmi"]
-[ext_resource type="Script" path="res://scripts/ui/lesson.gd" id="3_lesson"]
+[ext_resource type="Script" path="res://scripts/lesson/day7_lesson.gd" id="3_lesson"]
+[ext_resource type="Texture2D" uid="uid://bcl4114xrsbqi" path="res://assets/images/backgrounds/day7_bg.png" id="4_ynqea"]
+[ext_resource type="Script" path="res://scripts/lesson/day7_lesson_scroll.gd" id="5_scroll"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ifow5"]
+size = Vector2(456, 680)
 
 [node name="Lesson7" type="Node2D" unique_id=640833065]
 script = ExtResource("3_lesson")
-voice_path = "res://assets/audio/voice/lesson/滚轮.ogg"
+voice_path = "res://assets/audio/voice/lesson/lesson7_scroll.wav"
 
 [node name="Lesson7" type="Sprite2D" parent="." unique_id=1296821678]
 position = Vector2(962, 544.75)
@@ -17,3 +22,16 @@ texture = ExtResource("1_npgra")
 position = Vector2(1856, 1012)
 scale = Vector2(0.2382813, 0.2382813)
 texture = ExtResource("2_7gxmi")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=654894592]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1533519475]
+z_index = -1
+position = Vector2(1260, 556)
+shape = SubResource("RectangleShape2D_ifow5")
+script = ExtResource("5_scroll")
+
+[node name="Day7Bg" type="Sprite2D" parent="Area2D/CollisionShape2D" unique_id=1326830849]
+position = Vector2(12.000122, 180)
+scale = Vector2(0.6955367, 0.6955366)
+texture = ExtResource("4_ynqea")

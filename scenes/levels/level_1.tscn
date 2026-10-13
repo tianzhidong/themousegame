@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://74pgvdhfikoh"]
 
-[ext_resource type="Texture2D" uid="uid://bpxw72h68pv1r" path="res://assets/images/backgrounds/day1_bg.png" id="1_ksju7"]
+[ext_resource type="Texture2D" uid="uid://87a0tgxwexdy" path="res://assets/images/backgrounds/day1_bg.png" id="1_ksju7"]
 [ext_resource type="Texture2D" uid="uid://e1ea4vtig7sg" path="res://assets/images/friends/bear/bear_captain_idle.png" id="2_nsrm0"]
 [ext_resource type="Script" uid="uid://fcovasdpxs62" path="res://scripts/core/friend.gd" id="3_x42e6"]
 [ext_resource type="Texture2D" uid="uid://c7n0rciybswtg" path="res://assets/images/ui/back_button.png" id="4_sk5k4"]
@@ -24,6 +24,13 @@
 [ext_resource type="Texture2D" uid="uid://b0p5gvobl2bew" path="res://assets/images/objects/lesson/butterfly2.png" id="22_mqh5v"]
 [ext_resource type="Texture2D" uid="uid://csplt14t7l3kh" path="res://assets/images/objects/lesson/butterfly3.png" id="23_7o3do"]
 [ext_resource type="Script" uid="uid://b2w00c3bud27d" path="res://scripts/days/day1/animated_sprite_2d.gd" id="24_mqh5v"]
+[ext_resource type="Texture2D" uid="uid://jcv7yjneaty6" path="res://assets/images/objects/day1/boat_s.png" id="25_o7j4k"]
+[ext_resource type="Texture2D" uid="uid://dr4y0idy333we" path="res://assets/images/objects/day1/bird_s.png" id="26_31oqk"]
+[ext_resource type="Texture2D" uid="uid://ba15nm66thyl0" path="res://assets/images/objects/day1/bird1.png" id="27_x7jkp"]
+[ext_resource type="Texture2D" uid="uid://bthvf7pd6ls3t" path="res://assets/images/objects/day1/bird2.png" id="28_0qwwm"]
+[ext_resource type="Script" uid="uid://d27b7yyqd74li" path="res://scripts/days/day1/boats.gd" id="29_boats"]
+[ext_resource type="Script" uid="uid://tt4uypnytrci" path="res://scripts/days/day1/birds.gd" id="30_birds"]
+[ext_resource type="Script" uid="uid://b2kum5j8fatxt" path="res://scripts/days/day1/level1_completion.gd" id="31_level1_completion"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wvhbo"]
 radius = 8.0
@@ -116,7 +123,30 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_abi3o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_31oqk")
+}],
+"loop": 1,
+"name": &"bird",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_x7jkp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_0qwwm")
+}],
+"loop": 1,
+"name": &"bird_fly",
+"speed": 5.0
+}]
+
 [node name="Level1" type="Node2D" unique_id=1656788793]
+script = ExtResource("31_level1_completion")
 metadata/_edit_horizontal_guides_ = [120.0, 24.0]
 metadata/_edit_vertical_guides_ = [984.0]
 
@@ -302,3 +332,32 @@ scale = Vector2(0.09866647, 0.09866648)
 sprite_frames = SubResource("SpriteFrames_ifow5")
 animation = &"butterfly_fly"
 script = ExtResource("24_mqh5v")
+
+[node name="boats" type="Area2D" parent="." unique_id=54494180]
+script = ExtResource("29_boats")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="boats" unique_id=796335701]
+position = Vector2(1456, 705)
+polygon = PackedVector2Array(0, -1, 56, 47, 44, 52, 36, 60, 30, 71, 27, 76, 20, 76, 13, 80, 6, 85, -1, 94, -2, 105, -11, 106, -16, 111, -26, 125, -42, 127, -61, 137, -68, 152, -72, 159, -82, 161, -92, 160, -102, 166, -102, 178, -87, 181, -78, 181, -71, 179, -67, 184, -63, 191, -54, 198, -52, 200, -51, 207, -54, 211, -62, 215, -65, 221, -69, 224, -84, 227, -91, 234, -98, 241, -110, 264, -95, 278, -93, 285, -102, 297, -110, 309, -111, 315, -99, 326, -98, 330, -109, 336, -113, 343, -115, 352, -112, 359, -107, 363, -94, 365, -88, 364, -82, 364, -78, 364, -74, 367, -77, 373, -76, 375, -338, 376, -317, 360, -313, 355, -304, 357, -293, 358, -284, 357, -272, 351, -264, 345, -257, 338, -256, 331, -257, 328, -263, 322, -256, 325, -252, 325, -244, 325, -237, 323, -233, 316, -235, 307, -241, 302, -244, 301, -244, 301, -251, 300, -252, 298, -252, 297, -258, 284, -265, 281, -274, 277, -275, 273, -267, 271, -261, 262, -256, 253, -258, 241, -265, 237, -253, 234, -245, 221, -250, 218, -238, 218, -225, 212, -220, 206, -212, 192, -224, 181, -216, 178, -212, 170, -213, 164, -225, 159, -228, 155, -218, 147, -207, 144, -173, 136, -162, 127, -162, 122, -157, 122, -148, 124, -135, 121, -127, 111, -131, 105, -127, 103, -122, 101, -116, 96, -115, 92, -119, 83, -97, 83, -87, 74, -80, 64, -81, 55, -76, 52, -62, 43, -68, 34, -64, 32, -42, 33, -25, 26, -18, 18, -18, 15)
+
+[node name="boat" type="TextureRect" parent="boats/CollisionPolygon2D" unique_id=20109918]
+offset_left = -210.0
+offset_top = 123.0
+offset_right = 302.0
+offset_bottom = 635.0
+scale = Vector2(0.098821424, 0.098821424)
+texture = ExtResource("25_o7j4k")
+
+[node name="birds" type="Area2D" parent="." unique_id=881170075]
+script = ExtResource("30_birds")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="birds" unique_id=1823797873]
+position = Vector2(748, 543)
+polygon = PackedVector2Array(-88, 91, -91, 60, -125, -14, -269, -25, -412, 22, -457, -5, -293.63654, -74.29416, -293, -150, -230, -131, -176, -79, -97, -84, 5, -129, 102, -101, 257, -95, 266, -142, 378, -93, 537, -128, 542, -67, 630, 8, 590, 82, 567, 26, 469, -35, 334, -16, 266, 87, 359, 143, 250, 207, 244, 308, 249, 376, 229, 412, 199, 430, 140, 447, 86, 390, 45, 355, 79, 283, 73, 239, 44, 172, -36, 137, -101, 113)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="birds/CollisionPolygon2D" unique_id=38012073]
+scale = Vector2(0.20270799, 0.19938162)
+sprite_frames = SubResource("SpriteFrames_abi3o")
+animation = &"bird_fly"
+frame = 1
+frame_progress = 0.43054578
