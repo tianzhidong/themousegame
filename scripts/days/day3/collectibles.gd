@@ -14,6 +14,7 @@ const ITEM_SOUNDS := {
 }
 const DEFAULT_ITEM_COUNT := 5
 const MIN_SPAWN_DISTANCE := 58.0
+const ITEM_SIZE_MULTIPLIER := 1.25
 const ITEM_FAR_SCALE := 0.72
 const ITEM_NEAR_SCALE := 1.16
 const PERSPECTIVE_SCALE_JITTER := 0.06
@@ -215,7 +216,7 @@ func _create_item_group(definition: Dictionary) -> void:
 	var far_scale := float(definition.get("far_scale", ITEM_FAR_SCALE))
 	var near_scale := float(definition.get("near_scale", ITEM_NEAR_SCALE))
 	var scale_jitter := float(definition.get("scale_jitter", PERSPECTIVE_SCALE_JITTER))
-	var base_scale := template.scale
+	var base_scale := template.scale * ITEM_SIZE_MULTIPLIER
 	var region_order: Array[Node2D] = []
 	for spawn_region in regions:
 		region_order.append(spawn_region)
